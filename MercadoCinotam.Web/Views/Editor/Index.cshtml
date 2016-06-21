@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<style>
+    .ace_editor {
+        min-height: 1000px;
+    }
+</style>
+<div class="row">
+    <div class="col-sm-4">
+        <form method="POST" id="saveHtml">
+            <textarea style="height: 500px" id="editor" rows="10" name="html"></textarea>
+            <button type="submit">
+                Save
+            </button>
+        </form>
+    </div>
+    <div class="col-sm-8">
+        <iframe width="100%" height="1000px" id="content"></iframe>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="~/Views/Editor/ace.js"></script>
+    <script src="~/Views/Editor/theme-twilight.js"></script>
+    <script src="~/Views/Editor/mode-html_ruby.js"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/twilight");
+        editor.session.setMode("ace/mode/html_ruby");
+        $(document).ready(function () {
+            var html = $("#Html").val();
+            setTimeout(function () {
+
+                editor.insert(html);
+                $("#saveHtml").submit();
+            }, 1000);
+            editor.getSession().on('change', function (e) {
+                // e.type, etc
+                $("#saveHtml").submit();
+            });
+            $("#saveHtml").on("submit", function (e) {
+                e.preventDefault();
+                var value = editor.getValue();
+                var data = {
+                    Html: value,
+                    Id: $("#Id").val()
+                }
+                $.post("/Home/Index", data, function (response) {
+                    console.log(response);
+                    $("#content body").ready(function () {
+                        setTimeout(function () {
+                            $('#content').contents().find('body').empty();
+                            $('#content').contents().find('body').append(response.result.html.html);
+                        });
+                    });
+                    $("#Id").val(response.result.id);
+                }).fail(function (response) {
+                    console.log(response);
+                    $("#content").contents().find("body").empty();
+                    $('#content').contents().find('body').append(response.responseText);
+
+                });
+            });
+        });
+    </script>
+}
