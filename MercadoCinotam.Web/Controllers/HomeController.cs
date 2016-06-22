@@ -1,20 +1,19 @@
-﻿using Abp.Web.Mvc.Authorization;
-using DotLiquid;
+﻿using DotLiquid;
 using System.Web.Mvc;
 
 namespace MercadoCinotam.Web.Controllers
 {
-    [AbpMvcAuthorize]
     public class HomeController : MercadoCinotamControllerBase
     {
 
+
         public ActionResult Index()
         {
-            if (!IsHostSite)
-            {
-                return RedirectToAction("LandingPage");
-            }
-
+            //if (!IsHostSite)
+            //{
+            //    return RedirectToAction("LandingPage");
+            //}
+            //if is trying to access to a main page with a tenancy name we should send the user to the store profile page
             return View();
         }
 
@@ -35,6 +34,25 @@ namespace MercadoCinotam.Web.Controllers
         //    var model = new MyModel(input.Html);
         //    return Json(new { html = model, id = input.Id });
         //}
+        public ActionResult ProductList()
+        {
+            return View();
+        }
+
+        public ActionResult Product(string productUrl)
+        {
+            return View();
+        }
+
+        public ActionResult StoreProfile()
+        {
+            return View();
+        }
+
+        public ActionResult StoreAbout()
+        {
+            return View();
+        }
         public class MyModel : Drop
         {
             public MyModel(string htmlContent)

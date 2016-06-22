@@ -91,6 +91,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,8 +105,10 @@
     <Compile Include="MultiTenancy\ITenantAppService.cs" />
     <Compile Include="MultiTenancy\Dto\TenantListDto.cs" />
     <Compile Include="MultiTenancy\TenantAppService.cs" />
+    <Compile Include="Products\Admin\Dtos\ProductDto.cs" />
     <Compile Include="Products\Admin\Dtos\ProductInput.cs" />
     <Compile Include="Products\Admin\IProductAdminService.cs" />
+    <Compile Include="Products\Admin\ProductAdminService.cs" />
     <Compile Include="Products\Client\Dtos\Product.cs" />
     <Compile Include="Products\Client\Dtos\ProductList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,6 +135,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{B693E1AD-030E-4388-BBE9-51690178FD08}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageSaver\ImageSaver.csproj">
+      <Project>{EE58BADA-B4DE-45D4-AD78-4D7235C26A82}</Project>
+      <Name>ImageSaver</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MercadoCinotam.Core\MercadoCinotam.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>MercadoCinotam.Core</Name>

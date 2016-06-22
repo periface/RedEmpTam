@@ -1,0 +1,38 @@
+﻿using Abp.Application.Services.Dto;
+using System.Collections.Generic;
+
+namespace Helpers.GenericTypes
+{
+    /// <summary>
+    /// Normal request model
+    /// </summary>
+    public class RequestModel : RequestModel<int>, IInputDto
+    {
+        public RequestModel()
+        {
+            SecondarySearch = new List<string>();
+        }
+        public int start { get; set; }
+        public int length { get; set; }
+        public int draw { get; set; }
+        public Dictionary<string, string> search { get; set; }
+        public int PropSort { get; set; }
+        public string PropOrd { get; set; }
+        public List<string> SecondarySearch { get; set; }
+        /// <summary>
+        /// For reflection
+        /// </summary>
+        public string PropToSort { get; set; }
+
+        public string PropToSearch { get; set; }
+    }
+
+    /// <summary>
+    /// Abstract class for the request model
+    /// </summary>
+    /// <typeparam name="TParameterType"></typeparam>
+    public abstract class RequestModel<TParameterType>
+    {
+        public TParameterType RequestParameter { get; set; }
+    }
+}

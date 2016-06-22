@@ -1,8 +1,10 @@
 ﻿using Abp.Zero.EntityFramework;
 using MercadoCinotam.Authorization.Roles;
 using MercadoCinotam.MultiTenancy;
+using MercadoCinotam.Products.Entities;
 using MercadoCinotam.Users;
 using System.Data.Common;
+using System.Data.Entity;
 
 namespace MercadoCinotam.EntityFramework
 {
@@ -14,6 +16,8 @@ namespace MercadoCinotam.EntityFramework
          *   But it may cause problems when working Migrate.exe of EF. If you will apply migrations on command line, do not
          *   pass connection string name to base classes. ABP works either way.
          */
+        public IDbSet<Product> Products { get; set; }
+        public IDbSet<ProductGalardons> ProductGalardonses { get; set; }
         public MercadoCinotamDbContext()
             : base("Default")
         {

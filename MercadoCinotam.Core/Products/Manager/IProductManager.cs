@@ -1,13 +1,18 @@
-﻿using MercadoCinotam.Products.Entities;
+﻿using Abp.Domain.Services;
+using MercadoCinotam.Products.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MercadoCinotam.Products.Manager
 {
-    public interface IProductManager
+    public interface IProductManager : IDomainService
     {
-        int AddProduct(Product product);
+        Guid AddProduct(Product product);
         Product GetProduct(Guid id);
         IEnumerable<Product> GetProducts(int? take = 0);
+        int EditProduct(Product product);
+
+        IQueryable<Product> GetQuery();
     }
 }

@@ -3,10 +3,12 @@ using Abp.IdentityFramework;
 using Abp.Threading;
 using Abp.UI;
 using Abp.Web.Mvc.Controllers;
+using Helpers.GenericTypes;
 using MercadoCinotam.MultiTenancy;
 using MercadoCinotam.ThemeService;
 using Microsoft.AspNet.Identity;
 using PymeTamThemeEngine;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -19,6 +21,7 @@ namespace MercadoCinotam.Web.Controllers
     {
         private const string KeySession = "Theme";
         private const string LastTenant = "LastTenant";
+        private const string StorePage = "Store";
         public ITenantAppService TenantAppService { get; set; }
         public IThemeService ThemeService { get; set; }
         protected MercadoCinotamControllerBase()
@@ -28,11 +31,16 @@ namespace MercadoCinotam.Web.Controllers
 
         protected override void OnActionExecuted(ActionExecutedContext filterContext)
         {
-            InsertViewEngine();
+            ViewBag.TenantName = GetTenancyNameByUrl();
+            InsertViewEngine(filterContext);
         }
 
-        private void InsertViewEngine()
+        private void InsertViewEngine(ActionExecutedContext filterContext)
         {
+            if (filterContext.ActionDescriptor.ActionName != StorePage)
+            {
+                return;
+            }
             //Clear the view engine
             ClearViewEngine();
             string activeThemeName;
@@ -103,7 +111,34 @@ namespace MercadoCinotam.Web.Controllers
                 throw new UserFriendlyException(L("FormIsNotValidMessage"));
             }
         }
+        /// <summary>
+        /// Build the model for the datatables.js request
+        /// </summary>
+        /// <param name="requestModel"></param>
+        /// <param name="propToSearch">Prop used to filter data if empty tries to search in all props of the object</param>
+        /// <param name="reflectedProps">Columns of the table, they need to be in order</param>
+        protected void ProccessQueryData(RequestModel requestModel, string propToSearch, string[] reflectedProps)
+        {
+            if (
+                Request.QueryString["order[0][column]"] != null)
+            {
+                requestModel.PropSort = int.Parse(Request.QueryString["order[0][column]"]);
+            }
+            if (Request.QueryString["order[0][dir]"] != null)
+            {
+                requestModel.PropOrd = Request.QueryString["order[0][dir]"];
+            }
 
+            if (!string.IsNullOrEmpty(propToSearch)) requestModel.PropToSearch = propToSearch;
+            try
+            {
+                requestModel.PropToSort = reflectedProps[requestModel.PropSort];
+            }
+            catch
+            {
+                throw new Exception("Rango de propiedades invalido.");
+            }
+        }
         protected void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);

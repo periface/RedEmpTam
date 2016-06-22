@@ -1,0 +1,71 @@
+﻿<link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Administrador de Productos</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Productos Disponibles <a href="@Url.Action("AddProduct","Products")" class="btn btn-default pull-right btn-sm">Agregar Producto</a>
+            </div>
+            <div class="panel-body">
+
+                <table id="products" class="display" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>#Id</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                            <th >Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#products').DataTable({
+                "bServerSide": true,
+                "bPaginate": true,
+                "sPaginationType": "full_numbers",
+                "iDisplayLength": 10,
+                "ajax": "/Admin/Products/GetProducts",
+                columns: [
+                    {
+                        "data": "Id"
+                    },
+                    {
+                        "data": "ProductName"
+                    },
+                {
+                    "data": "ProductPrice"
+                },
+                    {
+                        "data": "Active"
+                    }
+                ],
+                "columnDefs": [
+                {
+                    // The `data` parameter refers to the data for the cell (defined by the
+                    // `data` option, which defaults to the column being worked with, in
+                    // this case `data: 0`.
+                    "render": function (data, type, row) {
+                        return "<a href='/Admin/Products/AddGalardon/"+row.Id+"' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a> <a href='/Admin/Products/Gallery/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-image'></i></a> <a href='/Admin/Products/AddProduct/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
+                    },
+                    "targets": 4
+                }
+                ]
+            });
+        });
+    </script>
+}
