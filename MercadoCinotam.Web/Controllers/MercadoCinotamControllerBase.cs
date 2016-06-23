@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity;
 using PymeTamThemeEngine;
 using System;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
 namespace MercadoCinotam.Web.Controllers
@@ -166,5 +167,96 @@ namespace MercadoCinotam.Web.Controllers
         {
             identityResult.CheckErrors(LocalizationManager);
         }
+        /// <summary>
+        /// <para>
+        /// By: Peri
+        /// </para>
+        /// Builds a new instance of T with the request param values
+        /// <para>Usefull to upload images with form-data values</para>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        /*
+            //Jquery code
+            $("#sampleForm").on("submit", function (e) {
+                var formData = new FormData(this);
+                e.preventDefault();
+                abp.ui.setBusy($("#sampleForm"), save(formData).done(function (response) {
+                    alert("Foo bar yeah!");
+                }));
+            });
+            --save function
+            return abp.ajax({
+                    url: "/MyPostUrl",
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    type: 'POST'
+                });
+
+            ///Server code
+            public async Task<ActionResult> CreateProduct()
+            {
+                var image = Request.Files[0];
+
+                var input = BuildInputByRequest<MyType>(Request);
+                ValidateModel(input);
+                //Now input is typeof MyType
+                var id = await _myService.MyFunction(input);
+                var thisFileFolder = "FileFolder/";
+
+                var virtualPath = mySaveFileFunction(image, thisFileFolder);
+                
+                return Json("Ok!", JsonRequestBehavior.AllowGet);
+            }
+            */
+        public T BuildInputByRequest<T>(HttpRequestBase request)
+        {
+            //Get type
+            var obj = typeof(T);
+            //Create a new instance of type
+            var instance = (T)Activator.CreateInstance(typeof(T));
+            //Look for all properties in the type
+            foreach (var props in obj.GetProperties())
+            {
+                //Get the name of the property
+                var prop = props.Name;
+
+                //Create a new property info
+                var propertyInfo = obj.GetProperty(props.Name);
+
+                //Gets the string value from the request params based on the property name
+                var stringValue = request.Params.GetValues(prop);
+
+                //If its empty just ignore it
+                if (stringValue == null) continue;
+
+                //Gets the first value
+                var value = stringValue[0];
+                try
+                {
+                    if (propertyInfo.PropertyType == typeof(Guid))
+                    {
+                        var convertedGuid = Guid.Parse(value);
+                        //Tries to convert the value type to the required value type for the generic object
+                        propertyInfo.SetValue(instance, convertedGuid, null);
+                    }
+                    else
+                    {
+                        var convertedValue = Convert.ChangeType(value, propertyInfo.PropertyType);
+                        //Tries to convert the value type to the required value type for the generic object
+                        propertyInfo.SetValue(instance, convertedValue, null);
+                    }
+                }
+                catch (Exception)
+                {
+                    // ignored
+                }
+            }
+            return instance;
+        }
+
     }
 }

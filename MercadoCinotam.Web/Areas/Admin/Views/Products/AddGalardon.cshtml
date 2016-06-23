@@ -13,7 +13,7 @@
     <div class="col-sm-12">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                Premios, Certificaciónes Recibidas <a href="@Url.Action("AddGalardonView","Products")" data-modal class="btn btn-sm pull-right btn-default">Agregar</a>
+                Premios, Certificaciónes Recibidas <a data-modal data-url="@Url.Action("AddGalardonView", "Products")" class="btn btn-sm pull-right btn-default">Agregar</a>
             </div>
             <div class="panel panel-body">
                 <div class="row">
@@ -41,9 +41,10 @@
     <script src="~/js/modal.js"></script>
     <script>
 
-        var mainFunction = (function ($) {
+        (function ($) {
             $(document).ready(function () {
-                window.modalInstance = window.helpers.modal();
+
+                window.modal = new abp.app.bootstrap.modal();
             });
         })($);
     </script>
