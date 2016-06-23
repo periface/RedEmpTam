@@ -1,0 +1,121 @@
+﻿@model MercadoCinotam.Products.Admin.Dtos.ProductInput
+<div class="row">
+    <div class="col-sm-12">
+        <h2>Crear Producto</h2>
+    </div>
+</div>
+@using (Html.BeginForm("AddProduct", "Products", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(a => a.Id)
+    @Html.HiddenFor(a => a.SmallImage)
+    @Html.HiddenFor(a => a.MainPicture)
+    @Html.HiddenFor(a => a.MediumImage)
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group">
+                <label class="control-label">Nombre de su producto</label>
+                @Html.TextBoxFor(a => a.ProductName, new { @class = "form-control" })
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-2">
+            <div class="form-group">
+                <label class="control-label">Sku</label>
+                @Html.TextBoxFor(a => a.Sku, new {@class = "form-control",})
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-2">
+            <div class="form-group">
+                <label class="control-label">Precio</label>
+                @Html.TextBoxFor(a => a.ProductPrice, new { @class = "form-control", })
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-2">
+            <div class="form-group">
+
+                <label class="control-label">Stock disponible</label>
+                <div class="input-group">
+
+                    <span class="input-group-addon">
+                        @Html.CheckBoxFor(a => a.TrackStock, new {Title = "Habilitar control de stock"})
+                    </span>
+                    @Html.TextBoxFor(a => a.AvailableStock, new {@class = "form-control", type = "number"})
+
+                </div>
+
+            </div>
+        </div>
+
+        @*<div class="col-lg-6">
+
+
+
+            <label class="control-label">Control de stocks</label>
+            <p class="help-block">
+                El control de stock permite al sistema mantener control de los stocks de un producto, de esta forma si el stock es de 0 el producto estara deshabilitado para la compra
+            </p>
+        </div>*@
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h5>Default</h5>
+            <img style="margin: 0 auto" class="img-responsive" src="@Model.MainPicture"/>
+        </div>
+        <div class="col-sm-2">
+
+            <h5>128x128</h5>
+            <img style="margin: 0 auto" class="img-responsive" src="@Model.MediumImage"/>
+
+        </div>
+        <div class="col-sm-2">
+            <h5>64x64</h5>
+            <img style="margin: 0 auto" class="img-responsive" src="@Model.SmallImage"/>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group">
+                <label class="control-label">Descripción del Producto</label>
+                <input type="file" class="form-control" id="image" name="image" onchange="createDataImage()" />
+                @Html.HiddenFor(a => a.DataImage)
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-12">
+            <div class="form-group">
+                <label class="control-label">Descripción del Producto</label>
+                @Html.TextAreaFor(a => a.ProductDescription, new { @class = "form-control", rows = 10 })
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-12">
+            <button class="btn btn-success" type="submit">Guardar</button>
+        </div>
+    </div>
+}
+
+@section Scripts{
+    <script>
+        function createDataImage() {
+            var filesSelected = document.getElementById("image").files;
+            if (filesSelected.length > 0) {
+                var fileToLoad = filesSelected[0];
+
+                var fileReader = new FileReader();
+
+                fileReader.onload = function (fileLoadedEvent) {
+                    var srcData = fileLoadedEvent.target.result; // <--- data: base64
+                    $("#DataImage").val(srcData);
+                    console.log(srcData);
+                }
+                fileReader.readAsDataURL(fileToLoad);
+            }
+        }
+    </script>
+}
