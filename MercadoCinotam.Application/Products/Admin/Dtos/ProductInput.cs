@@ -2,6 +2,7 @@
 using Abp.AutoMapper;
 using MercadoCinotam.Products.Entities;
 using System;
+using System.Web;
 
 namespace MercadoCinotam.Products.Admin.Dtos
 {
@@ -17,5 +18,7 @@ namespace MercadoCinotam.Products.Admin.Dtos
         public string MainPicture { get; set; }
         public string SmallImage { get; set; }
         public string MediumImage { get; set; }
+        public string Sku { get; set; }
+        public HttpPostedFileBase Imagen { get; set; }
     }
 }

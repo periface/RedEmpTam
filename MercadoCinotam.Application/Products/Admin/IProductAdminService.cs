@@ -2,15 +2,15 @@
 using Helpers.GenericTypes;
 using MercadoCinotam.Products.Admin.Dtos;
 using System;
-using System.Web;
 
 namespace MercadoCinotam.Products.Admin
 {
     public interface IProductAdminService : IApplicationService
     {
-        Guid AddProductToStore(ProductInput input, HttpPostedFileBase httpPostedFileBase);
+        Guid AddProductToStore(ProductInput input);
         ReturnModel<ProductDto> GetProducts(RequestModel request);
         ProductInput GetProductForEdit(Guid? id);
         object GetGalardons(Guid? id);
+        int AddGalardon(GalardonInput input);
     }
 }

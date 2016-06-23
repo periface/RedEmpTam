@@ -139,6 +139,29 @@ namespace MercadoCinotam.Web.Controllers
                 throw new Exception("Rango de propiedades invalido.");
             }
         }
+        protected void ProccessQueryData(RequestModel requestModel, string[] propsToSearch, string[] reflectedProps)
+        {
+            if (
+                Request.QueryString["order[0][column]"] != null)
+            {
+                requestModel.PropSort = int.Parse(Request.QueryString["order[0][column]"]);
+            }
+            if (Request.QueryString["order[0][dir]"] != null)
+            {
+                requestModel.PropOrd = Request.QueryString["order[0][dir]"];
+            }
+
+            if (propsToSearch.Any()) requestModel.PropsToSearch = propsToSearch;
+            try
+            {
+                requestModel.PropToSort = reflectedProps[requestModel.PropSort];
+            }
+            catch
+            {
+                throw new Exception("Rango de propiedades invalido.");
+            }
+        }
+
         protected void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);

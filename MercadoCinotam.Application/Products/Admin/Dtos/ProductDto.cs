@@ -8,5 +8,6 @@ namespace MercadoCinotam.Products.Admin.Dtos
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
         public bool Active { get; set; }
+        public string Sku { get; set; }
     }
 }

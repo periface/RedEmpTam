@@ -13,14 +13,14 @@
             </div>
             <div class="panel-body">
 
-                <table id="products" class="display" cellspacing="0" width="100%">
+                <table id="products" class="display">
                     <thead>
                         <tr>
-                            <th>#Id</th>
+                            <th>#Sku</th>
                             <th>Nombre</th>
                             <th>Precio</th>
                             <th>Estado</th>
-                            <th >Opciones</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -35,14 +35,18 @@
     <script>
         $(document).ready(function () {
             $('#products').DataTable({
+                buttons: [
+        'pdf'
+                ],
                 "bServerSide": true,
                 "bPaginate": true,
                 "sPaginationType": "full_numbers",
                 "iDisplayLength": 10,
                 "ajax": "/Admin/Products/GetProducts",
+                language: window.dataTablesLang,
                 columns: [
                     {
-                        "data": "Id"
+                        "data": "Sku"
                     },
                     {
                         "data": "ProductName"
@@ -59,8 +63,9 @@
                     // The `data` parameter refers to the data for the cell (defined by the
                     // `data` option, which defaults to the column being worked with, in
                     // this case `data: 0`.
+                    className: "text-center",
                     "render": function (data, type, row) {
-                        return "<a href='/Admin/Products/AddGalardon/"+row.Id+"' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a> <a href='/Admin/Products/Gallery/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-image'></i></a> <a href='/Admin/Products/AddProduct/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
+                        return "<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a> <a href='' class='btn btn-default btn-sm' title='Caracteristicas' ><i class='fa fa-bars'></i></a> <a href='' class='btn btn-default btn-sm' title='Historial de Stock' ><i class='fa fa-history'></i></a> <a title='Galeria' href='/Admin/Products/Gallery/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-image'></i></a> <a  title='Editar' href='/Admin/Products/AddProduct/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
                     },
                     "targets": 4
                 }

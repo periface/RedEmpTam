@@ -102,8 +102,11 @@
     <Compile Include="Features\FeatureValueStore.cs" />
     <Compile Include="MultiTenancy\Tenant.cs" />
     <Compile Include="MultiTenancy\TenantManager.cs" />
+    <Compile Include="Products\Entities\Feature.cs" />
     <Compile Include="Products\Entities\Product.cs" />
+    <Compile Include="Products\Entities\ProductFeatureSection.cs" />
     <Compile Include="Products\Entities\ProductGalardons.cs" />
+    <Compile Include="Products\Entities\ProductSlider.cs" />
     <Compile Include="Products\Manager\IProductManager.cs" />
     <Compile Include="Products\Manager\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

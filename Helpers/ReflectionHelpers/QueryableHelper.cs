@@ -83,6 +83,12 @@ namespace Helpers.ReflectionHelpers
             var lambda = SearchAllFields<T>(valueToSearch);
             return source.Where(lambda);
         }
+
+        public static IQueryable<T> Where<T>(this IQueryable<T> source, string[] propsToSearch, string valueToSearch)
+        {
+            var lambda = SearchAllFieldsWithPropertyDefined<T>(valueToSearch, propsToSearch);
+            return source.Where(lambda);
+        }
         public static Expression<Func<T, bool>> SearchAllFields<T>(string searchText)
         {
             var t = Expression.Parameter(typeof(T));
@@ -129,6 +135,35 @@ namespace Helpers.ReflectionHelpers
                     Expression.Constant(searchText));
 
                 body = Expression.OrElse(body, nextExpression);
+            }
+
+            return Expression.Lambda<Func<T, bool>>(body, t);
+        }
+        public static Expression<Func<T, bool>> SearchAllFieldsWithPropertyDefined<T>(string searchText, string[] properties)
+        {
+            var t = Expression.Parameter(typeof(T));
+            Expression body = Expression.Constant(false);
+
+            var containsMethod = typeof(string).GetMethod("Contains"
+                , new[] { typeof(string) });
+            var toStringMethod = typeof(object).GetMethod("ToString");
+            var stringProperties = typeof(T).GetProperties()
+                // ReSharper disable once AccessToModifiedClosure
+                .Where(property => property.PropertyType == typeof(string) && property.Name == properties.FirstOrDefault());
+
+            foreach (var property in stringProperties)
+            {
+                var element = properties.FirstOrDefault();
+                var stringValue = Expression.Call(Expression.Property(t, property.Name),
+                    toStringMethod);
+                var nextExpression = Expression.Call(stringValue,
+                    containsMethod,
+                    Expression.Constant(searchText));
+
+                body = Expression.OrElse(body, nextExpression);
+                var list = properties.ToList();
+                list.Remove(element);
+                properties = list.ToArray();
             }
 
             return Expression.Lambda<Func<T, bool>>(body, t);

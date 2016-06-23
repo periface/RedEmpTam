@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using Abp.Auditing;
+﻿using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
 using Abp.Configuration.Startup;
@@ -23,6 +15,14 @@ using MercadoCinotam.Web.Models.Account;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
 
 namespace MercadoCinotam.Web.Controllers
 {
@@ -69,7 +69,9 @@ namespace MercadoCinotam.Web.Controllers
                 new LoginFormViewModel
                 {
                     ReturnUrl = returnUrl,
-                    IsMultiTenancyEnabled = _multiTenancyConfig.IsEnabled
+                    IsMultiTenancyEnabled = _multiTenancyConfig.IsEnabled,
+                    IsHostSite = IsHostSite,
+                    TenantName = TenantName
                 });
         }
 
@@ -84,7 +86,10 @@ namespace MercadoCinotam.Web.Controllers
                 loginModel.Password,
                 loginModel.TenancyName
                 );
-
+            if (!IsHostSite)
+            {
+                loginModel.TenancyName = TenantName;
+            }
             await SignInAsync(loginResult.User, loginResult.Identity, loginModel.RememberMe);
 
             if (string.IsNullOrWhiteSpace(returnUrl))

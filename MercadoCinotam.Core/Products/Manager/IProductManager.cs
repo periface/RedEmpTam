@@ -14,5 +14,6 @@ namespace MercadoCinotam.Products.Manager
         int EditProduct(Product product);
 
         IQueryable<Product> GetQuery();
+        int AddGalardon(ProductGalardons galardon);
     }
 }

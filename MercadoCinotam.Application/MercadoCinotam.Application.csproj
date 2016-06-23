@@ -105,6 +105,7 @@
     <Compile Include="MultiTenancy\ITenantAppService.cs" />
     <Compile Include="MultiTenancy\Dto\TenantListDto.cs" />
     <Compile Include="MultiTenancy\TenantAppService.cs" />
+    <Compile Include="Products\Admin\Dtos\GalardonInput.cs" />
     <Compile Include="Products\Admin\Dtos\ProductDto.cs" />
     <Compile Include="Products\Admin\Dtos\ProductInput.cs" />
     <Compile Include="Products\Admin\IProductAdminService.cs" />

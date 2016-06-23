@@ -1,4 +1,5 @@
 ﻿using Abp.AutoMapper;
+using Abp.UI;
 using Helpers;
 using Helpers.GenericTypes;
 using ImageSaver.Manager;
@@ -7,7 +8,6 @@ using MercadoCinotam.Products.Entities;
 using MercadoCinotam.Products.Manager;
 using System;
 using System.Linq;
-using System.Web;
 
 namespace MercadoCinotam.Products.Admin
 {
@@ -25,7 +25,7 @@ namespace MercadoCinotam.Products.Admin
             _imageManager = imageManager;
         }
 
-        public Guid AddProductToStore(ProductInput input, HttpPostedFileBase httpPostedFileBase)
+        public Guid AddProductToStore(ProductInput input)
         {
 
             var slug = input.ProductName.CreateSlug();
@@ -39,22 +39,22 @@ namespace MercadoCinotam.Products.Admin
             else
             {
 
-                instance = Product.CreateProduct(input.ProductName, input.AvailableStock, input.TrackStock, input.ProductPrice, input.ProductDescription);
+                instance = Product.CreateProduct(input.ProductName, input.AvailableStock, input.TrackStock, input.ProductPrice, input.ProductDescription, input.Sku);
 
             }
 
-            if (httpPostedFileBase.ContentLength > 0)
+            if (input.Imagen.ContentLength > 0)
             {
                 //Small image
                 var formatedFolderSmall = string.Format(ImageFolder, tenantId, slug, FolderSizeSmall);
-                var smallImage = _imageManager.SaveImage(64, 64, httpPostedFileBase, formatedFolderSmall);
+                var smallImage = _imageManager.SaveImage(64, 64, input.Imagen, formatedFolderSmall);
                 //Medium Image
                 var formatedFolderMed = string.Format(ImageFolder, tenantId, slug, FolderSizeMedium);
-                var medImage = _imageManager.SaveImage(128, 128, httpPostedFileBase, formatedFolderMed);
+                var medImage = _imageManager.SaveImage(128, 128, input.Imagen, formatedFolderMed);
 
                 //Default Image
                 var formatedFolderDef = string.Format(ImageFolder, tenantId, slug, FolderSizeDefault);
-                var defImage = _imageManager.SaveImage(null, null, httpPostedFileBase, formatedFolderDef);
+                var defImage = _imageManager.SaveImage(null, null, input.Imagen, formatedFolderDef);
 
 
                 instance.SetMainImage(defImage);
@@ -86,6 +86,7 @@ namespace MercadoCinotam.Products.Admin
                     Id = a.Id,
                     ProductPrice = a.ProductPrice,
                     Active = a.Active,
+                    Sku = a.Sku
 
                 }).ToArray(),
                 recordsFiltered = filterByLength.Count
@@ -109,13 +110,24 @@ namespace MercadoCinotam.Products.Admin
                 ProductPrice = product.ProductPrice,
                 ProductDescription = product.ProductDescription,
                 ProductName = product.ProductName,
-                Id = product.Id
+                Id = product.Id,
+                Sku = product.Sku
             };
         }
 
         public object GetGalardons(Guid? id)
         {
             return null;
+        }
+
+        public int AddGalardon(GalardonInput input)
+        {
+            if (input.ProductId == null) throw new UserFriendlyException("Producto no definido");
+            var product = _productManager.GetProduct(input.ProductId.Value);
+
+            var galardon = ProductGalardons.Create(input.Name, input.No, product);
+
+            return _productManager.AddGalardon(galardon);
         }
     }
 }

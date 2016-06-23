@@ -18,6 +18,9 @@ namespace MercadoCinotam.EntityFramework
          */
         public IDbSet<Product> Products { get; set; }
         public IDbSet<ProductGalardons> ProductGalardonses { get; set; }
+        public IDbSet<ProductFeatureSection> ProductFeatureSections { get; set; }
+        public IDbSet<ProductSlider> ProductSliders { get; set; }
+        public IDbSet<Feature> Features { get; set; }
         public MercadoCinotamDbContext()
             : base("Default")
         {

@@ -52,7 +52,15 @@ namespace MercadoCinotam
             }
             if (!string.IsNullOrEmpty(searchString))
             {
-                queryable = string.IsNullOrEmpty(request.PropToSearch) ? queryable.Where(searchString) : queryable.Where(request.PropToSearch, searchString);
+                if (request.PropsToSearch != null)
+                {
+                    queryable.Where(request.PropsToSearch, searchString);
+                }
+                else
+                {
+                    queryable = string.IsNullOrEmpty(request.PropToSearch) ? queryable.Where(searchString) : queryable.Where(request.PropToSearch, searchString);
+
+                }
             }
             queryable = !string.IsNullOrEmpty(request.PropToSort) ? GetOrderedQuery(queryable, request) : queryable.OrderBy(defaultOrderableProp);
             var filteredByLength = queryable.Skip(pageIndex).Take(request.length).ToList();
