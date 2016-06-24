@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Certifications\Entities\Certification.cs" />
+    <Compile Include="Certifications\Manager\CertificationManager.cs" />
     <Compile Include="Certifications\Manager\ICertificationManager.cs" />
     <Compile Include="LangingPages\Entities\LandingPageAsset.cs" />
     <Compile Include="MercadoCinotamConsts.cs" />

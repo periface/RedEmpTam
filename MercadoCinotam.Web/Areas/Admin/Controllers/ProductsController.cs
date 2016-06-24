@@ -2,6 +2,7 @@
 using Abp.Web.Models;
 using Abp.Web.Mvc.Authorization;
 using Helpers.GenericTypes;
+using MercadoCinotam.GalardonsAndCert;
 using MercadoCinotam.Products.Admin;
 using MercadoCinotam.Products.Admin.Dtos;
 using MercadoCinotam.Web.Controllers;
@@ -14,10 +15,11 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
     public class ProductsController : MercadoCinotamControllerBase
     {
         private readonly IProductAdminService _productAdminService;
-
-        public ProductsController(IProductAdminService productAdminService)
+        private readonly IGalardonAdminService _galardonAdminService;
+        public ProductsController(IProductAdminService productAdminService, IGalardonAdminService galardonAdminService)
         {
             _productAdminService = productAdminService;
+            _galardonAdminService = galardonAdminService;
         }
 
         // GET: Admin/Products
@@ -54,16 +56,10 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
 
         public ActionResult AddGalardon(Guid? id)
         {
-            var galardons = _productAdminService.GetGalardons(id);
+            if (id == null) return HttpNotFound();
+            var galardons = _galardonAdminService.GetGalardonAssignationModel(id.Value);
             ViewBag.Id = id;
             return View(galardons);
         }
-        [HttpPost]
-        public ActionResult AddGalardon(GalardonInput input)
-        {
-            var id = _productAdminService.AddGalardon(input);
-            return Json(id);
-        }
-
     }
 }

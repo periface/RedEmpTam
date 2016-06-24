@@ -3,6 +3,7 @@ using Abp.UI;
 using Helpers;
 using Helpers.GenericTypes;
 using ImageSaver.Manager;
+using MercadoCinotam.GalardonsAndCert.Dtos;
 using MercadoCinotam.Products.Admin.Dtos;
 using MercadoCinotam.Products.Entities;
 using MercadoCinotam.Products.Manager;
@@ -115,15 +116,11 @@ namespace MercadoCinotam.Products.Admin
             };
         }
 
-        public object GetGalardons(Guid? id)
-        {
-            return null;
-        }
 
-        public int AddGalardon(GalardonInput input)
+        public int AddGalardon(GalardonProductInput input)
         {
             if (input.ProductId == null) throw new UserFriendlyException("Producto no definido");
-            var galardon = ProductCertification.Create(input.GalardonId, input.ProductId);
+            var galardon = ProductCertification.Create(input.Id, input.ProductId);
             return _productManager.AddGalardon(galardon);
         }
 

@@ -420,10 +420,15 @@
     <Content Include="Areas\Admin\Views\Products\AddProduct.cshtml" />
     <Content Include="Areas\Admin\Views\Products\AddGalardon.cshtml" />
     <Content Include="Areas\Admin\Views\CertAndGal\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\CertAndGal\Add.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-2.2.0-vsdoc.js" />
+    <Content Include="Scripts\dualListBox\bootstrap-duallistbox.css" />
+    <Content Include="Scripts\dualListBox\bootstrap-duallistbox.min.css" />
+    <Content Include="Scripts\dualListBox\jquery.bootstrap-duallistbox.js" />
+    <Content Include="Scripts\dualListBox\jquery.bootstrap-duallistbox.min.js" />
     <Content Include="Scripts\jquery-2.2.0.js" />
     <Content Include="Scripts\jquery-2.2.0.min.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />

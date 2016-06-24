@@ -10,7 +10,5 @@ namespace MercadoCinotam.Products.Admin
         Guid AddProductToStore(ProductInput input);
         ReturnModel<ProductDto> GetProducts(RequestModel request);
         ProductInput GetProductForEdit(Guid? id);
-        object GetGalardons(Guid? id);
-        int AddGalardon(GalardonInput input);
     }
 }

@@ -1,0 +1,48 @@
+﻿@model MercadoCinotam.GalardonsAndCert.Dtos.GalardonInput
+@using (Html.BeginForm("Add", "CertAndGal",new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(a => a.Id)
+    @Html.HiddenFor(a => a.Image)
+    @Html.HiddenFor(a=>a.ReturnUrl)
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Agregar Certificado o Galardon</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <div class="form-group">
+                <label class="control-label">Nombre de Certificación</label>
+                @Html.TextBoxFor(a => a.GalardonName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="form-group">
+                <label class="control-label">Numero de Certificado</label>
+                @Html.TextBoxFor(a => a.UniqueCode, new { @class = "form-control" })
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-12">
+            <div class="form-group">
+                <label class="control-label">Descripción</label>
+                @Html.TextAreaFor(a => a.Description, new { @class = "form-control",rows=5 })
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <div class="form-group">
+                <label class="control-label">Imagen</label>
+                <input type="file" class="form-control" name="CerImg" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </div>
+    </div>
+}

@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "Index";
 }
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/jszip-2.5.0/pdfmake-0.1.18/dt-1.10.12/af-2.1.2/b-1.2.1/b-colvis-1.2.1/b-flash-1.2.1/b-html5-1.2.1/b-print-1.2.1/cr-1.3.2/fc-3.2.2/fh-3.1.2/kt-2.1.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.css" />
 <div class="row">
     <div class="col-sm-12">
         <h2>
@@ -13,24 +14,23 @@
     <div class="col-sm-12">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                Premios, Certificaciónes Recibidas <a data-modal data-url="@Url.Action("AddGalardonInsertView", "Products",new {productId = ViewBag.Id})" class="btn btn-sm pull-right btn-default">Agregar</a>
+                Premios, Certificaciónes Recibidas <a href="@Url.Action("Add", "CertAndGal")" class="btn btn-sm pull-right btn-default">Agregar nueva</a>
             </div>
             <div class="panel panel-body">
                 <div class="row">
-
-                    <div class="col-sm-12 col-md-3">
-                        <div class="thumbnail">
-                            <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU1N2ExMjNiNTIgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTU3YTEyM2I1MiI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
-                            <div class="caption">
-                                <h3>Certificación de Calidad.</h3>
-                                <p class="lead">
-                                    No: UKKDS22212
-                                </p>
-                                <p>
-                                    <a href="#" class="btn btn-primary btn-sm" role="button">Button</a> <a href="#" class="btn btn-default btn-sm" role="button">Button</a>
-                                </p>
-                            </div>
-                        </div>
+                    <div class="col-sm-12">
+                        <table class="table table-responsive table-condensed" id="certs">
+                            <thead>
+                                <tr>
+                                    <th>#Id</th>
+                                    <th></th>
+                                    <th>Nombre</th>
+                                    <th>Codigo</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -39,13 +39,64 @@
 </div>
 @section Scripts{
     <script src="~/js/modal.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jszip-2.5.0/pdfmake-0.1.18/dt-1.10.12/af-2.1.2/b-1.2.1/b-colvis-1.2.1/b-flash-1.2.1/b-html5-1.2.1/b-print-1.2.1/cr-1.3.2/fc-3.2.2/fh-3.1.2/kt-2.1.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
     <script>
 
-        (function ($) {
-            $(document).ready(function () {
+        (function($) {
+            function buildTable() {
+                $('#certs').DataTable({
+                    "bServerSide": true,
+                    "bPaginate": true,
+                    "sPaginationType": "full_numbers",
+                    "iDisplayLength": 10,
+                    "ajax": "/Admin/CertAndGal/GetCertifications",
+                    language: window.dataTablesLang,
+                    columns: [
+                        {
+                            "data": "Id"
+                        },
+                        {
+                            "data": "Image"
+                        },
+                        {
+                            "data": "GalardonName"
+                        },
+                        {
+                            "data": "UniqueCode"
+                        }
+                    ],
+                    "columnDefs": [
+                        {
+                            // The `data` parameter refers to the data for the cell (defined by the
+                            // `data` option, which defaults to the column being worked with, in
+                            // this case `data: 0`.
+                            className: "text-center",
+                            "render": function(data, type, row) {
+                                return "<a  title='Editar' href='/Admin/CertAndGal/Add/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a><a  title='Eliminar' href='/Admin/CertAndGal/Add/" + row.Id + "' class='btn btn-sm btn-warning little-margin-btn'><i class='fa fa-times'></i></a>";
+                            },
+                            "targets": 4
+                        },
+                        {
+                            // The `data` parameter refers to the data for the cell (defined by the
+                            // `data` option, which defaults to the column being worked with, in
+                            // this case `data: 0`.
+                            "render": function(data, type, row) {
+                                return "<img src=" + data + " style='width:100px;height:100px' class='img-responsive' />";
+                            },
+                            "targets": 1
+                        }
+                    ]
+                });
+            }
+
+            $(document).ready(function() {
 
                 window.modal = new abp.app.bootstrap.modal();
+                buildTable();
             });
+
         })($);
+
     </script>
+
 }

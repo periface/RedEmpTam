@@ -11,13 +11,19 @@ namespace MercadoCinotam.Certifications.Entities
         public string Image { get; protected set; }
         public int TenantId { get; set; }
 
-        public static Certification Create(string name, string no)
+        public static Certification Create(string name, string no, string description)
         {
             return new Certification()
             {
                 GalardonName = name,
                 UniqueCode = no,
+                Description = description
             };
+        }
+
+        public void SetImage(string folder)
+        {
+            Image = folder;
         }
     }
 }

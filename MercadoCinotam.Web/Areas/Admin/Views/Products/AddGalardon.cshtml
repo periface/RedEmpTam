@@ -1,3 +1,91 @@
-﻿
-@{
+﻿@model MercadoCinotam.GalardonsAndCert.Dtos.GalardonProductInput
+<link href="~/Scripts/dualListBox/bootstrap-duallistbox.min.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Seleccióne las certificaciónes o galardones para su producto
+        </h2>
+        <a class="btn btn-primary" href="@Url.Action("Add", "CertAndGal"@*, new { returnUrl = ViewContext.HttpContext.Request.Url.PathAndQuery }*@)">Crear nueva certificación</a>
+    </div>
+</div>
+
+<form id="demoform" action="#" method="post">
+    <div class="row">
+        @Html.HiddenFor(a => a.ProductId)
+        <div class="col-lg-12">
+            <div class="form-group">
+                <select class="form-control inactiveList" multiple="multiple" size="10" name="Inactives[]">
+                    @foreach (var cerInactive in Model.InActiveGalardonDtos)
+                    {
+
+                        <option value="@cerInactive.Id">@cerInactive.GalardonName</option>
+                    }
+                </select>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-default">Guardar</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Certificaciones Asignadas al Producto</h3>
+            <div class="list-group list-inline">
+                @if (!Model.ActiveGalardonDtos.Any())
+                {
+                    <div class="list-group-item">
+                        Sin Certificaciónes Agregadas
+                    </div>
+                }
+                @foreach (var active in Model.ActiveGalardonDtos)
+                {
+                    <div class="list-group-item">
+                        <img class="img img-responsive" src="@active.Image" style="width: 30px; height: 30px"/>
+                        <button class="btn btn-danger pull-right btn-sm" type="button"><i class="fa fa-times"></i></button>
+
+                        @active.GalardonName
+
+
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</form>
+
+
+
+@section Scripts{
+
+    <script src="~/Scripts/dualListBox/jquery.bootstrap-duallistbox.min.js"></script>
+    <script>
+        (function ($) {
+
+            $(document).ready(function () {
+                var list = $('.inactiveList').bootstrapDualListbox({
+                    preserveSelectionOnMove: 'moved',
+                    moveOnSelect: false,
+                    nonSelectedListLabel: 'Inactivos',
+                    selectedListLabel: 'Activos'
+                });
+                $("#demoform").on("submit", function (e) {
+                    e.preventDefault();
+                    var data = $('select[name="Inactives[]"]').val();
+                    var formdata = {
+                        Actives: data,
+                        ProductId: $("#ProductId").val()
+                    };
+                    abp.ui.setBusy($("body"), abp.services.app.galardonAdmin.addGalardonToProduct(formdata).done(function () {
+                        abp.notify.success("Certificaciónes Agregadas");
+                    }));
+                });
+
+            });
+        })($);
+    </script>
 }

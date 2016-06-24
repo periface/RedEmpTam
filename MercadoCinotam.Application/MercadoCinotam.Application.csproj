@@ -99,13 +99,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GalardonsAndCert\Dtos\GalardonDto.cs" />
+    <Compile Include="GalardonsAndCert\Dtos\GalardonInput.cs" />
+    <Compile Include="GalardonsAndCert\GalardonAdminService.cs" />
+    <Compile Include="GalardonsAndCert\IGalardonAdminService.cs" />
     <Compile Include="MercadoCinotamApplicationModule.cs" />
     <Compile Include="MercadoCinotamAppServiceBase.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantInput.cs" />
     <Compile Include="MultiTenancy\ITenantAppService.cs" />
     <Compile Include="MultiTenancy\Dto\TenantListDto.cs" />
     <Compile Include="MultiTenancy\TenantAppService.cs" />
-    <Compile Include="Products\Admin\Dtos\GalardonInput.cs" />
+    <Compile Include="GalardonsAndCert\Dtos\GalardonProductInput.cs" />
     <Compile Include="Products\Admin\Dtos\ProductDto.cs" />
     <Compile Include="Products\Admin\Dtos\ProductInput.cs" />
     <Compile Include="Products\Admin\IProductAdminService.cs" />
