@@ -90,6 +90,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Certifications\Entities\Certification.cs" />
+    <Compile Include="Certifications\Manager\ICertificationManager.cs" />
     <Compile Include="LangingPages\Entities\LandingPageAsset.cs" />
     <Compile Include="MercadoCinotamConsts.cs" />
     <Compile Include="MercadoCinotamCoreModule.cs" />
@@ -105,7 +107,7 @@
     <Compile Include="Products\Entities\Feature.cs" />
     <Compile Include="Products\Entities\Product.cs" />
     <Compile Include="Products\Entities\ProductFeatureSection.cs" />
-    <Compile Include="Products\Entities\ProductGalardons.cs" />
+    <Compile Include="Products\Entities\ProductCertification.cs" />
     <Compile Include="Products\Entities\ProductSlider.cs" />
     <Compile Include="Products\Manager\IProductManager.cs" />
     <Compile Include="Products\Manager\ProductManager.cs" />

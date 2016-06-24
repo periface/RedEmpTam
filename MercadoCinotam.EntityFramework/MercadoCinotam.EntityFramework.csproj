@@ -176,29 +176,9 @@
     <Compile Include="Migrations\201605041151380_UserAccount_And_Notification_Changes.Designer.cs">
       <DependentUpon>201605041151380_UserAccount_And_Notification_Changes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606211710237_ProductPages.cs" />
-    <Compile Include="Migrations\201606211710237_ProductPages.Designer.cs">
-      <DependentUpon>201606211710237_ProductPages.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606211820500_Removed.cs" />
-    <Compile Include="Migrations\201606211820500_Removed.Designer.cs">
-      <DependentUpon>201606211820500_Removed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606221730535_Products.cs" />
-    <Compile Include="Migrations\201606221730535_Products.Designer.cs">
-      <DependentUpon>201606221730535_Products.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606222034487_DecimalToIntStock.cs" />
-    <Compile Include="Migrations\201606222034487_DecimalToIntStock.Designer.cs">
-      <DependentUpon>201606222034487_DecimalToIntStock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606231548308_Sku.cs" />
-    <Compile Include="Migrations\201606231548308_Sku.Designer.cs">
-      <DependentUpon>201606231548308_Sku.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606231755242_Features.cs" />
-    <Compile Include="Migrations\201606231755242_Features.Designer.cs">
-      <DependentUpon>201606231755242_Features.cs</DependentUpon>
+    <Compile Include="Migrations\201606241637098_InitialFix.cs" />
+    <Compile Include="Migrations\201606241637098_InitialFix.Designer.cs">
+      <DependentUpon>201606241637098_InitialFix.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -268,23 +248,8 @@
     <EmbeddedResource Include="Migrations\201605041151380_UserAccount_And_Notification_Changes.resx">
       <DependentUpon>201605041151380_UserAccount_And_Notification_Changes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606211710237_ProductPages.resx">
-      <DependentUpon>201606211710237_ProductPages.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606211820500_Removed.resx">
-      <DependentUpon>201606211820500_Removed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606221730535_Products.resx">
-      <DependentUpon>201606221730535_Products.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606222034487_DecimalToIntStock.resx">
-      <DependentUpon>201606222034487_DecimalToIntStock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606231548308_Sku.resx">
-      <DependentUpon>201606231548308_Sku.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606231755242_Features.resx">
-      <DependentUpon>201606231755242_Features.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606241637098_InitialFix.resx">
+      <DependentUpon>201606241637098_InitialFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

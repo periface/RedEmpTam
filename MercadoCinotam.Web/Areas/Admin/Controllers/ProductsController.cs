@@ -4,7 +4,6 @@ using Abp.Web.Mvc.Authorization;
 using Helpers.GenericTypes;
 using MercadoCinotam.Products.Admin;
 using MercadoCinotam.Products.Admin.Dtos;
-using MercadoCinotam.Web.Attributes;
 using MercadoCinotam.Web.Controllers;
 using System;
 using System.Web.Mvc;
@@ -56,12 +55,8 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
         public ActionResult AddGalardon(Guid? id)
         {
             var galardons = _productAdminService.GetGalardons(id);
+            ViewBag.Id = id;
             return View(galardons);
-        }
-        [ShouldBeAjaxRequest]
-        public ActionResult AddGalardonInsertView(Guid id)
-        {
-            return View();
         }
         [HttpPost]
         public ActionResult AddGalardon(GalardonInput input)

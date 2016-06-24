@@ -1,5 +1,6 @@
 ﻿using Abp.Zero.EntityFramework;
 using MercadoCinotam.Authorization.Roles;
+using MercadoCinotam.Certifications.Entities;
 using MercadoCinotam.MultiTenancy;
 using MercadoCinotam.Products.Entities;
 using MercadoCinotam.Users;
@@ -17,10 +18,11 @@ namespace MercadoCinotam.EntityFramework
          *   pass connection string name to base classes. ABP works either way.
          */
         public IDbSet<Product> Products { get; set; }
-        public IDbSet<ProductGalardons> ProductGalardonses { get; set; }
+        public IDbSet<ProductCertification> ProductCertifications { get; set; }
         public IDbSet<ProductFeatureSection> ProductFeatureSections { get; set; }
         public IDbSet<ProductSlider> ProductSliders { get; set; }
         public IDbSet<Feature> Features { get; set; }
+        public IDbSet<Certification> Certifications { get; set; }
         public MercadoCinotamDbContext()
             : base("Default")
         {

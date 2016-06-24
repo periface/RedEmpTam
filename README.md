@@ -1,3 +1,0 @@
-# RedEmpTam
-###Proyecto misterioso
-###.......

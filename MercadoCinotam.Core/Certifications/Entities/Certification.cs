@@ -1,24 +1,22 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 
-namespace MercadoCinotam.Products.Entities
+namespace MercadoCinotam.Certifications.Entities
 {
-    public class ProductGalardons : FullAuditedEntity, IMustHaveTenant
+    public class Certification : FullAuditedEntity, IMustHaveTenant
     {
         public string GalardonName { get; protected set; }
         public string Description { get; protected set; }
         public string UniqueCode { get; protected set; }
         public string Image { get; protected set; }
         public int TenantId { get; set; }
-        public virtual Product Product { get; protected set; }
 
-        public static ProductGalardons Create(string name, string no, Product product)
+        public static Certification Create(string name, string no)
         {
-            return new ProductGalardons()
+            return new Certification()
             {
                 GalardonName = name,
                 UniqueCode = no,
-                Product = product
             };
         }
     }

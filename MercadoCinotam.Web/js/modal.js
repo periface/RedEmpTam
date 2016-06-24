@@ -1,4 +1,4 @@
-﻿(function($) {
+﻿(function ($) {
     var modal = function (container) {
         var modalTypes = {
             MODAL_CANCEL: 'MODAL_CANCEL'
@@ -20,7 +20,7 @@
                 selfModal.container = $(container);
             }
         } else {
-            console.log("Modal not defined loading default");
+            console.warn("Modal not defined loading default");
             selfModal.container = $('#modal');
         }
 
@@ -29,24 +29,24 @@
         }
         modalInstance.open = function (url, data) {
             if (url) {
-                selfModal.container.load(url, data, function () {
-                    selfModal.initModal();
+                abp.ui.setBusy("body", function() {
+                    return selfModal.container.load(url, data, function() {
+                        selfModal.initModal();
+                    });
                 });
             }
         }
         modalInstance.close = function (data, modalType) {
-            abp.event.trigger(modalType,data);
+            abp.event.trigger(modalType, data);
             selfModal.container.modal('hide');
         }
         function initListener() {
             console.log('Modal service beep awaiting orders... bep bep');
             $('body').on('click', '[data-modal]', function (e) {
-                console.log("Btn click");
                 e.preventDefault();
                 var url = $(this).data('url') || $(this).attr('href');
                 console.log(url);
                 if (url) {
-                    console.log("Ok");
                     selfModal.container.load(url, function () {
                         selfModal.initModal();
                     });

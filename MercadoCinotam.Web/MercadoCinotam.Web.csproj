@@ -419,7 +419,7 @@
     <Content Include="Areas\Admin\Views\Products\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Products\AddProduct.cshtml" />
     <Content Include="Areas\Admin\Views\Products\AddGalardon.cshtml" />
-    <None Include="Areas\Admin\Views\Products\AddGalardonInsertView.cshtml" />
+    <Content Include="Areas\Admin\Views\CertAndGal\Index.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -485,6 +485,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CertAndGalController.cs" />
     <Compile Include="Areas\Admin\Controllers\MainMenuController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />

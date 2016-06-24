@@ -23,7 +23,7 @@ namespace MercadoCinotam.Products.Entities
         public string MainPicture { get; protected set; }
         public string SmallImage { get; protected set; }
         public string MediumImage { get; protected set; }
-        public virtual ICollection<ProductGalardons> ProductGalardons { get; protected set; }
+        public virtual ICollection<ProductCertification> ProductGalardons { get; protected set; }
         public virtual ICollection<ProductFeatureSection> FeatureSections { get; protected set; }
         public virtual ICollection<ProductSlider> ProductSliders { get; protected set; }
         public static Product CreateProduct(string productName, int availableStock, bool enableTrackStock, decimal price, string productDescription, string sku)

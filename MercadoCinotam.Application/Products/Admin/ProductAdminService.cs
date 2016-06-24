@@ -123,11 +123,9 @@ namespace MercadoCinotam.Products.Admin
         public int AddGalardon(GalardonInput input)
         {
             if (input.ProductId == null) throw new UserFriendlyException("Producto no definido");
-            var product = _productManager.GetProduct(input.ProductId.Value);
-
-            var galardon = ProductGalardons.Create(input.Name, input.No, product);
-
+            var galardon = ProductCertification.Create(input.GalardonId, input.ProductId);
             return _productManager.AddGalardon(galardon);
         }
+
     }
 }

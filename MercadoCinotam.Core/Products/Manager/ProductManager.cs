@@ -11,8 +11,8 @@ namespace MercadoCinotam.Products.Manager
     {
         private readonly IUnitOfWorkManager _unitOfWorkManager;
         private readonly IRepository<Product, Guid> _productRepository;
-        private readonly IRepository<ProductGalardons> _galardonsRepository;
-        public ProductManager(IRepository<Product, Guid> productRepository, IUnitOfWorkManager unitOfWorkManager, IRepository<ProductGalardons> galardonsRepository)
+        private readonly IRepository<ProductCertification> _galardonsRepository;
+        public ProductManager(IRepository<Product, Guid> productRepository, IUnitOfWorkManager unitOfWorkManager, IRepository<ProductCertification> galardonsRepository)
         {
             _productRepository = productRepository;
             _unitOfWorkManager = unitOfWorkManager;
@@ -50,11 +50,17 @@ namespace MercadoCinotam.Products.Manager
             return _productRepository.GetAll();
         }
 
-        public int AddGalardon(ProductGalardons galardon)
+        public int AddGalardon(ProductCertification galardon)
         {
             var id = _galardonsRepository.InsertOrUpdateAndGetId(galardon);
             _unitOfWorkManager.Current.SaveChanges();
             return id;
+        }
+
+        public ProductCertification GetGalardon(int galardonId)
+        {
+            var galardon = _galardonsRepository.FirstOrDefault(a => a.Id == galardonId);
+            return galardon;
         }
     }
 }
