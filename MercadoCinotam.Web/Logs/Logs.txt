@@ -4286,3 +4286,1067 @@ DEBUG 2016-06-23 16:27:19,263 [151  ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2016-06-23 16:27:19,668 [151  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"341bec05-57a2-4870-9cc5-a648db493aaa","IpAddress":"::1","TenantId":3,"UserId":4,"ConnectTime":"2016-06-23T16:27:19.6687875-05:00","Properties":{}}
 DEBUG 2016-06-23 16:27:19,682 [189  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 341bec05-57a2-4870-9cc5-a648db493aaa
 DEBUG 2016-06-23 16:30:15,860 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-23 16:35:15,874 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-23 16:40:15,888 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-23 16:45:15,903 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-23 16:49:03,822 [138  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 341bec05-57a2-4870-9cc5-a648db493aaa
+DEBUG 2016-06-23 16:49:04,184 [187  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d0e8f4c6-bd53-48c6-9be5-f7576439c42c","IpAddress":"::1","TenantId":3,"UserId":4,"ConnectTime":"2016-06-23T16:49:04.184226-05:00","Properties":{}}
+DEBUG 2016-06-23 16:49:04,198 [151  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d0e8f4c6-bd53-48c6-9be5-f7576439c42c
+DEBUG 2016-06-23 16:50:15,918 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-23 16:55:15,933 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-23 16:58:20,464 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: d0e8f4c6-bd53-48c6-9be5-f7576439c42c
+DEBUG 2016-06-23 16:58:20,871 [157  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"65482c5f-c20e-4855-8df8-10d42fe787e9","IpAddress":"::1","TenantId":3,"UserId":4,"ConnectTime":"2016-06-23T16:58:20.8719694-05:00","Properties":{}}
+DEBUG 2016-06-23 16:58:20,886 [186  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 65482c5f-c20e-4855-8df8-10d42fe787e9
+DEBUG 2016-06-23 16:58:22,377 [152  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 65482c5f-c20e-4855-8df8-10d42fe787e9
+DEBUG 2016-06-23 16:58:37,917 [179  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-23 16:58:37,917 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-06-23 16:58:37,917 [ebe2d] Hangfire.Server.Worker                   - Background process 'Worker #066ebe2d' stopped.
+DEBUG 2016-06-23 16:58:37,917 [156b4] Hangfire.Server.Worker                   - Background process 'Worker #c0f156b4' stopped.
+DEBUG 2016-06-23 16:58:37,917 [9c8be] Hangfire.Server.Worker                   - Background process 'Worker #7469c8be' stopped.
+DEBUG 2016-06-23 16:58:37,917 [a7ea3] Hangfire.Server.Worker                   - Background process 'Worker #5a3a7ea3' stopped.
+DEBUG 2016-06-23 16:58:37,917 [d8f58] Hangfire.Server.Worker                   - Background process 'Worker #5f4d8f58' stopped.
+DEBUG 2016-06-23 16:58:37,917 [d1ba0] Hangfire.Server.Worker                   - Background process 'Worker #622d1ba0' stopped.
+DEBUG 2016-06-23 16:58:37,917 [3c74c] Hangfire.Server.Worker                   - Background process 'Worker #bb63c74c' stopped.
+DEBUG 2016-06-23 16:58:37,917 [68273] Hangfire.Server.Worker                   - Background process 'Worker #95a68273' stopped.
+DEBUG 2016-06-23 16:58:37,917 [d0c19] Hangfire.Server.Worker                   - Background process 'Worker #28fd0c19' stopped.
+DEBUG 2016-06-23 16:58:37,917 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-06-23 16:58:37,917 [60bd5] Hangfire.Server.Worker                   - Background process 'Worker #b6360bd5' stopped.
+DEBUG 2016-06-23 16:58:37,917 [0be1b] Hangfire.Server.Worker                   - Background process 'Worker #8c80be1b' stopped.
+DEBUG 2016-06-23 16:58:37,917 [4e4ac] Hangfire.Server.Worker                   - Background process 'Worker #f9c4e4ac' stopped.
+DEBUG 2016-06-23 16:58:37,917 [239fc] Hangfire.Server.Worker                   - Background process 'Worker #728239fc' stopped.
+DEBUG 2016-06-23 16:58:37,917 [5c91b] Hangfire.Server.Worker                   - Background process 'Worker #f535c91b' stopped.
+DEBUG 2016-06-23 16:58:37,917 [99a68] Hangfire.Server.Worker                   - Background process 'Worker #1eb99a68' stopped.
+DEBUG 2016-06-23 16:58:37,917 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-06-23 16:58:37,917 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-06-23 16:58:37,917 [07175] Hangfire.Server.Worker                   - Background process 'Worker #ac307175' stopped.
+DEBUG 2016-06-23 16:58:37,917 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-06-23 16:58:37,917 [6e463] Hangfire.Server.Worker                   - Background process 'Worker #b556e463' stopped.
+DEBUG 2016-06-23 16:58:37,917 [e299d] Hangfire.Server.Worker                   - Background process 'Worker #549e299d' stopped.
+DEBUG 2016-06-23 16:58:37,917 [36418] Hangfire.Server.Worker                   - Background process 'Worker #9ed36418' stopped.
+DEBUG 2016-06-23 16:58:37,917 [deecf] Hangfire.Server.Worker                   - Background process 'Worker #61bdeecf' stopped.
+DEBUG 2016-06-24 09:52:08,156 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-24 09:52:09,348 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-24 09:52:09,352 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,355 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,356 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,357 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:09,362 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-24 09:52:09,456 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:52:09,456 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:52:09,456 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:52:09,456 [1    ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-24 09:52:09,620 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-24 09:52:09,713 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-24 09:52:09,788 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:52:10,502 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-24 09:52:10,510 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-24 09:52:10,527 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-24 09:52:10,528 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-24 09:52:10,530 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-06-24 09:52:10,536 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-24 09:52:10,552 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-24 09:52:10,555 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-06-24 09:52:10,556 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-24 09:52:10,556 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-24 09:52:10,556 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-24 09:52:10,556 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-24 09:52:10,556 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-24 09:52:10,556 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-24 09:52:10,556 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-24 09:52:10,567 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-24 09:52:10,668 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-06-24 09:52:10,668 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-24 09:52:10,758 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-24 09:52:10,761 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-24 09:52:10,763 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-24 09:52:10,765 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-24 09:52:10,767 [b4492] Hangfire.Server.Worker                   - Background process 'Worker #102b4492' started.
+DEBUG 2016-06-24 09:52:10,768 [6ffcd] Hangfire.Server.Worker                   - Background process 'Worker #de16ffcd' started.
+DEBUG 2016-06-24 09:52:10,768 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 09:52:10,772 [c5a3d] Hangfire.Server.Worker                   - Background process 'Worker #841c5a3d' started.
+DEBUG 2016-06-24 09:52:10,772 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-24 09:52:10,774 [93748] Hangfire.Server.Worker                   - Background process 'Worker #1a993748' started.
+DEBUG 2016-06-24 09:52:10,774 [85d57] Hangfire.Server.Worker                   - Background process 'Worker #b0485d57' started.
+DEBUG 2016-06-24 09:52:10,775 [9109b] Hangfire.Server.Worker                   - Background process 'Worker #e8b9109b' started.
+DEBUG 2016-06-24 09:52:10,776 [30ed7] Hangfire.Server.Worker                   - Background process 'Worker #9c230ed7' started.
+DEBUG 2016-06-24 09:52:10,777 [d4b48] Hangfire.Server.Worker                   - Background process 'Worker #910d4b48' started.
+DEBUG 2016-06-24 09:52:10,779 [3d03d] Hangfire.Server.Worker                   - Background process 'Worker #bcd3d03d' started.
+DEBUG 2016-06-24 09:52:10,780 [82930] Hangfire.Server.Worker                   - Background process 'Worker #ec982930' started.
+DEBUG 2016-06-24 09:52:10,781 [bca1d] Hangfire.Server.Worker                   - Background process 'Worker #4d1bca1d' started.
+DEBUG 2016-06-24 09:52:10,781 [54b2c] Hangfire.Server.Worker                   - Background process 'Worker #8e654b2c' started.
+DEBUG 2016-06-24 09:52:10,782 [b5431] Hangfire.Server.Worker                   - Background process 'Worker #a14b5431' started.
+DEBUG 2016-06-24 09:52:10,782 [f12f2] Hangfire.Server.Worker                   - Background process 'Worker #36cf12f2' started.
+DEBUG 2016-06-24 09:52:10,783 [e7cf4] Hangfire.Server.Worker                   - Background process 'Worker #b91e7cf4' started.
+DEBUG 2016-06-24 09:52:10,783 [f4eac] Hangfire.Server.Worker                   - Background process 'Worker #f32f4eac' started.
+DEBUG 2016-06-24 09:52:10,785 [1bc20] Hangfire.Server.Worker                   - Background process 'Worker #e171bc20' started.
+DEBUG 2016-06-24 09:52:10,785 [9170f] Hangfire.Server.Worker                   - Background process 'Worker #1099170f' started.
+DEBUG 2016-06-24 09:52:10,786 [136ce] Hangfire.Server.Worker                   - Background process 'Worker #cce136ce' started.
+DEBUG 2016-06-24 09:52:10,786 [a5a45] Hangfire.Server.Worker                   - Background process 'Worker #694a5a45' started.
+DEBUG 2016-06-24 09:52:10,787 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-24 09:52:10,788 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+INFO  2016-06-24 09:52:10,791 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2016-06-24 09:52:10,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-24 09:52:10,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-06-24 09:52:10,830 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-24 09:52:10,837 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-24 09:52:10,839 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-24 09:52:10,841 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-24 09:52:10,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-06-24 09:52:10,876 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-06-24 09:52:10,884 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-06-24 09:52:10,888 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-24 09:52:10,889 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-24 09:52:10,900 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-24 09:52:10,901 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-24 09:52:10,902 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.IThemeService' with service name 'app/theme'.
+DEBUG 2016-06-24 09:52:10,902 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-24 09:52:10,903 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-06-24 09:52:10,904 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-24 09:52:17,579 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7ca5145f-3a7c-42ea-b490-456b0535c3dc","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-06-24T09:52:17.5712762-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:17,621 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7ca5145f-3a7c-42ea-b490-456b0535c3dc
+DEBUG 2016-06-24 09:52:26,802 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7ca5145f-3a7c-42ea-b490-456b0535c3dc
+DEBUG 2016-06-24 09:52:27,551 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a6ea3e51-f29a-4326-8ee4-26574a2ff99e","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-06-24T09:52:27.5512666-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:27,569 [4    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a6ea3e51-f29a-4326-8ee4-26574a2ff99e
+DEBUG 2016-06-24 09:52:42,968 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a6ea3e51-f29a-4326-8ee4-26574a2ff99e
+DEBUG 2016-06-24 09:52:43,315 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ac676d8d-5338-44be-b3ec-c80cd1ab3246","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-06-24T09:52:43.3155698-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:43,329 [4    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ac676d8d-5338-44be-b3ec-c80cd1ab3246
+DEBUG 2016-06-24 09:52:45,205 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ac676d8d-5338-44be-b3ec-c80cd1ab3246
+DEBUG 2016-06-24 09:52:45,477 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c9a2649d-2656-4c8b-97ac-f30e226ce9d6","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-06-24T09:52:45.4774342-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:45,492 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c9a2649d-2656-4c8b-97ac-f30e226ce9d6
+DEBUG 2016-06-24 09:52:47,595 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a86c9dbe-5623-4c12-8703-ef326cce9c89","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:52:47.595281-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:47,608 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a86c9dbe-5623-4c12-8703-ef326cce9c89
+DEBUG 2016-06-24 09:52:49,583 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a86c9dbe-5623-4c12-8703-ef326cce9c89
+DEBUG 2016-06-24 09:52:49,798 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f4ca9374-aab4-4c91-ac1d-0f0e59302610","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:52:49.7981618-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:49,811 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f4ca9374-aab4-4c91-ac1d-0f0e59302610
+DEBUG 2016-06-24 09:52:50,559 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f4ca9374-aab4-4c91-ac1d-0f0e59302610
+DEBUG 2016-06-24 09:52:50,749 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1a20e0b1-814b-42e0-9af5-01382a29676d","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:52:50.7495422-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:50,762 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1a20e0b1-814b-42e0-9af5-01382a29676d
+DEBUG 2016-06-24 09:52:52,864 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1a20e0b1-814b-42e0-9af5-01382a29676d
+DEBUG 2016-06-24 09:52:53,148 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8eb78944-8cf1-4d2f-8f17-1d92dafc5d98","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:52:53.1485014-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:53,163 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8eb78944-8cf1-4d2f-8f17-1d92dafc5d98
+DEBUG 2016-06-24 09:52:57,828 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8eb78944-8cf1-4d2f-8f17-1d92dafc5d98
+DEBUG 2016-06-24 09:52:59,398 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b1ab6ff7-b451-4d3b-9f7f-3c4054c470ff","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:52:59.3969998-05:00","Properties":{}}
+DEBUG 2016-06-24 09:52:59,413 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b1ab6ff7-b451-4d3b-9f7f-3c4054c470ff
+DEBUG 2016-06-24 09:53:12,875 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b1ab6ff7-b451-4d3b-9f7f-3c4054c470ff
+DEBUG 2016-06-24 09:53:18,856 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5784d7c4-c411-4790-abe7-7c3e10ba09a5","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:53:18.8560402-05:00","Properties":{}}
+DEBUG 2016-06-24 09:53:18,869 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5784d7c4-c411-4790-abe7-7c3e10ba09a5
+DEBUG 2016-06-24 09:53:22,604 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c9a2649d-2656-4c8b-97ac-f30e226ce9d6
+DEBUG 2016-06-24 09:53:31,995 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5784d7c4-c411-4790-abe7-7c3e10ba09a5
+DEBUG 2016-06-24 09:53:32,293 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e25e56b9-51f3-4d8b-8f8e-c949ec4ef11a","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:53:32.2937272-05:00","Properties":{}}
+DEBUG 2016-06-24 09:53:32,307 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e25e56b9-51f3-4d8b-8f8e-c949ec4ef11a
+DEBUG 2016-06-24 09:53:33,631 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e25e56b9-51f3-4d8b-8f8e-c949ec4ef11a
+DEBUG 2016-06-24 09:53:33,998 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"69285723-973c-4935-8cbf-f591f8833cfc","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:53:33.998068-05:00","Properties":{}}
+DEBUG 2016-06-24 09:53:34,012 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 69285723-973c-4935-8cbf-f591f8833cfc
+DEBUG 2016-06-24 09:53:36,287 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 69285723-973c-4935-8cbf-f591f8833cfc
+DEBUG 2016-06-24 09:53:53,978 [59   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:53:53,979 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-06-24 09:53:53,979 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-06-24 09:53:53,979 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-06-24 09:53:53,979 [a5a45] Hangfire.Server.Worker                   - Background process 'Worker #694a5a45' stopped.
+DEBUG 2016-06-24 09:53:53,980 [e7cf4] Hangfire.Server.Worker                   - Background process 'Worker #b91e7cf4' stopped.
+DEBUG 2016-06-24 09:53:53,980 [b4492] Hangfire.Server.Worker                   - Background process 'Worker #102b4492' stopped.
+DEBUG 2016-06-24 09:53:53,980 [136ce] Hangfire.Server.Worker                   - Background process 'Worker #cce136ce' stopped.
+DEBUG 2016-06-24 09:53:53,980 [d4b48] Hangfire.Server.Worker                   - Background process 'Worker #910d4b48' stopped.
+DEBUG 2016-06-24 09:53:53,980 [9170f] Hangfire.Server.Worker                   - Background process 'Worker #1099170f' stopped.
+DEBUG 2016-06-24 09:53:53,980 [54b2c] Hangfire.Server.Worker                   - Background process 'Worker #8e654b2c' stopped.
+DEBUG 2016-06-24 09:53:53,980 [bca1d] Hangfire.Server.Worker                   - Background process 'Worker #4d1bca1d' stopped.
+DEBUG 2016-06-24 09:53:53,980 [c5a3d] Hangfire.Server.Worker                   - Background process 'Worker #841c5a3d' stopped.
+DEBUG 2016-06-24 09:53:53,980 [30ed7] Hangfire.Server.Worker                   - Background process 'Worker #9c230ed7' stopped.
+DEBUG 2016-06-24 09:53:53,980 [9109b] Hangfire.Server.Worker                   - Background process 'Worker #e8b9109b' stopped.
+DEBUG 2016-06-24 09:53:53,980 [f4eac] Hangfire.Server.Worker                   - Background process 'Worker #f32f4eac' stopped.
+DEBUG 2016-06-24 09:53:53,980 [b5431] Hangfire.Server.Worker                   - Background process 'Worker #a14b5431' stopped.
+DEBUG 2016-06-24 09:53:53,980 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-06-24 09:53:53,980 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-06-24 09:53:53,980 [82930] Hangfire.Server.Worker                   - Background process 'Worker #ec982930' stopped.
+DEBUG 2016-06-24 09:53:53,980 [93748] Hangfire.Server.Worker                   - Background process 'Worker #1a993748' stopped.
+DEBUG 2016-06-24 09:53:53,980 [3d03d] Hangfire.Server.Worker                   - Background process 'Worker #bcd3d03d' stopped.
+DEBUG 2016-06-24 09:53:53,980 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-06-24 09:53:53,980 [f12f2] Hangfire.Server.Worker                   - Background process 'Worker #36cf12f2' stopped.
+DEBUG 2016-06-24 09:53:53,980 [85d57] Hangfire.Server.Worker                   - Background process 'Worker #b0485d57' stopped.
+DEBUG 2016-06-24 09:53:53,980 [6ffcd] Hangfire.Server.Worker                   - Background process 'Worker #de16ffcd' stopped.
+DEBUG 2016-06-24 09:53:53,980 [1bc20] Hangfire.Server.Worker                   - Background process 'Worker #e171bc20' stopped.
+DEBUG 2016-06-24 09:53:54,004 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-06-24 09:53:54,004 [59   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-06-24 09:53:54,004 [59   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:53:55,737 [41   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-24 09:53:56,977 [41   ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-24 09:53:56,981 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,983 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,983 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,983 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,984 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,985 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,985 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,985 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,985 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:56,991 [41   ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-24 09:53:57,128 [41   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:53:57,128 [41   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:53:57,128 [41   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:53:57,128 [41   ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-24 09:53:57,177 [41   ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-24 09:53:57,216 [41   ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-24 09:53:57,286 [41   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:53:57,840 [41   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-24 09:53:57,846 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-24 09:53:57,847 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-24 09:53:57,848 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-24 09:53:57,849 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-06-24 09:53:57,856 [41   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-24 09:53:57,867 [41   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-24 09:53:57,870 [41   ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-06-24 09:53:57,870 [41   ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-24 09:53:57,870 [41   ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-24 09:53:57,870 [41   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-24 09:53:57,870 [41   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-24 09:53:57,871 [41   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-24 09:53:57,871 [41   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-24 09:53:57,871 [41   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-24 09:53:57,881 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-24 09:53:57,973 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-06-24 09:53:57,973 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-24 09:53:58,035 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-24 09:53:58,039 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-06-24 09:53:58,062 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-06-24 09:53:58,063 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-06-24 09:53:58,067 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-06-24 09:53:58,069 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-24 09:53:58,070 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-24 09:53:58,071 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-24 09:53:58,076 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-24 09:53:58,079 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-24 09:53:58,081 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-24 09:53:58,083 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-24 09:53:58,083 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-24 09:53:58,084 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 09:53:58,084 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-24 09:53:58,085 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.IThemeService' with service name 'app/theme'.
+DEBUG 2016-06-24 09:53:58,085 [2d735] Hangfire.Server.Worker                   - Background process 'Worker #2482d735' started.
+DEBUG 2016-06-24 09:53:58,086 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-24 09:53:58,087 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-06-24 09:53:58,088 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-24 09:53:58,090 [b767f] Hangfire.Server.Worker                   - Background process 'Worker #16db767f' started.
+DEBUG 2016-06-24 09:53:58,092 [a2046] Hangfire.Server.Worker                   - Background process 'Worker #b06a2046' started.
+DEBUG 2016-06-24 09:53:58,093 [30d26] Hangfire.Server.Worker                   - Background process 'Worker #a8930d26' started.
+DEBUG 2016-06-24 09:53:58,129 [56eb8] Hangfire.Server.Worker                   - Background process 'Worker #34c56eb8' started.
+DEBUG 2016-06-24 09:53:58,149 [fb351] Hangfire.Server.Worker                   - Background process 'Worker #f3afb351' started.
+DEBUG 2016-06-24 09:53:58,154 [ad952] Hangfire.Server.Worker                   - Background process 'Worker #4d4ad952' started.
+DEBUG 2016-06-24 09:53:58,158 [1c2c7] Hangfire.Server.Worker                   - Background process 'Worker #6a21c2c7' started.
+DEBUG 2016-06-24 09:53:58,162 [ba325] Hangfire.Server.Worker                   - Background process 'Worker #f10ba325' started.
+DEBUG 2016-06-24 09:53:58,167 [859b3] Hangfire.Server.Worker                   - Background process 'Worker #cbe859b3' started.
+DEBUG 2016-06-24 09:53:58,171 [62b71] Hangfire.Server.Worker                   - Background process 'Worker #d4d62b71' started.
+DEBUG 2016-06-24 09:53:58,183 [f9a0f] Hangfire.Server.Worker                   - Background process 'Worker #ef0f9a0f' started.
+DEBUG 2016-06-24 09:53:58,188 [5db13] Hangfire.Server.Worker                   - Background process 'Worker #d405db13' started.
+DEBUG 2016-06-24 09:53:58,192 [64c7d] Hangfire.Server.Worker                   - Background process 'Worker #88f64c7d' started.
+DEBUG 2016-06-24 09:53:58,193 [db030] Hangfire.Server.Worker                   - Background process 'Worker #91cdb030' started.
+DEBUG 2016-06-24 09:53:58,197 [a4997] Hangfire.Server.Worker                   - Background process 'Worker #263a4997' started.
+DEBUG 2016-06-24 09:53:58,201 [6c518] Hangfire.Server.Worker                   - Background process 'Worker #8ec6c518' started.
+DEBUG 2016-06-24 09:53:58,211 [e27ba] Hangfire.Server.Worker                   - Background process 'Worker #5a1e27ba' started.
+DEBUG 2016-06-24 09:53:58,212 [3ac03] Hangfire.Server.Worker                   - Background process 'Worker #7513ac03' started.
+DEBUG 2016-06-24 09:53:58,216 [ef46a] Hangfire.Server.Worker                   - Background process 'Worker #d92ef46a' started.
+DEBUG 2016-06-24 09:53:58,220 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-24 09:53:58,221 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-24 09:53:58,225 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-24 09:53:58,242 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-24 09:53:58,245 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-24 09:53:58,251 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-24 09:54:05,898 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"38fa3159-f6c3-4f7f-8e6e-f53734969287","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:05.8914454-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:05,939 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 38fa3159-f6c3-4f7f-8e6e-f53734969287
+DEBUG 2016-06-24 09:54:07,804 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 38fa3159-f6c3-4f7f-8e6e-f53734969287
+DEBUG 2016-06-24 09:54:08,127 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e9dcfb77-1e77-4095-ae1e-fe52843db5f6","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:08.1278926-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:08,142 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e9dcfb77-1e77-4095-ae1e-fe52843db5f6
+DEBUG 2016-06-24 09:54:09,163 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e9dcfb77-1e77-4095-ae1e-fe52843db5f6
+DEBUG 2016-06-24 09:54:09,430 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"152e4200-cac7-4ee5-82bd-519af0438fb1","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:09.430153-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:09,444 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 152e4200-cac7-4ee5-82bd-519af0438fb1
+DEBUG 2016-06-24 09:54:11,010 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 152e4200-cac7-4ee5-82bd-519af0438fb1
+DEBUG 2016-06-24 09:54:11,229 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"84207eb0-9795-4e85-8f9e-7779621fe0c0","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:11.2295128-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:11,241 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 84207eb0-9795-4e85-8f9e-7779621fe0c0
+DEBUG 2016-06-24 09:54:14,754 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 84207eb0-9795-4e85-8f9e-7779621fe0c0
+DEBUG 2016-06-24 09:54:15,180 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6eae3f7a-bea4-480a-8202-ba324c37c0e9","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:15.1793026-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:15,192 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6eae3f7a-bea4-480a-8202-ba324c37c0e9
+DEBUG 2016-06-24 09:54:20,870 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6eae3f7a-bea4-480a-8202-ba324c37c0e9
+DEBUG 2016-06-24 09:54:21,076 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b37a5966-1ca0-436c-9484-33a0895ced41","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:21.0764818-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:21,089 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b37a5966-1ca0-436c-9484-33a0895ced41
+DEBUG 2016-06-24 09:54:41,109 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b37a5966-1ca0-436c-9484-33a0895ced41
+DEBUG 2016-06-24 09:54:41,451 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7970394d-f0f4-4dc9-a21c-0b7784fb7fed","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:41.451556-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:41,465 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7970394d-f0f4-4dc9-a21c-0b7784fb7fed
+DEBUG 2016-06-24 09:54:42,372 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7970394d-f0f4-4dc9-a21c-0b7784fb7fed
+DEBUG 2016-06-24 09:54:42,759 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"36f0c00f-6174-4076-8fb8-da69325214e1","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:54:42.7598176-05:00","Properties":{}}
+DEBUG 2016-06-24 09:54:42,774 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 36f0c00f-6174-4076-8fb8-da69325214e1
+DEBUG 2016-06-24 09:55:00,455 [44   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:55:00,456 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-06-24 09:55:00,457 [3ac03] Hangfire.Server.Worker                   - Background process 'Worker #7513ac03' stopped.
+DEBUG 2016-06-24 09:55:00,457 [ef46a] Hangfire.Server.Worker                   - Background process 'Worker #d92ef46a' stopped.
+DEBUG 2016-06-24 09:55:00,457 [5db13] Hangfire.Server.Worker                   - Background process 'Worker #d405db13' stopped.
+DEBUG 2016-06-24 09:55:00,457 [62b71] Hangfire.Server.Worker                   - Background process 'Worker #d4d62b71' stopped.
+DEBUG 2016-06-24 09:55:00,457 [ba325] Hangfire.Server.Worker                   - Background process 'Worker #f10ba325' stopped.
+DEBUG 2016-06-24 09:55:00,457 [db030] Hangfire.Server.Worker                   - Background process 'Worker #91cdb030' stopped.
+DEBUG 2016-06-24 09:55:00,457 [56eb8] Hangfire.Server.Worker                   - Background process 'Worker #34c56eb8' stopped.
+DEBUG 2016-06-24 09:55:00,457 [ad952] Hangfire.Server.Worker                   - Background process 'Worker #4d4ad952' stopped.
+DEBUG 2016-06-24 09:55:00,457 [2d735] Hangfire.Server.Worker                   - Background process 'Worker #2482d735' stopped.
+DEBUG 2016-06-24 09:55:00,457 [a2046] Hangfire.Server.Worker                   - Background process 'Worker #b06a2046' stopped.
+DEBUG 2016-06-24 09:55:00,457 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-06-24 09:55:00,457 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-06-24 09:55:00,458 [6c518] Hangfire.Server.Worker                   - Background process 'Worker #8ec6c518' stopped.
+DEBUG 2016-06-24 09:55:00,458 [64c7d] Hangfire.Server.Worker                   - Background process 'Worker #88f64c7d' stopped.
+DEBUG 2016-06-24 09:55:00,458 [859b3] Hangfire.Server.Worker                   - Background process 'Worker #cbe859b3' stopped.
+DEBUG 2016-06-24 09:55:00,458 [fb351] Hangfire.Server.Worker                   - Background process 'Worker #f3afb351' stopped.
+DEBUG 2016-06-24 09:55:00,458 [30d26] Hangfire.Server.Worker                   - Background process 'Worker #a8930d26' stopped.
+DEBUG 2016-06-24 09:55:00,459 [b767f] Hangfire.Server.Worker                   - Background process 'Worker #16db767f' stopped.
+DEBUG 2016-06-24 09:55:00,459 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-06-24 09:55:00,459 [e27ba] Hangfire.Server.Worker                   - Background process 'Worker #5a1e27ba' stopped.
+DEBUG 2016-06-24 09:55:00,459 [a4997] Hangfire.Server.Worker                   - Background process 'Worker #263a4997' stopped.
+DEBUG 2016-06-24 09:55:00,459 [f9a0f] Hangfire.Server.Worker                   - Background process 'Worker #ef0f9a0f' stopped.
+DEBUG 2016-06-24 09:55:00,460 [1c2c7] Hangfire.Server.Worker                   - Background process 'Worker #6a21c2c7' stopped.
+DEBUG 2016-06-24 09:55:00,460 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-06-24 09:55:00,465 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-06-24 09:55:00,470 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-06-24 09:55:00,470 [44   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-06-24 09:55:00,471 [44   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:55:06,825 [45   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-24 09:55:08,078 [45   ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-24 09:55:08,081 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,084 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,084 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,084 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,084 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,084 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,085 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,086 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,086 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,086 [45   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,091 [45   ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-24 09:55:08,217 [45   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:55:08,217 [45   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:55:08,217 [45   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:55:08,217 [45   ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-24 09:55:08,267 [45   ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-24 09:55:08,305 [45   ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-24 09:55:08,372 [45   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:55:08,882 [45   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-24 09:55:08,889 [45   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-24 09:55:08,889 [45   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-24 09:55:08,890 [45   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-24 09:55:08,891 [45   ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-06-24 09:55:08,897 [45   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-24 09:55:08,909 [45   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-24 09:55:08,911 [45   ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-06-24 09:55:08,912 [45   ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-24 09:55:08,912 [45   ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-24 09:55:08,912 [45   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-24 09:55:08,912 [45   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-24 09:55:08,912 [45   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-24 09:55:08,912 [45   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-24 09:55:08,912 [45   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-24 09:55:08,922 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-24 09:55:09,010 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-06-24 09:55:09,010 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-24 09:55:09,071 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-24 09:55:09,076 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-06-24 09:55:09,087 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-24 09:55:09,091 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-24 09:55:09,093 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-24 09:55:09,095 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-24 09:55:09,095 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-06-24 09:55:09,095 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-24 09:55:09,096 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-06-24 09:55:09,097 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 09:55:09,098 [49c1c] Hangfire.Server.Worker                   - Background process 'Worker #60c49c1c' started.
+DEBUG 2016-06-24 09:55:09,100 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-06-24 09:55:09,103 [a2d94] Hangfire.Server.Worker                   - Background process 'Worker #275a2d94' started.
+DEBUG 2016-06-24 09:55:09,104 [7bc00] Hangfire.Server.Worker                   - Background process 'Worker #1b97bc00' started.
+DEBUG 2016-06-24 09:55:09,105 [206db] Hangfire.Server.Worker                   - Background process 'Worker #223206db' started.
+DEBUG 2016-06-24 09:55:09,105 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-24 09:55:09,105 [70308] Hangfire.Server.Worker                   - Background process 'Worker #85270308' started.
+DEBUG 2016-06-24 09:55:09,105 [45   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-24 09:55:09,107 [d0692] Hangfire.Server.Worker                   - Background process 'Worker #69ed0692' started.
+DEBUG 2016-06-24 09:55:09,116 [8c03d] Hangfire.Server.Worker                   - Background process 'Worker #b808c03d' started.
+DEBUG 2016-06-24 09:55:09,117 [93d45] Hangfire.Server.Worker                   - Background process 'Worker #07293d45' started.
+DEBUG 2016-06-24 09:55:09,119 [21274] Hangfire.Server.Worker                   - Background process 'Worker #08621274' started.
+DEBUG 2016-06-24 09:55:09,121 [45   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-24 09:55:09,122 [b63c9] Hangfire.Server.Worker                   - Background process 'Worker #332b63c9' started.
+DEBUG 2016-06-24 09:55:09,122 [45   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-24 09:55:09,123 [20200] Hangfire.Server.Worker                   - Background process 'Worker #7e020200' started.
+DEBUG 2016-06-24 09:55:09,123 [45   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.IThemeService' with service name 'app/theme'.
+DEBUG 2016-06-24 09:55:09,124 [69a66] Hangfire.Server.Worker                   - Background process 'Worker #40269a66' started.
+DEBUG 2016-06-24 09:55:09,124 [45   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-24 09:55:09,125 [45   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-06-24 09:55:09,126 [45   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-24 09:55:09,134 [7ac8c] Hangfire.Server.Worker                   - Background process 'Worker #ba77ac8c' started.
+DEBUG 2016-06-24 09:55:09,137 [fa54a] Hangfire.Server.Worker                   - Background process 'Worker #c82fa54a' started.
+DEBUG 2016-06-24 09:55:09,139 [78f29] Hangfire.Server.Worker                   - Background process 'Worker #66178f29' started.
+DEBUG 2016-06-24 09:55:09,139 [b74a1] Hangfire.Server.Worker                   - Background process 'Worker #600b74a1' started.
+DEBUG 2016-06-24 09:55:09,156 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-24 09:55:09,157 [0cab5] Hangfire.Server.Worker                   - Background process 'Worker #1210cab5' started.
+DEBUG 2016-06-24 09:55:09,162 [680b6] Hangfire.Server.Worker                   - Background process 'Worker #3f6680b6' started.
+DEBUG 2016-06-24 09:55:09,163 [5b515] Hangfire.Server.Worker                   - Background process 'Worker #c8e5b515' started.
+DEBUG 2016-06-24 09:55:09,166 [117e9] Hangfire.Server.Worker                   - Background process 'Worker #d8e117e9' started.
+DEBUG 2016-06-24 09:55:09,166 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-24 09:55:09,169 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-24 09:55:09,170 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-24 09:55:09,174 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-24 09:55:09,174 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-24 09:55:12,818 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 36f0c00f-6174-4076-8fb8-da69325214e1
+DEBUG 2016-06-24 09:55:17,424 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"38a974e2-8d04-47b6-828f-c2a27f43a1e9","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:17.4167476-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:17,481 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 38a974e2-8d04-47b6-828f-c2a27f43a1e9
+DEBUG 2016-06-24 09:55:23,207 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 38a974e2-8d04-47b6-828f-c2a27f43a1e9
+DEBUG 2016-06-24 09:55:23,759 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"67f19555-ca0a-474e-8164-cf1c1fba7c8f","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:23.7590158-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:23,773 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 67f19555-ca0a-474e-8164-cf1c1fba7c8f
+DEBUG 2016-06-24 09:55:28,052 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 67f19555-ca0a-474e-8164-cf1c1fba7c8f
+DEBUG 2016-06-24 09:55:28,379 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"54c26e53-1a24-446d-87cc-476a87ff0cea","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:28.3789396-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:28,397 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 54c26e53-1a24-446d-87cc-476a87ff0cea
+DEBUG 2016-06-24 09:55:30,292 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 54c26e53-1a24-446d-87cc-476a87ff0cea
+DEBUG 2016-06-24 09:55:30,509 [83   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"439a0577-5715-4f3f-b275-cd8695b89bba","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:30.5093656-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:30,522 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 439a0577-5715-4f3f-b275-cd8695b89bba
+DEBUG 2016-06-24 09:55:32,478 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 439a0577-5715-4f3f-b275-cd8695b89bba
+DEBUG 2016-06-24 09:55:32,746 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e98ef480-8922-4ac7-adf7-7bd9b5716ab8","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:32.746813-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:32,770 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e98ef480-8922-4ac7-adf7-7bd9b5716ab8
+DEBUG 2016-06-24 09:55:44,473 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e98ef480-8922-4ac7-adf7-7bd9b5716ab8
+DEBUG 2016-06-24 09:55:44,733 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b49a01d3-977a-491a-9de8-8432341df748","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:44.7332098-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:44,748 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b49a01d3-977a-491a-9de8-8432341df748
+DEBUG 2016-06-24 09:55:46,331 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b49a01d3-977a-491a-9de8-8432341df748
+DEBUG 2016-06-24 09:55:46,567 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b57a0465-d708-45af-aba3-071fb309b9f4","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:46.5675766-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:46,586 [83   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b57a0465-d708-45af-aba3-071fb309b9f4
+DEBUG 2016-06-24 09:55:47,897 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b57a0465-d708-45af-aba3-071fb309b9f4
+DEBUG 2016-06-24 09:55:48,176 [83   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6c9824d2-f8a4-447c-823f-5e93ef69ce13","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:55:48.1768984-05:00","Properties":{}}
+DEBUG 2016-06-24 09:55:48,200 [55   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6c9824d2-f8a4-447c-823f-5e93ef69ce13
+DEBUG 2016-06-24 09:56:40,562 [81   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6c9824d2-f8a4-447c-823f-5e93ef69ce13
+DEBUG 2016-06-24 09:56:40,910 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ac1e0145-97cb-46e5-8b73-b62775fc7f6e","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:56:40.9094428-05:00","Properties":{}}
+DEBUG 2016-06-24 09:56:40,924 [81   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ac1e0145-97cb-46e5-8b73-b62775fc7f6e
+DEBUG 2016-06-24 09:56:41,805 [81   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ac1e0145-97cb-46e5-8b73-b62775fc7f6e
+DEBUG 2016-06-24 09:56:42,156 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7dd948e2-1827-4df6-91d9-125acbbd7ac8","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:56:42.1566922-05:00","Properties":{}}
+DEBUG 2016-06-24 09:56:42,171 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7dd948e2-1827-4df6-91d9-125acbbd7ac8
+DEBUG 2016-06-24 09:56:43,155 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7dd948e2-1827-4df6-91d9-125acbbd7ac8
+DEBUG 2016-06-24 09:56:43,391 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c8f7d723-3f83-4140-9ce9-53c0fad4ce29","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:56:43.390939-05:00","Properties":{}}
+DEBUG 2016-06-24 09:56:43,404 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c8f7d723-3f83-4140-9ce9-53c0fad4ce29
+DEBUG 2016-06-24 09:56:45,901 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c8f7d723-3f83-4140-9ce9-53c0fad4ce29
+DEBUG 2016-06-24 09:56:46,116 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"40931f23-81c5-4be5-96a6-51bd0c104c82","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:56:46.116484-05:00","Properties":{}}
+DEBUG 2016-06-24 09:56:46,130 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 40931f23-81c5-4be5-96a6-51bd0c104c82
+DEBUG 2016-06-24 09:57:04,423 [81   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 40931f23-81c5-4be5-96a6-51bd0c104c82
+DEBUG 2016-06-24 09:57:04,815 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"1cb3531e-cb18-4dfa-8a3a-6be56892ba94","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:57:04.815223-05:00","Properties":{}}
+DEBUG 2016-06-24 09:57:04,829 [81   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 1cb3531e-cb18-4dfa-8a3a-6be56892ba94
+DEBUG 2016-06-24 09:57:07,281 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 1cb3531e-cb18-4dfa-8a3a-6be56892ba94
+DEBUG 2016-06-24 09:57:07,597 [83   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0bc9080f-2969-49fe-bb62-67c34f7f5752","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T09:57:07.5977794-05:00","Properties":{}}
+DEBUG 2016-06-24 09:57:07,614 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0bc9080f-2969-49fe-bb62-67c34f7f5752
+DEBUG 2016-06-24 09:58:37,633 [49   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:58:37,635 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-06-24 09:58:37,635 [d0692] Hangfire.Server.Worker                   - Background process 'Worker #69ed0692' stopped.
+DEBUG 2016-06-24 09:58:37,635 [680b6] Hangfire.Server.Worker                   - Background process 'Worker #3f6680b6' stopped.
+DEBUG 2016-06-24 09:58:37,635 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-06-24 09:58:37,635 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-06-24 09:58:37,635 [a2d94] Hangfire.Server.Worker                   - Background process 'Worker #275a2d94' stopped.
+DEBUG 2016-06-24 09:58:37,636 [70308] Hangfire.Server.Worker                   - Background process 'Worker #85270308' stopped.
+DEBUG 2016-06-24 09:58:37,636 [fa54a] Hangfire.Server.Worker                   - Background process 'Worker #c82fa54a' stopped.
+DEBUG 2016-06-24 09:58:37,636 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-06-24 09:58:37,636 [b74a1] Hangfire.Server.Worker                   - Background process 'Worker #600b74a1' stopped.
+DEBUG 2016-06-24 09:58:37,636 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-06-24 09:58:37,636 [0cab5] Hangfire.Server.Worker                   - Background process 'Worker #1210cab5' stopped.
+DEBUG 2016-06-24 09:58:37,636 [b63c9] Hangfire.Server.Worker                   - Background process 'Worker #332b63c9' stopped.
+DEBUG 2016-06-24 09:58:37,636 [117e9] Hangfire.Server.Worker                   - Background process 'Worker #d8e117e9' stopped.
+DEBUG 2016-06-24 09:58:37,636 [49c1c] Hangfire.Server.Worker                   - Background process 'Worker #60c49c1c' stopped.
+DEBUG 2016-06-24 09:58:37,636 [206db] Hangfire.Server.Worker                   - Background process 'Worker #223206db' stopped.
+DEBUG 2016-06-24 09:58:37,636 [7ac8c] Hangfire.Server.Worker                   - Background process 'Worker #ba77ac8c' stopped.
+DEBUG 2016-06-24 09:58:37,636 [93d45] Hangfire.Server.Worker                   - Background process 'Worker #07293d45' stopped.
+DEBUG 2016-06-24 09:58:37,636 [69a66] Hangfire.Server.Worker                   - Background process 'Worker #40269a66' stopped.
+DEBUG 2016-06-24 09:58:37,636 [8c03d] Hangfire.Server.Worker                   - Background process 'Worker #b808c03d' stopped.
+DEBUG 2016-06-24 09:58:37,636 [78f29] Hangfire.Server.Worker                   - Background process 'Worker #66178f29' stopped.
+DEBUG 2016-06-24 09:58:37,637 [5b515] Hangfire.Server.Worker                   - Background process 'Worker #c8e5b515' stopped.
+DEBUG 2016-06-24 09:58:37,637 [21274] Hangfire.Server.Worker                   - Background process 'Worker #08621274' stopped.
+DEBUG 2016-06-24 09:58:37,637 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-06-24 09:58:37,637 [20200] Hangfire.Server.Worker                   - Background process 'Worker #7e020200' stopped.
+DEBUG 2016-06-24 09:58:37,637 [7bc00] Hangfire.Server.Worker                   - Background process 'Worker #1b97bc00' stopped.
+DEBUG 2016-06-24 09:58:37,640 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-06-24 09:58:37,640 [49   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-06-24 09:58:37,640 [49   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:58:40,187 [41   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-24 09:58:41,326 [41   ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-24 09:58:41,330 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,332 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,333 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,334 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,334 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,334 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,334 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,334 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,334 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,334 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,335 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,335 [41   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,340 [41   ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-24 09:58:41,396 [41   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:58:41,396 [41   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:58:41,396 [41   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:58:41,396 [41   ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-24 09:58:41,446 [41   ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-24 09:58:41,486 [41   ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-24 09:58:41,555 [41   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:58:41,984 [41   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-24 09:58:41,990 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-24 09:58:41,990 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-24 09:58:41,991 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-24 09:58:41,992 [41   ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-06-24 09:58:41,999 [41   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-24 09:58:42,010 [41   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-24 09:58:42,012 [41   ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-06-24 09:58:42,013 [41   ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-24 09:58:42,013 [41   ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-24 09:58:42,013 [41   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-24 09:58:42,013 [41   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-24 09:58:42,013 [41   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-24 09:58:42,013 [41   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-24 09:58:42,013 [41   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-24 09:58:42,023 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-24 09:58:42,111 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-06-24 09:58:42,111 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-24 09:58:42,170 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-24 09:58:42,174 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-06-24 09:58:42,191 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-24 09:58:42,193 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-06-24 09:58:42,194 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-06-24 09:58:42,197 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-24 09:58:42,198 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-06-24 09:58:42,200 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-24 09:58:42,201 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-24 09:58:42,202 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-24 09:58:42,202 [41   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-24 09:58:42,204 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-24 09:58:42,205 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 09:58:42,209 [75abb] Hangfire.Server.Worker                   - Background process 'Worker #d2175abb' started.
+DEBUG 2016-06-24 09:58:42,214 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-24 09:58:42,215 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-24 09:58:42,216 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.IThemeService' with service name 'app/theme'.
+DEBUG 2016-06-24 09:58:42,217 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-24 09:58:42,217 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-06-24 09:58:42,218 [41   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-24 09:58:42,222 [aba57] Hangfire.Server.Worker                   - Background process 'Worker #489aba57' started.
+DEBUG 2016-06-24 09:58:42,228 [6405c] Hangfire.Server.Worker                   - Background process 'Worker #6ca6405c' started.
+DEBUG 2016-06-24 09:58:42,229 [27532] Hangfire.Server.Worker                   - Background process 'Worker #3ad27532' started.
+DEBUG 2016-06-24 09:58:42,248 [7615c] Hangfire.Server.Worker                   - Background process 'Worker #3e57615c' started.
+DEBUG 2016-06-24 09:58:42,249 [b836b] Hangfire.Server.Worker                   - Background process 'Worker #8c1b836b' started.
+DEBUG 2016-06-24 09:58:42,251 [cc5e9] Hangfire.Server.Worker                   - Background process 'Worker #707cc5e9' started.
+DEBUG 2016-06-24 09:58:42,252 [4ae46] Hangfire.Server.Worker                   - Background process 'Worker #2f74ae46' started.
+DEBUG 2016-06-24 09:58:42,255 [16be1] Hangfire.Server.Worker                   - Background process 'Worker #73116be1' started.
+DEBUG 2016-06-24 09:58:42,259 [669c0] Hangfire.Server.Worker                   - Background process 'Worker #e74669c0' started.
+DEBUG 2016-06-24 09:58:42,260 [30c7b] Hangfire.Server.Worker                   - Background process 'Worker #a8230c7b' started.
+DEBUG 2016-06-24 09:58:42,260 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-24 09:58:42,263 [6cb48] Hangfire.Server.Worker                   - Background process 'Worker #8256cb48' started.
+DEBUG 2016-06-24 09:58:42,266 [66b69] Hangfire.Server.Worker                   - Background process 'Worker #9c066b69' started.
+DEBUG 2016-06-24 09:58:42,269 [81755] Hangfire.Server.Worker                   - Background process 'Worker #4e381755' started.
+DEBUG 2016-06-24 09:58:42,270 [ea4cc] Hangfire.Server.Worker                   - Background process 'Worker #403ea4cc' started.
+DEBUG 2016-06-24 09:58:42,273 [d0813] Hangfire.Server.Worker                   - Background process 'Worker #0ddd0813' started.
+DEBUG 2016-06-24 09:58:42,276 [97f05] Hangfire.Server.Worker                   - Background process 'Worker #caf97f05' started.
+DEBUG 2016-06-24 09:58:42,282 [b8b92] Hangfire.Server.Worker                   - Background process 'Worker #1e9b8b92' started.
+DEBUG 2016-06-24 09:58:42,284 [f9509] Hangfire.Server.Worker                   - Background process 'Worker #dfef9509' started.
+DEBUG 2016-06-24 09:58:42,299 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-24 09:58:42,302 [801e6] Hangfire.Server.Worker                   - Background process 'Worker #b3e801e6' started.
+DEBUG 2016-06-24 09:58:42,311 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-24 09:58:42,314 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-24 09:58:42,316 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-24 09:58:42,323 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-24 09:59:19,743 [54   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:59:19,744 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-06-24 09:59:19,744 [81755] Hangfire.Server.Worker                   - Background process 'Worker #4e381755' stopped.
+DEBUG 2016-06-24 09:59:19,744 [801e6] Hangfire.Server.Worker                   - Background process 'Worker #b3e801e6' stopped.
+DEBUG 2016-06-24 09:59:19,744 [b8b92] Hangfire.Server.Worker                   - Background process 'Worker #1e9b8b92' stopped.
+DEBUG 2016-06-24 09:59:19,744 [669c0] Hangfire.Server.Worker                   - Background process 'Worker #e74669c0' stopped.
+DEBUG 2016-06-24 09:59:19,744 [d0813] Hangfire.Server.Worker                   - Background process 'Worker #0ddd0813' stopped.
+DEBUG 2016-06-24 09:59:19,744 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-06-24 09:59:19,744 [b836b] Hangfire.Server.Worker                   - Background process 'Worker #8c1b836b' stopped.
+DEBUG 2016-06-24 09:59:19,744 [ea4cc] Hangfire.Server.Worker                   - Background process 'Worker #403ea4cc' stopped.
+DEBUG 2016-06-24 09:59:19,744 [6cb48] Hangfire.Server.Worker                   - Background process 'Worker #8256cb48' stopped.
+DEBUG 2016-06-24 09:59:19,744 [30c7b] Hangfire.Server.Worker                   - Background process 'Worker #a8230c7b' stopped.
+DEBUG 2016-06-24 09:59:19,744 [7615c] Hangfire.Server.Worker                   - Background process 'Worker #3e57615c' stopped.
+DEBUG 2016-06-24 09:59:19,744 [f9509] Hangfire.Server.Worker                   - Background process 'Worker #dfef9509' stopped.
+DEBUG 2016-06-24 09:59:19,744 [4ae46] Hangfire.Server.Worker                   - Background process 'Worker #2f74ae46' stopped.
+DEBUG 2016-06-24 09:59:19,745 [16be1] Hangfire.Server.Worker                   - Background process 'Worker #73116be1' stopped.
+DEBUG 2016-06-24 09:59:19,745 [6405c] Hangfire.Server.Worker                   - Background process 'Worker #6ca6405c' stopped.
+DEBUG 2016-06-24 09:59:19,745 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-06-24 09:59:19,745 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-06-24 09:59:19,745 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-06-24 09:59:19,745 [97f05] Hangfire.Server.Worker                   - Background process 'Worker #caf97f05' stopped.
+DEBUG 2016-06-24 09:59:19,745 [75abb] Hangfire.Server.Worker                   - Background process 'Worker #d2175abb' stopped.
+DEBUG 2016-06-24 09:59:19,745 [aba57] Hangfire.Server.Worker                   - Background process 'Worker #489aba57' stopped.
+DEBUG 2016-06-24 09:59:19,745 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-06-24 09:59:19,745 [66b69] Hangfire.Server.Worker                   - Background process 'Worker #9c066b69' stopped.
+DEBUG 2016-06-24 09:59:19,745 [27532] Hangfire.Server.Worker                   - Background process 'Worker #3ad27532' stopped.
+DEBUG 2016-06-24 09:59:19,745 [cc5e9] Hangfire.Server.Worker                   - Background process 'Worker #707cc5e9' stopped.
+DEBUG 2016-06-24 09:59:19,750 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-06-24 09:59:19,750 [54   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-06-24 09:59:19,750 [54   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 09:59:22,057 [84   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-24 09:59:23,378 [84   ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-24 09:59:23,382 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,385 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,385 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,386 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,387 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,387 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,387 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,387 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,387 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,387 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,387 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:23,392 [84   ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-24 09:59:23,531 [84   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:59:23,531 [84   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:59:23,531 [84   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 09:59:23,531 [84   ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-24 09:59:23,739 [84   ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-24 09:59:23,854 [84   ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-24 09:59:23,933 [84   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 09:59:24,400 [84   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-24 09:59:24,407 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-24 09:59:24,407 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-24 09:59:24,408 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-24 09:59:24,409 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-06-24 09:59:24,416 [84   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-24 09:59:24,427 [84   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-24 09:59:24,430 [84   ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-06-24 09:59:24,430 [84   ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-24 09:59:24,430 [84   ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-24 09:59:24,430 [84   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-24 09:59:24,430 [84   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-24 09:59:24,431 [84   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-24 09:59:24,431 [84   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-24 09:59:24,431 [84   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-24 09:59:24,441 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-24 09:59:24,528 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-06-24 09:59:24,528 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-24 09:59:24,586 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-24 09:59:24,590 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-06-24 09:59:24,610 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-06-24 09:59:24,611 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-06-24 09:59:24,615 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-06-24 09:59:24,618 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-24 09:59:24,619 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-24 09:59:24,633 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-24 09:59:24,635 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-24 09:59:24,636 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.IThemeService' with service name 'app/theme'.
+DEBUG 2016-06-24 09:59:24,637 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-24 09:59:24,638 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-06-24 09:59:24,640 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-24 09:59:24,658 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-24 09:59:24,665 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-24 09:59:24,667 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-24 09:59:24,667 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-24 09:59:24,668 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-24 09:59:24,670 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 09:59:24,676 [12118] Hangfire.Server.Worker                   - Background process 'Worker #d2512118' started.
+DEBUG 2016-06-24 09:59:24,744 [648d8] Hangfire.Server.Worker                   - Background process 'Worker #b5c648d8' started.
+DEBUG 2016-06-24 09:59:24,745 [1b12d] Hangfire.Server.Worker                   - Background process 'Worker #e0a1b12d' started.
+DEBUG 2016-06-24 09:59:24,748 [2a1cb] Hangfire.Server.Worker                   - Background process 'Worker #5982a1cb' started.
+DEBUG 2016-06-24 09:59:24,761 [bad3e] Hangfire.Server.Worker                   - Background process 'Worker #abcbad3e' started.
+DEBUG 2016-06-24 09:59:24,768 [c136f] Hangfire.Server.Worker                   - Background process 'Worker #2d6c136f' started.
+DEBUG 2016-06-24 09:59:24,769 [22721] Hangfire.Server.Worker                   - Background process 'Worker #5ed22721' started.
+DEBUG 2016-06-24 09:59:24,771 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-24 09:59:24,771 [a3e75] Hangfire.Server.Worker                   - Background process 'Worker #fb7a3e75' started.
+DEBUG 2016-06-24 09:59:24,782 [7d967] Hangfire.Server.Worker                   - Background process 'Worker #90e7d967' started.
+DEBUG 2016-06-24 09:59:24,783 [6c43e] Hangfire.Server.Worker                   - Background process 'Worker #1a96c43e' started.
+DEBUG 2016-06-24 09:59:24,803 [96a40] Hangfire.Server.Worker                   - Background process 'Worker #be296a40' started.
+DEBUG 2016-06-24 09:59:24,806 [b134b] Hangfire.Server.Worker                   - Background process 'Worker #cbcb134b' started.
+DEBUG 2016-06-24 09:59:24,810 [ae6ab] Hangfire.Server.Worker                   - Background process 'Worker #71dae6ab' started.
+DEBUG 2016-06-24 09:59:24,810 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-24 09:59:24,810 [49046] Hangfire.Server.Worker                   - Background process 'Worker #3c249046' started.
+DEBUG 2016-06-24 09:59:24,811 [2416b] Hangfire.Server.Worker                   - Background process 'Worker #46f2416b' started.
+DEBUG 2016-06-24 09:59:24,812 [7228a] Hangfire.Server.Worker                   - Background process 'Worker #5427228a' started.
+DEBUG 2016-06-24 09:59:24,815 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-24 09:59:24,817 [8d00c] Hangfire.Server.Worker                   - Background process 'Worker #2a38d00c' started.
+DEBUG 2016-06-24 09:59:24,817 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-24 09:59:24,820 [8bc33] Hangfire.Server.Worker                   - Background process 'Worker #d5a8bc33' started.
+DEBUG 2016-06-24 09:59:24,822 [54cb4] Hangfire.Server.Worker                   - Background process 'Worker #66a54cb4' started.
+DEBUG 2016-06-24 09:59:24,825 [1e5d3] Hangfire.Server.Worker                   - Background process 'Worker #5dc1e5d3' started.
+DEBUG 2016-06-24 09:59:24,827 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-24 09:59:24,832 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-24 10:01:56,440 [119  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0bc9080f-2969-49fe-bb62-67c34f7f5752
+DEBUG 2016-06-24 10:01:57,671 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b2df6c6e-a0c4-4e38-b45d-83ce151090dc","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:01:57.664541-05:00","Properties":{}}
+DEBUG 2016-06-24 10:01:57,718 [125  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b2df6c6e-a0c4-4e38-b45d-83ce151090dc
+DEBUG 2016-06-24 10:04:24,804 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 10:07:22,914 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b2df6c6e-a0c4-4e38-b45d-83ce151090dc
+DEBUG 2016-06-24 10:07:23,263 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6faa169e-3770-4e88-9a67-2cd19de25299","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:07:23.2620975-05:00","Properties":{}}
+DEBUG 2016-06-24 10:07:23,280 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6faa169e-3770-4e88-9a67-2cd19de25299
+DEBUG 2016-06-24 10:07:24,028 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6faa169e-3770-4e88-9a67-2cd19de25299
+DEBUG 2016-06-24 10:07:24,303 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"cc2c8c09-7b37-4fd7-bc30-66492c5b4419","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:07:24.3032016-05:00","Properties":{}}
+DEBUG 2016-06-24 10:07:24,331 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: cc2c8c09-7b37-4fd7-bc30-66492c5b4419
+DEBUG 2016-06-24 10:07:27,527 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: cc2c8c09-7b37-4fd7-bc30-66492c5b4419
+DEBUG 2016-06-24 10:07:27,752 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a006a58f-35a2-497f-a012-c16d2fd56d08","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:07:27.7525465-05:00","Properties":{}}
+DEBUG 2016-06-24 10:07:27,766 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a006a58f-35a2-497f-a012-c16d2fd56d08
+DEBUG 2016-06-24 10:07:28,886 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a006a58f-35a2-497f-a012-c16d2fd56d08
+DEBUG 2016-06-24 10:07:29,145 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"839e87d9-909d-4105-bea3-98e939ec984e","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:07:29.1456858-05:00","Properties":{}}
+DEBUG 2016-06-24 10:07:29,159 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 839e87d9-909d-4105-bea3-98e939ec984e
+DEBUG 2016-06-24 10:08:09,991 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 839e87d9-909d-4105-bea3-98e939ec984e
+DEBUG 2016-06-24 10:08:10,372 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a2233894-2f24-41f5-9ee5-e721052d6f8c","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:10.3728081-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:10,396 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a2233894-2f24-41f5-9ee5-e721052d6f8c
+DEBUG 2016-06-24 10:08:12,709 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a2233894-2f24-41f5-9ee5-e721052d6f8c
+DEBUG 2016-06-24 10:08:13,035 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8422f093-548c-4b5a-85a8-c330b922f977","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:13.0340742-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:13,049 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8422f093-548c-4b5a-85a8-c330b922f977
+DEBUG 2016-06-24 10:08:14,136 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8422f093-548c-4b5a-85a8-c330b922f977
+DEBUG 2016-06-24 10:08:14,449 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"121f384c-c879-4a0a-a2e6-1dcf593960d2","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:14.4492157-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:14,462 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 121f384c-c879-4a0a-a2e6-1dcf593960d2
+DEBUG 2016-06-24 10:08:15,833 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 121f384c-c879-4a0a-a2e6-1dcf593960d2
+DEBUG 2016-06-24 10:08:16,055 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"76b4fd50-c583-4af1-8282-addce234fea0","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:16.0553763-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:16,068 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 76b4fd50-c583-4af1-8282-addce234fea0
+DEBUG 2016-06-24 10:08:43,281 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 76b4fd50-c583-4af1-8282-addce234fea0
+DEBUG 2016-06-24 10:08:43,620 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"25b00c9b-0bf3-42c5-b4dd-6ca4992a78b1","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:43.6201325-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:43,634 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 25b00c9b-0bf3-42c5-b4dd-6ca4992a78b1
+DEBUG 2016-06-24 10:08:46,580 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 25b00c9b-0bf3-42c5-b4dd-6ca4992a78b1
+DEBUG 2016-06-24 10:08:46,959 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6b542682-9831-40b4-8e7a-b25761fbd681","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:46.9594664-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:46,973 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6b542682-9831-40b4-8e7a-b25761fbd681
+DEBUG 2016-06-24 10:08:54,128 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6b542682-9831-40b4-8e7a-b25761fbd681
+DEBUG 2016-06-24 10:08:54,429 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ae7b97a6-6bb4-47fd-a684-317b4ddd5a25","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:54.4292133-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:54,445 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ae7b97a6-6bb4-47fd-a684-317b4ddd5a25
+DEBUG 2016-06-24 10:08:55,900 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ae7b97a6-6bb4-47fd-a684-317b4ddd5a25
+DEBUG 2016-06-24 10:08:56,195 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"51b765d6-fef7-4aa0-8b31-c05856a3d5ee","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:08:56.1953899-05:00","Properties":{}}
+DEBUG 2016-06-24 10:08:56,210 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 51b765d6-fef7-4aa0-8b31-c05856a3d5ee
+DEBUG 2016-06-24 10:09:04,118 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 51b765d6-fef7-4aa0-8b31-c05856a3d5ee
+DEBUG 2016-06-24 10:09:04,382 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c40a7e0f-0faf-4390-80b9-317df1d1c957","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:09:04.3822085-05:00","Properties":{}}
+DEBUG 2016-06-24 10:09:04,395 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c40a7e0f-0faf-4390-80b9-317df1d1c957
+DEBUG 2016-06-24 10:09:14,604 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c40a7e0f-0faf-4390-80b9-317df1d1c957
+DEBUG 2016-06-24 10:09:14,828 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"14dccda4-0073-4c77-9080-69af4f965f27","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:09:14.828253-05:00","Properties":{}}
+DEBUG 2016-06-24 10:09:14,841 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 14dccda4-0073-4c77-9080-69af4f965f27
+DEBUG 2016-06-24 10:09:16,153 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 14dccda4-0073-4c77-9080-69af4f965f27
+DEBUG 2016-06-24 10:09:16,450 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f22a9781-1bb4-491f-9a30-7b2440f4c2a5","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:09:16.4504152-05:00","Properties":{}}
+DEBUG 2016-06-24 10:09:16,463 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f22a9781-1bb4-491f-9a30-7b2440f4c2a5
+DEBUG 2016-06-24 10:09:20,490 [43   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f22a9781-1bb4-491f-9a30-7b2440f4c2a5
+DEBUG 2016-06-24 10:09:20,747 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"09d18b7c-b3c1-4f02-a179-37be921da7a7","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:09:20.7478449-05:00","Properties":{}}
+DEBUG 2016-06-24 10:09:20,760 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 09d18b7c-b3c1-4f02-a179-37be921da7a7
+DEBUG 2016-06-24 10:09:24,818 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 10:11:13,604 [73   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 09d18b7c-b3c1-4f02-a179-37be921da7a7
+DEBUG 2016-06-24 10:11:13,960 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"32d65054-9d98-4ab0-aacc-37fee4bf5b5b","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:11:13.960165-05:00","Properties":{}}
+DEBUG 2016-06-24 10:11:13,975 [70   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 32d65054-9d98-4ab0-aacc-37fee4bf5b5b
+DEBUG 2016-06-24 10:11:14,785 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 32d65054-9d98-4ab0-aacc-37fee4bf5b5b
+DEBUG 2016-06-24 10:11:15,180 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"46279f74-c020-4fa7-b0f3-df862547743a","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:11:15.1792869-05:00","Properties":{}}
+DEBUG 2016-06-24 10:11:15,193 [73   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 46279f74-c020-4fa7-b0f3-df862547743a
+DEBUG 2016-06-24 10:14:24,832 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 10:14:31,402 [82   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 10:14:31,403 [ae6ab] Hangfire.Server.Worker                   - Background process 'Worker #71dae6ab' stopped.
+DEBUG 2016-06-24 10:14:31,403 [54cb4] Hangfire.Server.Worker                   - Background process 'Worker #66a54cb4' stopped.
+DEBUG 2016-06-24 10:14:31,403 [648d8] Hangfire.Server.Worker                   - Background process 'Worker #b5c648d8' stopped.
+DEBUG 2016-06-24 10:14:31,403 [8bc33] Hangfire.Server.Worker                   - Background process 'Worker #d5a8bc33' stopped.
+DEBUG 2016-06-24 10:14:31,403 [a3e75] Hangfire.Server.Worker                   - Background process 'Worker #fb7a3e75' stopped.
+DEBUG 2016-06-24 10:14:31,403 [2416b] Hangfire.Server.Worker                   - Background process 'Worker #46f2416b' stopped.
+DEBUG 2016-06-24 10:14:31,403 [49046] Hangfire.Server.Worker                   - Background process 'Worker #3c249046' stopped.
+DEBUG 2016-06-24 10:14:31,403 [2a1cb] Hangfire.Server.Worker                   - Background process 'Worker #5982a1cb' stopped.
+DEBUG 2016-06-24 10:14:31,403 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-06-24 10:14:31,403 [c136f] Hangfire.Server.Worker                   - Background process 'Worker #2d6c136f' stopped.
+DEBUG 2016-06-24 10:14:31,403 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-06-24 10:14:31,403 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-06-24 10:14:31,403 [8d00c] Hangfire.Server.Worker                   - Background process 'Worker #2a38d00c' stopped.
+DEBUG 2016-06-24 10:14:31,403 [7d967] Hangfire.Server.Worker                   - Background process 'Worker #90e7d967' stopped.
+DEBUG 2016-06-24 10:14:31,404 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-06-24 10:14:31,404 [22721] Hangfire.Server.Worker                   - Background process 'Worker #5ed22721' stopped.
+DEBUG 2016-06-24 10:14:31,404 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-06-24 10:14:31,404 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-06-24 10:14:31,404 [1e5d3] Hangfire.Server.Worker                   - Background process 'Worker #5dc1e5d3' stopped.
+DEBUG 2016-06-24 10:14:31,404 [7228a] Hangfire.Server.Worker                   - Background process 'Worker #5427228a' stopped.
+DEBUG 2016-06-24 10:14:31,404 [1b12d] Hangfire.Server.Worker                   - Background process 'Worker #e0a1b12d' stopped.
+DEBUG 2016-06-24 10:14:31,405 [96a40] Hangfire.Server.Worker                   - Background process 'Worker #be296a40' stopped.
+DEBUG 2016-06-24 10:14:31,405 [6c43e] Hangfire.Server.Worker                   - Background process 'Worker #1a96c43e' stopped.
+DEBUG 2016-06-24 10:14:31,405 [bad3e] Hangfire.Server.Worker                   - Background process 'Worker #abcbad3e' stopped.
+DEBUG 2016-06-24 10:14:31,405 [b134b] Hangfire.Server.Worker                   - Background process 'Worker #cbcb134b' stopped.
+DEBUG 2016-06-24 10:14:31,405 [12118] Hangfire.Server.Worker                   - Background process 'Worker #d2512118' stopped.
+DEBUG 2016-06-24 10:14:31,408 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-06-24 10:14:31,408 [82   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-06-24 10:14:31,408 [82   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 10:14:36,992 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-24 10:14:38,165 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-24 10:14:38,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,173 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,179 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-24 10:14:38,305 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 10:14:38,305 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 10:14:38,305 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 10:14:38,305 [1    ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-24 10:14:38,354 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-24 10:14:38,393 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-24 10:14:38,462 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:14:38,970 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-24 10:14:38,977 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-24 10:14:38,978 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-24 10:14:38,979 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-24 10:14:38,980 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-06-24 10:14:38,986 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-24 10:14:38,997 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-24 10:14:39,000 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-24 10:14:39,011 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-24 10:14:39,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-06-24 10:14:39,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-24 10:14:39,163 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-24 10:14:39,167 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-06-24 10:14:39,176 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-24 10:14:39,179 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-24 10:14:39,183 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-24 10:14:39,185 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-24 10:14:39,186 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-24 10:14:39,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-06-24 10:14:39,187 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 10:14:39,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-06-24 10:14:39,192 [61d5a] Hangfire.Server.Worker                   - Background process 'Worker #9c861d5a' started.
+DEBUG 2016-06-24 10:14:39,193 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-06-24 10:14:39,197 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-24 10:14:39,198 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-24 10:14:39,201 [37365] Hangfire.Server.Worker                   - Background process 'Worker #f8937365' started.
+DEBUG 2016-06-24 10:14:39,207 [69f94] Hangfire.Server.Worker                   - Background process 'Worker #d7869f94' started.
+DEBUG 2016-06-24 10:14:39,211 [79343] Hangfire.Server.Worker                   - Background process 'Worker #fff79343' started.
+DEBUG 2016-06-24 10:14:39,211 [2cecc] Hangfire.Server.Worker                   - Background process 'Worker #d232cecc' started.
+DEBUG 2016-06-24 10:14:39,214 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-24 10:14:39,215 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-24 10:14:39,216 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.IThemeService' with service name 'app/theme'.
+DEBUG 2016-06-24 10:14:39,217 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-24 10:14:39,217 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-06-24 10:14:39,218 [32f2e] Hangfire.Server.Worker                   - Background process 'Worker #43b32f2e' started.
+DEBUG 2016-06-24 10:14:39,218 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-24 10:14:39,219 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-24 10:14:39,234 [d8c2f] Hangfire.Server.Worker                   - Background process 'Worker #a4cd8c2f' started.
+DEBUG 2016-06-24 10:14:39,235 [06c9c] Hangfire.Server.Worker                   - Background process 'Worker #6a006c9c' started.
+DEBUG 2016-06-24 10:14:39,235 [ece97] Hangfire.Server.Worker                   - Background process 'Worker #382ece97' started.
+DEBUG 2016-06-24 10:14:39,240 [55448] Hangfire.Server.Worker                   - Background process 'Worker #a9a55448' started.
+DEBUG 2016-06-24 10:14:39,240 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-24 10:14:39,241 [8aa71] Hangfire.Server.Worker                   - Background process 'Worker #f4e8aa71' started.
+DEBUG 2016-06-24 10:14:39,241 [62219] Hangfire.Server.Worker                   - Background process 'Worker #a5362219' started.
+DEBUG 2016-06-24 10:14:39,242 [bd455] Hangfire.Server.Worker                   - Background process 'Worker #427bd455' started.
+DEBUG 2016-06-24 10:14:39,245 [c4c7b] Hangfire.Server.Worker                   - Background process 'Worker #d08c4c7b' started.
+DEBUG 2016-06-24 10:14:39,246 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-24 10:14:39,247 [4fe45] Hangfire.Server.Worker                   - Background process 'Worker #ab34fe45' started.
+DEBUG 2016-06-24 10:14:39,249 [7a651] Hangfire.Server.Worker                   - Background process 'Worker #8307a651' started.
+DEBUG 2016-06-24 10:14:39,249 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-24 10:14:39,250 [05ffe] Hangfire.Server.Worker                   - Background process 'Worker #4a905ffe' started.
+DEBUG 2016-06-24 10:14:39,254 [7fff1] Hangfire.Server.Worker                   - Background process 'Worker #5757fff1' started.
+DEBUG 2016-06-24 10:14:39,255 [907bb] Hangfire.Server.Worker                   - Background process 'Worker #862907bb' started.
+DEBUG 2016-06-24 10:14:39,255 [7e675] Hangfire.Server.Worker                   - Background process 'Worker #bc27e675' started.
+DEBUG 2016-06-24 10:14:39,255 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-24 10:14:39,263 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-24 10:14:43,001 [114  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 46279f74-c020-4fa7-b0f3-df862547743a
+DEBUG 2016-06-24 10:14:47,242 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"36d2b426-d8c4-44b2-bf04-5c0913a6c1ae","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:14:47.2344903-05:00","Properties":{}}
+DEBUG 2016-06-24 10:14:47,285 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 36d2b426-d8c4-44b2-bf04-5c0913a6c1ae
+DEBUG 2016-06-24 10:15:20,805 [131  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 10:15:20,807 [7fff1] Hangfire.Server.Worker                   - Background process 'Worker #5757fff1' stopped.
+DEBUG 2016-06-24 10:15:20,807 [7e675] Hangfire.Server.Worker                   - Background process 'Worker #bc27e675' stopped.
+DEBUG 2016-06-24 10:15:20,807 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-06-24 10:15:20,807 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-06-24 10:15:20,807 [7a651] Hangfire.Server.Worker                   - Background process 'Worker #8307a651' stopped.
+DEBUG 2016-06-24 10:15:20,807 [c4c7b] Hangfire.Server.Worker                   - Background process 'Worker #d08c4c7b' stopped.
+DEBUG 2016-06-24 10:15:20,807 [907bb] Hangfire.Server.Worker                   - Background process 'Worker #862907bb' stopped.
+DEBUG 2016-06-24 10:15:20,807 [79343] Hangfire.Server.Worker                   - Background process 'Worker #fff79343' stopped.
+DEBUG 2016-06-24 10:15:20,807 [55448] Hangfire.Server.Worker                   - Background process 'Worker #a9a55448' stopped.
+DEBUG 2016-06-24 10:15:20,807 [4fe45] Hangfire.Server.Worker                   - Background process 'Worker #ab34fe45' stopped.
+DEBUG 2016-06-24 10:15:20,807 [06c9c] Hangfire.Server.Worker                   - Background process 'Worker #6a006c9c' stopped.
+DEBUG 2016-06-24 10:15:20,807 [32f2e] Hangfire.Server.Worker                   - Background process 'Worker #43b32f2e' stopped.
+DEBUG 2016-06-24 10:15:20,807 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-06-24 10:15:20,807 [8aa71] Hangfire.Server.Worker                   - Background process 'Worker #f4e8aa71' stopped.
+DEBUG 2016-06-24 10:15:20,807 [37365] Hangfire.Server.Worker                   - Background process 'Worker #f8937365' stopped.
+DEBUG 2016-06-24 10:15:20,807 [69f94] Hangfire.Server.Worker                   - Background process 'Worker #d7869f94' stopped.
+DEBUG 2016-06-24 10:15:20,807 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-06-24 10:15:20,807 [62219] Hangfire.Server.Worker                   - Background process 'Worker #a5362219' stopped.
+DEBUG 2016-06-24 10:15:20,807 [d8c2f] Hangfire.Server.Worker                   - Background process 'Worker #a4cd8c2f' stopped.
+DEBUG 2016-06-24 10:15:20,808 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-06-24 10:15:20,809 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-06-24 10:15:20,809 [05ffe] Hangfire.Server.Worker                   - Background process 'Worker #4a905ffe' stopped.
+DEBUG 2016-06-24 10:15:20,810 [bd455] Hangfire.Server.Worker                   - Background process 'Worker #427bd455' stopped.
+DEBUG 2016-06-24 10:15:20,810 [ece97] Hangfire.Server.Worker                   - Background process 'Worker #382ece97' stopped.
+DEBUG 2016-06-24 10:15:20,810 [2cecc] Hangfire.Server.Worker                   - Background process 'Worker #d232cecc' stopped.
+DEBUG 2016-06-24 10:15:20,810 [61d5a] Hangfire.Server.Worker                   - Background process 'Worker #9c861d5a' stopped.
+DEBUG 2016-06-24 10:15:20,813 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-06-24 10:15:20,813 [131  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-06-24 10:15:20,814 [131  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-06-24 10:15:26,642 [84   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-06-24 10:15:27,641 [84   ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-06-24 10:15:27,645 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,648 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,648 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,648 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,648 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,648 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,648 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,649 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,650 [84   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:27,654 [84   ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-06-24 10:15:27,711 [84   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 10:15:27,711 [84   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 10:15:27,711 [84   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-06-24 10:15:27,711 [84   ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-06-24 10:15:27,764 [84   ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-06-24 10:15:27,801 [84   ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-06-24 10:15:27,869 [84   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-06-24 10:15:28,353 [84   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-06-24 10:15:28,359 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-06-24 10:15:28,360 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-06-24 10:15:28,361 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-06-24 10:15:28,362 [84   ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-06-24 10:15:28,368 [84   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-06-24 10:15:28,379 [84   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-06-24 10:15:28,382 [84   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-06-24 10:15:28,392 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-06-24 10:15:28,482 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-06-24 10:15:28,482 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-06-24 10:15:28,543 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-06-24 10:15:28,546 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-06-24 10:15:28,555 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-06-24 10:15:28,558 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-06-24 10:15:28,560 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-06-24 10:15:28,562 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-06-24 10:15:28,562 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-06-24 10:15:28,563 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-06-24 10:15:28,564 [36877] Hangfire.Server.Worker                   - Background process 'Worker #df536877' started.
+DEBUG 2016-06-24 10:15:28,566 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-06-24 10:15:28,567 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-06-24 10:15:28,569 [f207a] Hangfire.Server.Worker                   - Background process 'Worker #32af207a' started.
+DEBUG 2016-06-24 10:15:28,571 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-06-24 10:15:28,573 [5dafb] Hangfire.Server.Worker                   - Background process 'Worker #1b65dafb' started.
+DEBUG 2016-06-24 10:15:28,574 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-06-24 10:15:28,575 [c0252] Hangfire.Server.Worker                   - Background process 'Worker #93ac0252' started.
+DEBUG 2016-06-24 10:15:28,575 [84   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-06-24 10:15:28,582 [542a1] Hangfire.Server.Worker                   - Background process 'Worker #329542a1' started.
+DEBUG 2016-06-24 10:15:28,586 [1ec2a] Hangfire.Server.Worker                   - Background process 'Worker #2121ec2a' started.
+DEBUG 2016-06-24 10:15:28,587 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-06-24 10:15:28,588 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-06-24 10:15:28,589 [e90b1] Hangfire.Server.Worker                   - Background process 'Worker #719e90b1' started.
+DEBUG 2016-06-24 10:15:28,591 [99617] Hangfire.Server.Worker                   - Background process 'Worker #72e99617' started.
+DEBUG 2016-06-24 10:15:28,591 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.IThemeService' with service name 'app/theme'.
+DEBUG 2016-06-24 10:15:28,591 [09063] Hangfire.Server.Worker                   - Background process 'Worker #17909063' started.
+DEBUG 2016-06-24 10:15:28,592 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-06-24 10:15:28,592 [3cf38] Hangfire.Server.Worker                   - Background process 'Worker #7b53cf38' started.
+DEBUG 2016-06-24 10:15:28,593 [05f30] Hangfire.Server.Worker                   - Background process 'Worker #01305f30' started.
+DEBUG 2016-06-24 10:15:28,594 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-06-24 10:15:28,594 [a60c7] Hangfire.Server.Worker                   - Background process 'Worker #218a60c7' started.
+DEBUG 2016-06-24 10:15:28,594 [84   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-06-24 10:15:28,611 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-06-24 10:15:28,615 [18fed] Hangfire.Server.Worker                   - Background process 'Worker #79a18fed' started.
+DEBUG 2016-06-24 10:15:28,616 [7a9dc] Hangfire.Server.Worker                   - Background process 'Worker #e5e7a9dc' started.
+DEBUG 2016-06-24 10:15:28,617 [8f51e] Hangfire.Server.Worker                   - Background process 'Worker #25b8f51e' started.
+DEBUG 2016-06-24 10:15:28,617 [d280e] Hangfire.Server.Worker                   - Background process 'Worker #ca0d280e' started.
+DEBUG 2016-06-24 10:15:28,622 [b9f27] Hangfire.Server.Worker                   - Background process 'Worker #9f4b9f27' started.
+DEBUG 2016-06-24 10:15:28,624 [0a58b] Hangfire.Server.Worker                   - Background process 'Worker #4320a58b' started.
+DEBUG 2016-06-24 10:15:28,624 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-06-24 10:15:28,625 [d0f40] Hangfire.Server.Worker                   - Background process 'Worker #81bd0f40' started.
+DEBUG 2016-06-24 10:15:28,625 [53b3b] Hangfire.Server.Worker                   - Background process 'Worker #e4c53b3b' started.
+DEBUG 2016-06-24 10:15:28,629 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-06-24 10:15:28,631 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-06-24 10:15:28,634 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-06-24 10:15:28,635 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-06-24 10:15:32,232 [76   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 36d2b426-d8c4-44b2-bf04-5c0913a6c1ae
+DEBUG 2016-06-24 10:15:34,105 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f2832e7c-e399-477a-a75b-f20a078c6397","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:15:34.0971761-05:00","Properties":{}}
+DEBUG 2016-06-24 10:15:34,145 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f2832e7c-e399-477a-a75b-f20a078c6397
+DEBUG 2016-06-24 10:16:12,439 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f2832e7c-e399-477a-a75b-f20a078c6397
+DEBUG 2016-06-24 10:16:12,785 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7038e3fe-6f1c-4461-92e4-daa736ac546e","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:16:12.7850445-05:00","Properties":{}}
+DEBUG 2016-06-24 10:16:12,799 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7038e3fe-6f1c-4461-92e4-daa736ac546e
+DEBUG 2016-06-24 10:16:13,761 [80   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7038e3fe-6f1c-4461-92e4-daa736ac546e
+DEBUG 2016-06-24 10:16:14,177 [83   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fa939a74-24f4-4662-bfae-f0c9f67c8129","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:16:14.1771837-05:00","Properties":{}}
+DEBUG 2016-06-24 10:16:14,195 [130  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fa939a74-24f4-4662-bfae-f0c9f67c8129
+DEBUG 2016-06-24 10:16:49,625 [113  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fa939a74-24f4-4662-bfae-f0c9f67c8129
+DEBUG 2016-06-24 10:16:49,969 [131  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5c58f5c9-74b7-459c-9e2f-5ee0ede5d80d","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-06-24T10:16:49.9687625-05:00","Properties":{}}
+DEBUG 2016-06-24 10:16:49,984 [82   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5c58f5c9-74b7-459c-9e2f-5ee0ede5d80d
+ERROR 2016-06-24 10:16:50,638 [82   ] eas.Admin.Controllers.ProductsController - The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Guid' for method 'System.Web.Mvc.ActionResult AddGalardonInsertView(System.Guid)' in 'MercadoCinotam.Web.Areas.Admin.Controllers.ProductsController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Nombre del parámetro: parameters
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Guid' for method 'System.Web.Mvc.ActionResult AddGalardonInsertView(System.Guid)' in 'MercadoCinotam.Web.Areas.Admin.Controllers.ProductsController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Nombre del parámetro: parameters
+   en System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-06-24 10:17:19,395 [72   ] eas.Admin.Controllers.ProductsController - Pagina no disponible
+Abp.UI.UserFriendlyException: Pagina no disponible
+   en MercadoCinotam.Web.Attributes.ShouldBeAjaxRequest.OnActionExecuted(ActionExecutedContext filterContext) en C:\Users\CINOTAM25\Documents\MercadoCinotam\MercadoCinotam.Web\Attributes\ShouldBeAjaxRequest.cs:línea 14
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-06-24 10:17:19,415 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5c58f5c9-74b7-459c-9e2f-5ee0ede5d80d

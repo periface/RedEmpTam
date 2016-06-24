@@ -25,9 +25,11 @@ namespace MercadoCinotam.Web.Controllers
         private const string StorePage = "Store";
         public ITenantAppService TenantAppService { get; set; }
         public IThemeService ThemeService { get; set; }
+
         protected MercadoCinotamControllerBase()
         {
             LocalizationSourceName = MercadoCinotamConsts.LocalizationSourceName;
+
         }
 
         protected override void OnActionExecuted(ActionExecutedContext filterContext)

@@ -4,6 +4,7 @@ using Abp.Web.Mvc.Authorization;
 using Helpers.GenericTypes;
 using MercadoCinotam.Products.Admin;
 using MercadoCinotam.Products.Admin.Dtos;
+using MercadoCinotam.Web.Attributes;
 using MercadoCinotam.Web.Controllers;
 using System;
 using System.Web.Mvc;
@@ -28,7 +29,7 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
         [WrapResult(false)]
         public JsonResult GetProducts(RequestModel model)
         {
-            ProccessQueryData(model, new[] { "ProductName", "Sku" }, new[] { "Id", "Sku", "ProductName", "ProductPrice", "Active", "" });
+            ProccessQueryData(model, "ProductName", new[] { "Id", "Sku", "ProductName", "ProductPrice", "Active", "" });
             var products = _productAdminService.GetProducts(model);
             return Json(products, JsonRequestBehavior.AllowGet);
         }
@@ -57,7 +58,12 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
             var galardons = _productAdminService.GetGalardons(id);
             return View(galardons);
         }
-
+        [ShouldBeAjaxRequest]
+        public ActionResult AddGalardonInsertView(Guid id)
+        {
+            return View();
+        }
+        [HttpPost]
         public ActionResult AddGalardon(GalardonInput input)
         {
             var id = _productAdminService.AddGalardon(input);

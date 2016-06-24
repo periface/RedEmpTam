@@ -9,7 +9,7 @@ namespace ImageSaver.Manager
 {
     public class ImageManager : IImageManager
     {
-        private ISaverManager _saverManager;
+        private readonly ISaverManager _saverManager;
 
         public ImageManager(ISaverManager saverManager)
         {

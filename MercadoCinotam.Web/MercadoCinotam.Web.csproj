@@ -419,6 +419,7 @@
     <Content Include="Areas\Admin\Views\Products\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Products\AddProduct.cshtml" />
     <Content Include="Areas\Admin\Views\Products\AddGalardon.cshtml" />
+    <None Include="Areas\Admin\Views\Products\AddGalardonInsertView.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -487,6 +488,7 @@
     <Compile Include="Areas\Admin\Controllers\MainMenuController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
+    <Compile Include="Attributes\ShouldBeAjaxRequest.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
