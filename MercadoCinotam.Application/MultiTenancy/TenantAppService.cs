@@ -1,6 +1,7 @@
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
+using Abp.Domain.Uow;
 using Abp.Extensions;
 using Abp.MultiTenancy;
 using Abp.Runtime.Security;
@@ -21,17 +22,18 @@ namespace MercadoCinotam.MultiTenancy
         private readonly RoleManager _roleManager;
         private readonly EditionManager _editionManager;
         private readonly IAbpZeroDbMigrator _abpZeroDbMigrator;
-
+        private readonly IUnitOfWorkManager _unitOfWorkManager;
         public TenantAppService(
             TenantManager tenantManager,
             RoleManager roleManager,
             EditionManager editionManager,
-            IAbpZeroDbMigrator abpZeroDbMigrator)
+            IAbpZeroDbMigrator abpZeroDbMigrator, IUnitOfWorkManager unitOfWorkManager)
         {
             _tenantManager = tenantManager;
             _roleManager = roleManager;
             _editionManager = editionManager;
             _abpZeroDbMigrator = abpZeroDbMigrator;
+            _unitOfWorkManager = unitOfWorkManager;
         }
 
         [AbpAuthorize(PermissionNames.Pages_Tenants)]

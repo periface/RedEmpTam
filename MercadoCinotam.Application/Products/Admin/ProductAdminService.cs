@@ -35,12 +35,13 @@ namespace MercadoCinotam.Products.Admin
             if (input.Id.HasValue)
             {
                 instance = _productManager.GetProduct(input.Id.Value);
+                instance.SetSlug(instance.ProductName.CreateSlug());
                 instance = input.MapTo(instance);
             }
             else
             {
 
-                instance = Product.CreateProduct(input.ProductName, input.AvailableStock, input.TrackStock, input.ProductPrice, input.ProductDescription, input.Sku);
+                instance = Product.CreateProduct(input.ProductName, input.AvailableStock, input.TrackStock, input.ProductPrice, input.ProductDescription, input.Sku, input.IsFeatured, input.ProductName.CreateSlug());
 
             }
 
@@ -48,10 +49,10 @@ namespace MercadoCinotam.Products.Admin
             {
                 //Small image
                 var formatedFolderSmall = string.Format(ImageFolder, tenantId, slug, FolderSizeSmall);
-                var smallImage = _imageManager.SaveImage(64, 64, input.Imagen, formatedFolderSmall);
+                var smallImage = _imageManager.SaveImage(250, 250, input.Imagen, formatedFolderSmall);
                 //Medium Image
                 var formatedFolderMed = string.Format(ImageFolder, tenantId, slug, FolderSizeMedium);
-                var medImage = _imageManager.SaveImage(128, 128, input.Imagen, formatedFolderMed);
+                var medImage = _imageManager.SaveImage(650, 350, input.Imagen, formatedFolderMed);
 
                 //Default Image
                 var formatedFolderDef = string.Format(ImageFolder, tenantId, slug, FolderSizeDefault);
@@ -87,7 +88,9 @@ namespace MercadoCinotam.Products.Admin
                     Id = a.Id,
                     ProductPrice = a.ProductPrice,
                     Active = a.Active,
-                    Sku = a.Sku
+                    Sku = a.Sku,
+                    IsFeatured = a.IsFeatured,
+                    Slug = a.Slug
 
                 }).ToArray(),
                 recordsFiltered = filterByLength.Count
@@ -112,7 +115,8 @@ namespace MercadoCinotam.Products.Admin
                 ProductDescription = product.ProductDescription,
                 ProductName = product.ProductName,
                 Id = product.Id,
-                Sku = product.Sku
+                Sku = product.Sku,
+                IsFeatured = product.IsFeatured,
             };
         }
 

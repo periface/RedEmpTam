@@ -93,7 +93,6 @@
     <Compile Include="Certifications\Entities\Certification.cs" />
     <Compile Include="Certifications\Manager\CertificationManager.cs" />
     <Compile Include="Certifications\Manager\ICertificationManager.cs" />
-    <Compile Include="LangingPages\Entities\LandingPageAsset.cs" />
     <Compile Include="MercadoCinotamConsts.cs" />
     <Compile Include="MercadoCinotamCoreModule.cs" />
     <Compile Include="Authorization\MercadoCinotamAuthorizationProvider.cs" />
@@ -116,13 +115,16 @@
     <Compile Include="Authorization\Roles\Role.cs" />
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
-    <Compile Include="LangingPages\Entities\LandingPage.cs" />
-    <Compile Include="Pyme\Entities\PymeConfiguration.cs" />
     <Compile Include="Pyme\Entities\PymeContactInfo.cs" />
     <Compile Include="Pyme\Entities\PymeInfo.cs" />
     <Compile Include="Pyme\Entities\PymeOwner.cs" />
     <Compile Include="Pyme\Manager\IPymeManager.cs" />
     <Compile Include="StoreTheme\Entities\Theme.cs" />
+    <Compile Include="SystemThemeProvider.cs" />
+    <Compile Include="Themes\Entities\Theme.cs" />
+    <Compile Include="Themes\Entities\ThemePreview.cs" />
+    <Compile Include="Themes\Manager\IThemeManager.cs" />
+    <Compile Include="Themes\Manager\ThemeManager.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />
@@ -156,6 +158,12 @@
   <ItemGroup>
     <Folder Include="Orders\" />
     <Folder Include="ShoppingCarts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{B693E1AD-030E-4388-BBE9-51690178FD08}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

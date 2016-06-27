@@ -20,5 +20,6 @@ namespace MercadoCinotam.Products.Admin.Dtos
         public string MediumImage { get; set; }
         public string Sku { get; set; }
         public HttpPostedFileBase Imagen { get; set; }
+        public bool IsFeatured { get; set; }
     }
 }

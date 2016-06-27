@@ -16,5 +16,6 @@ namespace MercadoCinotam.Products.Manager
         IQueryable<Product> GetQuery();
         int AddGalardon(ProductCertification galardon);
         ProductCertification GetGalardon(int galardonId);
+        IEnumerable<Product> GetFeaturedProducts();
     }
 }

@@ -9,6 +9,11 @@ namespace MercadoCinotam.Web.Controllers
 
         public ActionResult Index()
         {
+
+            if (!IsHostSite)
+            {
+                return RedirectToAction("Index", "Landing");
+            }
             //if (!IsHostSite)
             //{
             //    return RedirectToAction("LandingPage");
@@ -17,10 +22,7 @@ namespace MercadoCinotam.Web.Controllers
             return View();
         }
 
-        public ActionResult LandingPage()
-        {
-            return View();
-        }
+
         //[HttpPost]
         //[ValidateInput(false)]
         //public ActionResult Index(ProductPage input)
@@ -34,25 +36,6 @@ namespace MercadoCinotam.Web.Controllers
         //    var model = new MyModel(input.Html);
         //    return Json(new { html = model, id = input.Id });
         //}
-        public ActionResult ProductList()
-        {
-            return View();
-        }
-
-        public ActionResult Product(string productUrl)
-        {
-            return View();
-        }
-
-        public ActionResult StoreProfile()
-        {
-            return View();
-        }
-
-        public ActionResult StoreAbout()
-        {
-            return View();
-        }
         public class MyModel : Drop
         {
             public MyModel(string htmlContent)
@@ -81,6 +64,5 @@ namespace MercadoCinotam.Web.Controllers
             }
             public string Html { get; set; }
         }
-
     }
 }

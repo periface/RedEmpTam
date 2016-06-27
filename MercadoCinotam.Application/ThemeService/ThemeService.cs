@@ -1,10 +1,21 @@
-﻿namespace MercadoCinotam.ThemeService
+﻿using Abp.Configuration;
+using System.Threading.Tasks;
+
+namespace MercadoCinotam.ThemeService
 {
     public class ThemeService : IThemeService
     {
-        public string GetActiveThemeFromTenant(string tenant)
+        private readonly ISettingManager _settingManager;
+
+        public ThemeService(ISettingManager settingManager)
         {
-            return "";
+            _settingManager = settingManager;
+        }
+
+        public async Task<string> GetActiveThemeFromTenant()
+        {
+            var theme = await _settingManager.GetSettingValueAsync("Theme");
+            return theme;
         }
     }
 }

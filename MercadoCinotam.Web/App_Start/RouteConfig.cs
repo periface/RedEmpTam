@@ -10,6 +10,7 @@ namespace MercadoCinotam.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();
             //ASP.NET Web API Route Config
             routes.MapHttpRoute(
                 name: "DefaultApi",
@@ -21,7 +22,7 @@ namespace MercadoCinotam.Web
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new[] { "MercadoCinotam.Web.Areas.Admin.Controllers" }
+                namespaces: new[] { "MercadoCinotam.Web.Controllers" }
             );
         }
     }

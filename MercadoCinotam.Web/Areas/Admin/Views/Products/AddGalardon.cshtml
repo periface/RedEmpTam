@@ -64,23 +64,25 @@
 
     <script src="~/Scripts/dualListBox/jquery.bootstrap-duallistbox.min.js"></script>
     <script>
-        (function ($) {
+        (function($) {
 
-            $(document).ready(function () {
+            $(document).ready(function() {
                 var list = $('.inactiveList').bootstrapDualListbox({
                     preserveSelectionOnMove: 'moved',
                     moveOnSelect: false,
                     nonSelectedListLabel: 'Inactivos',
-                    selectedListLabel: 'Activos'
+                    selectedListLabel: 'Activos',
+                    infoTextEmpty: "Lista Vacía",
+                    infoText: "Mostrando {0} elementos"
                 });
-                $("#demoform").on("submit", function (e) {
+                $("#demoform").on("submit", function(e) {
                     e.preventDefault();
                     var data = $('select[name="Inactives[]"]').val();
                     var formdata = {
                         Actives: data,
                         ProductId: $("#ProductId").val()
                     };
-                    abp.ui.setBusy($("body"), abp.services.app.galardonAdmin.addGalardonToProduct(formdata).done(function () {
+                    abp.ui.setBusy($("body"), abp.services.app.galardonAdmin.addGalardonToProduct(formdata).done(function() {
                         abp.notify.success("Certificaciónes Agregadas");
                     }));
                 });

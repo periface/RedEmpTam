@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
+using Helpers.TenancyHelpers;
 using MercadoCinotam.Products.Entities;
 using System;
 using System.Collections.Generic;
@@ -36,9 +37,9 @@ namespace MercadoCinotam.Products.Manager
         {
             if (take.HasValue)
             {
-                return _productRepository.GetAll().Take(take.Value);
+                return _productRepository.GetAll().Where(a => a.TenantId == TenantHelper.TenantId).Take(take.Value).ToList();
             }
-            return _productRepository.GetAllList();
+            return _productRepository.GetAllList(a => a.TenantId == TenantHelper.TenantId);
         }
         public int EditProduct(Product product)
         {
@@ -62,5 +63,12 @@ namespace MercadoCinotam.Products.Manager
             var galardon = _galardonsRepository.FirstOrDefault(a => a.Id == galardonId);
             return galardon;
         }
+
+        public IEnumerable<Product> GetFeaturedProducts()
+        {
+            var products = _productRepository.GetAll().Where(a => a.Active && a.IsFeatured && a.TenantId == TenantHelper.TenantId);
+            return products.ToList();
+        }
+
     }
 }

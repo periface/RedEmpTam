@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using Abp.Localization.Dictionaries;
+﻿using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
 using Abp.Modules;
 using Abp.Zero;
@@ -8,6 +7,7 @@ using MercadoCinotam.Authorization;
 using MercadoCinotam.Authorization.Roles;
 using MercadoCinotam.MultiTenancy;
 using MercadoCinotam.Users;
+using System.Reflection;
 
 namespace MercadoCinotam
 {
@@ -36,6 +36,8 @@ namespace MercadoCinotam
                         )
                     )
                 );
+
+            Configuration.Settings.Providers.Add<SystemThemeProvider>();
 
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 

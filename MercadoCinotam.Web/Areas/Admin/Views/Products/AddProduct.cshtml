@@ -23,7 +23,7 @@
         <div class="col-sm-12 col-lg-2">
             <div class="form-group">
                 <label class="control-label">Sku</label>
-                @Html.TextBoxFor(a => a.Sku, new {@class = "form-control",})
+                @Html.TextBoxFor(a => a.Sku, new { @class = "form-control", })
             </div>
         </div>
         <div class="col-sm-12 col-lg-2">
@@ -39,43 +39,51 @@
                 <div class="input-group">
 
                     <span class="input-group-addon">
-                        @Html.CheckBoxFor(a => a.TrackStock, new {Title = "Habilitar control de stock"})
+                        @Html.CheckBoxFor(a => a.TrackStock, new { Title = "Habilitar control de stock" })
                     </span>
-                    @Html.TextBoxFor(a => a.AvailableStock, new {@class = "form-control", type = "number"})
+                    @Html.TextBoxFor(a => a.AvailableStock, new { @class = "form-control", type = "number" })
 
                 </div>
 
             </div>
         </div>
-
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="checkbox">
+                    <label class="control-label">
+                        @Html.CheckBoxFor(a=>a.IsFeatured) Producto Principal
+                    </label>
+                </div>
+            </div>
+        </div>
         @*<div class="col-lg-6">
 
 
 
-            <label class="control-label">Control de stocks</label>
-            <p class="help-block">
-                El control de stock permite al sistema mantener control de los stocks de un producto, de esta forma si el stock es de 0 el producto estara deshabilitado para la compra
-            </p>
-        </div>*@
+                <label class="control-label">Control de stocks</label>
+                <p class="help-block">
+                    El control de stock permite al sistema mantener control de los stocks de un producto, de esta forma si el stock es de 0 el producto estara deshabilitado para la compra
+                </p>
+            </div>*@
 
     </div>
     <div class="row">
         <div class="col-sm-2">
             <h5>Default</h5>
-            <img style="margin: 0 auto" class="img-responsive" src="@Model.MainPicture"/>
+            <img style="margin: 0 auto" class="img-responsive" src="@Model.MainPicture" />
         </div>
         <div class="col-sm-2">
 
             <h5>128x128</h5>
-            <img style="margin: 0 auto" class="img-responsive" src="@Model.MediumImage"/>
+            <img style="margin: 0 auto" class="img-responsive" src="@Model.MediumImage" />
 
         </div>
         <div class="col-sm-2">
             <h5>64x64</h5>
-            <img style="margin: 0 auto" class="img-responsive" src="@Model.SmallImage"/>
+            <img style="margin: 0 auto" class="img-responsive" src="@Model.SmallImage" />
         </div>
     </div>
-    <br/>
+    <br />
     <div class="row">
         <div class="col-sm-12 col-lg-6">
             <div class="form-group">

@@ -23,10 +23,12 @@ namespace MercadoCinotam.Products.Entities
         public string MainPicture { get; protected set; }
         public string SmallImage { get; protected set; }
         public string MediumImage { get; protected set; }
+        public bool IsFeatured { get; set; }
+        public string Slug { get; set; }
         public virtual ICollection<ProductCertification> ProductGalardons { get; protected set; }
         public virtual ICollection<ProductFeatureSection> FeatureSections { get; protected set; }
         public virtual ICollection<ProductSlider> ProductSliders { get; protected set; }
-        public static Product CreateProduct(string productName, int availableStock, bool enableTrackStock, decimal price, string productDescription, string sku)
+        public static Product CreateProduct(string productName, int availableStock, bool enableTrackStock, decimal price, string productDescription, string sku, bool isFeatured, string createSlug)
         {
             return new Product()
             {
@@ -35,7 +37,8 @@ namespace MercadoCinotam.Products.Entities
                 TrackStock = enableTrackStock,
                 ProductPrice = price,
                 ProductDescription = productDescription,
-                Sku = sku
+                Sku = sku,
+                IsFeatured = isFeatured
             };
         }
 
@@ -55,6 +58,11 @@ namespace MercadoCinotam.Products.Entities
         public void SetDataImage(string dataImage)
         {
             DataImage = dataImage;
+        }
+
+        public void SetSlug(string createSlug)
+        {
+            Slug = createSlug;
         }
     }
 }

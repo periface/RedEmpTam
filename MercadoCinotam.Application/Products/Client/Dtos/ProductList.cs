@@ -1,15 +1,13 @@
-﻿using System;
+﻿using Abp.Application.Services.Dto;
+using MercadoCinotam.Products.Admin.Dtos;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Abp.Application.Services.Dto;
 
 namespace MercadoCinotam.Products.Client.Dtos
 {
-   public class ProductList : IOutputDto
+    public class ProductList : IOutputDto
     {
-
+        public IEnumerable<ProductDto> Products { get; set; }
+        public string LiClass { get; set; }
+        public string UlClass { get; set; }
     }
-
 }

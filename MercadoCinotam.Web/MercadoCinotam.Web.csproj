@@ -473,6 +473,38 @@
     <Content Include="Views\Editor\mode-html_ruby.js" />
     <Content Include="Views\Editor\theme-twilight.js" />
     <Content Include="Views\Tenants\Index.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\css\bootstrap.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\css\bootstrap.min.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\css\creative.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\css\creative.min.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\css\magnific-popup.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\css\font-awesome.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\header.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\1.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\2.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\3.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\4.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\5.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\6.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\thumbnails\1.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\thumbnails\2.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\thumbnails\3.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\thumbnails\4.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\thumbnails\5.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\thumbnails\6.jpg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\bootstrap.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\bootstrap.min.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\creative.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\creative.min.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.easing.min.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.fittext.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.magnific-popup.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\scrollreveal.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\scrollreveal.min.js" />
     <Content Include="Views\Users\Index.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -497,7 +529,11 @@
     <Compile Include="Attributes\ShouldBeAjaxRequest.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LandingController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\Results\ChallengeResult.cs" />
     <Compile Include="Controllers\TenantsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -538,7 +574,17 @@
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Home\_dotLiquid.cshtml" />
     <None Include="Views\Home\LandingPage.cshtml" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Views\Themes\SimpleTheme\Products\Details.cshtml" />
+    <None Include="Views\Themes\SimpleTheme\Landing\Index.cshtml" />
     <None Include="Views\Shared\_Layout.liquid" />
+    <Content Include="Views\Themes\SimpleTheme\Shared\_LayoutPageSimpleTheme.cshtml" />
+    <Content Include="Views\Themes\SimpleTheme\ViewHelpers\LoadFeaturedProducts.cshtml" />
+    <None Include="Views\Themes\SimpleTheme\ViewHelpers\LoadMoreProducts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -575,7 +621,9 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Orders\" />
-    <Folder Include="Views\Themes\SimpleLandingPage\" />
+    <Folder Include="Views\Themes\SimpleTheme\Assets\fonts\" />
+    <Folder Include="Views\Themes\SimpleTheme\Cart\" />
+    <Folder Include="Views\Themes\SimpleTheme\Clients\" />
     <Folder Include="Views\ViewHelpers\" />
   </ItemGroup>
   <PropertyGroup>
