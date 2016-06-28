@@ -38,45 +38,51 @@
 
 @section Scripts{
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jszip-2.5.0/pdfmake-0.1.18/dt-1.10.12/af-2.1.2/b-1.2.1/b-colvis-1.2.1/b-flash-1.2.1/b-html5-1.2.1/b-print-1.2.1/cr-1.3.2/fc-3.2.2/fh-3.1.2/kt-2.1.2/r-2.1.0/rr-1.1.2/sc-1.4.2/se-1.2.0/datatables.min.js"></script>
+    <script src="~/js/modal.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#products').DataTable({
-                "bServerSide": true,
-                "bPaginate": true,
-                "sPaginationType": "full_numbers",
-                "iDisplayLength": 10,
-                "ajax": "/Admin/Products/GetProducts",
-                language: window.dataTablesLang,
-                columns: [
-                    {
-                        "data": "Sku"
-                    },
-                    {
-                        "data": "ProductName"
-                    },
-                {
-                    "data": "ProductPrice"
-                },
-                    {
-                        "data": "Active"
-                    }
-                ],
-                buttons: [
-                'copy', 'excel', 'pdf'
-                ],
-                "columnDefs": [
-                {
-                    // The `data` parameter refers to the data for the cell (defined by the
-                    // `data` option, which defaults to the column being worked with, in
-                    // this case `data: 0`.
-                    className: "text-center",
-                    "render": function (data, type, row) {
-                        return "<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a> <a href='' class='btn btn-default btn-sm' title='Caracteristicas' ><i class='fa fa-bars'></i></a> <a href='' class='btn btn-default btn-sm' title='Historial de Stock' ><i class='fa fa-history'></i></a> <a title='Galeria' href='/Admin/Products/Gallery/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-image'></i></a> <a  title='Editar' href='/Admin/Products/AddProduct/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
-                    },
-                    "targets": 4
-                }
-                ]
+        (function($) {
+
+            $(document).ready(function () {
+                window.modalInstance = abp.app.bootstrap.modal();
+                $('#products').DataTable({
+                    "bServerSide": true,
+                    "bPaginate": true,
+                    "sPaginationType": "full_numbers",
+                    "iDisplayLength": 10,
+                    "ajax": "/Admin/Products/GetProducts",
+                    language: window.dataTablesLang,
+                    columns: [
+                        {
+                            "data": "Sku"
+                        },
+                        {
+                            "data": "ProductName"
+                        },
+                        {
+                            "data": "ProductPrice"
+                        },
+                        {
+                            "data": "Active"
+                        }
+                    ],
+                    buttons: [
+                        'copy', 'excel', 'pdf'
+                    ],
+                    "columnDefs": [
+                        {
+                            // The `data` parameter refers to the data for the cell (defined by the
+                            // `data` option, which defaults to the column being worked with, in
+                            // this case `data: 0`.
+                            className: "text-center",
+                            //<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a>
+                            "render": function (data, type, row) {
+                                return " <a href='/Admin/Products/AddFeature/" + row.Id + "' data-modal class='btn btn-default btn-sm' title='Caracteristicas' ><i class='fa fa-bars'></i></a> <a href='' class='btn btn-default btn-sm' title='Historial de Stock' ><i class='fa fa-history'></i></a> <a title='Galeria' href='/Admin/Products/Gallery/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-image'></i></a> <a  title='Editar' href='/Admin/Products/AddProduct/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
+                            },
+                            "targets": 4
+                        }
+                    ]
+                });
             });
-        });
+        })($);
     </script>
 }

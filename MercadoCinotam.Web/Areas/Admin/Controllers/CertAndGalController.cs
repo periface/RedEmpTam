@@ -1,6 +1,6 @@
 ﻿using Abp.Web.Models;
 using Helpers.GenericTypes;
-using MercadoCinotam.GalardonsAndCert;
+using MercadoCinotam.GalardonsAndCert.Admin;
 using MercadoCinotam.GalardonsAndCert.Dtos;
 using MercadoCinotam.Web.Controllers;
 using System.Web.Mvc;

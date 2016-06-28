@@ -1,0 +1,63 @@
+﻿@model MercadoCinotam.Products.Admin.Dtos.AddFeatureInputModel
+
+@{ Layout = null;}
+<form class="addFeature" id="addFeature">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Editar Caracteristicas</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <div class="input-group">
+                            @Html.HiddenFor(a => a.ProductId)
+                            @Html.TextBoxFor(a => a.Feature, new { @class = "form-control", required = "required" })
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-primary">Agregar</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul id="featuresList" class="list-group">
+                            @foreach (var feat in Model.Features)
+                            {
+                                <li class="list-group-item js-id-@feat.Id">
+                                    @feat.FeatureText <button type="button" data-id="@feat.Id" class="btn btn-xs pull-right js-remove-feature"><span class="fa fa-times"></span></button>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</form>
+
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $("body").on("submit", ".addFeature", function (e) {
+                e.preventDefault();
+                var data = $(this).serializeFormToObject();
+                abp.ui.setBusy($(".addFeature"), abp.services.app.productAdmin.addFeatureToProduct(data).done(function (id) {
+                    $("#featuresList").append("<li class='list-group-item js-id-"+id+"'>" + data.Feature + "<button type='button' data-id=" + id + " class='btn btn-xs pull-right js-remove-feature'><span class='fa fa-times'></span></button></li>");
+                }));
+            });
+            $("body").on("click", ".js-remove-feature",function() {
+                var id = $(this).data("id");
+                abp.ui.setBusy($(".addFeature"), abp.services.app.productAdmin.removeFeature(id).done(function () {
+                    var element = $("#featuresList").find(".js-id-" + id);
+                    element.fadeOut();
+                    abp.notify.success("¡Caracteristica eliminada!");
+                }));
+            });
+        });
+    })($);
+</script>

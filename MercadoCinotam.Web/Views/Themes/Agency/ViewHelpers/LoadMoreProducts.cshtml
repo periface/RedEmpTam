@@ -1,0 +1,22 @@
+﻿@model MercadoCinotam.Products.Client.Dtos.ProductList
+@{
+    Layout = null;
+}
+@foreach (var product in Model.Products)
+{
+    <div class="col-lg-4 col-sm-6">
+        <a href="@product.MainPicture" class="portfolio-box">
+            <img style="max-width: 100%; height: auto;" src="@product.MediumImage" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                        @product.ProductName
+                    </div>
+                    <div class="project-name">
+                        @product.ProductPrice
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+}

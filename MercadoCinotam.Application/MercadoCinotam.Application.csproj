@@ -99,10 +99,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GalardonsAndCert\Client\GalardonClientService.cs" />
+    <Compile Include="GalardonsAndCert\Client\IGalardonClientService.cs" />
     <Compile Include="GalardonsAndCert\Dtos\GalardonDto.cs" />
     <Compile Include="GalardonsAndCert\Dtos\GalardonInput.cs" />
-    <Compile Include="GalardonsAndCert\GalardonAdminService.cs" />
-    <Compile Include="GalardonsAndCert\IGalardonAdminService.cs" />
+    <Compile Include="GalardonsAndCert\Admin\GalardonAdminService.cs" />
+    <Compile Include="GalardonsAndCert\Admin\IGalardonAdminService.cs" />
     <Compile Include="MercadoCinotamApplicationModule.cs" />
     <Compile Include="MercadoCinotamAppServiceBase.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantInput.cs" />
@@ -110,10 +112,14 @@
     <Compile Include="MultiTenancy\Dto\TenantListDto.cs" />
     <Compile Include="MultiTenancy\TenantAppService.cs" />
     <Compile Include="GalardonsAndCert\Dtos\GalardonProductInput.cs" />
+    <Compile Include="Products\Admin\Dtos\AddFeatureInputModel.cs" />
+    <Compile Include="Products\Admin\Dtos\FeatureInput.cs" />
     <Compile Include="Products\Admin\Dtos\ProductDto.cs" />
     <Compile Include="Products\Admin\Dtos\ProductInput.cs" />
     <Compile Include="Products\Admin\IProductAdminService.cs" />
     <Compile Include="Products\Admin\ProductAdminService.cs" />
+    <Compile Include="Products\Client\Dtos\FeaturesList.cs" />
+    <Compile Include="Products\Client\Dtos\GalardonList.cs" />
     <Compile Include="Products\Client\Dtos\Product.cs" />
     <Compile Include="Products\Client\Dtos\ProductList.cs" />
     <Compile Include="Products\Client\IProductClientService.cs" />

@@ -6,6 +6,7 @@ using MercadoCinotam.Products.Entities;
 using MercadoCinotam.Users;
 using System.Data.Common;
 using System.Data.Entity;
+using MercadoCinotam.ProductFeatures.Entities;
 
 namespace MercadoCinotam.EntityFramework
 {

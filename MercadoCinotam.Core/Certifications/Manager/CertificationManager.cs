@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
+using Helpers.TenancyHelpers;
 using MercadoCinotam.Certifications.Entities;
 using MercadoCinotam.Products.Entities;
 using System;
@@ -34,7 +35,8 @@ namespace MercadoCinotam.Certifications.Manager
 
         public IEnumerable<Certification> GetCertifications()
         {
-            throw new NotImplementedException();
+            var certifications = _certificationRepository.GetAllList(a => a.TenantId == TenantHelper.TenantId);
+            return certifications;
         }
 
         public IQueryable<Certification> GetCertificationsQuery()

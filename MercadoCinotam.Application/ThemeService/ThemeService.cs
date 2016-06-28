@@ -1,21 +1,30 @@
 ﻿using Abp.Configuration;
+using Helpers.TenancyHelpers;
+using System;
 using System.Threading.Tasks;
 
 namespace MercadoCinotam.ThemeService
 {
-    public class ThemeService : IThemeService
+    public class ThemeService : MercadoCinotamAppServiceBase, IThemeService
     {
-        private readonly ISettingManager _settingManager;
+        private readonly ISettingStore _settingStore;
 
-        public ThemeService(ISettingManager settingManager)
+        public ThemeService(ISettingStore settingStore)
         {
-            _settingManager = settingManager;
+            _settingStore = settingStore;
         }
 
         public async Task<string> GetActiveThemeFromTenant()
         {
-            var theme = await _settingManager.GetSettingValueAsync("Theme");
-            return theme;
+            try
+            {
+                var theme = await _settingStore.GetSettingOrNullAsync(TenantHelper.TenantId, null, "Theme");
+                return theme.Value;
+            }
+            catch (Exception)
+            {
+                return "";
+            }
         }
     }
 }

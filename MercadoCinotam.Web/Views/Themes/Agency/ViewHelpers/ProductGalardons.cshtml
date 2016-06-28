@@ -1,0 +1,29 @@
+﻿@model MercadoCinotam.Products.Client.Dtos.GalardonList
+@{
+    Layout = null;
+}
+<section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Certificaciones</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach (var gal in Model.Galardons)
+            {
+
+            <div style="min-height: 166px;overflow: hidden" class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <img src="@gal.Image" class="img-responsive img-rounded" style="width: 64px; height: 64px; margin: 0 auto; overflow: hidden;" />
+                    <h3>@gal.GalardonName</h3>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

@@ -17,5 +17,7 @@ namespace MercadoCinotam.Products.Manager
         int AddGalardon(ProductCertification galardon);
         ProductCertification GetGalardon(int galardonId);
         IEnumerable<Product> GetFeaturedProducts();
+        Product GetProduct(string id, string slug);
+        Product GetProduct(string productSlug);
     }
 }

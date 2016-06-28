@@ -2,7 +2,7 @@
 using Abp.Web.Models;
 using Abp.Web.Mvc.Authorization;
 using Helpers.GenericTypes;
-using MercadoCinotam.GalardonsAndCert;
+using MercadoCinotam.GalardonsAndCert.Admin;
 using MercadoCinotam.Products.Admin;
 using MercadoCinotam.Products.Admin.Dtos;
 using MercadoCinotam.Web.Controllers;
@@ -54,6 +54,11 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult AddFeature(Guid id)
+        {
+            var model = _productAdminService.GetAddFeatureViewModel(id);
+            return View(model);
+        }
         public ActionResult AddGalardon(Guid? id)
         {
             if (id == null) return HttpNotFound();

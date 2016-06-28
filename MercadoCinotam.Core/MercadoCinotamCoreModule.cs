@@ -37,7 +37,7 @@ namespace MercadoCinotam
                     )
                 );
 
-            Configuration.Settings.Providers.Add<SystemThemeProvider>();
+            //Configuration.Settings.Providers.Add<SystemThemeProvider>();
 
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 

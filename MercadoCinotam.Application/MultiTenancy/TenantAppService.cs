@@ -1,7 +1,7 @@
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
-using Abp.Domain.Uow;
+using Abp.Configuration;
 using Abp.Extensions;
 using Abp.MultiTenancy;
 using Abp.Runtime.Security;
@@ -22,18 +22,18 @@ namespace MercadoCinotam.MultiTenancy
         private readonly RoleManager _roleManager;
         private readonly EditionManager _editionManager;
         private readonly IAbpZeroDbMigrator _abpZeroDbMigrator;
-        private readonly IUnitOfWorkManager _unitOfWorkManager;
+        private readonly ISettingStore _settingStore;
         public TenantAppService(
             TenantManager tenantManager,
             RoleManager roleManager,
             EditionManager editionManager,
-            IAbpZeroDbMigrator abpZeroDbMigrator, IUnitOfWorkManager unitOfWorkManager)
+            IAbpZeroDbMigrator abpZeroDbMigrator, ISettingStore settingStore)
         {
             _tenantManager = tenantManager;
             _roleManager = roleManager;
             _editionManager = editionManager;
             _abpZeroDbMigrator = abpZeroDbMigrator;
-            _unitOfWorkManager = unitOfWorkManager;
+            _settingStore = settingStore;
         }
 
         [AbpAuthorize(PermissionNames.Pages_Tenants)]
@@ -88,6 +88,10 @@ namespace MercadoCinotam.MultiTenancy
                 //Assign admin user to role!
                 CheckErrors(await UserManager.AddToRoleAsync(adminUser.Id, adminRole.Name));
                 await CurrentUnitOfWork.SaveChangesAsync();
+
+                //Assign Default Theme
+                await _settingStore.CreateAsync(new SettingInfo(tenant.Id, null, "Theme", "SimpleTheme"));
+
             }
         }
 

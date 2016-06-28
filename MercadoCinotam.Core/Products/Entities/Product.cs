@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using MercadoCinotam.ProductFeatures.Entities;
 using System;
 using System.Collections.Generic;
 
@@ -26,7 +27,7 @@ namespace MercadoCinotam.Products.Entities
         public bool IsFeatured { get; set; }
         public string Slug { get; set; }
         public virtual ICollection<ProductCertification> ProductGalardons { get; protected set; }
-        public virtual ICollection<ProductFeatureSection> FeatureSections { get; protected set; }
+        public virtual ICollection<Feature> FeatureSections { get; protected set; }
         public virtual ICollection<ProductSlider> ProductSliders { get; protected set; }
         public static Product CreateProduct(string productName, int availableStock, bool enableTrackStock, decimal price, string productDescription, string sku, bool isFeatured, string createSlug)
         {

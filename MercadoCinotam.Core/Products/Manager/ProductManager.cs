@@ -70,5 +70,16 @@ namespace MercadoCinotam.Products.Manager
             return products.ToList();
         }
 
+        public Product GetProduct(string id, string slug)
+        {
+            var product = _productRepository.FirstOrDefault(a => a.Sku == id && a.Slug.ToUpper() == slug.ToUpper() && a.TenantId == TenantHelper.TenantId);
+            return product;
+        }
+
+        public Product GetProduct(string productSlug)
+        {
+            var product = _productRepository.FirstOrDefault(a => a.Slug.ToUpper() == productSlug.ToUpper() && a.TenantId == TenantHelper.TenantId);
+            return product;
+        }
     }
 }

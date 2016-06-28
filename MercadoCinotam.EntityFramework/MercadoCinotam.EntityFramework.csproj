@@ -176,17 +176,9 @@
     <Compile Include="Migrations\201605041151380_UserAccount_And_Notification_Changes.Designer.cs">
       <DependentUpon>201605041151380_UserAccount_And_Notification_Changes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606241637098_InitialFix.cs" />
-    <Compile Include="Migrations\201606241637098_InitialFix.Designer.cs">
-      <DependentUpon>201606241637098_InitialFix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606271649164_IsFeatured.cs" />
-    <Compile Include="Migrations\201606271649164_IsFeatured.Designer.cs">
-      <DependentUpon>201606271649164_IsFeatured.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201606271758278_Slug.cs" />
-    <Compile Include="Migrations\201606271758278_Slug.Designer.cs">
-      <DependentUpon>201606271758278_Slug.cs</DependentUpon>
+    <Compile Include="Migrations\201606281708192_InitialFix.cs" />
+    <Compile Include="Migrations\201606281708192_InitialFix.Designer.cs">
+      <DependentUpon>201606281708192_InitialFix.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -256,14 +248,8 @@
     <EmbeddedResource Include="Migrations\201605041151380_UserAccount_And_Notification_Changes.resx">
       <DependentUpon>201605041151380_UserAccount_And_Notification_Changes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606241637098_InitialFix.resx">
-      <DependentUpon>201606241637098_InitialFix.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606271649164_IsFeatured.resx">
-      <DependentUpon>201606271649164_IsFeatured.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201606271758278_Slug.resx">
-      <DependentUpon>201606271758278_Slug.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606281708192_InitialFix.resx">
+      <DependentUpon>201606281708192_InitialFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

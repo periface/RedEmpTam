@@ -4,11 +4,14 @@ using Helpers;
 using Helpers.GenericTypes;
 using ImageSaver.Manager;
 using MercadoCinotam.GalardonsAndCert.Dtos;
+using MercadoCinotam.ProductFeatures.Manager;
 using MercadoCinotam.Products.Admin.Dtos;
+using MercadoCinotam.Products.Client.Dtos;
 using MercadoCinotam.Products.Entities;
 using MercadoCinotam.Products.Manager;
 using System;
 using System.Linq;
+using Product = MercadoCinotam.Products.Entities.Product;
 
 namespace MercadoCinotam.Products.Admin
 {
@@ -16,14 +19,16 @@ namespace MercadoCinotam.Products.Admin
     {
         private readonly IProductManager _productManager;
         private readonly IImageManager _imageManager;
+        private readonly IProductFeatureManager _productFeatureManager;
         private const string ImageFolder = "/Content/Images/Tenants/{0}/Products/{1}/{2}/";
         private const string FolderSizeSmall = "64x64";
         private const string FolderSizeDefault = "Default";
         private const string FolderSizeMedium = "128x128";
-        public ProductAdminService(IProductManager productManager, IImageManager imageManager)
+        public ProductAdminService(IProductManager productManager, IImageManager imageManager, IProductFeatureManager productFeatureManager)
         {
             _productManager = productManager;
             _imageManager = imageManager;
+            _productFeatureManager = productFeatureManager;
         }
 
         public Guid AddProductToStore(ProductInput input)
@@ -117,6 +122,31 @@ namespace MercadoCinotam.Products.Admin
                 Id = product.Id,
                 Sku = product.Sku,
                 IsFeatured = product.IsFeatured,
+            };
+        }
+
+        public int AddFeatureToProduct(FeatureInput input)
+        {
+            var id = _productFeatureManager.AddProductFeature(input.Feature, input.ProductId);
+            return id;
+        }
+
+        public void RemoveFeature(int featureId)
+        {
+            _productFeatureManager.RemoveFeature(featureId);
+        }
+        public AddFeatureInputModel GetAddFeatureViewModel(Guid id)
+        {
+            var featuresFromProduct = _productFeatureManager.GetProductFeatures(id);
+            var features = featuresFromProduct.Select(feature => new FeatureDto()
+            {
+                FeatureText = feature.FeatureText,
+                Id = feature.Id
+            }).ToList();
+            return new AddFeatureInputModel()
+            {
+                ProductId = id,
+                Features = features
             };
         }
 

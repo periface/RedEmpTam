@@ -17,5 +17,6 @@ namespace MercadoCinotam.Products.Admin.Dtos
         public string SmallImage { get; set; }
         public string MediumImage { get; set; }
         public string Slug { get; set; }
+        public string ProductDescription { get; set; }
     }
 }
