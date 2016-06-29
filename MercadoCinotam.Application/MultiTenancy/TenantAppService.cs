@@ -9,6 +9,7 @@ using MercadoCinotam.Authorization;
 using MercadoCinotam.Authorization.Roles;
 using MercadoCinotam.Editions;
 using MercadoCinotam.MultiTenancy.Dto;
+using MercadoCinotam.StartupSettings;
 using MercadoCinotam.Users;
 using System.Collections.Generic;
 using System.Linq;
@@ -90,10 +91,21 @@ namespace MercadoCinotam.MultiTenancy
                 await CurrentUnitOfWork.SaveChangesAsync();
 
                 //Assign Default Theme
-                await _settingStore.CreateAsync(new SettingInfo(tenant.Id, null, "Theme", "SimpleTheme"));
+                await _settingStore.CreateAsync(Settings.ThemeInitialConfig(tenant.Id));
+
+                //Paypal config
+                await _settingStore.CreateAsync(Settings.PayPalInitialConfig(tenant.Id));
+                await _settingStore.CreateAsync(Settings.PayPalSecretKey(tenant.Id));
+
 
             }
         }
+
+
+
+
+
+
 
         public async Task<int?> GetTenantIdByName(string tenancyName)
         {

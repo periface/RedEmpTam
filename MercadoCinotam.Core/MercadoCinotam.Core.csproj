@@ -117,14 +117,16 @@
     <Compile Include="Authorization\Roles\Role.cs" />
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
+    <Compile Include="Pyme\Entities\MainPageContent.cs" />
     <Compile Include="Pyme\Entities\PymeContactInfo.cs" />
     <Compile Include="Pyme\Entities\PymeInfo.cs" />
     <Compile Include="Pyme\Entities\PymeOwner.cs" />
     <Compile Include="Pyme\Manager\IPymeManager.cs" />
-    <Compile Include="StoreTheme\Entities\Theme.cs" />
+    <Compile Include="Pyme\Manager\PymeManager.cs" />
     <Compile Include="SystemThemeProvider.cs" />
     <Compile Include="Themes\Entities\Theme.cs" />
     <Compile Include="Themes\Entities\ThemePreview.cs" />
+    <Compile Include="Themes\Entities\ThemeRequiredField.cs" />
     <Compile Include="Themes\Manager\IThemeManager.cs" />
     <Compile Include="Themes\Manager\ThemeManager.cs" />
     <Compile Include="Users\User.cs" />

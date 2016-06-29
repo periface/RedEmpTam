@@ -9,5 +9,6 @@ namespace MercadoCinotam.Pyme.Manager
         int AddOwner(PymeOwner owner);
         int AddContactInfo(PymeContactInfo contactInfo);
 
+        PymeInfo GetInfo();
     }
 }

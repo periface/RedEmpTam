@@ -23,6 +23,7 @@
                                     <th>#Sku</th>
                                     <th>Nombre</th>
                                     <th>Precio</th>
+                                    <th>Nombre Unico</th>
                                     <th>Estado</th>
                                     <th>Opciones</th>
                                 </tr>
@@ -62,7 +63,7 @@
                             "data": "ProductPrice"
                         },
                         {
-                            "data": "Active"
+                            "data": "Slug"
                         }
                     ],
                     buttons: [
@@ -77,6 +78,16 @@
                             //<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a>
                             "render": function (data, type, row) {
                                 return " <a href='/Admin/Products/AddFeature/" + row.Id + "' data-modal class='btn btn-default btn-sm' title='Caracteristicas' ><i class='fa fa-bars'></i></a> <a href='' class='btn btn-default btn-sm' title='Historial de Stock' ><i class='fa fa-history'></i></a> <a title='Galeria' href='/Admin/Products/Gallery/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-image'></i></a> <a  title='Editar' href='/Admin/Products/AddProduct/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
+                            },
+                            "targets": 5
+                        }, {
+                            className: "text-center",
+                            "render":function(data, type, row) {
+                                if (row.Active) {
+                                    return "<span class='label label-success'>Activo</span>";
+                                } else {
+                                    return "<span class='label label-warning'>Inactivo</span>";
+                                }
                             },
                             "targets": 4
                         }

@@ -1,0 +1,83 @@
+﻿@model MercadoCinotam.PymeInfo.Dtos.PymeInfoInput
+@{
+    Layout = null;
+}
+<form id="siteInfo" enctype="multipart/form-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                @Html.HiddenFor(a => a.Id)
+                @Html.HiddenFor(a => a.PymeLogo)
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Información del negocio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Nombre del sitio
+                            </label>
+                            @Html.TextBoxFor(a => a.PymeName, new {@class = "form-control", required = "Required"})
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Slogan
+                            </label>
+                            @Html.TextAreaFor(a => a.PymeSlogan, new {@class = "form-control"})
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Acerca de
+                            </label>
+                            @Html.TextAreaFor(a => a.About, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Logotipo
+                            </label>
+                            <input type="file" class="form-control" name="Logo"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <img style="margin:15% auto auto auto; width: 220px; height: 220px;" class="img-responsive img-circle img-centered" src="@Model.PymeLogo"/>
+            </div>
+        </div>
+     
+    </div>
+</form>
+
+<script>
+    (function () {
+        $(document).ready(function () {
+            $("#siteInfo").on("submit", function (e) {
+                var element = $(this);
+                var formData = new FormData(this);
+                e.preventDefault();
+                postWithUpload(element,formData,"/Admin/MyStore/MainInfo", function (data) {
+                    abp.notify.success("Información guardada con exito");
+                });
+            });
+        });
+    })();
+</script>

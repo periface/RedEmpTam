@@ -2,11 +2,13 @@
 using MercadoCinotam.Authorization.Roles;
 using MercadoCinotam.Certifications.Entities;
 using MercadoCinotam.MultiTenancy;
+using MercadoCinotam.ProductFeatures.Entities;
 using MercadoCinotam.Products.Entities;
+using MercadoCinotam.Pyme.Entities;
+using MercadoCinotam.Themes.Entities;
 using MercadoCinotam.Users;
 using System.Data.Common;
 using System.Data.Entity;
-using MercadoCinotam.ProductFeatures.Entities;
 
 namespace MercadoCinotam.EntityFramework
 {
@@ -24,6 +26,13 @@ namespace MercadoCinotam.EntityFramework
         public IDbSet<ProductSlider> ProductSliders { get; set; }
         public IDbSet<Feature> Features { get; set; }
         public IDbSet<Certification> Certifications { get; set; }
+        public IDbSet<PymeInfo> PymeInfos { get; set; }
+        public IDbSet<PymeContactInfo> PymeContactInfos { get; set; }
+        public IDbSet<PymeOwner> PymeOwners { get; set; }
+        public IDbSet<MainPageContent> MainPageContents { get; set; }
+        public IDbSet<Theme> Themes { get; set; }
+        public IDbSet<ThemeRequiredField> ThemeRequiredFields { get; set; }
+        public IDbSet<ThemePreview> ThemePreviews { get; set; }
         public MercadoCinotamDbContext()
             : base("Default")
         {

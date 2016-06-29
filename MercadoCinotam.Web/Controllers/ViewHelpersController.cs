@@ -1,5 +1,6 @@
 ﻿using MercadoCinotam.GalardonsAndCert.Client;
 using MercadoCinotam.Products.Client;
+using MercadoCinotam.PymeInfo.PymeClientService;
 using System;
 using System.Web.Mvc;
 
@@ -9,10 +10,12 @@ namespace MercadoCinotam.Web.Controllers
     {
         private readonly IProductClientService _productClientService;
         private readonly IGalardonClientService _galardonClientService;
-        public ViewHelpersController(IProductClientService productClientService, IGalardonClientService galardonClientService)
+        private readonly IPymeClientService _pymeClientService;
+        public ViewHelpersController(IProductClientService productClientService, IGalardonClientService galardonClientService, IPymeClientService pymeClientService)
         {
             _productClientService = productClientService;
             _galardonClientService = galardonClientService;
+            _pymeClientService = pymeClientService;
         }
 
         // GET: ViewHelpers
@@ -67,9 +70,14 @@ namespace MercadoCinotam.Web.Controllers
         public ActionResult GetProductPropertyValue(string productSlug, string property)
         {
             var value = _productClientService.GetProperty(productSlug, property);
-            return View(value);
+            return View(new MvcHtmlString(value.ToString()));
         }
 
+        public ActionResult GetPymePropertyValue(string property)
+        {
+            var value = _pymeClientService.GetProperty(property);
+            return View(new MvcHtmlString(value.ToString()));
+        }
         public ActionResult GetFeatures(Guid id)
         {
             var features = _productClientService.GetProductFeatures(id);

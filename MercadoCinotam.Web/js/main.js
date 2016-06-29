@@ -21,6 +21,21 @@
 
         return obj;
     };
+    function save(formData, url) {
+        return abp.ajax({
+            url: url,
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            type: "POST"
+        });
+    };
+    window.postWithUpload = function (element,formData,url, callback) {
+        abp.ui.setBusy(element, save(formData, url).done(function(d) {
+            callback(d);
+        }));
+    };
 
     //Configure blockUI
     if ($.blockUI) {

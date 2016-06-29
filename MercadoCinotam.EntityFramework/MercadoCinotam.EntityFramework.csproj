@@ -180,6 +180,26 @@
     <Compile Include="Migrations\201606281708192_InitialFix.Designer.cs">
       <DependentUpon>201606281708192_InitialFix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606291910544_PymeInfo.cs" />
+    <Compile Include="Migrations\201606291910544_PymeInfo.Designer.cs">
+      <DependentUpon>201606291910544_PymeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606292058581_MainPageContentEdited.cs" />
+    <Compile Include="Migrations\201606292058581_MainPageContentEdited.Designer.cs">
+      <DependentUpon>201606292058581_MainPageContentEdited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606292116497_About.cs" />
+    <Compile Include="Migrations\201606292116497_About.Designer.cs">
+      <DependentUpon>201606292116497_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606292131258_ThemeCOnfiguration.cs" />
+    <Compile Include="Migrations\201606292131258_ThemeCOnfiguration.Designer.cs">
+      <DependentUpon>201606292131258_ThemeCOnfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606292133219_ThemeReferenceName.cs" />
+    <Compile Include="Migrations\201606292133219_ThemeReferenceName.Designer.cs">
+      <DependentUpon>201606292133219_ThemeReferenceName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MercadoCinotamDataModule.cs" />
@@ -250,6 +270,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606281708192_InitialFix.resx">
       <DependentUpon>201606281708192_InitialFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606291910544_PymeInfo.resx">
+      <DependentUpon>201606291910544_PymeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606292058581_MainPageContentEdited.resx">
+      <DependentUpon>201606292058581_MainPageContentEdited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606292116497_About.resx">
+      <DependentUpon>201606292116497_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606292131258_ThemeCOnfiguration.resx">
+      <DependentUpon>201606292131258_ThemeCOnfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606292133219_ThemeReferenceName.resx">
+      <DependentUpon>201606292133219_ThemeReferenceName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

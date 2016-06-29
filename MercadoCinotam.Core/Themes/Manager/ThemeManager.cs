@@ -1,7 +1,6 @@
 ﻿using MercadoCinotam.Themes.Entities;
 using System;
 using System.Collections.Generic;
-using Theme = MercadoCinotam.StoreTheme.Entities.Theme;
 
 namespace MercadoCinotam.Themes.Manager
 {

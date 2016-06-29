@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Mi Tienda";
+}
+<h2>
+    Mi Tienda
+</h2>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="@Url.Action("MainInfo","MyStore")" data-target="#info" aria-controls="home" role="tab" data-toggle="tabajax">Información Principal</a></li>
+    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tabajax">Contacto</a></li>
+    <li role="presentation"><a href="#owner" aria-controls="owners" role="tab" data-toggle="tabajax">Propietario</a></li>
+    <li role="presentation"><a href="#themes" aria-controls="themes" role="tab" data-toggle="tabajax">Temas</a></li>
+    <li role="presentation"><a href="#sections" aria-controls="messages" role="tab" data-toggle="tabajax">Secciones y/o Contenido</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="info"></div>
+    <div role="tabpanel" class="tab-pane" id="contact"></div>
+    <div role="tabpanel" class="tab-pane" id="owner"></div>
+    <div role="tabpanel" class="tab-pane" id="themes"></div>
+    <div role="tabpanel" class="tab-pane" id="sections"></div>
+</div>
+@section Scripts{
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('[data-toggle="tabajax"]').click(function () {
+                    var $this = $(this),
+                        loadurl = $this.attr('href'),
+                        targ = $this.attr('data-target');
+
+                    $.get(loadurl, function (data) {
+                        $(targ).html(data);
+                    });
+
+                    $this.tab('show');
+                    return false;
+                });
+                $('[data-toggle="tabajax"]').each(function (index, value) {
+                    if (index === 0) {
+                        $(value).trigger("click");
+                    }
+                });
+            });
+        })($);
+</script>
+}

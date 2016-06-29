@@ -9,5 +9,7 @@ namespace MercadoCinotam.Pyme.Entities
         public string AddressLineOne { get; set; }
         public string AddressLineTwo { get; set; }
         public int TenantId { get; set; }
+        public string Lat { get; set; }
+        public string Long { get; set; }
     }
 }

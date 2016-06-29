@@ -46,7 +46,18 @@ namespace MercadoCinotam.Products.Admin
             else
             {
 
-                instance = Product.CreateProduct(input.ProductName, input.AvailableStock, input.TrackStock, input.ProductPrice, input.ProductDescription, input.Sku, input.IsFeatured, input.ProductName.CreateSlug());
+                instance = Product.CreateProduct(input.ProductName,
+                    input.AvailableStock,
+                    input.TrackStock,
+                    input.ProductPrice,
+                    input.ProductDescription,
+                    input.Sku,
+                    input.IsFeatured,
+                    input.ProductName.CreateSlug());
+                if (input.Active)
+                {
+                    instance.Active = input.Active;
+                }
 
             }
 
@@ -109,20 +120,7 @@ namespace MercadoCinotam.Products.Admin
                 return new ProductInput();
             }
             var product = _productManager.GetProduct(id.Value);
-            return new ProductInput()
-            {
-                AvailableStock = product.AvailableStock,
-                SmallImage = product.SmallImage,
-                TrackStock = product.TrackStock,
-                MainPicture = product.MainPicture,
-                MediumImage = product.MediumImage,
-                ProductPrice = product.ProductPrice,
-                ProductDescription = product.ProductDescription,
-                ProductName = product.ProductName,
-                Id = product.Id,
-                Sku = product.Sku,
-                IsFeatured = product.IsFeatured,
-            };
+            return product.MapTo<ProductInput>();
         }
 
         public int AddFeatureToProduct(FeatureInput input)

@@ -421,6 +421,8 @@
     <Content Include="Areas\Admin\Views\Products\AddGalardon.cshtml" />
     <Content Include="Areas\Admin\Views\CertAndGal\Index.cshtml" />
     <Content Include="Areas\Admin\Views\CertAndGal\Add.cshtml" />
+    <None Include="Areas\Admin\Views\MyStore\Index.cshtml" />
+    <None Include="Areas\Admin\Views\MyStore\MainInfo.cshtml" />
     <None Include="Areas\Admin\Views\Products\AddFeature.cshtml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -569,6 +571,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CertAndGalController.cs" />
     <Compile Include="Areas\Admin\Controllers\MainMenuController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MyStoreController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
     <Compile Include="Attributes\ShouldBeAjaxRequest.cs" />
@@ -680,9 +683,11 @@
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\Cart.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\AllGalardons.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\GetFeatures.cshtml" />
+    <Content Include="Views\Themes\SimpleTheme\ViewHelpers\GetPymePropertyValue.cshtml" />
     <None Include="Views\Themes\SimpleTheme\ViewHelpers\LoadMoreProducts.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\_ViewStart.cshtml" />
     <None Include="Views\Themes\SimpleTheme\ViewHelpers\GetProductPropertyValue.cshtml" />
+    <None Include="Views\Themes\Agency\ViewHelpers\GetPymePropertyValue.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

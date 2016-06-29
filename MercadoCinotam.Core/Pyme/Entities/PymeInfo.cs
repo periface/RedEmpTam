@@ -8,9 +8,7 @@ namespace MercadoCinotam.Pyme.Entities
         public string PymeName { get; set; }
         public string PymeLogo { get; set; }
         public string PymeSlogan { get; set; }
-        public string PymeCatchPhrase { get; set; }
-        public string GetInTouchPhrase { get; set; }
-        public string PymeAbout { get; set; }
+        public string About { get; set; }
         public int TenantId { get; set; }
     }
 }
