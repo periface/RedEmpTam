@@ -10,5 +10,6 @@ namespace MercadoCinotam.Themes.Manager
         IEnumerable<Theme> GetThemes();
         Theme GetTheme(int themeId);
         IEnumerable<ThemePreview> GetThemePreviews(int themeId);
+        Theme GetTheme(string activeThemeName);
     }
 }

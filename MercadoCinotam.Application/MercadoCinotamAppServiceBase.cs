@@ -1,8 +1,10 @@
 ﻿using Abp.Application.Services;
 using Abp.IdentityFramework;
 using Abp.Runtime.Session;
+using Abp.UI;
 using Helpers.GenericTypes;
 using Helpers.ReflectionHelpers;
+using Helpers.TenancyHelpers;
 using MercadoCinotam.MultiTenancy;
 using MercadoCinotam.Users;
 using Microsoft.AspNet.Identity;
@@ -85,6 +87,22 @@ namespace MercadoCinotam
         protected virtual void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);
+        }
+
+        public int TenantId
+        {
+            get
+            {
+                if (TenantHelper.TenantId == null && AbpSession.TenantId.HasValue)
+                {
+                    return AbpSession.TenantId.Value;
+                }
+                if (TenantHelper.TenantId != null)
+                {
+                    return (int)TenantHelper.TenantId;
+                }
+                throw new UserFriendlyException();
+            }
         }
     }
 }

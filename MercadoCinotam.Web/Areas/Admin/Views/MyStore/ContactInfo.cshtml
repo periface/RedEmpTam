@@ -1,0 +1,188 @@
+﻿@model MercadoCinotam.PymeInfo.Dtos.PymeContactInfoInput
+
+@{
+    Layout = null;
+}
+
+<form id="siteContactInfo" enctype="multipart/form-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                @Html.HiddenFor(a => a.Id)
+                @Html.HiddenFor(a => a.TenantId)
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Información de Contacto</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Correo Electronico
+                            </label>
+                            @Html.TextBoxFor(a => a.Email, new { @class = "form-control", required = "Required" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Numero Telefonico
+                            </label>
+                            @Html.TextBoxFor(a => a.PhoneNumber, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Dirección Linea #1
+                            </label>
+                            @Html.TextBoxFor(a => a.AddressLineOne, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Dirección Linea #2
+                            </label>
+                            @Html.TextBoxFor(a => a.AddressLineTwo, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+                @*<div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    Logotipo
+                                </label>
+                                <input type="file" class="form-control" name="Logo" />
+                            </div>
+                        </div>
+                    </div>*@
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h4>Mapa</h4>
+                <div style="height: 300px; width: 100%" id="map"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="control-label">
+                            Latitud
+                        </label>
+                        @Html.TextBoxFor(a => a.Lat, new { @class = "form-control" })
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="control-label">
+                            Longitud
+                        </label>
+                        @Html.TextBoxFor(a => a.Long, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+
+    </div>
+</form>
+<script>
+
+    var map;
+    function initMap() {
+
+        var initialCoords = { lat: 22.944, lng: -102.326 };
+
+        if ($("#Lat").val() !== "" || $("#Long").val() !== "") {
+            initialCoords = { lat: Number($("#Lat").val()), lng: Number($("#Long").val()) };
+        }
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: initialCoords,
+            zoom: 8
+        });
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                map.setCenter(pos);
+                $("#Lat").val(pos.lat);
+                $("#Long").val(pos.lng);
+            }, function () {
+
+            });
+        }
+
+        //var infoWnd = new google.maps.InfoWindow({
+        //    content: map.getCenter().toUrlValue(),
+        //    position: map.getCenter(),
+        //    disableAutoPan: true
+        //});
+        //infoWnd.open(map);
+        var center = map.getCenter();
+        $("#Lat").val(center.lat);
+        $("#Long").val(center.lng);
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            map: map
+        });
+        google.maps.event.addListener(map, "center_changed", function () {
+            var center = map.getCenter();
+            console.log(map.getCenter());
+            //infoWnd.setContent(map.getCenter().toUrlValue());
+            //infoWnd.setPosition(map.getCenter());
+            $("#Lat").val(center.lat);
+            $("#Long").val(center.lng);
+            if (marker) {
+                marker.setPosition(center);
+            } else {
+                marker = new google.maps.Marker({
+                    position: center,
+                    map: map
+                });
+            }
+
+            //infoWnd.open(map);
+        });
+    }
+
+
+    (function ($) {
+        $(document).ready(function () {
+            $("#siteContactInfo").on("submit", function (e) {
+                e.preventDefault();
+                var element = $(this);
+                var data = element.serializeFormToObject();
+                abp.ui.setBusy(element, abp.services.app.pymeAdmin.addContactInfo(data).done(function (d) {
+                    abp.notify.success("Información guardada");
+                }));
+            });
+        });
+    })($);
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3q5Y_MqL7h1IsKMzycghaB4j-h2t0q30&callback=initMap"></script>
+
+@*<script>
+        (function () {
+            $(document).ready(function () {
+                $("#siteInfo").on("submit", function (e) {
+                    var element = $(this);
+                    var formData = new FormData(this);
+                    e.preventDefault();
+                    postWithUpload(element,formData,"/Admin/MyStore/MainInfo", function (data) {
+                        abp.notify.success("Información guardada con exito");
+                    });
+                });
+            });
+        })();
+    </script>*@

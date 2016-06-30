@@ -1,4 +1,5 @@
-﻿using MercadoCinotam.Themes.Entities;
+﻿using Abp.Domain.Repositories;
+using MercadoCinotam.Themes.Entities;
 using System;
 using System.Collections.Generic;
 
@@ -6,6 +7,14 @@ namespace MercadoCinotam.Themes.Manager
 {
     public class ThemeManager : IThemeManager
     {
+        private readonly IRepository<Theme> _themeRepository;
+        private readonly IRepository<ThemePreview> _themePreviewRepository;
+        public ThemeManager(IRepository<Theme> themeRepository, IRepository<ThemePreview> themePreviewRepository)
+        {
+            _themeRepository = themeRepository;
+            _themePreviewRepository = themePreviewRepository;
+        }
+
         public int SaveTheme(Theme theme)
         {
             throw new NotImplementedException();
@@ -13,17 +22,23 @@ namespace MercadoCinotam.Themes.Manager
 
         public IEnumerable<Theme> GetThemes()
         {
-            throw new NotImplementedException();
+            return _themeRepository.GetAllList();
         }
 
         public Theme GetTheme(int themeId)
         {
-            throw new NotImplementedException();
+            return _themeRepository.FirstOrDefault(a => a.Id == themeId);
         }
 
         public IEnumerable<ThemePreview> GetThemePreviews(int themeId)
         {
-            throw new NotImplementedException();
+            var previews = _themePreviewRepository.GetAllList(a => a.Theme.Id == themeId);
+            return previews;
+        }
+
+        public Theme GetTheme(string activeThemeName)
+        {
+            return _themeRepository.FirstOrDefault(a => a.ThemeUniqueName.ToUpper() == activeThemeName.ToUpper());
         }
     }
 }

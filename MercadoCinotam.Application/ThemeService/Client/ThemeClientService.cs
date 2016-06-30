@@ -3,13 +3,13 @@ using Helpers.TenancyHelpers;
 using System;
 using System.Threading.Tasks;
 
-namespace MercadoCinotam.ThemeService
+namespace MercadoCinotam.ThemeService.Client
 {
-    public class ThemeService : MercadoCinotamAppServiceBase, IThemeService
+    public class ThemeClientService : MercadoCinotamAppServiceBase, IThemeClientService
     {
         private readonly ISettingStore _settingStore;
 
-        public ThemeService(ISettingStore settingStore)
+        public ThemeClientService(ISettingStore settingStore)
         {
             _settingStore = settingStore;
         }

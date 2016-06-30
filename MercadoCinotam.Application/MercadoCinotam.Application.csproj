@@ -107,7 +107,10 @@
     <Compile Include="GalardonsAndCert\Admin\IGalardonAdminService.cs" />
     <Compile Include="MercadoCinotamApplicationModule.cs" />
     <Compile Include="MercadoCinotamAppServiceBase.cs" />
+    <Compile Include="PymeInfo\Dtos\MainPageContentDto.cs" />
+    <Compile Include="PymeInfo\Dtos\PymeContactInfoInput.cs" />
     <Compile Include="PymeInfo\Dtos\PymeInfoInput.cs" />
+    <Compile Include="PymeInfo\Dtos\SetThemeInput.cs" />
     <Compile Include="PymeInfo\PymeAdminService\IPymeAdminService.cs" />
     <Compile Include="PymeInfo\PymeAdminService\PymeAdminService.cs" />
     <Compile Include="PymeInfo\PymeClientService\IPymeClientService.cs" />
@@ -135,8 +138,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles\IRoleAppService.cs" />
     <Compile Include="Roles\Dto\UpdateRolePermissionsInput.cs" />
-    <Compile Include="ThemeService\IThemeService.cs" />
-    <Compile Include="ThemeService\ThemeService.cs" />
+    <Compile Include="ThemeService\Admin\IThemeAdminService.cs" />
+    <Compile Include="ThemeService\Admin\ThemeAdminService.cs" />
+    <Compile Include="ThemeService\Client\IThemeClientService.cs" />
+    <Compile Include="ThemeService\Client\ThemeClientService.cs" />
+    <Compile Include="ThemeService\Dtos\ThemeSelectorOutput.cs" />
     <Compile Include="Users\Dto\CreateUserInput.cs" />
     <Compile Include="Users\IUserAppService.cs" />
     <Compile Include="Roles\RoleAppService.cs" />

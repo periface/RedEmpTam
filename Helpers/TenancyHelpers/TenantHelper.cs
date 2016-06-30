@@ -15,6 +15,17 @@ namespace Helpers.TenancyHelpers
             HttpContext.Current.Session[CurrentTenant] = id;
         }
 
-        public static int? TenantId => (int?)HttpContext.Current.Session[CurrentTenant];
+        public static int? TenantId
+        {
+            get
+            {
+                if (HttpContext.Current.Session == null) return null;
+                if (HttpContext.Current.Session[CurrentTenant] != null)
+                {
+                    return (int?)HttpContext.Current.Session[CurrentTenant];
+                }
+                return null;
+            }
+        }
     }
 }

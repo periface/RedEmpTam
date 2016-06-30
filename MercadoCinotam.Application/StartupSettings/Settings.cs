@@ -18,5 +18,10 @@ namespace MercadoCinotam.StartupSettings
         {
             return new SettingInfo(tenantId, null, ConfigConst.PayPalCode, ValueConst.EmptyCode);
         }
+
+        public static SettingInfo ThemeInitialConfig(int tenantId, string themeUniqueName)
+        {
+            return new SettingInfo(tenantId, null, ConfigConst.Theme, themeUniqueName);
+        }
     }
 }

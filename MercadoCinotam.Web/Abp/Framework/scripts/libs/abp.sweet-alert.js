@@ -31,6 +31,14 @@
                 cancelButtonText: 'Cancel',
                 confirmButtonColor: "#DD6B55",
                 confirmButtonText: 'Yes'
+            },
+            yesNo: {
+                type: 'info',
+                title: 'Are you sure?',
+                showCancelButton: true,
+                cancelButtonText: 'No',
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: 'Si'
             }
         }
     };
@@ -101,7 +109,31 @@
             });
         });
     };
+    abp.message.yesNo = function (message, titleOrCallback, callback) {
+        var userOpts = {
+            text: message
+        };
 
+        if ($.isFunction(titleOrCallback)) {
+            callback = titleOrCallback;
+        } else if (titleOrCallback) {
+            userOpts.title = titleOrCallback;
+        };
+
+        var opts = $.extend(
+            {},
+            abp.libs.sweetAlert.config.default,
+            abp.libs.sweetAlert.config.yesNo,
+            userOpts
+        );
+
+        return $.Deferred(function ($dfd) {
+            sweetAlert(opts, function (isConfirmed) {
+                callback && callback(isConfirmed);
+                $dfd.resolve(isConfirmed);
+            });
+        });
+    };
     abp.event.on('abp.dynamicScriptsInitialized', function () {
         abp.libs.sweetAlert.config.confirm.title = abp.localization.abpWeb('AreYouSure');
         abp.libs.sweetAlert.config.confirm.cancelButtonText = abp.localization.abpWeb('Cancel');

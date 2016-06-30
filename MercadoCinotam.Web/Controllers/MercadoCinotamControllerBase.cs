@@ -5,7 +5,7 @@ using Abp.UI;
 using Abp.Web.Mvc.Controllers;
 using Helpers.GenericTypes;
 using MercadoCinotam.MultiTenancy;
-using MercadoCinotam.ThemeService;
+using MercadoCinotam.ThemeService.Client;
 using Microsoft.AspNet.Identity;
 using PymeTamThemeEngine;
 using System;
@@ -23,7 +23,7 @@ namespace MercadoCinotam.Web.Controllers
         private const string KeySession = "Theme";
         private const string LastTenant = "LastTenant";
         public ITenantAppService TenantAppService { get; set; }
-        public IThemeService ThemeService { get; set; }
+        public IThemeClientService ThemeService { get; set; }
 
         protected MercadoCinotamControllerBase()
         {

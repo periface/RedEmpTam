@@ -15,7 +15,8 @@
     <AssemblyName>MercadoCinotam.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -421,9 +422,14 @@
     <Content Include="Areas\Admin\Views\Products\AddGalardon.cshtml" />
     <Content Include="Areas\Admin\Views\CertAndGal\Index.cshtml" />
     <Content Include="Areas\Admin\Views\CertAndGal\Add.cshtml" />
+    <None Include="Areas\Admin\Views\MyStore\ContactInfo.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\Index.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\MainInfo.cshtml" />
+    <None Include="Areas\Admin\Views\MyStore\MainPageContents.cshtml" />
+    <None Include="Areas\Admin\Views\MyStore\Themes.cshtml" />
     <None Include="Areas\Admin\Views\Products\AddFeature.cshtml" />
+    <None Include="Properties\PublishProfiles\pymetam - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\pymetam - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

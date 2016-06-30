@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Services;
 using MercadoCinotam.Pyme.Entities;
+using System.Linq;
 
 namespace MercadoCinotam.Pyme.Manager
 {
@@ -9,6 +10,9 @@ namespace MercadoCinotam.Pyme.Manager
         int AddOwner(PymeOwner owner);
         int AddContactInfo(PymeContactInfo contactInfo);
 
-        PymeInfo GetInfo();
+        PymeInfo GetInfo(int tenantId);
+        PymeContactInfo GetContactInfo(int tenantId);
+        void SetMainPageContent(int themeId, bool keepData);
+        IQueryable<MainPageContent> GetMainPageContentsQuery();
     }
 }

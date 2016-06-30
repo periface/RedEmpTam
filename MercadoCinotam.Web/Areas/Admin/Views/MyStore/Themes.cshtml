@@ -1,0 +1,92 @@
+﻿@model MercadoCinotam.ThemeService.Dtos.ThemeSelectorOutput
+
+@{
+    Layout = null;
+
+
+}
+<div id="themeSelector" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Selección de Tema</h2>
+            <h4>Tema Activo: @Model.ActiveTheme.ThemeName</h4>
+            <div class="list-group">
+                @foreach (var theme in Model.Themes)
+                {
+                    bool isFirst = true;
+                    string active = "active";
+                    <div class="list-group-item">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h4>@theme.ThemeName @if (!theme.Released)
+                                {
+                                    <span class="label label-warning">En Desarrollo</span>
+                                }</h4>
+                                <p>
+                                    @theme.ThemeDescription
+                                    <br/>
+                                    <br/>
+                                    
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <button data-id="@theme.Id" style="margin: 0 auto; border-radius: 0px;" class="btn btn-primary btn-lg js-theme-selection">Seleccionar</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                @*<a href="#"><img style="margin: 0 auto;margin-top: 10%" src="@theme.Preview" class="img-responsive" /></a>*@
+
+                                <div id="carousel-@theme.Id" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+
+                                        @foreach (var img in theme.Preview)
+                                        {
+                                            if (!isFirst)
+                                            {
+                                                active = "";
+                                            }
+                                            <div class="item @active">
+                                                <img style="width: 100%;min-height: 200px; max-height: 200px;" src="@img.Image" alt="...">
+                                            </div>
+                                            isFirst = false;
+                                        }
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-@theme.Id" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-@theme.Id" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    (function() {
+        $(document).ready(function() {
+            $("body").on("click", ".js-theme-selection",function() {
+                var id = $(this).data("id");
+                abp.message.yesNo("Este tema puede contener campos adicionales o iguales a los de su tema", "¿Conservar datos originales?", function (response) {
+                    var data = {
+                        ThemeId: id,
+                        KeepOldData:response
+                    }
+                    abp.ui.setBusy($("#themeSelector"), abp.services.app.pymeAdmin.setTheme(data).done(function (d) {
+                        abp.message.success("Tema Seleccionado");
+                    }));
+                });
+            });
+        });
+    })();
+</script>

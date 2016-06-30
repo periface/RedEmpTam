@@ -1,9 +1,9 @@
 ﻿using Abp.Application.Services;
 using System.Threading.Tasks;
 
-namespace MercadoCinotam.ThemeService
+namespace MercadoCinotam.ThemeService.Client
 {
-    public interface IThemeService : IApplicationService
+    public interface IThemeClientService : IApplicationService
     {
         Task<string> GetActiveThemeFromTenant();
     }
