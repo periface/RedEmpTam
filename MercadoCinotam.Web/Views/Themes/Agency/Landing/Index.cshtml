@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,6 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link href="~/Views/Themes/Agency/Assets/css/overlay.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,6 +30,15 @@
     <![endif]-->
 </head>
 <body id="page-top" class="index">
+
+    <div id="overlay" class="overlay">
+
+        <div class="overlay-content">
+
+            <h1>Cargando</h1>
+        </div>
+
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -36,10 +50,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a  class="navbar-brand page-scroll" href="#page-top">@{Html.RenderAction("GetPymePropertyValue", "ViewHelpers", new {property = "PymeName"});}</a>
+                <a class="navbar-brand page-scroll" href="#page-top">@{Html.RenderAction("GetPymePropertyValue", "ViewHelpers", new { property = "PymeName" });}</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -69,8 +83,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
+                <div data-property="PymeName" data-servicename="PymeInfo" class="intro-lead-in"></div>
+                <div data-property="PymeSlogan" data-servicename="PymeInfo" class="intro-heading"></div>
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
@@ -88,8 +102,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading" data-property="SimpleTheme.Saludo" data-servicename="SimpleThemeService"></h2>
+                    <h3 data-property="SimpleTheme.GreetText" data-servicename="SimpleThemeService" class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row">
@@ -356,7 +370,8 @@
     <script src="~/Views/Themes/Agency/Assets/js/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="~/Views/Themes/Agency/Assets/js/agency.js"></script>
-
     @{Html.RenderAction("LoadFeaturedProducts", "ViewHelpers", new { viewFile = "_modalsForProducts" });}
+    <script src="~/js/PeriAttrEngine.js"></script>
+    <script src="~/Views/Themes/Agency/Assets/js/main.js"></script>
 </body>
 </html>

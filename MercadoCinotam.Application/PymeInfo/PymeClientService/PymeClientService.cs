@@ -27,5 +27,11 @@ namespace MercadoCinotam.PymeInfo.PymeClientService
                 return $"No se ha encontrado la propiedad {property} <a href='/Admin/MainMenu/'>Reparar</a>";
             }
         }
+
+        public object GetPropertyFromMainContent(string key)
+        {
+            var result = _pymeManager.GetMainPageContent(key, TenantId);
+            return result;
+        }
     }
 }

@@ -385,6 +385,10 @@
       <DependentUpon>main.css</DependentUpon>
     </Content>
     <Content Include="js\modal.js" />
+    <Content Include="js\PeriAttrEngine.js" />
+    <Content Include="js\PeriAttrEngine.min.js">
+      <DependentUpon>PeriAttrEngine.js</DependentUpon>
+    </Content>
     <Content Include="log4net.config" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
@@ -428,6 +432,7 @@
     <None Include="Areas\Admin\Views\MyStore\MainPageContents.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\Themes.cshtml" />
     <None Include="Areas\Admin\Views\Products\AddFeature.cshtml" />
+    <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\pymetam - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\pymetam - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
@@ -485,6 +490,7 @@
     <Content Include="Views\Themes\Agency\Assets\css\agency.css" />
     <Content Include="Views\Themes\Agency\Assets\css\bootstrap.css" />
     <Content Include="Views\Themes\Agency\Assets\css\bootstrap.min.css" />
+    <Content Include="Views\Themes\Agency\Assets\css\overlay.css" />
     <Content Include="Views\Themes\Agency\Assets\font-awesome\css\font-awesome.css" />
     <Content Include="Views\Themes\Agency\Assets\font-awesome\css\font-awesome.min.css" />
     <Content Include="Views\Themes\Agency\Assets\font-awesome\fonts\fontawesome-webfont.svg" />
@@ -526,11 +532,13 @@
     <Content Include="Views\Themes\Agency\Assets\js\contact_me.js" />
     <Content Include="Views\Themes\Agency\Assets\js\jqBootstrapValidation.js" />
     <Content Include="Views\Themes\Agency\Assets\js\jquery.js" />
+    <Content Include="Views\Themes\Agency\Assets\js\main.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\css\bootstrap.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\css\bootstrap.min.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\css\creative.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\css\creative.min.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\css\magnific-popup.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\css\overlay.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\css\font-awesome.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\css\font-awesome.min.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\fontawesome-webfont.svg" />
@@ -556,6 +564,7 @@
     <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.magnific-popup.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\main.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\js\scrollreveal.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\js\scrollreveal.min.js" />
     <Content Include="Views\Users\Index.js" />

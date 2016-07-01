@@ -111,5 +111,11 @@ namespace MercadoCinotam.Pyme.Manager
         {
             return _mainPageContentRepository.GetAll();
         }
+
+        public object GetMainPageContent(string key, int tenantId)
+        {
+            var mainPageContent = _mainPageContentRepository.FirstOrDefault(a => a.TenantId == tenantId && a.Key == key);
+            return mainPageContent == null ? "Valor no encontrado" : mainPageContent.Value;
+        }
     }
 }

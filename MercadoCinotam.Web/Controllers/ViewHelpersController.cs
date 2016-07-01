@@ -1,4 +1,5 @@
-﻿using MercadoCinotam.GalardonsAndCert.Client;
+﻿using Abp.Web.Models;
+using MercadoCinotam.GalardonsAndCert.Client;
 using MercadoCinotam.Products.Client;
 using MercadoCinotam.PymeInfo.PymeClientService;
 using System;
@@ -82,6 +83,20 @@ namespace MercadoCinotam.Web.Controllers
         {
             var features = _productClientService.GetProductFeatures(id);
             return View(features);
+        }
+
+
+        [WrapResult(false)]
+        public JsonResult GetPropertiesFromMain(string key)
+        {
+            var propertyValue = _pymeClientService.GetPropertyFromMainContent(key);
+            return Json(propertyValue, JsonRequestBehavior.AllowGet);
+        }
+        [WrapResult(false)]
+        public JsonResult GetPropertiesFromPymeInfo(string key)
+        {
+            var propertyValue = _pymeClientService.GetProperty(key);
+            return Json(propertyValue, JsonRequestBehavior.AllowGet);
         }
     }
 }

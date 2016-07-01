@@ -5,5 +5,6 @@ namespace MercadoCinotam.PymeInfo.PymeClientService
     public interface IPymeClientService : IApplicationService
     {
         object GetProperty(string property);
+        object GetPropertyFromMainContent(string key);
     }
 }

@@ -14,5 +14,6 @@ namespace MercadoCinotam.Pyme.Manager
         PymeContactInfo GetContactInfo(int tenantId);
         void SetMainPageContent(int themeId, bool keepData);
         IQueryable<MainPageContent> GetMainPageContentsQuery();
+        object GetMainPageContent(string key, int tenantId);
     }
 }
