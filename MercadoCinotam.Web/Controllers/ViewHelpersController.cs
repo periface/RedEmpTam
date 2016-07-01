@@ -1,4 +1,5 @@
 ﻿using Abp.Web.Models;
+using MercadoCinotam.Enums;
 using MercadoCinotam.GalardonsAndCert.Client;
 using MercadoCinotam.Products.Client;
 using MercadoCinotam.PymeInfo.PymeClientService;
@@ -76,7 +77,7 @@ namespace MercadoCinotam.Web.Controllers
 
         public ActionResult GetPymePropertyValue(string property)
         {
-            var value = _pymeClientService.GetProperty(property);
+            var value = _pymeClientService.GetProperty(property, PymePropertyListing.Info);
             return View(new MvcHtmlString(value.ToString()));
         }
         public ActionResult GetFeatures(Guid id)
@@ -89,13 +90,19 @@ namespace MercadoCinotam.Web.Controllers
         [WrapResult(false)]
         public JsonResult GetPropertiesFromMain(string key)
         {
-            var propertyValue = _pymeClientService.GetPropertyFromMainContent(key);
+            var propertyValue = _pymeClientService.GetProperty(key, PymePropertyListing.ContentSections);
             return Json(propertyValue, JsonRequestBehavior.AllowGet);
         }
         [WrapResult(false)]
         public JsonResult GetPropertiesFromPymeInfo(string key)
         {
-            var propertyValue = _pymeClientService.GetProperty(key);
+            var propertyValue = _pymeClientService.GetProperty(key, PymePropertyListing.Info);
+            return Json(propertyValue, JsonRequestBehavior.AllowGet);
+        }
+        [WrapResult(false)]
+        public JsonResult GetPropertiesFromPymeContactInfo(string key)
+        {
+            var propertyValue = _pymeClientService.GetProperty(key, PymePropertyListing.Contact);
             return Json(propertyValue, JsonRequestBehavior.AllowGet);
         }
     }

@@ -1,10 +1,10 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 
-namespace MercadoCinotam.PymeInfo.Dtos
+namespace MercadoCinotam.MainPageContent.Dtos
 {
     [AutoMap(typeof(MainPageContentManager.Entities.MainPageContent))]
-    public class MainPageContentDto : EntityDto
+    public class ContentInput : EntityDto, IInputDto
     {
         public string Key { get; set; }
         public string Value { get; set; }

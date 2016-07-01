@@ -1,7 +1,7 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 
-namespace MercadoCinotam.Pyme.Entities
+namespace MercadoCinotam.MainPageContentManager.Entities
 {
     public class MainPageContent : FullAuditedEntity, IMustHaveTenant
     {

@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h2>Contenido de pagina principal</h2>
-           
+
         </div>
     </div>
     <div class="row">
@@ -13,7 +13,7 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     Contenidos definidos
-                    <button class="btn btn-default btn btn-sm pull-right">
+                    <button data-modal data-url="@Url.Action("EditContent")" class="btn btn-default btn btn-sm pull-right">
                         Crear
                     </button>
                 </div>
@@ -25,6 +25,7 @@
                                 <th>#</th>
                                 <th>Llave</th>
                                 <th>Valor</th>
+                                <th>Tema</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -41,7 +42,7 @@
 
         $(document).ready(function () {
             window.modalInstance = abp.app.bootstrap.modal();
-            $('#contents').DataTable({
+            var table =$('#contents').DataTable({
                 "bServerSide": true,
                 "bPaginate": true,
                 "sPaginationType": "full_numbers",
@@ -57,6 +58,9 @@
                     },
                     {
                         "data": "Value"
+                    },
+                    {
+                        "data": "ThemeReferenceName"
                     }
                 ],
                 "columnDefs": [
@@ -67,11 +71,14 @@
                         className: "text-center",
                         //<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a>
                         "render": function (data, type, row) {
-                            return " <a title='Editar' href='/Admin/Products/AddProduct/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
+                            return " <a title='Editar' data-modal href='/Admin/MyStore/EditContent/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
                         },
-                        "targets": 3
+                        "targets": 4
                     }
                 ]
+            });
+            abp.event.on("AddContent", function () {
+                table.ajax.reload();
             });
         });
     })($);

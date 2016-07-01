@@ -93,6 +93,8 @@
     <Compile Include="Certifications\Entities\Certification.cs" />
     <Compile Include="Certifications\Manager\CertificationManager.cs" />
     <Compile Include="Certifications\Manager\ICertificationManager.cs" />
+    <Compile Include="MainPageContentManager\Manager\IMainPageContentManager.cs" />
+    <Compile Include="MainPageContentManager\Manager\MainPageContentManager.cs" />
     <Compile Include="MercadoCinotamConsts.cs" />
     <Compile Include="MercadoCinotamCoreModule.cs" />
     <Compile Include="Authorization\MercadoCinotamAuthorizationProvider.cs" />
@@ -117,7 +119,7 @@
     <Compile Include="Authorization\Roles\Role.cs" />
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
-    <Compile Include="Pyme\Entities\MainPageContent.cs" />
+    <Compile Include="MainPageContentManager\Entities\MainPageContent.cs" />
     <Compile Include="Pyme\Entities\PymeContactInfo.cs" />
     <Compile Include="Pyme\Entities\PymeInfo.cs" />
     <Compile Include="Pyme\Entities\PymeOwner.cs" />

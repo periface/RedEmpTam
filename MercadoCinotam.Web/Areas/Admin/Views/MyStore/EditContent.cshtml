@@ -1,0 +1,60 @@
+﻿@model MercadoCinotam.MainPageContent.Dtos.ContentInput
+
+@{
+    Layout = null;
+}
+
+<form class="addContent" id="addFeature">
+    @Html.HiddenFor(a => a.ThemeReferenceId)
+    @Html.HiddenFor(a => a.IsStatic)
+    @Html.HiddenFor(a => a.ThemeReferenceName)
+    @Html.HiddenFor(a => a.Type)
+    @Html.HiddenFor(a=>a.Id)
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Editar Caracteristicas</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        @if (Model.IsStatic)
+                        {
+                            <label class="control-label">Llave</label>
+                            @Html.TextBoxFor(a => a.Key, new {@class = "form-control", disabled = "disabled"})
+                        }
+                        else
+                        {
+                            <label class="control-label">Llave</label>
+                            @Html.TextBoxFor(a => a.Key, new {@class = "form-control"})
+                        }
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="control-label">Valor</label>
+                        @Html.TextBoxFor(a => a.Value, new {@class = "form-control"})
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</form>
+
+<script>
+    (function ($) {
+        var modalType = "AddContent";
+        $(document).ready(function () {
+            $("body").on("submit", ".addContent", function (e) {
+                e.preventDefault();
+                var data = $(this).serializeFormToObject();
+                abp.ui.setBusy($(".addContent"), abp.services.app.mainContentAdmin.addEditContent(data).done(function (id) {
+                    window.modalInstance.close({},modalType);
+                }));
+            });
+        });
+    })($);
+</script>

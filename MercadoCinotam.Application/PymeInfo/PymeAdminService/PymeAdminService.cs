@@ -96,12 +96,7 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
                 recordsTotal = totalCount,
                 iTotalDisplayRecords = totalCount,
                 iTotalRecords = query.Count(),
-                data = filterByLength.Select(a => new MainPageContentDto()
-                {
-                    Id = a.Id,
-                    Key = a.Key,
-                    Value = a.Value
-                }).ToArray(),
+                data = filterByLength.Select(a => a.MapTo<MainPageContentDto>()).ToArray(),
                 recordsFiltered = filterByLength.Count
             };
 

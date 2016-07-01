@@ -99,12 +99,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\PymePropertyListing.cs" />
     <Compile Include="GalardonsAndCert\Client\GalardonClientService.cs" />
     <Compile Include="GalardonsAndCert\Client\IGalardonClientService.cs" />
     <Compile Include="GalardonsAndCert\Dtos\GalardonDto.cs" />
     <Compile Include="GalardonsAndCert\Dtos\GalardonInput.cs" />
     <Compile Include="GalardonsAndCert\Admin\GalardonAdminService.cs" />
     <Compile Include="GalardonsAndCert\Admin\IGalardonAdminService.cs" />
+    <Compile Include="MainPageContent\Admin\IMainContentAdminService.cs" />
+    <Compile Include="MainPageContent\Admin\MainContentAdminService.cs" />
+    <Compile Include="MainPageContent\Dtos\ContentInput.cs" />
     <Compile Include="MercadoCinotamApplicationModule.cs" />
     <Compile Include="MercadoCinotamAppServiceBase.cs" />
     <Compile Include="PymeInfo\Dtos\MainPageContentDto.cs" />

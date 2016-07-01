@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Services;
+using MercadoCinotam.MainPageContentManager.Entities;
 using MercadoCinotam.Pyme.Entities;
 using System.Linq;
 

@@ -38,14 +38,25 @@ var Engine = (function (options) {
             var element = $(this);
             var propertyRequest = $(this).data("property");
             var properyServiceName = $(this).data("servicename");
+            var printInProperty = $(this).data("printproperty");
+            var replicate = $(this).data("replicate");
+
+            var dataBindObj = {
+                propertyRequest: propertyRequest,
+                propertyServiceName: properyServiceName,
+                printInProperty: printInProperty,
+                replicate: replicate,
+                element: element
+            }
+
 
             var serviceInfo = findElement(self.propertyServices, "propertyServiceName", properyServiceName);
-            console.log(serviceInfo);
+            console.log(dataBindObj);
             if (serviceInfo == undefined) {
                 console.error("Servicio no definido");
             } else {
 
-                self.buildAjaxObj(serviceInfo.propertyServiceEndPoint, propertyRequest, element, deferred);
+                self.buildAjaxObj(serviceInfo.propertyServiceEndPoint, dataBindObj, deferred);
             }
 
         });
@@ -55,14 +66,14 @@ var Engine = (function (options) {
     if (options.autoStart) {
         self.listener();
     }
-    this.buildAjaxObj = function (endPoint, name, $element, deferredArray) {
-        if (endPoint !== "" && name !== "") {
-            var endPointUrl = endPoint + "?key=" + name;
+    this.buildAjaxObj = function (endPoint, dataBindObj, deferredArray) {
+        if (endPoint !== "" && dataBindObj.propertyRequest !== "") {
+            var endPointUrl = endPoint + "?key=" + dataBindObj.propertyRequest;
             deferredArray.push($.ajax({
                 url: endPointUrl,
-                data: name,
+                data: dataBindObj.propertyRequest,
                 success: function (data, textStatus, jqXhr) {
-                    self.bindData($element, data);
+                    self.bindData(dataBindObj, data);
                 }
             }));
         }
@@ -78,15 +89,16 @@ var Engine = (function (options) {
         }
         console.log("All request done");
     }
-    this.bindData = function (element, data) {
-        var elementTag = element[0].nodeName.toLowerCase();
-        switch (elementTag) {
-            case tagType.IMG:
-                element.attr("src", data);
-                break;
-            default:
-                element.text(data);
-                break;
+    this.bindData = function (dataBindObj, data) {
+        //var elementTag = dataBindObj.element[0].nodeName.toLowerCase();
+
+        if (dataBindObj.printInProperty) {
+            dataBindObj.element.attr(dataBindObj.printInProperty, data);
+            if (dataBindObj.replicate) {
+                dataBindObj.element.text(data);
+            }
+        } else {
+            dataBindObj.element.text(data);
         }
     }
     return {

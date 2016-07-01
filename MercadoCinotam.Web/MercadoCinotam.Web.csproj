@@ -427,6 +427,7 @@
     <Content Include="Areas\Admin\Views\CertAndGal\Index.cshtml" />
     <Content Include="Areas\Admin\Views\CertAndGal\Add.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\ContactInfo.cshtml" />
+    <None Include="Areas\Admin\Views\MyStore\EditContent.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\Index.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\MainInfo.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\MainPageContents.cshtml" />

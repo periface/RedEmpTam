@@ -1,6 +1,7 @@
 ﻿using Abp.Zero.EntityFramework;
 using MercadoCinotam.Authorization.Roles;
 using MercadoCinotam.Certifications.Entities;
+using MercadoCinotam.MainPageContentManager.Entities;
 using MercadoCinotam.MultiTenancy;
 using MercadoCinotam.ProductFeatures.Entities;
 using MercadoCinotam.Products.Entities;

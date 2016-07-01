@@ -2,9 +2,11 @@
 using Helpers.GenericTypes;
 using Helpers.ReflectionHelpers;
 using Helpers.ThemeHelper;
+using MercadoCinotam.MainPageContent.Admin;
 using MercadoCinotam.PymeInfo.Dtos;
 using MercadoCinotam.PymeInfo.PymeAdminService;
 using MercadoCinotam.ThemeService.Admin;
+using MercadoCinotam.Web.Attributes;
 using MercadoCinotam.Web.Controllers;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -15,10 +17,12 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
     {
         private readonly IPymeAdminService _pymeAdminService;
         private readonly IThemeAdminService _themeAdminService;
-        public MyStoreController(IPymeAdminService pymeAdminService, IThemeAdminService themeAdminService)
+        private readonly IMainContentAdminService _mainContentAdminService;
+        public MyStoreController(IPymeAdminService pymeAdminService, IThemeAdminService themeAdminService, IMainContentAdminService mainContentAdminService)
         {
             _pymeAdminService = pymeAdminService;
             _themeAdminService = themeAdminService;
+            _mainContentAdminService = mainContentAdminService;
         }
 
         // GET: Admin/MyStore
@@ -64,9 +68,15 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
         [WrapResult(false)]
         public JsonResult GetMainContents(RequestModel input)
         {
-            ProccessQueryData(input, "Key", new[] { "Id", "Key", "Value" });
+            ProccessQueryData(input, "Key", new[] { "Id", "Key", "Value", "ThemeReferenceName" });
             var data = _pymeAdminService.GetMainPageContents(input);
             return Json(data, JsonRequestBehavior.AllowGet);
+        }
+        [ShouldBeAjaxRequest]
+        public ActionResult EditContent(int? id)
+        {
+            var content = _mainContentAdminService.GetContentForEdit(id);
+            return View(content);
         }
     }
 }
