@@ -7,7 +7,7 @@ namespace MercadoCinotam.MainPageContent.Admin
 {
     public class MainContentAdminService : IMainContentAdminService
     {
-        private readonly IMainPageContentManager _contentManager;
+        public readonly IMainPageContentManager _contentManager;
 
         public MainContentAdminService(IMainPageContentManager contentManager)
         {
