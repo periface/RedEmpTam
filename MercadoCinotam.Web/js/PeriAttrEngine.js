@@ -1,13 +1,13 @@
 var Engine = (function (options) {
+
     if (!options) {
+        console.warn("Options r null loading defaults...");
         options = {
             useOverlay: true,
             autoStart: false,
-            overlayObj: undefined
+            overlayObj: undefined,
+            enableDebug :false
         }
-    }
-    var tagType = {
-        IMG: "img"
     }
     var self = this;
 
@@ -24,12 +24,12 @@ var Engine = (function (options) {
         });
     }
     function findElement(arr, propName, propValue) {
-        for (var i = 0; i < arr.length; i++)
-            if (arr[i][propName] === propValue)
+        for (var i = 0; i < arr.length; i++) 
+            if (arr[i][propName] === propValue) 
                 return arr[i];
-
+        return undefined;
         // will return undefined if not found; you could return a default instead
-    }
+    };
     //Listener to data-* properties
     this.listener = function () {
         //Lets try http://stackoverflow.com/questions/5627284/pass-in-an-array-of-deferreds-to-when
@@ -40,18 +40,24 @@ var Engine = (function (options) {
             var properyServiceName = $(this).data("servicename");
             var printInProperty = $(this).data("printproperty");
             var replicate = $(this).data("replicate");
-
+            var callbackFunc = $(this).data("callback");
+            var useFuncOnly = $(this).data("ignoreall");
             var dataBindObj = {
                 propertyRequest: propertyRequest,
                 propertyServiceName: properyServiceName,
                 printInProperty: printInProperty,
                 replicate: replicate,
-                element: element
+                element: element,
+                callbackFunc: callbackFunc,
+                useFuncOnly: useFuncOnly
             }
 
 
             var serviceInfo = findElement(self.propertyServices, "propertyServiceName", properyServiceName);
-            console.log(dataBindObj);
+            if (options.enableDebug) {
+
+                console.debug(dataBindObj);
+            }
             if (serviceInfo == undefined) {
                 console.error("Servicio no definido");
             } else {
@@ -61,7 +67,7 @@ var Engine = (function (options) {
 
         });
         $.when.apply($, deferred).done(self.allDoneFunction);
-        //It works!! such awesome!! much power, very async
+        //It works!! many awesome!! much power, very async
     };
     if (options.autoStart) {
         self.listener();
@@ -73,12 +79,29 @@ var Engine = (function (options) {
                 url: endPointUrl,
                 data: dataBindObj.propertyRequest,
                 success: function (data, textStatus, jqXhr) {
-                    self.bindData(dataBindObj, data);
+                    if (options.debug) {
+                        console.log("Text status -->");
+                        console.log(textStatus);
+                        console.log("jqXHR -->");
+                        console.log(jqXhr);
+                    }
+                    if (dataBindObj.callbackFunc) {
+                        if (dataBindObj.useFuncOnly) {
+                            self.callFunction(dataBindObj.callbackFunc, data, dataBindObj.element);
+                        } else {
+                            self.bindData(dataBindObj, data);
+                            self.callFunction(dataBindObj.callbackFunc, data, dataBindObj.element);
+                        }
+                    } else {
+                        self.bindData(dataBindObj, data);
+                    }
                 }
             }));
         }
     }
-
+    this.callFunction = function (func, data, domElement) {
+        window[func](data, domElement);
+    };
     this.allDoneFunction = function () {
         if (options.useOverlay) {
             if (options.overlayObj) {

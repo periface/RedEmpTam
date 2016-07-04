@@ -22,10 +22,10 @@
                     <table id="contents" class="table table-responsive table-condensed">
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Llave</th>
                                 <th>Valor</th>
                                 <th>Tema</th>
+                                <th class="text-center">Tipo</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -51,9 +51,6 @@
                 language: window.dataTablesLang,
                 columns: [
                     {
-                        "data": "Id"
-                    },
-                    {
                         "data": "Key"
                     },
                     {
@@ -71,9 +68,29 @@
                         className: "text-center",
                         //<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a>
                         "render": function (data, type, row) {
-                            return " <a title='Editar' data-modal href='/Admin/MyStore/EditContent/" + row.Id + "' class='btn btn-sm btn-default'><i class='fa fa-edit'></i></a>";
+                            var edtiBtn = " <a title='Editar' data-modal href='/Admin/MyStore/EditContent/" + row.Id + "' class='btn btn-xs btn-default'><i class='fa fa-edit'></i></a>";
+                            var allbtns = edtiBtn;
+                            if (!row.IsStatic) {
+                                var deleteBtn  = " <a title='Eliminar' data-modal href='/Admin/MyStore/DeleteContent/" + row.Id + "' class='btn btn-xs btn-danger'><i class='fa fa-times'></i></a>";
+                                allbtns += deleteBtn;
+                            }
+                            return allbtns;
                         },
                         "targets": 4
+                    },
+                    {
+                        // The `data` parameter refers to the data for the cell (defined by the
+                        // `data` option, which defaults to the column being worked with, in
+                        // this case `data: 0`.
+                        className: "text-center",
+                        //<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a>
+                        "render": function (data, type, row) {
+                            if (!row.IsStatic) {
+                                return "<span class='label label-primary'> No Estatico </span>";
+                            }
+                            return "<span class='label label-warning'> Estatico </span>";
+                        },
+                        "targets": 3
                     }
                 ]
             });

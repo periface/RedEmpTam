@@ -4,13 +4,13 @@
     Layout = null;
 }
 
-<form class="addContent" id="addFeature">
+<form class="addContent" id="addContent">
     @Html.HiddenFor(a => a.ThemeReferenceId)
     @Html.HiddenFor(a => a.IsStatic)
     @Html.HiddenFor(a => a.ThemeReferenceName)
     @Html.HiddenFor(a => a.Type)
     @Html.HiddenFor(a=>a.Id)
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -48,10 +48,10 @@
     (function ($) {
         var modalType = "AddContent";
         $(document).ready(function () {
-            $("body").on("submit", ".addContent", function (e) {
+            $("body").on("submit", "#addContent", function (e) {
                 e.preventDefault();
                 var data = $(this).serializeFormToObject();
-                abp.ui.setBusy($(".addContent"), abp.services.app.mainContentAdmin.addEditContent(data).done(function (id) {
+                abp.ui.setBusy($("#addContent"), abp.services.app.mainContentAdmin.addEditContent(data).done(function (id) {
                     window.modalInstance.close({},modalType);
                 }));
             });

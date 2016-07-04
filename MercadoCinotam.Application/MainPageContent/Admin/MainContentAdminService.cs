@@ -7,7 +7,7 @@ namespace MercadoCinotam.MainPageContent.Admin
 {
     public class MainContentAdminService : IMainContentAdminService
     {
-        public readonly IMainPageContentManager _contentManager;
+        private readonly IMainPageContentManager _contentManager;
 
         public MainContentAdminService(IMainPageContentManager contentManager)
         {
@@ -24,6 +24,9 @@ namespace MercadoCinotam.MainPageContent.Admin
                 return _contentManager.AddContent(edited);
             }
             var newContent = input.MapTo<MainPageContentManager.Entities.MainPageContent>();
+            newContent.ThemeReferenceId = 0;
+            newContent.ThemeReferenceName = "Custom";
+            newContent.IsStatic = false;
             return _contentManager.AddContent(newContent);
         }
 
