@@ -25,7 +25,8 @@ namespace Helpers.GenericTypes
         public string PropToSort { get; set; }
 
         public string PropToSearch { get; set; }
-        public string[] PropsToSearch { get; set; }
+        public bool SearchInAll { get; set; }
+        public string SearchCol { get; set; }
     }
 
     /// <summary>

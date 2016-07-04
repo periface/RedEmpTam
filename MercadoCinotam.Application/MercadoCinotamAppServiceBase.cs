@@ -54,9 +54,9 @@ namespace MercadoCinotam
             }
             if (!string.IsNullOrEmpty(searchString))
             {
-                if (request.PropsToSearch != null)
+                if (request.SearchInAll)
                 {
-                    queryable.Where(request.PropsToSearch, searchString);
+                    queryable.Where(searchString);
                 }
                 else
                 {

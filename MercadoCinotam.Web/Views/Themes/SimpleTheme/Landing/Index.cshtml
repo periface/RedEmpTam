@@ -34,9 +34,9 @@
     <div id="overlay" class="overlay">
         <div class="overlay-content text-center">
             <a>
-                <h1>Getting the awesome!!</h1>
-                <h2>Such load...</h2>
-                <h2>Very async...</h2>
+                <h1 data-async="false" data-servicename="SimpleThemeService" data-property="SimpleTheme.LoadPage.SecTitle"></h1>
+                <h2 data-async="false" data-servicename="SimpleThemeService" data-property="SimpleTheme.LoadPage.Text"></h2>
+                <h2 data-async="false" data-servicename="SimpleThemeService" data-property="SimpleTheme.LoadPage.SecText"></h2>
             </a>
             <img class="img-responsive img-circle shake" style="width: 200px; height: 200px; margin: 0 auto; " src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg" />
         </div>
@@ -80,7 +80,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <header>
+    <header data-ignoreall="true" data-servicename="SimpleThemeService" data-callback="setBackgroundImage" data-property="SimpleTheme.Header.Background">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 data-property="PymeName" data-servicename="PymeInfo"></h1>
@@ -172,6 +172,9 @@
 <script>
     var shopCart = function (data, domElement) {
         domElement.text(data + " (6)");
+    }
+    var setBackgroundImage = function (data, domElement) {
+        domElement.css("background-image", "url(" + data + ")");
     }
 </script>
 </body>

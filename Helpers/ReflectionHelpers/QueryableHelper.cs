@@ -73,28 +73,16 @@ namespace Helpers.ReflectionHelpers
         public static IQueryable<T> Where<T>(this IQueryable<T> source, string valueToSearch)
         {
 
-            //var parameterExpression = Expression.Parameter(typeof(T));
-            //var propertyInfo = typeof(T).GetProperty(propertyName);
-            //var member = Expression.MakeMemberAccess(parameterExpression,propertyInfo);
-            //Expression method = Expression.Call(member, "ToLower", null, null);
-            //var lambda = Expression.Lambda<Func<T, bool>>
-            //    (Expression.Equal(method, Expression.Constant(valueToSearch.ToLower())), parameterExpression);
-            //return source.Where(lambda);
             var lambda = SearchAllFields<T>(valueToSearch);
             return source.Where(lambda);
         }
 
-        public static IQueryable<T> Where<T>(this IQueryable<T> source, string[] propsToSearch, string valueToSearch)
-        {
-            var lambda = SearchAllFieldsWithPropertyDefined<T>(valueToSearch, propsToSearch);
-            return source.Where(lambda);
-        }
         public static Expression<Func<T, bool>> SearchAllFields<T>(string searchText)
         {
             var t = Expression.Parameter(typeof(T));
             Expression body = Expression.Constant(false);
 
-            var containsMethod = typeof(string).GetMethod("Contains"
+            var containsMethod = typeof(string).GetMethod("Equals"
                 , new[] { typeof(string) });
             var toStringMethod = typeof(object).GetMethod("ToString");
 
@@ -114,7 +102,7 @@ namespace Helpers.ReflectionHelpers
 
             return Expression.Lambda<Func<T, bool>>(body, t);
         }
-        public static Expression<Func<T, bool>> SearchAllFieldsWithPropertyDefined<T>(string searchText, string propery)
+        public static Expression<Func<T, bool>> SearchAllFieldsWithPropertyDefined<T>(string searchText, string property)
         {
             var t = Expression.Parameter(typeof(T));
             Expression body = Expression.Constant(false);
@@ -124,11 +112,11 @@ namespace Helpers.ReflectionHelpers
             var toStringMethod = typeof(object).GetMethod("ToString");
 
             var stringProperties = typeof(T).GetProperties()
-                .Where(property => property.PropertyType == typeof(string) && property.Name == propery);
+                .Where(p => p.PropertyType == typeof(string) && p.Name == property);
 
-            foreach (var property in stringProperties)
+            foreach (var propertyValue in stringProperties)
             {
-                var stringValue = Expression.Call(Expression.Property(t, property.Name),
+                var stringValue = Expression.Call(Expression.Property(t, propertyValue.Name),
                     toStringMethod);
                 var nextExpression = Expression.Call(stringValue,
                     containsMethod,
@@ -139,34 +127,34 @@ namespace Helpers.ReflectionHelpers
 
             return Expression.Lambda<Func<T, bool>>(body, t);
         }
-        public static Expression<Func<T, bool>> SearchAllFieldsWithPropertyDefined<T>(string searchText, string[] properties)
-        {
-            var t = Expression.Parameter(typeof(T));
-            Expression body = Expression.Constant(false);
+        //public static Expression<Func<T, bool>> SearchAllFieldsWithPropertyDefined<T>(string searchText, string[] properties)
+        //{
+        //    var t = Expression.Parameter(typeof(T));
+        //    Expression body = Expression.Constant(false);
 
-            var containsMethod = typeof(string).GetMethod("Contains"
-                , new[] { typeof(string) });
-            var toStringMethod = typeof(object).GetMethod("ToString");
-            var stringProperties = typeof(T).GetProperties()
-                // ReSharper disable once AccessToModifiedClosure
-                .Where(property => property.PropertyType == typeof(string) && property.Name == properties.FirstOrDefault());
+        //    var containsMethod = typeof(string).GetMethod("Contains"
+        //        , new[] { typeof(string) });
+        //    var toStringMethod = typeof(object).GetMethod("ToString");
+        //    var stringProperties = typeof(T).GetProperties()
+        //        // ReSharper disable once AccessToModifiedClosure
+        //        .Where(property => property.PropertyType == typeof(string) && property.Name == properties.FirstOrDefault(a => a == property.Name)).ToList();
 
-            foreach (var property in stringProperties)
-            {
-                var element = properties.FirstOrDefault();
-                var stringValue = Expression.Call(Expression.Property(t, property.Name),
-                    toStringMethod);
-                var nextExpression = Expression.Call(stringValue,
-                    containsMethod,
-                    Expression.Constant(searchText));
+        //    foreach (var property in stringProperties)
+        //    {
+        //        var element = properties.FirstOrDefault();
+        //        var stringValue = Expression.Call(Expression.Property(t, property.Name),
+        //            toStringMethod);
+        //        var nextExpression = Expression.Call(stringValue,
+        //            containsMethod,
+        //            Expression.Constant(searchText.ToLower()));
 
-                body = Expression.OrElse(body, nextExpression);
-                var list = properties.ToList();
-                list.Remove(element);
-                properties = list.ToArray();
-            }
+        //        body = Expression.Or(body, nextExpression);
+        //        var list = properties.ToList();
+        //        list.Remove(element);
+        //        properties = list.ToArray();
+        //    }
 
-            return Expression.Lambda<Func<T, bool>>(body, t);
-        }
+        //    return Expression.Lambda<Func<T, bool>>(body, t);
+        //}
     }
 }

@@ -18,7 +18,27 @@
                     </button>
                 </div>
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="control-label">
+                                Buscar
+                            </label>
+                            <input type="search" class="form-control" id="searchTable" />
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="control-label">
+                                Preferencia de busqueda
+                            </label>
+                            <select id="column" class="form-control">
+                                <option value="Key">Llave</option>
 
+                                <option value="Value">Valor</option>
+
+                                <option value="ThemeReferenceName">Tema</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br />
                     <table id="contents" class="table table-responsive table-condensed">
                         <thead>
                             <tr>
@@ -42,12 +62,20 @@
 
         $(document).ready(function () {
             window.modalInstance = abp.app.bootstrap.modal();
-            var table =$('#contents').DataTable({
+            var table = $('#contents').DataTable({
                 "bServerSide": true,
                 "bPaginate": true,
                 "sPaginationType": "full_numbers",
                 "iDisplayLength": 10,
-                "ajax": "/Admin/MyStore/GetMainContents",
+                "dom": 'lrtip',
+                ajax: {
+                    url: "/Admin/MyStore/GetMainContents",
+                    data: function (d) {
+                        return $.extend({}, d, {
+                            "SearchCol": $("#column").val()
+                        });
+                    }
+                },
                 language: window.dataTablesLang,
                 columns: [
                     {
@@ -71,7 +99,7 @@
                             var edtiBtn = " <a title='Editar' data-modal href='/Admin/MyStore/EditContent/" + row.Id + "' class='btn btn-xs btn-default'><i class='fa fa-edit'></i></a>";
                             var allbtns = edtiBtn;
                             if (!row.IsStatic) {
-                                var deleteBtn  = " <a title='Eliminar' data-modal href='/Admin/MyStore/DeleteContent/" + row.Id + "' class='btn btn-xs btn-danger'><i class='fa fa-times'></i></a>";
+                                var deleteBtn = " <a title='Eliminar' data-modal href='/Admin/MyStore/DeleteContent/" + row.Id + "' class='btn btn-xs btn-danger'><i class='fa fa-times'></i></a>";
                                 allbtns += deleteBtn;
                             }
                             return allbtns;
@@ -96,6 +124,12 @@
             });
             abp.event.on("AddContent", function () {
                 table.ajax.reload();
+            });
+            $("#searchTable").on("keyup", function () {
+                table.search(this.value).draw();
+            });
+            $("#column").change(function () {
+                table.search($("#searchTable").val()).draw();
             });
         });
     })($);

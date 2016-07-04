@@ -124,6 +124,14 @@ namespace MercadoCinotam.Web.Controllers
         /// <param name="reflectedProps">Columns of the table, they need to be in order</param>
         protected void ProccessQueryData(RequestModel requestModel, string propToSearch, string[] reflectedProps)
         {
+            if (!string.IsNullOrEmpty(requestModel.SearchCol))
+            {
+                requestModel.PropToSearch = requestModel.SearchCol;
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(propToSearch)) requestModel.PropToSearch = propToSearch;
+            }
             if (
                 Request.QueryString["order[0][column]"] != null)
             {
@@ -134,7 +142,7 @@ namespace MercadoCinotam.Web.Controllers
                 requestModel.PropOrd = Request.QueryString["order[0][dir]"];
             }
 
-            if (!string.IsNullOrEmpty(propToSearch)) requestModel.PropToSearch = propToSearch;
+
             try
             {
                 requestModel.PropToSort = reflectedProps[requestModel.PropSort];
@@ -144,8 +152,13 @@ namespace MercadoCinotam.Web.Controllers
                 throw new Exception("Rango de propiedades invalido.");
             }
         }
-        protected void ProccessQueryData(RequestModel requestModel, string[] propsToSearch, string[] reflectedProps)
+        protected void ProccessQueryData(RequestModel requestModel, string[] reflectedProps)
         {
+            if (!string.IsNullOrEmpty(requestModel.SearchCol))
+            {
+                requestModel.PropToSearch = requestModel.SearchCol;
+            }
+            requestModel.SearchInAll = true;
             if (
                 Request.QueryString["order[0][column]"] != null)
             {
@@ -156,7 +169,6 @@ namespace MercadoCinotam.Web.Controllers
                 requestModel.PropOrd = Request.QueryString["order[0][dir]"];
             }
 
-            if (propsToSearch.Any()) requestModel.PropsToSearch = propsToSearch;
             try
             {
                 requestModel.PropToSort = reflectedProps[requestModel.PropSort];
@@ -171,42 +183,6 @@ namespace MercadoCinotam.Web.Controllers
         {
             identityResult.CheckErrors(LocalizationManager);
         }
-        /*
-            //Jquery code
-            $("#sampleForm").on("submit", function (e) {
-                var formData = new FormData(this);
-                e.preventDefault();
-                abp.ui.setBusy($("#sampleForm"), save(formData).done(function (response) {
-                    alert("Foo bar yeah!");
-                }));
-            });
-            --save function
-            return abp.ajax({
-                    url: "/MyPostUrl",
-                    data: formData,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    type: 'POST'
-                });
-
-            ///Server code
-            public async Task<ActionResult> CreateProduct()
-            {
-                var image = Request.Files[0];
-
-                var input = BuildInputByRequest<MyType>(Request);
-                ValidateModel(input);
-                //Now input is typeof MyType
-                var id = await _myService.MyFunction(input);
-                var thisFileFolder = "FileFolder/";
-
-                var virtualPath = mySaveFileFunction(image, thisFileFolder);
-                
-                return Json("Ok!", JsonRequestBehavior.AllowGet);
-            }
-            */
-
 
     }
 }
