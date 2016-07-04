@@ -1,3 +1,4 @@
+//Depends on Jquery
 var Engine = (function (options) {
 
     if (!options) {
@@ -6,7 +7,8 @@ var Engine = (function (options) {
             useOverlay: true,
             autoStart: false,
             overlayObj: undefined,
-            enableDebug :false
+            enableDebug: false,
+            onAllRequestsFinished: undefined
         }
     }
     var self = this;
@@ -24,14 +26,15 @@ var Engine = (function (options) {
         });
     }
     function findElement(arr, propName, propValue) {
-        for (var i = 0; i < arr.length; i++) 
-            if (arr[i][propName] === propValue) 
+        for (var i = 0; i < arr.length; i++)
+            if (arr[i][propName] === propValue)
                 return arr[i];
         return undefined;
         // will return undefined if not found; you could return a default instead
     };
     //Listener to data-* properties
     this.listener = function () {
+        //$.When example for deferred objects
         //Lets try http://stackoverflow.com/questions/5627284/pass-in-an-array-of-deferreds-to-when
         var deferred = [];
         $("[data-property]").each(function () {
@@ -59,7 +62,7 @@ var Engine = (function (options) {
                 console.debug(dataBindObj);
             }
             if (serviceInfo == undefined) {
-                console.error("Servicio no definido");
+                console.error("Service undefined");
             } else {
 
                 self.buildAjaxObj(serviceInfo.propertyServiceEndPoint, dataBindObj, deferred);
@@ -67,6 +70,7 @@ var Engine = (function (options) {
 
         });
         $.when.apply($, deferred).done(self.allDoneFunction);
+        //
         //It works!! many awesome!! much power, very async
     };
     if (options.autoStart) {
@@ -100,33 +104,69 @@ var Engine = (function (options) {
         }
     }
     this.callFunction = function (func, data, domElement) {
-        window[func](data, domElement);
+        try {
+            window[func](data, domElement);
+        } catch (e) {
+            console.warn("Callback function has failed to execute or has some internal errors, pleas check it out --->");
+            console.info("Dont try to eval the function in the lib source dude... pls -->");
+            console.info("Lets continue....");
+            return;
+        }
     };
     this.allDoneFunction = function () {
-        if (options.useOverlay) {
-            if (options.overlayObj) {
-                document.getElementById(options.overlayObj).style.width = "0%";
-            } else {
-                console.warn("No hay una capa de carga definida");
+        if (options.onAllRequestsFinished) {
+            options.onAllRequestsFinished();
+            if (options.useOverlay) {
+                //Continue with the normal overlay behavior
+                self.hideOverlay();
             }
         }
-        console.log("All request done");
+        else {
+            if (options.useOverlay) {
+                self.hideOverlay();
+            }
+            console.log("All requests done");
+        }
+
+    }
+    this.hideOverlay = function () {
+        if (options.overlayObj) {
+            document.getElementById(options.overlayObj).style.width = "0%";
+        } else {
+            console.warn("No overlay defined");
+        }
     }
     this.bindData = function (dataBindObj, data) {
         //var elementTag = dataBindObj.element[0].nodeName.toLowerCase();
-
         if (dataBindObj.printInProperty) {
             dataBindObj.element.attr(dataBindObj.printInProperty, data);
             if (dataBindObj.replicate) {
-                dataBindObj.element.text(data);
+                self.appendDataInDomElement(dataBindObj, data);
+            } else {
+                self.appendOnlyId(dataBindObj);
             }
         } else {
-            dataBindObj.element.text(data);
+            self.appendDataInDomElement(dataBindObj, data);
         }
+    }
+    this.appendDataInDomElement = function (dataBindObj, data) {
+        dataBindObj.element.text(data);
+        dataBindObj.element.attr("id", dataBindObj.propertyRequest);
+    };
+    this.appendOnlyId = function (dataBindObj) {
+        dataBindObj.element.attr("id", dataBindObj.propertyRequest);
+    };
+    this.getValueFromDomElement = function (keyValue) {
+        var value = document.getElementById(keyValue).value;
+        if (value) {
+            return value;
+        }
+        return undefined;
     }
     return {
         propertyServices: this.propertyServices,
         defineNewPropertyService: this.definePropertyService,
+        getValue: this.getValueFromDomElement,
         startListener: this.listener
     };
 });

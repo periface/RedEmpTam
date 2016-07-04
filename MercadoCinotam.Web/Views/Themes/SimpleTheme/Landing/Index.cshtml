@@ -60,18 +60,20 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" data-servicename="SimpleThemeService" data-property="SimpleTheme.AboutUs" href="#about">Acerca de</a>
+                        <a class="page-scroll" data-servicename="SimpleThemeService" data-property="SimpleTheme.Menu.AboutUs" href="#about"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" data-servicename="SimpleThemeService" data-property="SimpleTheme.OurProducts" href="#services">Nuestros Productos</a>
+                        <a class="page-scroll" data-servicename="SimpleThemeService" data-property="SimpleTheme.Menu.OurProducts" href="#services"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#certifications" data-servicename="SimpleThemeService" data-property="SimpleTheme.Certifications">Certifications</a>
+                        <a class="page-scroll" href="#certifications" data-servicename="SimpleThemeService" data-property="SimpleTheme.Menu.Certifications"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contacto</a>
+                        <a class="page-scroll" data-servicename="SimpleThemeService" data-property="SimpleTheme.Menu.Contact" href="#contact"></a>
                     </li>
-
+                    <li>
+                        <a class="page-scroll" data-callback="shopCart" data-ignoreall="true" data-servicename="SimpleThemeService" data-property="SimpleTheme.Menu.Cart" href="#"></a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -147,7 +149,7 @@
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                     <p>
-                        <a  data-callback="callbackSample" data-property="Email" data-replicate="true" data-printproperty="href" data-servicename="PymeContact"></a>
+                        <a data-property="Email" data-replicate="true" data-printproperty="href" data-servicename="PymeContact"></a>
                     </p>
                 </div>
             </div>
@@ -168,12 +170,8 @@
     <script src="/js/PeriAttrEngine.js"></script>
 <script src="/Views/Themes/SimpleTheme/Assets/js/main.js"></script>
 <script>
-    var callbackSample = function (data, domElement) {
-        console.log("Callback worked");
-        console.log("With data -- >");
-        console.log(data);
-        console.log("The doom >:) element is -->");
-        console.log(domElement);
+    var shopCart = function (data, domElement) {
+        domElement.text(data + " (6)");
     }
 </script>
 </body>
