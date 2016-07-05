@@ -74,19 +74,13 @@ namespace MercadoCinotam.Web.Controllers
             var value = _productClientService.GetProperty(productSlug, property);
             return View(new MvcHtmlString(value.ToString()));
         }
-
-        public ActionResult GetPymePropertyValue(string property)
-        {
-            var value = _pymeClientService.GetProperty(property, PymePropertyListing.Info);
-            return View(new MvcHtmlString(value.ToString()));
-        }
         public ActionResult GetFeatures(Guid id)
         {
             var features = _productClientService.GetProductFeatures(id);
             return View(features);
         }
 
-
+        #region Services for attribute engine
         [WrapResult(false)]
         public JsonResult GetPropertiesFromMain(string key)
         {
@@ -105,5 +99,6 @@ namespace MercadoCinotam.Web.Controllers
             var propertyValue = _pymeClientService.GetProperty(key, PymePropertyListing.Contact);
             return Json(propertyValue, JsonRequestBehavior.AllowGet);
         }
+        #endregion
     }
 }

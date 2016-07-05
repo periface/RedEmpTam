@@ -432,6 +432,7 @@
     <None Include="Areas\Admin\Views\MyStore\MainInfo.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\MainPageContents.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\Themes.cshtml" />
+    <Content Include="Areas\Admin\Views\MyStore\_resolveInputForType.cshtml" />
     <None Include="Areas\Admin\Views\Products\AddFeature.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\pymetam - FTP.pubxml" />
@@ -566,6 +567,9 @@
     <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.magnific-popup.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\js\jquery.magnific-popup.min.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\js\main.js" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\js\main.min.js">
+      <DependentUpon>main.js</DependentUpon>
+    </Content>
     <Content Include="Views\Themes\SimpleTheme\Assets\js\scrollreveal.js" />
     <Content Include="Views\Themes\SimpleTheme\Assets\js\scrollreveal.min.js" />
     <Content Include="Views\Users\Index.js" />

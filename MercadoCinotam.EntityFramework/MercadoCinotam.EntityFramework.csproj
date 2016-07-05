@@ -200,6 +200,10 @@
     <Compile Include="Migrations\201606292133219_ThemeReferenceName.Designer.cs">
       <DependentUpon>201606292133219_ThemeReferenceName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607051637201_ThemeContentType.cs" />
+    <Compile Include="Migrations\201607051637201_ThemeContentType.Designer.cs">
+      <DependentUpon>201607051637201_ThemeContentType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MercadoCinotamDataModule.cs" />
@@ -285,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606292133219_ThemeReferenceName.resx">
       <DependentUpon>201606292133219_ThemeReferenceName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607051637201_ThemeContentType.resx">
+      <DependentUpon>201607051637201_ThemeContentType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

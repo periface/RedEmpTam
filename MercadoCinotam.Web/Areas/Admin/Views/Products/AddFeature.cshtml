@@ -43,7 +43,7 @@
 <script>
     (function ($) {
         $(document).ready(function () {
-            $("body").on("submit", ".addFeature", function (e) {
+            $("body").on("submit", "#addFeature", function (e) {
                 e.preventDefault();
                 var data = $(this).serializeFormToObject();
                 abp.ui.setBusy($(".addFeature"), abp.services.app.productAdmin.addFeatureToProduct(data).done(function (id) {

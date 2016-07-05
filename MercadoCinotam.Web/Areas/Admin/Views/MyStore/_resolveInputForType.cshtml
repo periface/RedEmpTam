@@ -1,0 +1,25 @@
+﻿@model MercadoCinotam.MainPageContent.Dtos.ContentInput
+
+@switch (Model.Type)
+{
+    case "Texto":
+        <div class="col-lg-6">
+            <label class="control-label">Valor</label>
+            @Html.TextBoxFor(a => a.Value, new { @class = "form-control" })
+        </div>
+        break;
+    case "Imagen":
+        <div class="col-lg-6">
+            <label class="control-label">Imagen</label>
+            <input type="file" class="form-control" name="imagen" />
+        </div>
+        break;
+    default:
+        <div class="col-lg-6">
+            <label class="control-label">Valor</label>
+            @Html.TextBoxFor(a => a.Value, new {@class = "form-control"})
+        </div>
+        break;
+}
+
+

@@ -66,10 +66,11 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
             return View();
         }
         [WrapResult(false)]
-        public JsonResult GetMainContents(RequestModel input)
+        public async Task<JsonResult> GetMainContents(RequestModel input)
         {
-            ProccessQueryData(input, "Key", new[] { "Id", "Key", "Value", "ThemeReferenceName" });
-            var data = _pymeAdminService.GetMainPageContents(input);
+            var onlyActiveTheme = bool.Parse(input.GenericProperty[0]);
+            ProccessQueryData(input, "Key", new[] { "Id", "Key", "Value", "Type", "ThemeReferenceName" });
+            var data = await _pymeAdminService.GetMainPageContents(input, onlyActiveTheme);
             return Json(data, JsonRequestBehavior.AllowGet);
         }
         [ShouldBeAjaxRequest]

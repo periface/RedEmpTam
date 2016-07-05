@@ -4,5 +4,11 @@
     "inputFiles": [
       "js/PeriAttrEngine.js"
     ]
+  },
+  {
+    "outputFileName": "Views/Themes/SimpleTheme/Assets/js/main.min.js",
+    "inputFiles": [
+      "Views/Themes/SimpleTheme/Assets/js/main.js"
+    ]
   }
 ]

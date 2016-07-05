@@ -18,6 +18,7 @@ namespace MercadoCinotam.ThemeService.Dtos
         public string ThemeDescription { get; set; }
         public bool Released { get; set; }
         public IEnumerable<ThemePreviewDto> Preview { get; set; }
+
     }
     [AutoMap(typeof(ThemePreview))]
     public class ThemePreviewDto

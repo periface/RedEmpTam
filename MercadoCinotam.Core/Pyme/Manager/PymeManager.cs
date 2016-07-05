@@ -75,8 +75,9 @@ namespace MercadoCinotam.Pyme.Manager
                             Value = themeRequiredField.Value,
                             Key = themeRequiredField.Key,
                             ThemeReferenceId = themeId,
-                            ThemeReferenceName = theme.ThemeName,
-                            IsStatic = true
+                            ThemeReferenceName = theme.ThemeUniqueName,
+                            IsStatic = true,
+                            Type = themeRequiredField.Type
                         });
                     }
                 }

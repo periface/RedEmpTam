@@ -27,6 +27,7 @@ namespace Helpers.GenericTypes
         public string PropToSearch { get; set; }
         public bool SearchInAll { get; set; }
         public string SearchCol { get; set; }
+        public dynamic GenericProperty { get; set; }
     }
 
     /// <summary>

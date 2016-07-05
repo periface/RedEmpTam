@@ -8,6 +8,7 @@ using MercadoCinotam.Pyme.Manager;
 using MercadoCinotam.PymeInfo.Dtos;
 using MercadoCinotam.StartupSettings;
 using MercadoCinotam.Themes.Manager;
+using MercadoCinotam.ThemeService.Client;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,13 +20,15 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
         private readonly IImageManager _imageManager;
         private readonly IThemeManager _themeManager;
         private readonly ISettingStore _settingStore;
+        private readonly IThemeClientService _themeClientService;
         private const string ImageFolder = "/Content/Images/Logos/Tentants/{0}/";
-        public PymeAdminService(IPymeManager pymeManager, IImageManager imageManager, IThemeManager themeManager, ISettingStore settingStore)
+        public PymeAdminService(IPymeManager pymeManager, IImageManager imageManager, IThemeManager themeManager, ISettingStore settingStore, IThemeClientService themeClientService)
         {
             _pymeManager = pymeManager;
             _imageManager = imageManager;
             _themeManager = themeManager;
             _settingStore = settingStore;
+            _themeClientService = themeClientService;
         }
 
         public int AddInfo(PymeInfoInput input)
@@ -83,9 +86,19 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
             _pymeManager.SetMainPageContent(theme.Id, input.KeepOldData);
         }
 
-        public ReturnModel<MainPageContentDto> GetMainPageContents(RequestModel request)
+        public async Task<ReturnModel<MainPageContentDto>> GetMainPageContents(RequestModel request, bool onlyActiveTheme = false)
         {
-            var query = _pymeManager.GetMainPageContentsQuery();
+            IQueryable<MainPageContentManager.Entities.MainPageContent> query;
+            if (onlyActiveTheme)
+            {
+                var activeTheme = await _themeClientService.GetActiveThemeFromTenant();
+                query = _pymeManager.GetMainPageContentsQuery().Where(a => a.ThemeReferenceName == activeTheme);
+
+            }
+            else
+            {
+                query = _pymeManager.GetMainPageContentsQuery();
+            }
             int totalCount;
             var filterByLength = GenerateModel(request, query, "Key", out totalCount);
 

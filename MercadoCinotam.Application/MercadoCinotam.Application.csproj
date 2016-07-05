@@ -109,6 +109,7 @@
     <Compile Include="MainPageContent\Admin\IMainContentAdminService.cs" />
     <Compile Include="MainPageContent\Admin\MainContentAdminService.cs" />
     <Compile Include="MainPageContent\Dtos\ContentInput.cs" />
+    <Compile Include="MainPageContent\Dtos\MainContentType.cs" />
     <Compile Include="MercadoCinotamApplicationModule.cs" />
     <Compile Include="MercadoCinotamAppServiceBase.cs" />
     <Compile Include="PymeInfo\Dtos\MainPageContentDto.cs" />

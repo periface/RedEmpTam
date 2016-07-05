@@ -35,6 +35,7 @@ namespace MercadoCinotam.ThemeService.Admin
                     ThemeDescription = a.ThemeDescription,
                     ThemeName = a.ThemeName,
                     ThemeUniqueName = a.ThemeUniqueName,
+
                 }).ToList(),
                 ActiveTheme = activeThemeDto
             };

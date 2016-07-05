@@ -1,7 +1,7 @@
 ﻿using Abp.Application.Services;
+using Helpers.GenericTypes;
 using MercadoCinotam.PymeInfo.Dtos;
 using System.Threading.Tasks;
-using Helpers.GenericTypes;
 
 namespace MercadoCinotam.PymeInfo.PymeAdminService
 {
@@ -12,6 +12,6 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
         int AddContactInfo(PymeContactInfoInput input);
         PymeContactInfoInput GetContactInfoForEdit();
         Task SetTheme(SetThemeInput input);
-        ReturnModel<MainPageContentDto> GetMainPageContents(RequestModel request);
+        Task<ReturnModel<MainPageContentDto>> GetMainPageContents(RequestModel request, bool onlyActiveTheme = false);
     }
 }

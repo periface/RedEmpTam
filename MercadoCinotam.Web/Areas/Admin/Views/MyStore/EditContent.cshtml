@@ -9,7 +9,7 @@
     @Html.HiddenFor(a => a.IsStatic)
     @Html.HiddenFor(a => a.ThemeReferenceName)
     @Html.HiddenFor(a => a.Type)
-    @Html.HiddenFor(a=>a.Id)
+    @Html.HiddenFor(a => a.Id)
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -18,22 +18,27 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-6">
-                        @if (Model.IsStatic)
-                        {
-                            <label class="control-label">Llave</label>
-                            @Html.TextBoxFor(a => a.Key, new {@class = "form-control", disabled = "disabled"})
-                        }
-                        else
-                        {
-                            <label class="control-label">Llave</label>
-                            @Html.TextBoxFor(a => a.Key, new {@class = "form-control"})
-                        }
+                    <div class="col-lg-4">
+                        <label class="control-label">
+                            Tipo de Contenido
+                        </label>
+                        @(Model.IsStatic ? Html.DropDownListFor(a => a.Type, new SelectList(Model.Types, "Type", "Type"), new { disabled = "disabled", @class = "form-control" }) : Html.DropDownListFor(a => a.Type, new SelectList(Model.Types, "Type", "Type"), new { @class = "form-control" }))
                     </div>
+                </div>
+                <div class="row">
+
                     <div class="col-lg-6">
-                        <label class="control-label">Valor</label>
-                        @Html.TextBoxFor(a => a.Value, new {@class = "form-control"})
+
+                        <label class="control-label">Llave</label>
+                        @Html.TextBoxFor(a => a.Key, new { @class = "form-control", disabled = "disabled" })
+
                     </div>
+
+                    @{
+                        Html.RenderPartial("_resolveInputForType", Model);
+                    }
+
+
                 </div>
             </div>
             <div class="modal-footer">
@@ -52,7 +57,7 @@
                 e.preventDefault();
                 var data = $(this).serializeFormToObject();
                 abp.ui.setBusy($("#addContent"), abp.services.app.mainContentAdmin.addEditContent(data).done(function (id) {
-                    window.modalInstance.close({},modalType);
+                    window.modalInstance.close({}, modalType);
                 }));
             });
         });

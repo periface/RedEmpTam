@@ -7,5 +7,6 @@ namespace MercadoCinotam.Themes.Entities
         public string Key { get; set; }
         public string Value { get; set; }
         public virtual Theme Theme { get; set; }
+        public string Type { get; set; }
     }
 }
