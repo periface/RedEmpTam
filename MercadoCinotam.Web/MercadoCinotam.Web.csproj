@@ -702,7 +702,7 @@
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\ProductGalardons.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\Cart.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\AllGalardons.cshtml" />
-    <Content Include="Views\Themes\SimpleTheme\ViewHelpers\GetFeatures.cshtml" />
+    <Content Include="Views\Themes\SimpleTheme\ViewHelpers\disabledGetFeatures.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\GetPymePropertyValue.cshtml" />
     <None Include="Views\Themes\SimpleTheme\ViewHelpers\LoadMoreProducts.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\_ViewStart.cshtml" />

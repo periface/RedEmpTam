@@ -113,7 +113,56 @@
             </div>
         </div>
         <div class="container">
-            @{Html.RenderAction("LoadFeaturedProducts", "ViewHelpers");}
+            <style>
+                .details-text {
+                    margin-top: 40px;
+                    line-height: 25px;
+                    font-stretch: semi-condensed;
+                    font-weight: 100;
+                }
+
+                .little-container {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+                    .little-container ul {
+                        margin-top: 30px;
+                    }
+
+                        .little-container ul > li {
+                            margin: 10px;
+                            font-weight: 100;
+                            /* font-stretch: inherit; */
+                            font-size: 1.1em;
+                            line-height: 30px;
+                            list-style: none;
+                        }
+            </style>
+
+
+            <div data-source="FeaturedProducts" data-iterate="products">
+                <div class="row" data-template="products">
+                    <div class="col-sm-4">
+                        <h4 class="text-center" data-iproperty="ProductName"></h4>
+                        <img class="img-responsive img-rounded" style="" data-iproperty="MediumImage" data-replicate="false" data-printproperty="src"/>
+                        <br/>
+                        <p class="text-center">
+                            <button class="btn btn-primary btn-sm" data-iproperty="Id" data-printproperty="data-id">Agregar al carro!</button>
+                        </p>
+                    </div>
+                    <div data-source="FeaturesOfProduct"
+                         data-iproperty="Id"
+                         data-printproperty="data-id"
+                         data-replicate="false"
+                         data-beforesend="beforeSendFunction" 
+                         data-iterate="features">
+                        <div class="row" data-template="features">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     @*<section class="no-padding" id="portfolio">
@@ -175,6 +224,16 @@
         }
         var setBackgroundImage = function (data, domElement) {
             domElement.css("background-image", "url(" + data + ")");
+        }
+        var beforeSendFunction = function (data, context, callback) {
+
+            setTimeout(function () {
+                console.log($(context));
+                console.log($(context).parent());
+                var id = $(context).parent().data("id");
+                data.Id = id;
+                callback(data);
+            },0);
         }
     </script>
 </body>

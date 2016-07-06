@@ -31,77 +31,93 @@
                 list-style: none;
             }
 </style>
-@foreach (var product in Model.Products)
-{
-    if (left)
+
+
+<div data-source="FeaturedProducts" data-beforesend="beforeSendFunction" data-iterate="products">
+    <div data-template="products">
+        <div class="col-sm-4">
+            <h4 class="text-center" data-iproperty="ProductName"></h4>
+            <img class="img-responsive img-rounded" style="" data-iproperty="MediumImage" data-replicate="false" data-printproperty="src" />
+            <br />
+            <p class="text-center">
+                <button class="btn btn-primary btn-sm" data-iproperty="Id" data-printproperty="data-id">Agregar al carro!</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+@*@foreach (var product in Model.Products)
     {
-        <div class="row">
-            <div class="col-sm-12">
+        if (left)
+        {
+            <div class="row">
+                <div class="col-sm-12">
 
-                <h2 class="text-center">@product.ProductName</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                <div class="service-box">
-                    <img class="img-responsive img-rounded" style="margin: 0 auto" src="@product.MediumImage" />
-                    @*<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>*@
-
-                    <h4 class="lead">@product.ProductPrice</h4>
-                    <br />
-                    <p>
-                        @*<a href="@Url.Action("Details","Products",new { slug = product.Slug,id = product.Sku})" class="btn btn-info btn-xs">Mas Información</a>*@
-                        <a href="@Url.Action("AddToCart", "Cart", new {id = product.Sku})" class="btn btn-primary btn-sm">Agregar al Carro</a>
-                    </p>
+                    <h2 class="text-center">@product.ProductName</h2>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 text-center">
-                <div>
-                    <h3>Acerca del Producto</h3>
-                    <p class="text-justify details-text">
-                        @product.ProductDescription
-                    </p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <div class="service-box">
+                        <img class="img-responsive img-rounded" style="margin: 0 auto" src="@product.MediumImage" />
+
+
+                        <h4 class="lead">@product.ProductPrice</h4>
+                        <br />
+                        <p>
+
+                            <a href="@Url.Action("AddToCart", "Cart", new {id = product.Sku})" class="btn btn-primary btn-sm">Agregar al Carro</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 text-center">
+                    <div>
+                        <h3>Acerca del Producto</h3>
+                        <p class="text-justify details-text">
+                            @product.ProductDescription
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        { Html.RenderAction("GetFeatures", "ViewHelpers", new { id = product.Id }); }
-        left = false;
-        <hr />
-    }
-    else
-    {
-        <div class="row">
-            <div class="col-sm-12">
+            { Html.RenderAction("GetFeatures", "ViewHelpers", new { id = product.Id }); }
+            left = false;
+            <hr />
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-sm-12">
 
-                <h2 class="text-center">@product.ProductName</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 text-center">
-                <div class="">
-                    <h3>Acerca del Producto</h3>
-                    <p class="text-justify details-text">
-                        @product.ProductDescription
-                    </p>
+                    <h2 class="text-center">@product.ProductName</h2>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 text-center">
-                <div class="service-box">
-                    <img class="img-responsive img-rounded" style="margin: 0 auto" src="@product.MediumImage" />
-                    @*<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>*@
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="">
+                        <h3>Acerca del Producto</h3>
+                        <p class="text-justify details-text">
+                            @product.ProductDescription
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <img class="img-responsive img-rounded" style="margin: 0 auto" src="@product.MediumImage" />
 
-                    <h4 class="lead">@product.ProductPrice</h4>
-                    <br />
-                    <p>
-                        @*<a href="@Url.Action("Details","Products",new { slug = product.Slug,id = product.Sku})" class="btn btn-info btn-xs">Mas Información</a>*@
-                        <a href="@Url.Action("AddToCart", "Cart", new {id = product.Sku})" class="btn btn-primary btn-sm">Agregar al Carro</a>
-                    </p>
+
+                        <h4 class="lead">@product.ProductPrice</h4>
+                        <br />
+                        <p>
+
+                            <a href="@Url.Action("AddToCart", "Cart", new {id = product.Sku})" class="btn btn-primary btn-sm">Agregar al Carro</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        { Html.RenderAction("GetFeatures", "ViewHelpers", new { id = product.Id }); }
+            { Html.RenderAction("GetFeatures", "ViewHelpers", new { id = product.Id }); }
 
-        left = true;
-        <hr />
-    }
-}
+            left = true;
+            <hr />
+        }
+    }*@
