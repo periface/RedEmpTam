@@ -248,3 +248,1180 @@ DEBUG 2016-07-06 16:46:05,388 [gator] Hangfire.SqlServer.CountersAggregator    -
 DEBUG 2016-07-06 16:51:05,395 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
 DEBUG 2016-07-06 16:56:05,489 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
 DEBUG 2016-07-06 17:01:05,528 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-06 17:02:30,443 [58   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-06 17:02:30,443 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-07-06 17:02:30,443 [ccaed] Hangfire.Server.Worker                   - Background process 'Worker #96accaed' stopped.
+DEBUG 2016-07-06 17:02:30,443 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-07-06 17:02:30,443 [45c01] Hangfire.Server.Worker                   - Background process 'Worker #0fd45c01' stopped.
+DEBUG 2016-07-06 17:02:30,443 [837c3] Hangfire.Server.Worker                   - Background process 'Worker #458837c3' stopped.
+DEBUG 2016-07-06 17:02:30,443 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-07-06 17:02:30,443 [652fe] Hangfire.Server.Worker                   - Background process 'Worker #fea652fe' stopped.
+DEBUG 2016-07-06 17:02:30,443 [fca07] Hangfire.Server.Worker                   - Background process 'Worker #108fca07' stopped.
+DEBUG 2016-07-06 17:02:30,443 [def35] Hangfire.Server.Worker                   - Background process 'Worker #2d6def35' stopped.
+DEBUG 2016-07-06 17:02:30,443 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-07-06 17:02:30,443 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-07-06 17:02:30,443 [a20cf] Hangfire.Server.Worker                   - Background process 'Worker #825a20cf' stopped.
+DEBUG 2016-07-06 17:02:30,443 [a3517] Hangfire.Server.Worker                   - Background process 'Worker #ecfa3517' stopped.
+DEBUG 2016-07-06 17:02:30,443 [ed805] Hangfire.Server.Worker                   - Background process 'Worker #5a9ed805' stopped.
+DEBUG 2016-07-06 17:02:30,443 [7771b] Hangfire.Server.Worker                   - Background process 'Worker #9187771b' stopped.
+DEBUG 2016-07-06 17:02:30,443 [55691] Hangfire.Server.Worker                   - Background process 'Worker #f1655691' stopped.
+DEBUG 2016-07-06 17:02:30,443 [2d071] Hangfire.Server.Worker                   - Background process 'Worker #c122d071' stopped.
+DEBUG 2016-07-06 17:02:30,443 [798cb] Hangfire.Server.Worker                   - Background process 'Worker #ecc798cb' stopped.
+DEBUG 2016-07-06 17:02:30,443 [b2c3d] Hangfire.Server.Worker                   - Background process 'Worker #9b2b2c3d' stopped.
+DEBUG 2016-07-06 17:02:30,443 [efbde] Hangfire.Server.Worker                   - Background process 'Worker #83aefbde' stopped.
+DEBUG 2016-07-06 17:02:30,443 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-07-06 17:02:30,443 [1cccf] Hangfire.Server.Worker                   - Background process 'Worker #6751cccf' stopped.
+DEBUG 2016-07-06 17:02:30,443 [0da05] Hangfire.Server.Worker                   - Background process 'Worker #bd00da05' stopped.
+DEBUG 2016-07-06 17:02:30,443 [da621] Hangfire.Server.Worker                   - Background process 'Worker #61cda621' stopped.
+DEBUG 2016-07-06 17:02:30,443 [4364b] Hangfire.Server.Worker                   - Background process 'Worker #6984364b' stopped.
+DEBUG 2016-07-06 17:02:30,443 [743ec] Hangfire.Server.Worker                   - Background process 'Worker #1db743ec' stopped.
+DEBUG 2016-07-07 10:52:38,846 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-07 10:52:40,162 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-07-07 10:52:40,165 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,168 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,169 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:40,174 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-07-07 10:52:40,270 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:52:40,270 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:52:40,270 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:52:40,270 [1    ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-07 10:52:40,460 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-07 10:52:40,553 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-07 10:52:40,628 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:52:41,511 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-07 10:52:41,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-07 10:52:41,519 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-07 10:52:41,520 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-07 10:52:41,521 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-07-07 10:52:41,527 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-07 10:52:41,543 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-07 10:52:41,546 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-07-07 10:52:41,546 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-07 10:52:41,546 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-07 10:52:41,547 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-07 10:52:41,547 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-07-07 10:52:41,547 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-07 10:52:41,547 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-07 10:52:41,547 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-07 10:52:41,558 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-07 10:52:41,658 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes defines auto mapping attributes
+DEBUG 2016-07-07 10:52:41,658 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-07 10:52:41,756 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-07 10:52:41,757 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-07 10:52:41,762 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-07 10:52:41,764 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-07 10:52:41,765 [62fa8] Hangfire.Server.Worker                   - Background process 'Worker #92162fa8' started.
+DEBUG 2016-07-07 10:52:41,766 [3278c] Hangfire.Server.Worker                   - Background process 'Worker #2273278c' started.
+DEBUG 2016-07-07 10:52:41,771 [10f33] Hangfire.Server.Worker                   - Background process 'Worker #f3510f33' started.
+DEBUG 2016-07-07 10:52:41,771 [a2ec4] Hangfire.Server.Worker                   - Background process 'Worker #271a2ec4' started.
+DEBUG 2016-07-07 10:52:41,772 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 10:52:41,773 [f5719] Hangfire.Server.Worker                   - Background process 'Worker #122f5719' started.
+DEBUG 2016-07-07 10:52:41,775 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 10:52:41,777 [9dc03] Hangfire.Server.Worker                   - Background process 'Worker #def9dc03' started.
+DEBUG 2016-07-07 10:52:41,777 [6020e] Hangfire.Server.Worker                   - Background process 'Worker #b366020e' started.
+DEBUG 2016-07-07 10:52:41,778 [d41ec] Hangfire.Server.Worker                   - Background process 'Worker #522d41ec' started.
+DEBUG 2016-07-07 10:52:41,778 [ef26e] Hangfire.Server.Worker                   - Background process 'Worker #01fef26e' started.
+DEBUG 2016-07-07 10:52:41,781 [52e70] Hangfire.Server.Worker                   - Background process 'Worker #1b652e70' started.
+INFO  2016-07-07 10:52:41,785 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2016-07-07 10:52:41,785 [be19e] Hangfire.Server.Worker                   - Background process 'Worker #aecbe19e' started.
+DEBUG 2016-07-07 10:52:41,787 [e9e9e] Hangfire.Server.Worker                   - Background process 'Worker #890e9e9e' started.
+DEBUG 2016-07-07 10:52:41,788 [9557e] Hangfire.Server.Worker                   - Background process 'Worker #fe89557e' started.
+DEBUG 2016-07-07 10:52:41,794 [55349] Hangfire.Server.Worker                   - Background process 'Worker #f3255349' started.
+DEBUG 2016-07-07 10:52:41,803 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-07 10:52:41,805 [2b3d3] Hangfire.Server.Worker                   - Background process 'Worker #9ad2b3d3' started.
+DEBUG 2016-07-07 10:52:41,808 [b6bcc] Hangfire.Server.Worker                   - Background process 'Worker #ca0b6bcc' started.
+DEBUG 2016-07-07 10:52:41,810 [af47d] Hangfire.Server.Worker                   - Background process 'Worker #91eaf47d' started.
+DEBUG 2016-07-07 10:52:41,812 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-07-07 10:52:41,814 [aff6d] Hangfire.Server.Worker                   - Background process 'Worker #c50aff6d' started.
+DEBUG 2016-07-07 10:52:41,815 [0de81] Hangfire.Server.Worker                   - Background process 'Worker #bc70de81' started.
+DEBUG 2016-07-07 10:52:41,816 [b0423] Hangfire.Server.Worker                   - Background process 'Worker #22bb0423' started.
+DEBUG 2016-07-07 10:52:41,821 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-07 10:52:41,829 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-07 10:52:41,845 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 10:52:41,845 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-07-07 10:52:41,846 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemeDto
+DEBUG 2016-07-07 10:52:41,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemePreviewDto
+DEBUG 2016-07-07 10:52:41,849 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Client.Dtos.FeatureDto
+DEBUG 2016-07-07 10:52:41,851 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductDto
+DEBUG 2016-07-07 10:52:41,851 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 10:52:41,853 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 10:52:41,855 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 10:52:41,857 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-07-07 10:52:41,863 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-07 10:52:41,867 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-07 10:52:41,868 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.MainPageContentDto
+DEBUG 2016-07-07 10:52:41,870 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeContactInfoInput
+DEBUG 2016-07-07 10:52:41,871 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeInfoInput
+DEBUG 2016-07-07 10:52:41,873 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MainPageContent.Dtos.ContentInput
+DEBUG 2016-07-07 10:52:41,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonDto
+DEBUG 2016-07-07 10:52:41,877 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonInput
+DEBUG 2016-07-07 10:52:41,879 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-07 10:52:41,898 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-07 10:52:41,899 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-07 10:52:41,900 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.Client.IThemeClientService' with service name 'app/themeClient'.
+DEBUG 2016-07-07 10:52:41,901 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-07 10:52:41,902 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Client.IProductClientService' with service name 'app/productClient'.
+DEBUG 2016-07-07 10:52:41,903 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-07-07 10:52:41,903 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-07 10:52:41,904 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeClientService.IPymeClientService' with service name 'app/pymeClient'.
+DEBUG 2016-07-07 10:52:41,905 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeAdminService.IPymeAdminService' with service name 'app/pymeAdmin'.
+DEBUG 2016-07-07 10:52:41,906 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MainPageContent.Admin.IMainContentAdminService' with service name 'app/mainContentAdmin'.
+DEBUG 2016-07-07 10:52:41,907 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Admin.IGalardonAdminService' with service name 'app/galardonAdmin'.
+DEBUG 2016-07-07 10:52:41,908 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Client.IGalardonClientService' with service name 'app/galardonClient'.
+DEBUG 2016-07-07 10:52:48,768 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ae8bd41c-181a-4b54-9c6a-19a6e7b50359","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-07-07T10:52:48.7600228-05:00","Properties":{}}
+DEBUG 2016-07-07 10:52:48,803 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ae8bd41c-181a-4b54-9c6a-19a6e7b50359
+DEBUG 2016-07-07 10:53:16,859 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ae8bd41c-181a-4b54-9c6a-19a6e7b50359
+DEBUG 2016-07-07 10:54:08,045 [12   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 10:54:08,046 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-07-07 10:54:08,047 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-07-07 10:54:08,047 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-07-07 10:54:08,047 [e9e9e] Hangfire.Server.Worker                   - Background process 'Worker #890e9e9e' stopped.
+DEBUG 2016-07-07 10:54:08,047 [af47d] Hangfire.Server.Worker                   - Background process 'Worker #91eaf47d' stopped.
+DEBUG 2016-07-07 10:54:08,047 [aff6d] Hangfire.Server.Worker                   - Background process 'Worker #c50aff6d' stopped.
+DEBUG 2016-07-07 10:54:08,047 [b6bcc] Hangfire.Server.Worker                   - Background process 'Worker #ca0b6bcc' stopped.
+DEBUG 2016-07-07 10:54:08,047 [9557e] Hangfire.Server.Worker                   - Background process 'Worker #fe89557e' stopped.
+DEBUG 2016-07-07 10:54:08,047 [55349] Hangfire.Server.Worker                   - Background process 'Worker #f3255349' stopped.
+DEBUG 2016-07-07 10:54:08,047 [b0423] Hangfire.Server.Worker                   - Background process 'Worker #22bb0423' stopped.
+DEBUG 2016-07-07 10:54:08,047 [52e70] Hangfire.Server.Worker                   - Background process 'Worker #1b652e70' stopped.
+DEBUG 2016-07-07 10:54:08,047 [ef26e] Hangfire.Server.Worker                   - Background process 'Worker #01fef26e' stopped.
+DEBUG 2016-07-07 10:54:08,047 [6020e] Hangfire.Server.Worker                   - Background process 'Worker #b366020e' stopped.
+DEBUG 2016-07-07 10:54:08,047 [f5719] Hangfire.Server.Worker                   - Background process 'Worker #122f5719' stopped.
+DEBUG 2016-07-07 10:54:08,047 [3278c] Hangfire.Server.Worker                   - Background process 'Worker #2273278c' stopped.
+DEBUG 2016-07-07 10:54:08,047 [62fa8] Hangfire.Server.Worker                   - Background process 'Worker #92162fa8' stopped.
+DEBUG 2016-07-07 10:54:08,047 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-07-07 10:54:08,047 [d41ec] Hangfire.Server.Worker                   - Background process 'Worker #522d41ec' stopped.
+DEBUG 2016-07-07 10:54:08,047 [a2ec4] Hangfire.Server.Worker                   - Background process 'Worker #271a2ec4' stopped.
+DEBUG 2016-07-07 10:54:08,047 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-07-07 10:54:08,049 [be19e] Hangfire.Server.Worker                   - Background process 'Worker #aecbe19e' stopped.
+DEBUG 2016-07-07 10:54:08,049 [0de81] Hangfire.Server.Worker                   - Background process 'Worker #bc70de81' stopped.
+DEBUG 2016-07-07 10:54:08,049 [2b3d3] Hangfire.Server.Worker                   - Background process 'Worker #9ad2b3d3' stopped.
+DEBUG 2016-07-07 10:54:08,049 [9dc03] Hangfire.Server.Worker                   - Background process 'Worker #def9dc03' stopped.
+DEBUG 2016-07-07 10:54:08,049 [10f33] Hangfire.Server.Worker                   - Background process 'Worker #f3510f33' stopped.
+DEBUG 2016-07-07 10:54:08,049 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-07-07 10:54:08,052 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-07-07 10:54:08,052 [12   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-07-07 10:54:08,053 [12   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 10:54:22,078 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-07 10:54:23,305 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-07-07 10:54:23,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,312 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,312 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,312 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,312 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:23,320 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-07-07 10:54:23,382 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:54:23,383 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:54:23,383 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:54:23,383 [1    ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-07 10:54:23,451 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-07 10:54:23,511 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-07 10:54:23,583 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:54:24,131 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-07 10:54:24,170 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-07 10:54:24,171 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-07 10:54:24,172 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-07 10:54:24,173 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-07-07 10:54:24,179 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-07 10:54:24,191 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-07 10:54:24,194 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-07-07 10:54:24,194 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-07 10:54:24,195 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-07 10:54:24,195 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-07 10:54:24,195 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-07-07 10:54:24,195 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-07 10:54:24,195 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-07 10:54:24,195 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-07 10:54:24,206 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-07 10:54:24,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes defines auto mapping attributes
+DEBUG 2016-07-07 10:54:24,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-07 10:54:24,378 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-07 10:54:24,380 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-07 10:54:24,382 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-07 10:54:24,383 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-07 10:54:24,384 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 10:54:24,385 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 10:54:24,391 [22ec6] Hangfire.Server.Worker                   - Background process 'Worker #17322ec6' started.
+DEBUG 2016-07-07 10:54:24,402 [4627a] Hangfire.Server.Worker                   - Background process 'Worker #4914627a' started.
+DEBUG 2016-07-07 10:54:24,405 [31761] Hangfire.Server.Worker                   - Background process 'Worker #1f331761' started.
+DEBUG 2016-07-07 10:54:24,406 [0d054] Hangfire.Server.Worker                   - Background process 'Worker #f380d054' started.
+DEBUG 2016-07-07 10:54:24,409 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 10:54:24,410 [189d8] Hangfire.Server.Worker                   - Background process 'Worker #dcc189d8' started.
+DEBUG 2016-07-07 10:54:24,414 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-07 10:54:24,416 [f5ef5] Hangfire.Server.Worker                   - Background process 'Worker #c5ef5ef5' started.
+DEBUG 2016-07-07 10:54:24,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-07-07 10:54:24,424 [cb904] Hangfire.Server.Worker                   - Background process 'Worker #755cb904' started.
+DEBUG 2016-07-07 10:54:24,425 [9200d] Hangfire.Server.Worker                   - Background process 'Worker #37b9200d' started.
+DEBUG 2016-07-07 10:54:24,436 [22442] Hangfire.Server.Worker                   - Background process 'Worker #b1122442' started.
+DEBUG 2016-07-07 10:54:24,444 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-07-07 10:54:24,445 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemeDto
+DEBUG 2016-07-07 10:54:24,447 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemePreviewDto
+DEBUG 2016-07-07 10:54:24,448 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Client.Dtos.FeatureDto
+DEBUG 2016-07-07 10:54:24,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductDto
+DEBUG 2016-07-07 10:54:24,455 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-07-07 10:54:24,456 [94c31] Hangfire.Server.Worker                   - Background process 'Worker #c8a94c31' started.
+DEBUG 2016-07-07 10:54:24,456 [d94b2] Hangfire.Server.Worker                   - Background process 'Worker #2fdd94b2' started.
+DEBUG 2016-07-07 10:54:24,457 [7171d] Hangfire.Server.Worker                   - Background process 'Worker #69e7171d' started.
+DEBUG 2016-07-07 10:54:24,462 [8d5e1] Hangfire.Server.Worker                   - Background process 'Worker #2c78d5e1' started.
+DEBUG 2016-07-07 10:54:24,462 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 10:54:24,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-07 10:54:24,466 [24e4d] Hangfire.Server.Worker                   - Background process 'Worker #5f624e4d' started.
+DEBUG 2016-07-07 10:54:24,466 [87aae] Hangfire.Server.Worker                   - Background process 'Worker #04087aae' started.
+DEBUG 2016-07-07 10:54:24,467 [09ea4] Hangfire.Server.Worker                   - Background process 'Worker #57109ea4' started.
+DEBUG 2016-07-07 10:54:24,467 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-07 10:54:24,468 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.MainPageContentDto
+DEBUG 2016-07-07 10:54:24,468 [a907f] Hangfire.Server.Worker                   - Background process 'Worker #3e6a907f' started.
+DEBUG 2016-07-07 10:54:24,469 [272f4] Hangfire.Server.Worker                   - Background process 'Worker #346272f4' started.
+DEBUG 2016-07-07 10:54:24,469 [314d0] Hangfire.Server.Worker                   - Background process 'Worker #c69314d0' started.
+DEBUG 2016-07-07 10:54:24,470 [10833] Hangfire.Server.Worker                   - Background process 'Worker #dba10833' started.
+DEBUG 2016-07-07 10:54:24,470 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeContactInfoInput
+DEBUG 2016-07-07 10:54:24,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeInfoInput
+DEBUG 2016-07-07 10:54:24,473 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-07 10:54:24,474 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MainPageContent.Dtos.ContentInput
+DEBUG 2016-07-07 10:54:24,476 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonDto
+DEBUG 2016-07-07 10:54:24,477 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-07 10:54:24,477 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonInput
+DEBUG 2016-07-07 10:54:24,479 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-07 10:54:24,484 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 10:54:24,486 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 10:54:24,492 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-07 10:54:24,493 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-07 10:54:24,494 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.Client.IThemeClientService' with service name 'app/themeClient'.
+DEBUG 2016-07-07 10:54:24,495 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-07 10:54:24,496 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Client.IProductClientService' with service name 'app/productClient'.
+DEBUG 2016-07-07 10:54:24,496 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-07-07 10:54:24,497 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-07 10:54:24,498 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeClientService.IPymeClientService' with service name 'app/pymeClient'.
+DEBUG 2016-07-07 10:54:24,499 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeAdminService.IPymeAdminService' with service name 'app/pymeAdmin'.
+DEBUG 2016-07-07 10:54:24,500 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MainPageContent.Admin.IMainContentAdminService' with service name 'app/mainContentAdmin'.
+DEBUG 2016-07-07 10:54:24,501 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Admin.IGalardonAdminService' with service name 'app/galardonAdmin'.
+DEBUG 2016-07-07 10:54:24,501 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Client.IGalardonClientService' with service name 'app/galardonClient'.
+DEBUG 2016-07-07 10:56:48,033 [38   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 10:56:48,034 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-07-07 10:56:48,034 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-07-07 10:56:48,034 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-07-07 10:56:48,034 [31761] Hangfire.Server.Worker                   - Background process 'Worker #1f331761' stopped.
+DEBUG 2016-07-07 10:56:48,034 [a907f] Hangfire.Server.Worker                   - Background process 'Worker #3e6a907f' stopped.
+DEBUG 2016-07-07 10:56:48,034 [272f4] Hangfire.Server.Worker                   - Background process 'Worker #346272f4' stopped.
+DEBUG 2016-07-07 10:56:48,035 [314d0] Hangfire.Server.Worker                   - Background process 'Worker #c69314d0' stopped.
+DEBUG 2016-07-07 10:56:48,035 [8d5e1] Hangfire.Server.Worker                   - Background process 'Worker #2c78d5e1' stopped.
+DEBUG 2016-07-07 10:56:48,035 [24e4d] Hangfire.Server.Worker                   - Background process 'Worker #5f624e4d' stopped.
+DEBUG 2016-07-07 10:56:48,035 [d94b2] Hangfire.Server.Worker                   - Background process 'Worker #2fdd94b2' stopped.
+DEBUG 2016-07-07 10:56:48,035 [22ec6] Hangfire.Server.Worker                   - Background process 'Worker #17322ec6' stopped.
+DEBUG 2016-07-07 10:56:48,035 [f5ef5] Hangfire.Server.Worker                   - Background process 'Worker #c5ef5ef5' stopped.
+DEBUG 2016-07-07 10:56:48,035 [10833] Hangfire.Server.Worker                   - Background process 'Worker #dba10833' stopped.
+DEBUG 2016-07-07 10:56:48,035 [94c31] Hangfire.Server.Worker                   - Background process 'Worker #c8a94c31' stopped.
+DEBUG 2016-07-07 10:56:48,035 [189d8] Hangfire.Server.Worker                   - Background process 'Worker #dcc189d8' stopped.
+DEBUG 2016-07-07 10:56:48,035 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-07-07 10:56:48,035 [87aae] Hangfire.Server.Worker                   - Background process 'Worker #04087aae' stopped.
+DEBUG 2016-07-07 10:56:48,035 [4627a] Hangfire.Server.Worker                   - Background process 'Worker #4914627a' stopped.
+DEBUG 2016-07-07 10:56:48,035 [cb904] Hangfire.Server.Worker                   - Background process 'Worker #755cb904' stopped.
+DEBUG 2016-07-07 10:56:48,035 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-07-07 10:56:48,036 [22442] Hangfire.Server.Worker                   - Background process 'Worker #b1122442' stopped.
+DEBUG 2016-07-07 10:56:48,037 [09ea4] Hangfire.Server.Worker                   - Background process 'Worker #57109ea4' stopped.
+DEBUG 2016-07-07 10:56:48,037 [9200d] Hangfire.Server.Worker                   - Background process 'Worker #37b9200d' stopped.
+DEBUG 2016-07-07 10:56:48,037 [7171d] Hangfire.Server.Worker                   - Background process 'Worker #69e7171d' stopped.
+DEBUG 2016-07-07 10:56:48,037 [0d054] Hangfire.Server.Worker                   - Background process 'Worker #f380d054' stopped.
+DEBUG 2016-07-07 10:56:48,037 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-07-07 10:56:48,041 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-07-07 10:56:48,041 [38   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-07-07 10:56:48,041 [38   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 10:57:31,622 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-07 10:57:32,853 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-07-07 10:57:32,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,861 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:32,867 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-07-07 10:57:32,996 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:57:32,996 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:57:32,996 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 10:57:32,996 [1    ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-07 10:57:33,041 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-07 10:57:33,081 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-07 10:57:33,149 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 10:57:33,859 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-07 10:57:33,865 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-07 10:57:33,866 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-07 10:57:33,867 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-07 10:57:33,868 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-07-07 10:57:33,874 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-07 10:57:33,885 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-07 10:57:33,888 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-07-07 10:57:33,889 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-07 10:57:33,889 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-07 10:57:33,889 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-07 10:57:33,889 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-07-07 10:57:33,889 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-07 10:57:33,889 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-07 10:57:33,889 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-07 10:57:33,899 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-07 10:57:33,993 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes defines auto mapping attributes
+DEBUG 2016-07-07 10:57:33,993 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-07 10:57:34,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-07 10:57:34,063 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-07-07 10:57:34,068 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-07 10:57:34,077 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-07 10:57:34,079 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 10:57:34,082 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-07-07 10:57:34,082 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-07 10:57:34,083 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemeDto
+DEBUG 2016-07-07 10:57:34,083 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 10:57:34,085 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemePreviewDto
+DEBUG 2016-07-07 10:57:34,085 [aaa96] Hangfire.Server.Worker                   - Background process 'Worker #248aaa96' started.
+DEBUG 2016-07-07 10:57:34,086 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Client.Dtos.FeatureDto
+DEBUG 2016-07-07 10:57:34,088 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductDto
+DEBUG 2016-07-07 10:57:34,092 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-07-07 10:57:34,097 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-07 10:57:34,100 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-07 10:57:34,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.MainPageContentDto
+DEBUG 2016-07-07 10:57:34,104 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeContactInfoInput
+DEBUG 2016-07-07 10:57:34,104 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-07 10:57:34,105 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeInfoInput
+DEBUG 2016-07-07 10:57:34,108 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MainPageContent.Dtos.ContentInput
+DEBUG 2016-07-07 10:57:34,110 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonDto
+DEBUG 2016-07-07 10:57:34,113 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonInput
+DEBUG 2016-07-07 10:57:34,115 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-07 10:57:34,129 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-07 10:57:34,130 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-07 10:57:34,131 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.Client.IThemeClientService' with service name 'app/themeClient'.
+DEBUG 2016-07-07 10:57:34,132 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-07 10:57:34,133 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Client.IProductClientService' with service name 'app/productClient'.
+DEBUG 2016-07-07 10:57:34,134 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-07-07 10:57:34,135 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-07 10:57:34,136 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeClientService.IPymeClientService' with service name 'app/pymeClient'.
+DEBUG 2016-07-07 10:57:34,136 [bd45f] Hangfire.Server.Worker                   - Background process 'Worker #1c4bd45f' started.
+DEBUG 2016-07-07 10:57:34,137 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeAdminService.IPymeAdminService' with service name 'app/pymeAdmin'.
+DEBUG 2016-07-07 10:57:34,138 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MainPageContent.Admin.IMainContentAdminService' with service name 'app/mainContentAdmin'.
+DEBUG 2016-07-07 10:57:34,139 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Admin.IGalardonAdminService' with service name 'app/galardonAdmin'.
+DEBUG 2016-07-07 10:57:34,140 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Client.IGalardonClientService' with service name 'app/galardonClient'.
+DEBUG 2016-07-07 10:57:34,141 [c2cff] Hangfire.Server.Worker                   - Background process 'Worker #db2c2cff' started.
+DEBUG 2016-07-07 10:57:34,141 [63e2b] Hangfire.Server.Worker                   - Background process 'Worker #2c663e2b' started.
+DEBUG 2016-07-07 10:57:34,142 [05356] Hangfire.Server.Worker                   - Background process 'Worker #dc405356' started.
+DEBUG 2016-07-07 10:57:34,161 [7a6bd] Hangfire.Server.Worker                   - Background process 'Worker #fc47a6bd' started.
+DEBUG 2016-07-07 10:57:34,166 [a332e] Hangfire.Server.Worker                   - Background process 'Worker #c76a332e' started.
+DEBUG 2016-07-07 10:57:34,168 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 10:57:34,177 [66cc2] Hangfire.Server.Worker                   - Background process 'Worker #67966cc2' started.
+DEBUG 2016-07-07 10:57:34,179 [802f0] Hangfire.Server.Worker                   - Background process 'Worker #485802f0' started.
+DEBUG 2016-07-07 10:57:34,181 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 10:57:34,191 [4cf6d] Hangfire.Server.Worker                   - Background process 'Worker #d404cf6d' started.
+DEBUG 2016-07-07 10:57:34,196 [6b919] Hangfire.Server.Worker                   - Background process 'Worker #77f6b919' started.
+DEBUG 2016-07-07 10:57:34,199 [ae117] Hangfire.Server.Worker                   - Background process 'Worker #91dae117' started.
+DEBUG 2016-07-07 10:57:34,200 [2697a] Hangfire.Server.Worker                   - Background process 'Worker #b382697a' started.
+DEBUG 2016-07-07 10:57:34,207 [71311] Hangfire.Server.Worker                   - Background process 'Worker #5dd71311' started.
+DEBUG 2016-07-07 10:57:34,208 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 10:57:34,211 [cc7a3] Hangfire.Server.Worker                   - Background process 'Worker #219cc7a3' started.
+DEBUG 2016-07-07 10:57:34,213 [3e6ad] Hangfire.Server.Worker                   - Background process 'Worker #f0a3e6ad' started.
+DEBUG 2016-07-07 10:57:34,217 [9fb23] Hangfire.Server.Worker                   - Background process 'Worker #95a9fb23' started.
+DEBUG 2016-07-07 10:57:34,225 [73296] Hangfire.Server.Worker                   - Background process 'Worker #e9c73296' started.
+DEBUG 2016-07-07 10:57:34,228 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 10:57:34,231 [3d584] Hangfire.Server.Worker                   - Background process 'Worker #a1f3d584' started.
+DEBUG 2016-07-07 10:57:34,238 [61b28] Hangfire.Server.Worker                   - Background process 'Worker #59261b28' started.
+DEBUG 2016-07-07 10:57:34,239 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-07 10:57:34,249 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-07 10:58:12,835 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9a3911e2-8ec1-423e-8c74-113d2b5212d0","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-07-07T10:58:12.8282751-05:00","Properties":{}}
+DEBUG 2016-07-07 10:58:12,876 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9a3911e2-8ec1-423e-8c74-113d2b5212d0
+DEBUG 2016-07-07 10:58:16,927 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"470f509f-8757-423f-87e8-4d520e17e95b","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T10:58:16.927685-05:00","Properties":{}}
+DEBUG 2016-07-07 10:58:16,945 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 470f509f-8757-423f-87e8-4d520e17e95b
+DEBUG 2016-07-07 10:58:17,301 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 470f509f-8757-423f-87e8-4d520e17e95b
+DEBUG 2016-07-07 10:58:25,369 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0371f82f-b7bd-4090-9be1-c739665d4a74","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T10:58:25.3695291-05:00","Properties":{}}
+DEBUG 2016-07-07 10:58:25,381 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0371f82f-b7bd-4090-9be1-c739665d4a74
+DEBUG 2016-07-07 10:58:27,098 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0371f82f-b7bd-4090-9be1-c739665d4a74
+DEBUG 2016-07-07 10:58:27,807 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"30163bb8-7aa2-46ab-8cd9-ad87e13736d8","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T10:58:27.8077729-05:00","Properties":{}}
+DEBUG 2016-07-07 10:58:27,834 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 30163bb8-7aa2-46ab-8cd9-ad87e13736d8
+DEBUG 2016-07-07 10:58:36,232 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 30163bb8-7aa2-46ab-8cd9-ad87e13736d8
+DEBUG 2016-07-07 10:58:52,821 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9a3911e2-8ec1-423e-8c74-113d2b5212d0
+DEBUG 2016-07-07 11:02:34,116 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:07:34,130 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:12:34,144 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:17:34,158 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:22:34,159 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:24:48,093 [91   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3ba395ad-53fe-4aef-afb1-60873f850803","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-07-07T11:24:48.0921043-05:00","Properties":{}}
+DEBUG 2016-07-07 11:24:48,101 [78   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3ba395ad-53fe-4aef-afb1-60873f850803
+DEBUG 2016-07-07 11:24:58,853 [84   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b5414bbf-726f-445a-a194-4110b8325b65","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T11:24:58.8531043-05:00","Properties":{}}
+DEBUG 2016-07-07 11:24:58,860 [76   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b5414bbf-726f-445a-a194-4110b8325b65
+DEBUG 2016-07-07 11:25:00,080 [84   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b5414bbf-726f-445a-a194-4110b8325b65
+DEBUG 2016-07-07 11:25:00,686 [78   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f03f09ea-9a13-4666-a581-f8bdf995d0ea","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T11:25:00.6861043-05:00","Properties":{}}
+DEBUG 2016-07-07 11:25:00,693 [72   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f03f09ea-9a13-4666-a581-f8bdf995d0ea
+DEBUG 2016-07-07 11:25:25,421 [92   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3ba395ad-53fe-4aef-afb1-60873f850803
+DEBUG 2016-07-07 11:27:34,143 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:32:34,127 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:37:34,111 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:42:34,113 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:47:34,127 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:49:09,681 [92   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f03f09ea-9a13-4666-a581-f8bdf995d0ea
+DEBUG 2016-07-07 11:49:10,063 [72   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e8c11bee-aa99-43af-b17b-0cf58a9306cb","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T11:49:10.0631834-05:00","Properties":{}}
+DEBUG 2016-07-07 11:49:10,072 [77   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e8c11bee-aa99-43af-b17b-0cf58a9306cb
+DEBUG 2016-07-07 11:49:11,735 [72   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e8c11bee-aa99-43af-b17b-0cf58a9306cb
+DEBUG 2016-07-07 11:49:12,226 [84   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"302556c2-a37b-4e39-8bc9-6a40e557553f","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T11:49:12.2263997-05:00","Properties":{}}
+DEBUG 2016-07-07 11:49:12,233 [84   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 302556c2-a37b-4e39-8bc9-6a40e557553f
+DEBUG 2016-07-07 11:49:41,702 [85   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 302556c2-a37b-4e39-8bc9-6a40e557553f
+DEBUG 2016-07-07 11:49:42,455 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"37ca5c81-7fa0-4ce0-a12c-15603b4c81f4","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T11:49:42.4554223-05:00","Properties":{}}
+DEBUG 2016-07-07 11:49:42,462 [83   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 37ca5c81-7fa0-4ce0-a12c-15603b4c81f4
+DEBUG 2016-07-07 11:52:34,141 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:57:34,148 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 11:57:34,271 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 11:57:34,272 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 11:57:34,272 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 11:57:34,273 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 11:57:34,273 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 12:02:07,591 [77   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 12:02:07,592 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-07-07 12:02:07,592 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-07-07 12:02:07,592 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-07-07 12:02:07,592 [66cc2] Hangfire.Server.Worker                   - Background process 'Worker #67966cc2' stopped.
+DEBUG 2016-07-07 12:02:07,593 [73296] Hangfire.Server.Worker                   - Background process 'Worker #e9c73296' stopped.
+DEBUG 2016-07-07 12:02:07,593 [3d584] Hangfire.Server.Worker                   - Background process 'Worker #a1f3d584' stopped.
+DEBUG 2016-07-07 12:02:07,593 [ae117] Hangfire.Server.Worker                   - Background process 'Worker #91dae117' stopped.
+DEBUG 2016-07-07 12:02:07,593 [4cf6d] Hangfire.Server.Worker                   - Background process 'Worker #d404cf6d' stopped.
+DEBUG 2016-07-07 12:02:07,593 [6b919] Hangfire.Server.Worker                   - Background process 'Worker #77f6b919' stopped.
+DEBUG 2016-07-07 12:02:07,593 [c2cff] Hangfire.Server.Worker                   - Background process 'Worker #db2c2cff' stopped.
+DEBUG 2016-07-07 12:02:07,593 [7a6bd] Hangfire.Server.Worker                   - Background process 'Worker #fc47a6bd' stopped.
+DEBUG 2016-07-07 12:02:07,593 [2697a] Hangfire.Server.Worker                   - Background process 'Worker #b382697a' stopped.
+DEBUG 2016-07-07 12:02:07,593 [bd45f] Hangfire.Server.Worker                   - Background process 'Worker #1c4bd45f' stopped.
+DEBUG 2016-07-07 12:02:07,593 [a332e] Hangfire.Server.Worker                   - Background process 'Worker #c76a332e' stopped.
+DEBUG 2016-07-07 12:02:07,593 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-07-07 12:02:07,593 [cc7a3] Hangfire.Server.Worker                   - Background process 'Worker #219cc7a3' stopped.
+DEBUG 2016-07-07 12:02:07,593 [61b28] Hangfire.Server.Worker                   - Background process 'Worker #59261b28' stopped.
+DEBUG 2016-07-07 12:02:07,593 [802f0] Hangfire.Server.Worker                   - Background process 'Worker #485802f0' stopped.
+DEBUG 2016-07-07 12:02:07,594 [63e2b] Hangfire.Server.Worker                   - Background process 'Worker #2c663e2b' stopped.
+DEBUG 2016-07-07 12:02:07,594 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-07-07 12:02:07,594 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-07-07 12:02:07,594 [9fb23] Hangfire.Server.Worker                   - Background process 'Worker #95a9fb23' stopped.
+DEBUG 2016-07-07 12:02:07,594 [71311] Hangfire.Server.Worker                   - Background process 'Worker #5dd71311' stopped.
+DEBUG 2016-07-07 12:02:07,595 [3e6ad] Hangfire.Server.Worker                   - Background process 'Worker #f0a3e6ad' stopped.
+DEBUG 2016-07-07 12:02:07,595 [05356] Hangfire.Server.Worker                   - Background process 'Worker #dc405356' stopped.
+DEBUG 2016-07-07 12:02:07,595 [aaa96] Hangfire.Server.Worker                   - Background process 'Worker #248aaa96' stopped.
+DEBUG 2016-07-07 12:02:07,598 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-07-07 12:02:07,602 [77   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-07-07 12:02:07,602 [77   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 12:02:09,333 [70   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-07 12:02:10,534 [70   ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-07-07 12:02:10,538 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,541 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,542 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,542 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,542 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,542 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,542 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,542 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,542 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,543 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,543 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,543 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,543 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,543 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,543 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,543 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,544 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,544 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,544 [70   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:10,549 [70   ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-07-07 12:02:10,612 [70   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 12:02:10,612 [70   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 12:02:10,612 [70   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 12:02:10,612 [70   ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-07 12:02:10,660 [70   ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-07 12:02:10,701 [70   ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-07 12:02:10,771 [70   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 12:02:11,308 [70   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-07 12:02:11,315 [70   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-07 12:02:11,315 [70   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-07 12:02:11,316 [70   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-07 12:02:11,317 [70   ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-07-07 12:02:11,324 [70   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-07 12:02:11,336 [70   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-07 12:02:11,339 [70   ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-07-07 12:02:11,339 [70   ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-07 12:02:11,339 [70   ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-07 12:02:11,339 [70   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-07 12:02:11,339 [70   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-07-07 12:02:11,340 [70   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-07 12:02:11,340 [70   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-07 12:02:11,340 [70   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-07 12:02:11,353 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-07 12:02:11,441 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes defines auto mapping attributes
+DEBUG 2016-07-07 12:02:11,441 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-07 12:02:11,507 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-07 12:02:11,510 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-07-07 12:02:11,524 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-07 12:02:11,526 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-07 12:02:11,529 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-07 12:02:11,531 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 12:02:11,532 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-07-07 12:02:11,533 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-07 12:02:11,534 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:02:11,535 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemeDto
+DEBUG 2016-07-07 12:02:11,537 [4adb0] Hangfire.Server.Worker                   - Background process 'Worker #2534adb0' started.
+DEBUG 2016-07-07 12:02:11,537 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemePreviewDto
+DEBUG 2016-07-07 12:02:11,537 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Client.Dtos.FeatureDto
+DEBUG 2016-07-07 12:02:11,539 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductDto
+DEBUG 2016-07-07 12:02:11,543 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-07-07 12:02:11,543 [3dbe5] Hangfire.Server.Worker                   - Background process 'Worker #ce93dbe5' started.
+DEBUG 2016-07-07 12:02:11,544 [de6dd] Hangfire.Server.Worker                   - Background process 'Worker #818de6dd' started.
+DEBUG 2016-07-07 12:02:11,546 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-07 12:02:11,549 [44c68] Hangfire.Server.Worker                   - Background process 'Worker #1e044c68' started.
+DEBUG 2016-07-07 12:02:11,550 [ee21c] Hangfire.Server.Worker                   - Background process 'Worker #18aee21c' started.
+DEBUG 2016-07-07 12:02:11,550 [fce04] Hangfire.Server.Worker                   - Background process 'Worker #b04fce04' started.
+DEBUG 2016-07-07 12:02:11,551 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-07 12:02:11,552 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.MainPageContentDto
+DEBUG 2016-07-07 12:02:11,552 [ad93e] Hangfire.Server.Worker                   - Background process 'Worker #d36ad93e' started.
+DEBUG 2016-07-07 12:02:11,553 [21bb9] Hangfire.Server.Worker                   - Background process 'Worker #6b721bb9' started.
+DEBUG 2016-07-07 12:02:11,554 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 12:02:11,554 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeContactInfoInput
+DEBUG 2016-07-07 12:02:11,556 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeInfoInput
+DEBUG 2016-07-07 12:02:11,557 [7905d] Hangfire.Server.Worker                   - Background process 'Worker #04c7905d' started.
+DEBUG 2016-07-07 12:02:11,559 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MainPageContent.Dtos.ContentInput
+DEBUG 2016-07-07 12:02:11,562 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonDto
+DEBUG 2016-07-07 12:02:11,563 [ac284] Hangfire.Server.Worker                   - Background process 'Worker #6fdac284' started.
+DEBUG 2016-07-07 12:02:11,565 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonInput
+DEBUG 2016-07-07 12:02:11,567 [70   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-07 12:02:11,571 [57f0f] Hangfire.Server.Worker                   - Background process 'Worker #50d57f0f' started.
+DEBUG 2016-07-07 12:02:11,574 [a82b1] Hangfire.Server.Worker                   - Background process 'Worker #bf5a82b1' started.
+DEBUG 2016-07-07 12:02:11,576 [b1bb9] Hangfire.Server.Worker                   - Background process 'Worker #fb4b1bb9' started.
+DEBUG 2016-07-07 12:02:11,582 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-07 12:02:11,583 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-07 12:02:11,584 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.Client.IThemeClientService' with service name 'app/themeClient'.
+DEBUG 2016-07-07 12:02:11,585 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-07 12:02:11,585 [92026] Hangfire.Server.Worker                   - Background process 'Worker #d9292026' started.
+DEBUG 2016-07-07 12:02:11,586 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Client.IProductClientService' with service name 'app/productClient'.
+DEBUG 2016-07-07 12:02:11,587 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-07-07 12:02:11,588 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-07 12:02:11,589 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeClientService.IPymeClientService' with service name 'app/pymeClient'.
+DEBUG 2016-07-07 12:02:11,590 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeAdminService.IPymeAdminService' with service name 'app/pymeAdmin'.
+DEBUG 2016-07-07 12:02:11,591 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MainPageContent.Admin.IMainContentAdminService' with service name 'app/mainContentAdmin'.
+DEBUG 2016-07-07 12:02:11,592 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Admin.IGalardonAdminService' with service name 'app/galardonAdmin'.
+DEBUG 2016-07-07 12:02:11,592 [8238c] Hangfire.Server.Worker                   - Background process 'Worker #5d28238c' started.
+DEBUG 2016-07-07 12:02:11,593 [70   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Client.IGalardonClientService' with service name 'app/galardonClient'.
+DEBUG 2016-07-07 12:02:11,595 [7cf20] Hangfire.Server.Worker                   - Background process 'Worker #6a57cf20' started.
+DEBUG 2016-07-07 12:02:11,596 [6b7ac] Hangfire.Server.Worker                   - Background process 'Worker #0446b7ac' started.
+DEBUG 2016-07-07 12:02:11,597 [a4845] Hangfire.Server.Worker                   - Background process 'Worker #9c2a4845' started.
+DEBUG 2016-07-07 12:02:11,598 [38596] Hangfire.Server.Worker                   - Background process 'Worker #53f38596' started.
+DEBUG 2016-07-07 12:02:11,600 [a6b7d] Hangfire.Server.Worker                   - Background process 'Worker #e99a6b7d' started.
+DEBUG 2016-07-07 12:02:11,601 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-07 12:02:11,602 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-07 12:02:11,607 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 12:02:11,611 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 12:02:11,613 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 12:07:11,577 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:12:11,566 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:17:11,580 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:22:11,594 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:27:11,608 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:32:11,611 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:37:11,606 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:42:11,620 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:47:11,634 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:52:11,621 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 12:54:18,186 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 37ca5c81-7fa0-4ce0-a12c-15603b4c81f4
+DEBUG 2016-07-07 12:54:19,121 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e9958cd7-7124-411f-b8d3-7be3231afe43","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T12:54:19.1136823-05:00","Properties":{}}
+DEBUG 2016-07-07 12:54:19,157 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e9958cd7-7124-411f-b8d3-7be3231afe43
+DEBUG 2016-07-07 12:54:20,195 [83   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e9958cd7-7124-411f-b8d3-7be3231afe43
+DEBUG 2016-07-07 12:54:20,653 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"113f469b-1f99-4250-86db-baef259e3882","IpAddress":"::1","TenantId":2,"UserId":3,"ConnectTime":"2016-07-07T12:54:20.6536823-05:00","Properties":{}}
+DEBUG 2016-07-07 12:54:20,659 [106  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 113f469b-1f99-4250-86db-baef259e3882
+DEBUG 2016-07-07 12:57:11,605 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:02:11,589 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:02:11,599 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 13:02:11,599 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 13:02:11,600 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 13:02:11,601 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 13:02:11,602 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 13:07:11,589 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:12:11,603 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:17:11,617 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:22:11,631 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:27:11,645 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:32:11,659 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:37:11,673 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:42:11,666 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:47:11,650 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:52:11,634 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 13:57:11,618 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:02:11,602 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 14:02:11,602 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:02:11,602 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 14:02:11,603 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 14:02:11,604 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 14:02:11,604 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 14:07:11,586 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:12:11,570 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:17:11,606 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:22:11,624 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:27:11,638 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:32:11,652 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:37:11,666 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:42:11,680 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:47:11,691 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:52:11,647 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 14:57:11,631 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:02:11,605 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 15:02:11,606 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 15:02:11,606 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 15:02:11,607 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 15:02:11,608 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 15:02:11,615 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:07:11,599 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:12:11,583 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:17:11,567 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:22:11,561 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:27:11,600 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:32:11,614 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:37:11,628 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:42:11,643 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:47:11,658 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:52:11,673 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 15:57:11,664 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:02:11,606 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 16:02:11,608 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 16:02:11,609 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 16:02:11,610 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 16:02:11,611 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 16:02:11,631 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:07:11,616 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:12:11,601 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:17:11,587 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:22:11,572 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:27:11,557 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:32:11,542 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:37:11,527 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:42:11,512 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:47:11,497 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:52:11,481 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 16:57:11,466 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 17:00:11,400 [77   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 17:00:11,401 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-07-07 17:00:11,401 [4adb0] Hangfire.Server.Worker                   - Background process 'Worker #2534adb0' stopped.
+DEBUG 2016-07-07 17:00:11,401 [6b7ac] Hangfire.Server.Worker                   - Background process 'Worker #0446b7ac' stopped.
+DEBUG 2016-07-07 17:00:11,401 [a4845] Hangfire.Server.Worker                   - Background process 'Worker #9c2a4845' stopped.
+DEBUG 2016-07-07 17:00:11,401 [ad93e] Hangfire.Server.Worker                   - Background process 'Worker #d36ad93e' stopped.
+DEBUG 2016-07-07 17:00:11,402 [7cf20] Hangfire.Server.Worker                   - Background process 'Worker #6a57cf20' stopped.
+DEBUG 2016-07-07 17:00:11,402 [ee21c] Hangfire.Server.Worker                   - Background process 'Worker #18aee21c' stopped.
+DEBUG 2016-07-07 17:00:11,402 [a82b1] Hangfire.Server.Worker                   - Background process 'Worker #bf5a82b1' stopped.
+DEBUG 2016-07-07 17:00:11,402 [44c68] Hangfire.Server.Worker                   - Background process 'Worker #1e044c68' stopped.
+DEBUG 2016-07-07 17:00:11,402 [3dbe5] Hangfire.Server.Worker                   - Background process 'Worker #ce93dbe5' stopped.
+DEBUG 2016-07-07 17:00:11,402 [a6b7d] Hangfire.Server.Worker                   - Background process 'Worker #e99a6b7d' stopped.
+DEBUG 2016-07-07 17:00:11,403 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-07-07 17:00:11,403 [38596] Hangfire.Server.Worker                   - Background process 'Worker #53f38596' stopped.
+DEBUG 2016-07-07 17:00:11,403 [8238c] Hangfire.Server.Worker                   - Background process 'Worker #5d28238c' stopped.
+DEBUG 2016-07-07 17:00:11,403 [ac284] Hangfire.Server.Worker                   - Background process 'Worker #6fdac284' stopped.
+DEBUG 2016-07-07 17:00:11,403 [de6dd] Hangfire.Server.Worker                   - Background process 'Worker #818de6dd' stopped.
+DEBUG 2016-07-07 17:00:11,403 [fce04] Hangfire.Server.Worker                   - Background process 'Worker #b04fce04' stopped.
+DEBUG 2016-07-07 17:00:11,404 [7905d] Hangfire.Server.Worker                   - Background process 'Worker #04c7905d' stopped.
+DEBUG 2016-07-07 17:00:11,404 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-07-07 17:00:11,407 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-07-07 17:00:11,407 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-07-07 17:00:11,407 [92026] Hangfire.Server.Worker                   - Background process 'Worker #d9292026' stopped.
+DEBUG 2016-07-07 17:00:11,407 [b1bb9] Hangfire.Server.Worker                   - Background process 'Worker #fb4b1bb9' stopped.
+DEBUG 2016-07-07 17:00:11,407 [21bb9] Hangfire.Server.Worker                   - Background process 'Worker #6b721bb9' stopped.
+DEBUG 2016-07-07 17:00:11,407 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-07-07 17:00:11,407 [57f0f] Hangfire.Server.Worker                   - Background process 'Worker #50d57f0f' stopped.
+DEBUG 2016-07-07 17:00:11,413 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-07-07 17:00:11,413 [77   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-07-07 17:00:11,413 [77   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 17:00:14,750 [32   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-07 17:00:16,016 [32   ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2016-07-07 17:00:16,020 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,023 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,023 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,023 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,023 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,023 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,024 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,024 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,024 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,024 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,024 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,024 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,024 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: FileSaver.FileManagerModule, FileSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,025 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: ImageSaver.ImageSaverModule, ImageSaver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,025 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamApplicationModule, MercadoCinotam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,025 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamCoreModule, MercadoCinotam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,025 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.MercadoCinotamDataModule, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,025 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Web.MercadoCinotamWebModule, MercadoCinotam.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,025 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: MercadoCinotam.Api.MercadoCinotamWebApiModule, MercadoCinotam.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,030 [32   ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2016-07-07 17:00:16,166 [32   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 17:00:16,166 [32   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 17:00:16,166 [32   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-07 17:00:16,166 [32   ] o.Configuration.LanguageManagementConfig - Converted MercadoCinotam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-07 17:00:16,217 [32   ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-07 17:00:16,262 [32   ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-07 17:00:16,330 [32   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: MercadoCinotam.EntityFramework.MercadoCinotamDbContext, MercadoCinotam.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-07 17:00:16,859 [32   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-07 17:00:16,865 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-07 17:00:16,866 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-07 17:00:16,867 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-07 17:00:16,868 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: MercadoCinotam
+DEBUG 2016-07-07 17:00:16,874 [32   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-07 17:00:16,888 [32   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-07 17:00:16,891 [32   ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: localhost@MercadoCinotam'.
+INFO  2016-07-07 17:00:16,891 [32   ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-07 17:00:16,891 [32   ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-07 17:00:16,891 [32   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-07 17:00:16,891 [32   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-07-07 17:00:16,892 [32   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-07 17:00:16,892 [32   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-07 17:00:16,892 [32   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-07 17:00:16,903 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-07 17:00:16,997 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes defines auto mapping attributes
+DEBUG 2016-07-07 17:00:16,997 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-07 17:00:17,062 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-07 17:00:17,067 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.CreateUserInput
+DEBUG 2016-07-07 17:00:17,081 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-07 17:00:17,083 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-07 17:00:17,085 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-07 17:00:17,087 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-07 17:00:17,088 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Users.Dto.UserListDto
+DEBUG 2016-07-07 17:00:17,089 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-07 17:00:17,089 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemeDto
+DEBUG 2016-07-07 17:00:17,092 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.ThemeService.Dtos.ThemePreviewDto
+DEBUG 2016-07-07 17:00:17,093 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Client.Dtos.FeatureDto
+DEBUG 2016-07-07 17:00:17,095 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductDto
+DEBUG 2016-07-07 17:00:17,096 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-07 17:00:17,099 [01654] Hangfire.Server.Worker                   - Background process 'Worker #10f01654' started.
+DEBUG 2016-07-07 17:00:17,099 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Products.Admin.Dtos.ProductInput
+DEBUG 2016-07-07 17:00:17,102 [9c583] Hangfire.Server.Worker                   - Background process 'Worker #8799c583' started.
+DEBUG 2016-07-07 17:00:17,103 [6b400] Hangfire.Server.Worker                   - Background process 'Worker #5fd6b400' started.
+DEBUG 2016-07-07 17:00:17,103 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-07 17:00:17,105 [d08be] Hangfire.Server.Worker                   - Background process 'Worker #4ead08be' started.
+DEBUG 2016-07-07 17:00:17,107 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-07 17:00:17,107 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.MainPageContentDto
+DEBUG 2016-07-07 17:00:17,110 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeContactInfoInput
+DEBUG 2016-07-07 17:00:17,111 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.PymeInfo.Dtos.PymeInfoInput
+DEBUG 2016-07-07 17:00:17,113 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.MainPageContent.Dtos.ContentInput
+DEBUG 2016-07-07 17:00:17,115 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonDto
+DEBUG 2016-07-07 17:00:17,117 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.GalardonsAndCert.Dtos.GalardonInput
+DEBUG 2016-07-07 17:00:17,120 [32   ] Abp.AutoMapper.AbpAutoMapperModule       - MercadoCinotam.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-07 17:00:17,120 [dfc6d] Hangfire.Server.Worker                   - Background process 'Worker #059dfc6d' started.
+DEBUG 2016-07-07 17:00:17,127 [7e965] Hangfire.Server.Worker                   - Background process 'Worker #d0f7e965' started.
+DEBUG 2016-07-07 17:00:17,128 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-07 17:00:17,130 [6d388] Hangfire.Server.Worker                   - Background process 'Worker #41c6d388' started.
+DEBUG 2016-07-07 17:00:17,130 [47fd0] Hangfire.Server.Worker                   - Background process 'Worker #b8047fd0' started.
+DEBUG 2016-07-07 17:00:17,140 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-07 17:00:17,141 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-07 17:00:17,142 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.ThemeService.Client.IThemeClientService' with service name 'app/themeClient'.
+DEBUG 2016-07-07 17:00:17,143 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-07 17:00:17,144 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Client.IProductClientService' with service name 'app/productClient'.
+DEBUG 2016-07-07 17:00:17,146 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.Products.Admin.IProductAdminService' with service name 'app/productAdmin'.
+DEBUG 2016-07-07 17:00:17,148 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-07 17:00:17,149 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeClientService.IPymeClientService' with service name 'app/pymeClient'.
+DEBUG 2016-07-07 17:00:17,150 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.PymeInfo.PymeAdminService.IPymeAdminService' with service name 'app/pymeAdmin'.
+DEBUG 2016-07-07 17:00:17,151 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.MainPageContent.Admin.IMainContentAdminService' with service name 'app/mainContentAdmin'.
+DEBUG 2016-07-07 17:00:17,152 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Admin.IGalardonAdminService' with service name 'app/galardonAdmin'.
+DEBUG 2016-07-07 17:00:17,153 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'MercadoCinotam.GalardonsAndCert.Client.IGalardonClientService' with service name 'app/galardonClient'.
+DEBUG 2016-07-07 17:00:17,158 [28f79] Hangfire.Server.Worker                   - Background process 'Worker #0bd28f79' started.
+DEBUG 2016-07-07 17:00:17,159 [156af] Hangfire.Server.Worker                   - Background process 'Worker #a0e156af' started.
+DEBUG 2016-07-07 17:00:17,160 [95892] Hangfire.Server.Worker                   - Background process 'Worker #f3a95892' started.
+DEBUG 2016-07-07 17:00:17,160 [a4eed] Hangfire.Server.Worker                   - Background process 'Worker #004a4eed' started.
+DEBUG 2016-07-07 17:00:17,161 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-07 17:00:17,169 [c3497] Hangfire.Server.Worker                   - Background process 'Worker #924c3497' started.
+DEBUG 2016-07-07 17:00:17,169 [d7564] Hangfire.Server.Worker                   - Background process 'Worker #b7bd7564' started.
+DEBUG 2016-07-07 17:00:17,170 [987f1] Hangfire.Server.Worker                   - Background process 'Worker #4ca987f1' started.
+DEBUG 2016-07-07 17:00:17,170 [a4ae4] Hangfire.Server.Worker                   - Background process 'Worker #903a4ae4' started.
+DEBUG 2016-07-07 17:00:17,173 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-07 17:00:17,176 [11e81] Hangfire.Server.Worker                   - Background process 'Worker #91f11e81' started.
+DEBUG 2016-07-07 17:00:17,177 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-07 17:00:17,177 [33c97] Hangfire.Server.Worker                   - Background process 'Worker #40c33c97' started.
+DEBUG 2016-07-07 17:00:17,178 [360cb] Hangfire.Server.Worker                   - Background process 'Worker #4d6360cb' started.
+DEBUG 2016-07-07 17:00:17,180 [8e5f5] Hangfire.Server.Worker                   - Background process 'Worker #7da8e5f5' started.
+DEBUG 2016-07-07 17:00:17,189 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-07 17:00:17,189 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-07 17:03:36,631 [92   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 113f469b-1f99-4250-86db-baef259e3882
+DEBUG 2016-07-07 17:03:47,250 [9c583] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #8799c583' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+DEBUG 2016-07-07 17:03:47,250 [d7564] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #b7bd7564' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   en System.Data.SqlClient.SqlTransaction.Rollback()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:0f99826a-170e-41bd-9d12-e0242ccecdd7
+Error Number:6005,State:2,Class:14
+DEBUG 2016-07-07 17:03:47,250 [a4eed] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #004a4eed' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   en System.Data.SqlClient.SqlTransaction.Rollback()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:bb2d5713-0d42-4de2-ad39-e0d407e02bb6
+Error Number:6005,State:2,Class:14
+DEBUG 2016-07-07 17:03:47,250 [156af] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #a0e156af' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:1a11cefd-81f6-4056-a7f5-1c0880463a2f
+Error Number:6005,State:2,Class:14
+DEBUG 2016-07-07 17:03:47,250 [duler] Hangfire.Server.DelayedJobScheduler      - Error occurred during execution of 'DelayedJobScheduler' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+Login failed for user 'IIS APPPOOL\DefaultAppPool'.
+Error grave en el comando actual. Los resultados, si los hay, se deben descartar.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   en Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   en Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   en Hangfire.SqlServer.SqlServerDistributedLock.Acquire(IDbConnection connection, String resource, TimeSpan timeout)
+   en Hangfire.SqlServer.SqlServerDistributedLock..ctor(SqlServerStorage storage, String resource, TimeSpan timeout)
+   en Hangfire.SqlServer.SqlServerConnection.AcquireDistributedLock(String resource, TimeSpan timeout)
+   en Hangfire.Server.DelayedJobScheduler.EnqueueNextScheduledJob(BackgroundProcessContext context)
+   en Hangfire.Server.DelayedJobScheduler.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:31ce766c-883a-4be4-912c-a9355098ce1f
+Error Number:6005,State:1,Class:14
+INFO  2016-07-07 17:03:47,250 [a4eed] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #004a4eed' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:03 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+INFO  2016-07-07 17:03:47,250 [d7564] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #b7bd7564' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:02 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+DEBUG 2016-07-07 17:03:47,250 [47fd0] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #b8047fd0' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+Login failed for user 'IIS APPPOOL\DefaultAppPool'.
+Error grave en el comando actual. Los resultados, si los hay, se deben descartar.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   en System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:af157649-334a-4a24-95eb-4ac398f6e989
+Error Number:6005,State:1,Class:14
+INFO  2016-07-07 17:03:47,250 [9c583] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #8799c583' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+Login failed for user 'IIS APPPOOL\DefaultAppPool'.
+Error grave en el comando actual. Los resultados, si los hay, se deben descartar.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnection.BeginSqlTransaction(IsolationLevel iso, String transactionName, Boolean shouldReconnect)
+   en System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:1a11cefd-81f6-4056-a7f5-1c0880463a2f
+Error Number:6005,State:1,Class:14
+DEBUG 2016-07-07 17:03:47,265 [tbeat] Hangfire.Server.ServerHeartbeat          - Error occurred during execution of 'ServerHeartbeat' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerStorage.UseConnection[T](Func`2 func)
+   en Hangfire.Server.ServerHeartbeat.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+DEBUG 2016-07-07 17:03:47,250 [33c97] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #40c33c97' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   en System.Data.SqlClient.SqlTransaction.Rollback()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:b4cdc823-0f39-4dac-b140-cf776228e3ef
+Error Number:6005,State:2,Class:14
+INFO  2016-07-07 17:03:47,265 [156af] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #a0e156af' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:02 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+INFO  2016-07-07 17:03:47,280 [duler] Hangfire.Server.DelayedJobScheduler      - Error occurred during execution of 'DelayedJobScheduler' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerDistributedLock..ctor(SqlServerStorage storage, String resource, TimeSpan timeout)
+   en Hangfire.SqlServer.SqlServerConnection.AcquireDistributedLock(String resource, TimeSpan timeout)
+   en Hangfire.Server.DelayedJobScheduler.EnqueueNextScheduledJob(BackgroundProcessContext context)
+   en Hangfire.Server.DelayedJobScheduler.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+INFO  2016-07-07 17:03:47,280 [tbeat] Hangfire.Server.ServerHeartbeat          - Error occurred during execution of 'ServerHeartbeat' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:04 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerStorage.UseConnection[T](Func`2 func)
+   en Hangfire.Server.ServerHeartbeat.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+DEBUG 2016-07-07 17:03:47,265 [6d388] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #41c6d388' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   en System.Data.SqlClient.SqlTransaction.Rollback()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:ddb5730a-8feb-463a-8b8c-bac2a78a46e5
+Error Number:6005,State:2,Class:14
+INFO  2016-07-07 17:03:47,280 [33c97] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #40c33c97' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:03 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+INFO  2016-07-07 17:03:47,280 [6d388] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #41c6d388' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:02 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+DEBUG 2016-07-07 17:03:47,280 [a4ae4] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #903a4ae4' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): SHUTDOWN is in progress.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   en System.Data.SqlClient.SqlTransaction.Rollback()
+   en Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   en Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:1a52aa9c-c110-447a-8bb4-93a86d3c6d94
+Error Number:6005,State:2,Class:14
+DEBUG 2016-07-07 17:03:48,279 [84   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-07 17:03:48,279 [156af] Hangfire.Server.Worker                   - Background process 'Worker #a0e156af' stopped.
+DEBUG 2016-07-07 17:03:48,279 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-07-07 17:03:48,279 [6d388] Hangfire.Server.Worker                   - Background process 'Worker #41c6d388' stopped.
+DEBUG 2016-07-07 17:03:48,279 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-07-07 17:03:48,279 [9c583] Hangfire.Server.Worker                   - Background process 'Worker #8799c583' stopped.
+DEBUG 2016-07-07 17:03:48,279 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-07-07 17:03:48,279 [a4ae4] Hangfire.Server.Worker                   - Background process 'Worker #903a4ae4' stopped.
+DEBUG 2016-07-07 17:03:48,279 [47fd0] Hangfire.Server.Worker                   - Background process 'Worker #b8047fd0' stopped.
+DEBUG 2016-07-07 17:03:48,279 [33c97] Hangfire.Server.Worker                   - Background process 'Worker #40c33c97' stopped.
+DEBUG 2016-07-07 17:03:48,279 [95892] Hangfire.Server.Worker                   - Background process 'Worker #f3a95892' stopped.
+DEBUG 2016-07-07 17:03:48,279 [d7564] Hangfire.Server.Worker                   - Background process 'Worker #b7bd7564' stopped.
+DEBUG 2016-07-07 17:03:48,279 [c3497] Hangfire.Server.Worker                   - Background process 'Worker #924c3497' stopped.
+DEBUG 2016-07-07 17:03:48,279 [a4eed] Hangfire.Server.Worker                   - Background process 'Worker #004a4eed' stopped.
+DEBUG 2016-07-07 17:03:48,279 [360cb] Hangfire.Server.Worker                   - Background process 'Worker #4d6360cb' stopped.
+DEBUG 2016-07-07 17:03:48,279 [28f79] Hangfire.Server.Worker                   - Background process 'Worker #0bd28f79' stopped.
+DEBUG 2016-07-07 17:03:48,279 [7e965] Hangfire.Server.Worker                   - Background process 'Worker #d0f7e965' stopped.
+DEBUG 2016-07-07 17:03:48,279 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-07-07 17:03:48,279 [8e5f5] Hangfire.Server.Worker                   - Background process 'Worker #7da8e5f5' stopped.
+DEBUG 2016-07-07 17:03:48,279 [6b400] Hangfire.Server.Worker                   - Background process 'Worker #5fd6b400' stopped.
+DEBUG 2016-07-07 17:03:48,279 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-07-07 17:03:48,279 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-07-07 17:03:48,279 [dfc6d] Hangfire.Server.Worker                   - Background process 'Worker #059dfc6d' stopped.
+DEBUG 2016-07-07 17:03:48,279 [11e81] Hangfire.Server.Worker                   - Background process 'Worker #91f11e81' stopped.
+DEBUG 2016-07-07 17:03:48,279 [987f1] Hangfire.Server.Worker                   - Background process 'Worker #4ca987f1' stopped.
+DEBUG 2016-07-07 17:03:48,279 [01654] Hangfire.Server.Worker                   - Background process 'Worker #10f01654' stopped.
+DEBUG 2016-07-07 17:03:48,279 [d08be] Hangfire.Server.Worker                   - Background process 'Worker #4ead08be' stopped.
+DEBUG 2016-07-07 17:03:48,279 [erver] ngfire.Server.BackgroundProcessingServer - Error occurred during execution of 'BackgroundProcessingServer' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): Se ha establecido la conexión con el servidor correctamente, pero se ha producido un error durante el inicio de sesión previo del protocolo de enlace. (provider: SSL Provider, error: 0 - El identificador especificado no es válido) ---> System.ComponentModel.Win32Exception (0x80004005): El identificador especificado no es válido
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   en Hangfire.SqlServer.SqlServerStorage.UseConnection[T](Func`2 func)
+   en Hangfire.Server.BackgroundProcessingServer.Hangfire.Server.IBackgroundProcess.Execute(BackgroundProcessContext context)
+   en Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:a4896659-795c-4d08-920a-a7c6151a7f3a
+Error Number:-2146893055,State:0,Class:20
+DEBUG 2016-07-07 17:03:48,279 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-07-07 17:03:48,279 [84   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-07-07 17:03:48,279 [84   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager

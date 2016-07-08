@@ -29,6 +29,36 @@
     <link href="~/Views/Themes/SimpleTheme/Assets/css/overlay.css" rel="stylesheet" />
         <![endif]-->
     <link href="~/Views/Themes/SimpleTheme/Assets/css/overlay.css" rel="stylesheet" />
+    <style>
+        .details-text {
+            margin-top: 40px;
+            line-height: 25px;
+            -webkit-font-stretch: semi-condensed;
+            -moz-font-stretch: semi-condensed;
+            -ms-font-stretch: semi-condensed;
+            -o-font-stretch: semi-condensed;
+            font-stretch: semi-condensed;
+            font-weight: 100;
+        }
+
+        .little-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+            .little-container ul {
+                margin-top: 30px;
+            }
+
+                .little-container ul > li {
+                    margin: 10px;
+                    font-weight: 100;
+                    /* font-stretch: inherit; */
+                    font-size: 1.1em;
+                    line-height: 30px;
+                    list-style: none;
+                }
+    </style>
 </head>
 <body id="page-top">
     <div id="overlay" class="overlay">
@@ -113,75 +143,58 @@
             </div>
         </div>
         <div class="container">
-            <style>
-                .details-text {
-                    margin-top: 40px;
-                    line-height: 25px;
-                    font-stretch: semi-condensed;
-                    font-weight: 100;
-                }
-
-                .little-container {
-                    width: 80%;
-                    margin: 0 auto;
-                }
-
-                    .little-container ul {
-                        margin-top: 30px;
-                    }
-
-                        .little-container ul > li {
-                            margin: 10px;
-                            font-weight: 100;
-                            /* font-stretch: inherit; */
-                            font-size: 1.1em;
-                            line-height: 30px;
-                            list-style: none;
-                        }
-            </style>
-
-
             <div data-source="FeaturedProducts" data-iterate="products">
-                <div class="row" data-template="products">
-                    <div class="col-sm-4">
-                        <h4 class="text-center" data-iproperty="ProductName"></h4>
-                        <img class="img-responsive img-rounded" style="" data-iproperty="MediumImage" data-replicate="false" data-printproperty="src"/>
-                        <br/>
-                        <p class="text-center">
-                            <button class="btn btn-primary btn-sm" data-iproperty="Id" data-printproperty="data-id">Agregar al carro!</button>
-                        </p>
+                <div data-template="products">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <h4 class="text-center" data-iproperty="ProductName"></h4>
+                            <img class="img-responsive img-rounded" style="" data-iproperty="MediumImage" data-replicate="false" data-printproperty="src" />
+                            <br />
+                            <p class="text-center">
+                                <button class="btn btn-primary btn-sm" data-iproperty="Id" data-printproperty="data-id">Agregar al carro!</button>
+                            </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <h3 class="text-center">Caracteristicas</h3>
+                            <div data-source="FeaturesOfProduct"
+                                 data-iproperty="Id"
+                                 data-printproperty="data-id"
+                                 data-replicate="false"
+                                 data-beforesend="beforeSendFunction"
+                                 data-iterate="features">
+                                <ul class="list-group" data-template="features">
+                                    <li class="list-group-item"><a data-iproperty="FeatureText"></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div data-source="FeaturesOfProduct"
-                         data-iproperty="Id"
-                         data-printproperty="data-id"
-                         data-replicate="false"
-                         data-beforesend="beforeSendFunction" 
-                         data-iterate="features">
-                        <div class="row" data-template="features">
-                            
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" data-property="SimpleThemeService.SimpleTheme.Certifications"></h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" data-source="Galardons" data-iterate="galardons">
+                <div data-template="galardons">
+                    <div style="min-height: 166px; overflow: hidden" class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <img src="" data-iproperty="Image" data-printproperty="src" data-replicate="false" class="img-responsive img-rounded" style="width: 64px; height: 64px; margin: 0 auto; overflow: hidden;" />
+                            <h3 data-iproperty="GalardonName"></h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    @*<section class="no-padding" id="portfolio">
-            <div class="container-fluid">
-                <div class="row no-gutter popup-gallery">
-                    @{Html.RenderAction("LoadMoreProducts","ViewHelpers",new {Take = 6});}
-                </div>
-            </div>
-        </section>*@
-    <section id="certifications" class="bg-primary">
-        @{Html.RenderAction("AllGalardons", "ViewHelpers");}
-        @*<aside class="bg-dark">
-                <div class="container text-center">
-                    <div class="call-to-action">
-                        <h2>Ver mas!</h2>
-                        <a href="@Url.Action("Index","Products")" class="btn btn-default btn-xl sr-button">Acceder a la tienda</a>
-                    </div>
-                </div>
-            </aside>*@
     </section>
     <section id="contact">
         <div class="container">
@@ -226,14 +239,16 @@
             domElement.css("background-image", "url(" + data + ")");
         }
         var beforeSendFunction = function (data, context, callback) {
+            console.log("Test of callbackfunction -->");
+            var parent = $(context).parent();
+            console.log(parent);
+            var id = parent.data("id");
+            console.log(id);
+            if (id != undefined) {
 
-            setTimeout(function () {
-                console.log($(context));
-                console.log($(context).parent());
-                var id = $(context).parent().data("id");
                 data.Id = id;
                 callback(data);
-            },0);
+            }
         }
     </script>
 </body>
