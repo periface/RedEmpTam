@@ -4,6 +4,7 @@ using MercadoCinotam.GalardonsAndCert.Client;
 using MercadoCinotam.Products.Client;
 using MercadoCinotam.PymeInfo.PymeClientService;
 using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace MercadoCinotam.Web.Controllers
@@ -110,6 +111,35 @@ namespace MercadoCinotam.Web.Controllers
         {
             var products = _productClientService.GetFeaturedProductList();
             return Json(products.Products, JsonRequestBehavior.AllowGet);
+        }
+
+        [WrapResult(false)]
+        public JsonResult GetMock(int id)
+        {
+            var mock = new List<MyArrayObj>()
+            {
+                new MyArrayObj()
+                {
+                    Name = "Alan"
+                },
+                new MyArrayObj()
+                {
+                    Name = "Alfredo"
+                },
+                new MyArrayObj()
+                {
+                    Name = "Fernando"
+                },
+                new MyArrayObj()
+                {
+                    Name = "Ale Ale-jandro"
+                }
+            };
+            return Json(mock, JsonRequestBehavior.AllowGet);
+        }
+        public class MyArrayObj
+        {
+            public string Name { get; set; }
         }
         #endregion
     }
