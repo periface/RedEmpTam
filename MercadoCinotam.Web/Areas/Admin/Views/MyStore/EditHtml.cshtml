@@ -1,0 +1,161 @@
+﻿@model MercadoCinotam.ThemeService.Dtos.ThemeHtmlInput
+
+<h2>
+    Editor de Contenido
+</h2>
+<div class="row">
+
+    <form id="themeEditor">
+        <div class="col-sm-9">
+
+            <label class="control-label">Cabecera</label>
+            <pre style="height: 500px" id="editorHeader">@Model.HtmlContentHeader</pre>
+            <label class="control-label">Cuerpo</label>
+            <pre style="height: 500px" id="editorBody">@Model.HtmlContentBody</pre>
+            <p>
+                
+            </p>
+        </div>
+        <div class="col-sm-3">
+
+            <div id="myAffix" aria-multiselectable="false" class="panel-group" role="tablist">
+                <h3>Servicios Disponibles</h3>
+                <h4>Propiedades</h4>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1"> SimpleThemeService</a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="false" style="height: 0px;">
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading2">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup2" aria-expanded="false" aria-controls="collapseListGroup2"> PymeInfo</a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2" aria-expanded="false" style="height: 0px;">
+                        <ul>
+                            <li>PymeName</li>
+                            <li>PymeSlogan</li>
+                            <li>PymeLogo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading3">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup3" aria-expanded="false" aria-controls="collapseListGroup3"> PymeContact</a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading3" aria-expanded="false" style="height: 0px;">
+                        <ul>
+                            <li>Email</li>
+                            <li>PhoneNumber</li>
+                            <li>AddressLineOne</li>
+                            <li>AddressLineTwo</li>
+                            <li>Lat</li>
+                            <li>Long</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4>Colecciones</h4>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading4">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup4" aria-expanded="false" aria-controls="collapseListGroup1"> Galardons</a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading4" aria-expanded="false" style="height: 0px;">
+                        <ul>
+                            <li>Image</li>
+                            <li>GalardonName</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading5">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup5" aria-expanded="false" aria-controls="collapseListGroup1"> Products</a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading5" aria-expanded="false" style="height: 0px;">
+                        <ul>
+                            <li>ProductName</li>
+                            <li>MediumImage</li>
+                            <li>ProductDescription</li>
+                            <li>ProductPrice</li>
+                        </ul>
+                    </div>
+                </div>
+                <br/>
+                <button class="btn btn-primary" type="submit">
+                    Guardar
+                </button>
+            </div>
+           
+        </div>
+
+    </form>
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/ace/src-noconflict/ace.js"></script>
+    <script src="~/Scripts/ace/src-noconflict/ext-language_tools.js"></script>
+    <script>
+
+        (function () {
+            // trigger extension
+            ace.require("ace/ext/language_tools");
+            var editor = ace.edit("editorBody");
+            editor.session.setMode("ace/mode/html");
+            editor.setTheme("ace/theme/tomorrow");
+            // enable autocompletion and snippets
+            editor.setOptions({
+                enableBasicAutocompletion: true,
+                enableSnippets: true,
+                enableLiveAutocompletion: false
+            });
+            var editorHead = ace.edit("editorHeader");
+            editorHead.session.setMode("ace/mode/html");
+            editorHead.setTheme("ace/theme/tomorrow");
+            // enable autocompletion and snippets
+            editorHead.setOptions({
+                enableBasicAutocompletion: true,
+                enableSnippets: true,
+                enableLiveAutocompletion: false
+            });
+
+            $(document).ready(function () {
+                $('#myAffix').affix({
+                    offset: {
+                        top: 80,
+                        //bottom: function () {
+                        //    return (this.bottom = $('.footer').outerHeight(true));
+                        //}
+                    }
+                });
+                $("#themeEditor").on("submit", function (e) {
+                    e.preventDefault();
+                    var data = {
+                        HtmlContentBody: editor.getValue(),
+                        HtmlContentHeader: editorHead.getValue()
+                    }
+                    abp.ui.setBusy("body", abp.services.app.themeAdmin.createHtml(data).done(function (response) {
+                        abp.message.success("Contenido editado con exito");
+                    }));
+                });
+            });
+
+        })();
+
+
+
+    </script>
+}

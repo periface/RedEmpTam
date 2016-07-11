@@ -13,7 +13,7 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     Contenidos definidos
-                    <button data-modal disabled="disabled" data-url="@Url.Action("EditContent")" class="btn btn-default btn btn-sm pull-right">
+                    <button data-modal data-url="@Url.Action("EditContent")" class="btn btn-default btn btn-sm pull-right">
                         Crear
                     </button>
                 </div>
@@ -33,7 +33,6 @@
                                 <option value="Key">Llave</option>
 
                                 <option value="Value">Valor</option>
-                                <option value="Type">Tipo de Contenido</option>
 
                                 <option value="ThemeReferenceName">Tema</option>
                             </select>
@@ -50,9 +49,7 @@
                             <tr>
                                 <th>Llave</th>
                                 <th>Valor</th>
-                                <th>Tipo de contenido</th>
                                 <th>Tema</th>
-                                <th class="text-center">Tipo</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -93,9 +90,6 @@
                         "data": "Value"
                     },
                     {
-                        "data": "Type"
-                    },
-                    {
                         "data": "ThemeReferenceName"
                     }
                 ],
@@ -115,22 +109,23 @@
                             }
                             return allbtns;
                         },
-                        "targets": 5
-                    },
-                    {
-                        // The `data` parameter refers to the data for the cell (defined by the
-                        // `data` option, which defaults to the column being worked with, in
-                        // this case `data: 0`.
-                        className: "text-center",
-                        //<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a>
-                        "render": function (data, type, row) {
-                            if (!row.IsStatic) {
-                                return "<span class='label label-primary'> No Estatico </span>";
-                            }
-                            return "<span class='label label-warning'> Estatico </span>";
-                        },
-                        "targets": 4
+                        "targets": 3
                     }
+                    //},
+                    //{
+                    //    // The `data` parameter refers to the data for the cell (defined by the
+                    //    // `data` option, which defaults to the column being worked with, in
+                    //    // this case `data: 0`.
+                    //    className: "text-center",
+                    //    //<a href='/Admin/Products/AddGalardon/" + row.Id + "' title='Galardones ó Certificaciones' class='btn btn-sm btn-default'><i class='fa fa-trophy'></i></a>
+                    //    "render": function (data, type, row) {
+                    //        if (!row.IsStatic) {
+                    //            return "<span class='label label-primary'> No Estatico </span>";
+                    //        }
+                    //        return "<span class='label label-warning'> Estatico </span>";
+                    //    },
+                    //    "targets": 3
+                    //}
                 ]
             });
             abp.event.on("AddContent", function () {

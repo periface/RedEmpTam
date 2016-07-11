@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Web;
 
 namespace FileSaver.Manager
@@ -14,8 +15,9 @@ namespace FileSaver.Manager
 
         public string SaveAndGetVirtualPath(HttpPostedFileBase file, string folderPrefix)
         {
+            var newFileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
             var folder = string.Format(folderPrefix, "");
-            var virtualPath = string.Format(folderPrefix, file.FileName);
+            var virtualPath = string.Format(folderPrefix, newFileName);
             var physicalPath = _server.MapPath(virtualPath);
             CreateFolder(folder);
             file.SaveAs(physicalPath);

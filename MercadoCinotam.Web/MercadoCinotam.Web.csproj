@@ -428,6 +428,7 @@
     <Content Include="Areas\Admin\Views\CertAndGal\Add.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\ContactInfo.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\EditContent.cshtml" />
+    <None Include="Areas\Admin\Views\MyStore\EditHtml.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\Index.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\MainInfo.cshtml" />
     <None Include="Areas\Admin\Views\MyStore\MainPageContents.cshtml" />
@@ -438,6 +439,8 @@
     <None Include="Properties\PublishProfiles\pymetam - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\pymetam - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\ace\src-noconflict\ace.js" />
+    <Content Include="Scripts\ace\src-noconflict\ext-language_tools.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-2.2.0-vsdoc.js" />
@@ -541,9 +544,11 @@
     <Content Include="Views\Themes\SimpleTheme\Assets\css\creative.min.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\css\magnific-popup.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\css\overlay.css" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\DefaultContent\Body.txt" />
     <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\css\font-awesome.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\css\font-awesome.min.css" />
     <Content Include="Views\Themes\SimpleTheme\Assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Views\Themes\SimpleTheme\Assets\DefaultContent\Header.txt" />
     <Content Include="Views\Themes\SimpleTheme\Assets\img\header.jpg" />
     <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\1.jpg" />
     <Content Include="Views\Themes\SimpleTheme\Assets\img\portfolio\fullsize\2.jpg" />
@@ -704,10 +709,12 @@
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\AllGalardons.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\disabledGetFeatures.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\ViewHelpers\GetPymePropertyValue.cshtml" />
+    <Content Include="Views\Themes\SimpleTheme\ViewHelpers\Header.cshtml" />
     <None Include="Views\Themes\SimpleTheme\ViewHelpers\LoadMoreProducts.cshtml" />
     <Content Include="Views\Themes\SimpleTheme\_ViewStart.cshtml" />
     <None Include="Views\Themes\SimpleTheme\ViewHelpers\GetProductPropertyValue.cshtml" />
     <None Include="Views\Themes\Agency\ViewHelpers\GetPymePropertyValue.cshtml" />
+    <Content Include="Views\Themes\SimpleTheme\ViewHelpers\Body.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

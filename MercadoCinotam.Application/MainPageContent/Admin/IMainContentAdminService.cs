@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services;
 using MercadoCinotam.MainPageContent.Dtos;
+using System.Threading.Tasks;
 
 namespace MercadoCinotam.MainPageContent.Admin
 {
@@ -7,5 +8,6 @@ namespace MercadoCinotam.MainPageContent.Admin
     {
         int AddEditContent(ContentInput input);
         ContentInput GetContentForEdit(int? id);
+        Task<int> AddEditContentWithFile(ContentInput model);
     }
 }

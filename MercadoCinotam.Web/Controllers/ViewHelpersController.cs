@@ -1,8 +1,10 @@
-﻿using Abp.Web.Models;
+﻿using Abp.Threading;
+using Abp.Web.Models;
 using MercadoCinotam.Enums;
 using MercadoCinotam.GalardonsAndCert.Client;
 using MercadoCinotam.Products.Client;
 using MercadoCinotam.PymeInfo.PymeClientService;
+using MercadoCinotam.ThemeService.Client;
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -14,11 +16,13 @@ namespace MercadoCinotam.Web.Controllers
         private readonly IProductClientService _productClientService;
         private readonly IGalardonClientService _galardonClientService;
         private readonly IPymeClientService _pymeClientService;
-        public ViewHelpersController(IProductClientService productClientService, IGalardonClientService galardonClientService, IPymeClientService pymeClientService)
+        private readonly IThemeClientService _themeClientService;
+        public ViewHelpersController(IProductClientService productClientService, IGalardonClientService galardonClientService, IPymeClientService pymeClientService, IThemeClientService themeClientService)
         {
             _productClientService = productClientService;
             _galardonClientService = galardonClientService;
             _pymeClientService = pymeClientService;
+            _themeClientService = themeClientService;
         }
 
         // GET: ViewHelpers
@@ -142,5 +146,17 @@ namespace MercadoCinotam.Web.Controllers
             public string Name { get; set; }
         }
         #endregion
+
+        public ActionResult Body()
+        {
+            var themeBody = AsyncHelper.RunSync(() => _themeClientService.GetThemeContentFor("Body"));
+            return View(themeBody);
+        }
+
+        public ActionResult Header()
+        {
+            var themeHeader = AsyncHelper.RunSync(() => _themeClientService.GetThemeContentFor("Header"));
+            return View(themeHeader);
+        }
     }
 }

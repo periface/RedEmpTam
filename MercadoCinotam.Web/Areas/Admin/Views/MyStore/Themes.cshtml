@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h2>Selección de Tema</h2>
-            <h4>Tema Activo: @Model.ActiveTheme.ThemeName</h4>
+            <h4>Tema Activo: @Model.ActiveTheme.ThemeName -> <a href="@Url.Action("EditHtml")">Editar Contenido (Avanzado)</a></h4>
             <div class="list-group">
                 @foreach (var theme in Model.Themes)
                 {

@@ -22,16 +22,26 @@
                         <label class="control-label">
                             Tipo de Contenido
                         </label>
-                        @(Model.IsStatic ? Html.DropDownListFor(a => a.Type, new SelectList(Model.Types, "Type", "Type"), new { disabled = "disabled", @class = "form-control" }) : Html.DropDownListFor(a => a.Type, new SelectList(Model.Types, "Type", "Type"), new { @class = "form-control" }))
+                        @(Model.IsStatic ? Html.DropDownListFor(a => a.Type, new SelectList(Model.Types, "Type", "Type"), new { disabled = "disabled", @class = "form-control type" }) : Html.DropDownListFor(a => a.Type, new SelectList(Model.Types, "Type", "Type"), new { @class = "form-control type" }))
                     </div>
                 </div>
                 <div class="row">
 
                     <div class="col-lg-6">
+                        @if (Model.IsStatic)
+                        {
 
-                        <label class="control-label">Llave</label>
-                        @Html.TextBoxFor(a => a.Key, new { @class = "form-control", disabled = "disabled" })
+                            <label class="control-label">Llave</label>
+                            @Html.TextBoxFor(a => a.Key, new { @class = "form-control", disabled = "disabled" })
 
+                        }
+                        else
+                        {
+
+                            <label class="control-label">Llave</label>
+                            @Html.TextBoxFor(a => a.Key, new { @class = "form-control" })
+
+                        }
                     </div>
 
                     @{
@@ -55,10 +65,38 @@
         $(document).ready(function () {
             $("body").on("submit", "#addContent", function (e) {
                 e.preventDefault();
-                var data = $(this).serializeFormToObject();
-                abp.ui.setBusy($("#addContent"), abp.services.app.mainContentAdmin.addEditContent(data).done(function (id) {
-                    window.modalInstance.close({}, modalType);
-                }));
+                var self = this;
+                var selected = $("#Type").val();
+
+                switch (selected) {
+                    case "Imagen":
+                        var formData = new FormData(self);
+                        window.postWithUpload(self, formData,"/Admin/MyStore/AddEditContent",function(responseData) {
+                            window.modalInstance.close({}, modalType);
+                        });
+                        break;
+                    default:
+                        var data = $(this).serializeFormToObject();
+                        abp.ui.setBusy($("#addContent"), abp.services.app.mainContentAdmin.addEditContent(data).done(function (id) {
+                            window.modalInstance.close({}, modalType);
+                        }));
+                }
+
+
+            });
+            $("body").on("change", ".type", function () {
+                var value = $(this).val();
+                switch (value) {
+                    case "Imagen":
+                        $("#inputContainer").html("");
+                        $("#inputContainer").append('<label class="control-label">Imagen</label><input type="file" class="form-control" name="imagen" />');
+                        break;
+                    case "Texto":
+                        $("#inputContainer").html("");
+                        $("#inputContainer").append('<label class="control-label">Valor</label><input type="text" class="form-control" name="Value" />');
+                        break;
+                    default:
+                }
             });
         });
     })($);

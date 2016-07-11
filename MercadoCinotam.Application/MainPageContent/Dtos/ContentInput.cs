@@ -2,6 +2,7 @@
 using Abp.AutoMapper;
 using Castle.Components.DictionaryAdapter;
 using System.Collections.Generic;
+using System.Web;
 
 namespace MercadoCinotam.MainPageContent.Dtos
 {
@@ -14,11 +15,11 @@ namespace MercadoCinotam.MainPageContent.Dtos
             {
                 new MainContentType()
                 {
-                    Type = "Imagen"
+                    Type = "Texto"
                 },
                 new MainContentType()
                 {
-                    Type = "Texto"
+                    Type = "Imagen"
                 }
             };
         }
@@ -29,5 +30,6 @@ namespace MercadoCinotam.MainPageContent.Dtos
         public int ThemeReferenceId { get; set; }
         public string ThemeReferenceName { get; set; }
         public List<MainContentType> Types { get; set; }
+        public HttpPostedFileBase File   { get; set; }
     }
 }

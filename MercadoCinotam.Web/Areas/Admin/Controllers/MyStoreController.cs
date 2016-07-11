@@ -1,8 +1,10 @@
-﻿using Abp.Web.Models;
+﻿using Abp.UI;
+using Abp.Web.Models;
 using Helpers.GenericTypes;
 using Helpers.ReflectionHelpers;
 using Helpers.ThemeHelper;
 using MercadoCinotam.MainPageContent.Admin;
+using MercadoCinotam.MainPageContent.Dtos;
 using MercadoCinotam.PymeInfo.Dtos;
 using MercadoCinotam.PymeInfo.PymeAdminService;
 using MercadoCinotam.ThemeService.Admin;
@@ -78,6 +80,23 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
         {
             var content = _mainContentAdminService.GetContentForEdit(id);
             return View(content);
+        }
+        [HttpPost]
+        public async Task<ActionResult> AddEditContent()
+        {
+            var model = InputBuilder.BuildInputByRequest<ContentInput>(Request);
+            if (Request.Files.Count <= 0)
+            {
+                throw new UserFriendlyException("No hay imagen");
+            }
+            model.File = Request.Files[0];
+            var id = await _mainContentAdminService.AddEditContentWithFile(model);
+            return Json(id, JsonRequestBehavior.AllowGet);
+        }
+        public async Task<ActionResult> EditHtml()
+        {
+            var themeContents = await _themeAdminService.GetThemeContentForEdit();
+            return View(themeContents);
         }
     }
 }
