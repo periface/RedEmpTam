@@ -2,8 +2,8 @@
 using Helpers.TenancyHelpers;
 using MercadoCinotam.StartupSettings;
 using MercadoCinotam.ThemeService.Dtos;
+using MercadoCinotam.ThemeService.Helpers;
 using System;
-using System.IO;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -17,9 +17,11 @@ namespace MercadoCinotam.ThemeService.Client
         private const string ThemeBodyContent = "/Views/Themes/{0}/Assets/DefaultContent/Body.txt";
         const string FileNameHeader = "Header.txt";
         const string FileNameBody = "Body.txt";
+        private readonly HttpServerUtility _server;
         public ThemeClientService(ISettingStore settingStore)
         {
             _settingStore = settingStore;
+            _server = HttpContext.Current.Server;
         }
 
         public async Task<string> GetActiveThemeFromTenant()
@@ -39,82 +41,29 @@ namespace MercadoCinotam.ThemeService.Client
             var currentTheme = await _settingStore.GetSettingOrNullAsync(TenantId, null, ConfigConst.Theme);
 
             var tenantFolder = string.Format(ServerPath, TenantId, currentTheme.Value);
-            var serverFileBodyRoute = HttpContext.Current.Server.MapPath(tenantFolder + FileNameBody);
-            var serverFileHeaderRoute = HttpContext.Current.Server.MapPath(tenantFolder + FileNameHeader);
+            var serverFileBodyRoute = GetServerFileRoute(tenantFolder, FileNameBody);
+            var serverFileHeaderRoute = GetServerFileRoute(tenantFolder, FileNameHeader);
             try
             {
-                string content;
-                switch (selector)
-                {
-                    case "Body":
-                        using (var reader = new StreamReader(serverFileBodyRoute))
-                        {
-                            content = reader.ReadToEnd();
-                            reader.Close();
-                        }
-                        if (string.IsNullOrEmpty(content))
-                        {
-                            throw new Exception();
-                        }
-                        break;
-                    case "Header":
-                        using (var reader = new StreamReader(serverFileHeaderRoute))
-                        {
-                            content = reader.ReadToEnd();
-                            reader.Close();
-                        }
-                        if (string.IsNullOrEmpty(content))
-                        {
-                            throw new Exception();
-                        }
-                        break;
-                    default:
-                        throw new Exception();
-                }
-                return new ThemeContentOutput()
-                {
-                    HtmlContent = content
-                };
+                var result = FileHelpers.GetThemeResultsBySelector(selector, serverFileBodyRoute, serverFileHeaderRoute);
+                return result;
             }
             catch (Exception)
             {
                 var resolveThemeHeaderPath = string.Format(ThemeHeaderContent, currentTheme.Value);
                 var resolveThemeBodyPath = string.Format(ThemeBodyContent, currentTheme.Value);
-                var defaultContentHeader = HttpContext.Current.Server.MapPath(resolveThemeHeaderPath);
-                var defaultContentBody = HttpContext.Current.Server.MapPath(resolveThemeBodyPath);
-                string content;
-                switch (selector)
-                {
-                    case "Body":
-                        using (var reader = new StreamReader(defaultContentBody))
-                        {
-                            content = reader.ReadToEnd();
-                            reader.Close();
-                        }
-                        if (string.IsNullOrEmpty(content))
-                        {
-                            throw new Exception();
-                        }
-                        break;
-                    case "Header":
-                        using (var reader = new StreamReader(defaultContentHeader))
-                        {
-                            content = reader.ReadToEnd();
-                            reader.Close();
-                        }
-                        if (string.IsNullOrEmpty(content))
-                        {
-                            throw new Exception();
-                        }
-                        break;
-                    default:
-                        throw new Exception();
-                }
-                return new ThemeContentOutput()
-                {
-                    HtmlContent = content
-                };
+                var defaultContentHeader = _server.MapPath(resolveThemeHeaderPath);
+                var defaultContentBody = _server.MapPath(resolveThemeBodyPath);
+                var result = FileHelpers.GetThemeResultsBySelector(selector, defaultContentBody, defaultContentHeader);
+                return result;
             }
+        }
+
+
+
+        private string GetServerFileRoute(string tenantFolder, string fileNameBody)
+        {
+            return _server.MapPath(tenantFolder + fileNameBody);
         }
     }
 }

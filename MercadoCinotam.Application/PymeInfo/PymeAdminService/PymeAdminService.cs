@@ -2,12 +2,12 @@
 using Abp.Configuration;
 using Helpers.GenericTypes;
 using Helpers.TenancyHelpers;
-using ImageSaver.Manager;
+using ImageSaver;
+using MercadoCinotam.Pyme;
 using MercadoCinotam.Pyme.Entities;
-using MercadoCinotam.Pyme.Manager;
 using MercadoCinotam.PymeInfo.Dtos;
 using MercadoCinotam.StartupSettings;
-using MercadoCinotam.Themes.Manager;
+using MercadoCinotam.Themes;
 using MercadoCinotam.ThemeService.Client;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,13 +16,13 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
 {
     public class PymeAdminService : MercadoCinotamAppServiceBase, IPymeAdminService
     {
-        private readonly IPymeManager _pymeManager;
-        private readonly IImageManager _imageManager;
-        private readonly IThemeManager _themeManager;
+        private readonly PymeProvider _pymeManager;
+        private readonly ImageProvider _imageManager;
+        private readonly ThemeProvider _themeManager;
         private readonly ISettingStore _settingStore;
         private readonly IThemeClientService _themeClientService;
         private const string ImageFolder = "/Content/Images/Logos/Tentants/{0}/";
-        public PymeAdminService(IPymeManager pymeManager, IImageManager imageManager, IThemeManager themeManager, ISettingStore settingStore, IThemeClientService themeClientService)
+        public PymeAdminService(PymeProvider pymeManager, ImageProvider imageManager, ThemeProvider themeManager, ISettingStore settingStore, IThemeClientService themeClientService)
         {
             _pymeManager = pymeManager;
             _imageManager = imageManager;

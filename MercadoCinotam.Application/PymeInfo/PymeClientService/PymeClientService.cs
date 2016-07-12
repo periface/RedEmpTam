@@ -1,14 +1,14 @@
 ﻿using MercadoCinotam.Enums;
-using MercadoCinotam.Pyme.Manager;
+using MercadoCinotam.Pyme;
 using System;
 
 namespace MercadoCinotam.PymeInfo.PymeClientService
 {
     public class PymeClientService : MercadoCinotamAppServiceBase, IPymeClientService
     {
-        private readonly IPymeManager _pymeManager;
+        private readonly PymeProvider _pymeManager;
 
-        public PymeClientService(IPymeManager pymeManager)
+        public PymeClientService(PymeProvider pymeManager)
         {
             _pymeManager = pymeManager;
         }

@@ -2,13 +2,12 @@
 using Abp.UI;
 using Helpers;
 using Helpers.GenericTypes;
-using ImageSaver.Manager;
+using ImageSaver;
 using MercadoCinotam.GalardonsAndCert.Dtos;
-using MercadoCinotam.ProductFeatures.Manager;
+using MercadoCinotam.ProductFeatures;
 using MercadoCinotam.Products.Admin.Dtos;
 using MercadoCinotam.Products.Client.Dtos;
 using MercadoCinotam.Products.Entities;
-using MercadoCinotam.Products.Manager;
 using System;
 using System.Linq;
 using Product = MercadoCinotam.Products.Entities.Product;
@@ -17,14 +16,14 @@ namespace MercadoCinotam.Products.Admin
 {
     public class ProductAdminService : MercadoCinotamAppServiceBase, IProductAdminService
     {
-        private readonly IProductManager _productManager;
-        private readonly IImageManager _imageManager;
-        private readonly IProductFeatureManager _productFeatureManager;
+        private readonly ProductProvider _productManager;
+        private readonly ImageProvider _imageManager;
+        private readonly ProductFeaturesProvider _productFeatureManager;
         private const string ImageFolder = "/Content/Images/Tenants/{0}/Products/{1}/{2}/";
         private const string FolderSizeSmall = "64x64";
         private const string FolderSizeDefault = "Default";
         private const string FolderSizeMedium = "128x128";
-        public ProductAdminService(IProductManager productManager, IImageManager imageManager, IProductFeatureManager productFeatureManager)
+        public ProductAdminService(ProductProvider productManager, ImageProvider imageManager, ProductFeaturesProvider productFeatureManager)
         {
             _productManager = productManager;
             _imageManager = imageManager;

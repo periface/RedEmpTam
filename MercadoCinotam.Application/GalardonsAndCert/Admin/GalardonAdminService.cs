@@ -1,10 +1,9 @@
 ﻿using Abp.AutoMapper;
-using Abp.Runtime.Session;
 using Helpers;
 using Helpers.GenericTypes;
-using ImageSaver.Manager;
+using ImageSaver;
+using MercadoCinotam.Certifications;
 using MercadoCinotam.Certifications.Entities;
-using MercadoCinotam.Certifications.Manager;
 using MercadoCinotam.GalardonsAndCert.Dtos;
 using System;
 using System.Collections.Generic;
@@ -14,37 +13,34 @@ namespace MercadoCinotam.GalardonsAndCert.Admin
 {
     public class GalardonAdminService : MercadoCinotamAppServiceBase, IGalardonAdminService
     {
-        private readonly ICertificationManager _certificationManager;
-        private readonly IImageManager _imageManager;
-
-        private IAbpSession _abpSession;
+        private readonly ImageProvider _imageProvider;
+        private readonly CertificationProvider _certificationProvider;
         private const string GalardonFolder = "/Content/Images/Galardons/Tenants/{0}/{1}/";
-        public GalardonAdminService(ICertificationManager certificationManager, IImageManager imageManager)
+        public GalardonAdminService(ImageProvider imageProvider, CertificationProvider certificationProvider)
         {
-            _certificationManager = certificationManager;
-            _imageManager = imageManager;
-            _abpSession = NullAbpSession.Instance;
+            _imageProvider = imageProvider;
+            _certificationProvider = certificationProvider;
         }
 
         public int AddGalardon(GalardonInput input)
         {
             if (input.Id != 0)
             {
-                var galardonDb = _certificationManager.GetCertification(input.Id);
+                var galardonDb = _certificationProvider.GetCertification(input.Id);
                 var edited = input.MapTo(galardonDb);
-                var id = _certificationManager.AddCertification(edited);
+                var id = _certificationProvider.AddCertification(edited);
                 if (input.ImageFile.ContentLength <= 0) return id;
                 var computedFolder = string.Format(GalardonFolder, AbpSession.TenantId, edited.GalardonName.CreateSlug());
-                var folder = _imageManager.SaveImage(200, 200, input.ImageFile, computedFolder);
+                var folder = _imageProvider.SaveImage(200, 200, input.ImageFile, computedFolder);
                 edited.SetImage(folder);
                 return id;
             }
             else
             {
                 var model = Certification.Create(input.GalardonName, input.UniqueCode, input.Description);
-                var id = _certificationManager.AddCertification(model);
+                var id = _certificationProvider.AddCertification(model);
                 var computedFolder = string.Format(GalardonFolder, AbpSession.TenantId, model.GalardonName.CreateSlug());
-                var folder = _imageManager.SaveImage(200, 200, input.ImageFile, computedFolder);
+                var folder = _imageProvider.SaveImage(200, 200, input.ImageFile, computedFolder);
                 model.SetImage(folder);
                 return id;
             }
@@ -53,7 +49,7 @@ namespace MercadoCinotam.GalardonsAndCert.Admin
         public GalardonInput GetGalardonForEdit(int? id)
         {
             if (id == null) return new GalardonInput();
-            var galardon = _certificationManager.GetCertification(id.Value);
+            var galardon = _certificationProvider.GetCertification(id.Value);
             if (galardon == null)
             {
                 return new GalardonInput();
@@ -76,7 +72,7 @@ namespace MercadoCinotam.GalardonsAndCert.Admin
         public ReturnModel<GalardonDto> GetGalardons(RequestModel request)
         {
             int count;
-            var query = _certificationManager.GetCertificationsQuery();
+            var query = _certificationProvider.GetCertificationsQuery();
             var model = GenerateModel(request, query, "GalardonName", out count);
             return new ReturnModel<GalardonDto>()
             {
@@ -98,15 +94,15 @@ namespace MercadoCinotam.GalardonsAndCert.Admin
 
         public GalardonProductInput GetGalardonAssignationModel(Guid productId)
         {
-            var galardonAssignationFromProduct = _certificationManager.GetCertifications(productId).ToList();
+            var galardonAssignationFromProduct = _certificationProvider.GetCertifications(productId).ToList();
             var activeGalardon = new List<GalardonDto>();
             foreach (var assignation in galardonAssignationFromProduct)
             {
-                var cert = _certificationManager.GetCertification(assignation.CertId);
+                var cert = _certificationProvider.GetCertification(assignation.CertId);
                 activeGalardon.Add(cert.MapTo<GalardonDto>());
 
             }
-            var inactives = _certificationManager.GetCertifications(galardonAssignationFromProduct).ToList();
+            var inactives = _certificationProvider.GetCertifications(galardonAssignationFromProduct).ToList();
 
             return new GalardonProductInput()
             {
@@ -120,7 +116,7 @@ namespace MercadoCinotam.GalardonsAndCert.Admin
         {
             foreach (var id in input.Actives)
             {
-                _certificationManager.AddCertificationToProduct(input.ProductId, id);
+                _certificationProvider.AddCertificationToProduct(input.ProductId, id);
             }
         }
     }

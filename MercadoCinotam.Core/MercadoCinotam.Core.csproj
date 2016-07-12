@@ -90,9 +90,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Certifications\CertificationProvider.cs" />
     <Compile Include="Certifications\Entities\Certification.cs" />
     <Compile Include="Certifications\Manager\CertificationManager.cs" />
     <Compile Include="Certifications\Manager\ICertificationManager.cs" />
+    <Compile Include="MainPageContentManager\MainPageContentProvider.cs" />
     <Compile Include="MainPageContentManager\Manager\IMainPageContentManager.cs" />
     <Compile Include="MainPageContentManager\Manager\MainPageContentManager.cs" />
     <Compile Include="MercadoCinotamConsts.cs" />
@@ -109,12 +111,14 @@
     <Compile Include="ProductFeatures\Manager\IProductFeatureManager.cs" />
     <Compile Include="ProductFeatures\Entities\Feature.cs" />
     <Compile Include="ProductFeatures\Manager\ProductFeatureManager.cs" />
+    <Compile Include="ProductFeatures\ProductFeaturesProvider.cs" />
     <Compile Include="Products\Entities\Product.cs" />
     <Compile Include="ProductFeatures\Entities\ProductFeatureSection.cs" />
     <Compile Include="Products\Entities\ProductCertification.cs" />
     <Compile Include="Products\Entities\ProductSlider.cs" />
     <Compile Include="Products\Manager\IProductManager.cs" />
     <Compile Include="Products\Manager\ProductManager.cs" />
+    <Compile Include="Products\ProductProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Authorization\Roles\Role.cs" />
     <Compile Include="Authorization\Roles\RoleManager.cs" />
@@ -125,12 +129,14 @@
     <Compile Include="Pyme\Entities\PymeOwner.cs" />
     <Compile Include="Pyme\Manager\IPymeManager.cs" />
     <Compile Include="Pyme\Manager\PymeManager.cs" />
+    <Compile Include="Pyme\PymeProvider.cs" />
     <Compile Include="SystemThemeProvider.cs" />
     <Compile Include="Themes\Entities\Theme.cs" />
     <Compile Include="Themes\Entities\ThemePreview.cs" />
     <Compile Include="Themes\Entities\ThemeRequiredField.cs" />
     <Compile Include="Themes\Manager\IThemeManager.cs" />
     <Compile Include="Themes\Manager\ThemeManager.cs" />
+    <Compile Include="Themes\ThemeProvider.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />

@@ -1,5 +1,5 @@
 ﻿using Abp.AutoMapper;
-using MercadoCinotam.Certifications.Manager;
+using MercadoCinotam.Certifications;
 using MercadoCinotam.GalardonsAndCert.Dtos;
 using MercadoCinotam.Products.Client.Dtos;
 using System.Linq;
@@ -8,9 +8,9 @@ namespace MercadoCinotam.GalardonsAndCert.Client
 {
     public class GalardonClientService : IGalardonClientService
     {
-        private readonly ICertificationManager _certificationManager;
+        private readonly CertificationProvider _certificationManager;
 
-        public GalardonClientService(ICertificationManager certificationManager)
+        public GalardonClientService(CertificationProvider certificationManager)
         {
             _certificationManager = certificationManager;
         }

@@ -1,10 +1,9 @@
 ﻿using Abp.AutoMapper;
-using MercadoCinotam.Certifications.Manager;
+using MercadoCinotam.Certifications;
 using MercadoCinotam.GalardonsAndCert.Dtos;
-using MercadoCinotam.ProductFeatures.Manager;
+using MercadoCinotam.ProductFeatures;
 using MercadoCinotam.Products.Admin.Dtos;
 using MercadoCinotam.Products.Client.Dtos;
-using MercadoCinotam.Products.Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +12,12 @@ namespace MercadoCinotam.Products.Client
 {
     public class ProductClientService : IProductClientService
     {
-        private readonly IProductManager _productManager;
-        private readonly ICertificationManager _certificationManager;
-        private readonly IProductFeatureManager _productFeatureManager;
-        public ProductClientService(IProductManager productManager, ICertificationManager certificationManager, IProductFeatureManager productFeatureManager)
+        private readonly ProductProvider _productManager;
+        private readonly CertificationProvider _certificationManager;
+        private readonly ProductFeaturesProvider _productFeatureManager;
+        public ProductClientService(ProductProvider productManager,
+            CertificationProvider certificationManager,
+            ProductFeaturesProvider productFeatureManager)
         {
             _productManager = productManager;
             _certificationManager = certificationManager;

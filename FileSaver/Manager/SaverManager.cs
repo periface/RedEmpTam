@@ -13,7 +13,7 @@ namespace FileSaver.Manager
             _server = HttpContext.Current.Server;
         }
 
-        public string SaveAndGetVirtualPath(HttpPostedFileBase file, string folderPrefix)
+        public virtual string SaveAndGetVirtualPath(HttpPostedFileBase file, string folderPrefix)
         {
             var newFileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
             var folder = string.Format(folderPrefix, "");

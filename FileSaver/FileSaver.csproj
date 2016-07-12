@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileManagerModule.cs" />
+    <Compile Include="FileProvider.cs" />
     <Compile Include="Manager\ISaverManager.cs" />
     <Compile Include="Manager\SaverManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
