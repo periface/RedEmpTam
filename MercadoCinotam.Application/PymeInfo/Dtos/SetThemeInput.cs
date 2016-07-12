@@ -2,7 +2,7 @@
 {
     public class SetThemeInput
     {
-        public int ThemeId { get; set; }
+        public string ThemeId { get; set; }
         public bool KeepOldData { get; set; }
     }
 }

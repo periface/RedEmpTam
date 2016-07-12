@@ -1,0 +1,92 @@
+{
+	"ThemeName": "Tema Agency",
+	"ThemeUniqueName": "Agency",
+	"ThemeCreationTime": "12-07-2016",
+	"ThemeDescription": "Tema basico, recomendado para negocios con poca cantidad de productos (3)",
+	"InDevelopment": "false",
+	"TenantName": "",
+	"PropertyServices": [{
+		"Name": "AgencyServiceName"
+	}, {
+		"Name": "PymeInfo"
+	}, {
+		"Name": "PymeContact"
+	}],
+	"IterationServices": [{
+		"Name": "Products",
+		"Properties": ["ProductName", "MediumImage", "ProductDescription", "ProductPrice", "Sku"]
+	}, {
+		"Name": "Galardons",
+		"Properties": ["Image", "GalardonName"]
+	}],
+	"PreviewsFolder": "/Assets/Img/ThemePreviews/",
+	"ThemeRequiredProperties": [{
+		"Key": "Agency.OurProducts",
+		"Value": "Nuestros productos",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Features",
+		"Value": "Caracteristicas",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Certifications",
+		"Value": "Certificaciones",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.GetInTouch",
+		"Value": "Pongase en contacto",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.GetInTouchMessage",
+		"Value": "Estamos para atenderle",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.AboutUs",
+		"Value": "Nosotros",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Menu.OurProducts",
+		"Value": "Productos",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Menu.Features",
+		"Value": "Caracteristicas",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Menu.Certifications",
+		"Value": "Certificaciones",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Menu.Contact",
+		"Value": "Contacto",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Menu.AboutUs",
+		"Value": "Acerca de nosotros",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Menu.Cart",
+		"Value": "Carrito",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.LoadPage.Text",
+		"Value": "Cargando...",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.LoadPage.SecText",
+		"Value": "Las Mejores Tiendas Online",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.LoadPage.SecTitle",
+		"Value": "PymeTam",
+		"Type": "Texto"
+	}, {
+		"Key": "Agency.Header.Background",
+		"Value": "/Views/Themes/Agency/Assets/img/header.jpg",
+		"Type": "Imagen"
+	}, {
+		"Key": "Agency.Header.BackgroundElements",
+		"Value": "Nuestros productos",
+		"Type": "Texto"
+	}]
+}

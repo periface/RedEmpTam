@@ -11,6 +11,7 @@ using MercadoCinotam.Themes;
 using MercadoCinotam.ThemeService.Client;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace MercadoCinotam.PymeInfo.PymeAdminService
 {
@@ -21,6 +22,7 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
         private readonly ThemeProvider _themeManager;
         private readonly ISettingStore _settingStore;
         private readonly IThemeClientService _themeClientService;
+        private readonly HttpServerUtility _server;
         private const string ImageFolder = "/Content/Images/Logos/Tentants/{0}/";
         public PymeAdminService(PymeProvider pymeManager, ImageProvider imageManager, ThemeProvider themeManager, ISettingStore settingStore, IThemeClientService themeClientService)
         {
@@ -29,6 +31,7 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
             _themeManager = themeManager;
             _settingStore = settingStore;
             _themeClientService = themeClientService;
+            _server = HttpContext.Current.Server;
         }
 
         public int AddInfo(PymeInfoInput input)
@@ -80,10 +83,11 @@ namespace MercadoCinotam.PymeInfo.PymeAdminService
 
         public async Task SetTheme(SetThemeInput input)
         {
-            var theme = _themeManager.GetTheme(input.ThemeId);
+            var theme = await _themeManager.GetTheme(input.ThemeId, _server);
             await _settingStore.UpdateAsync(Settings.ThemeInitialConfig(TenantId, theme.ThemeUniqueName));
+            var themeFromFile = await _themeManager.GetThemeByThemeName(input.ThemeId, HttpContext.Current.Server);
 
-            _pymeManager.SetMainPageContent(theme.Id, input.KeepOldData);
+            _pymeManager.SetMainPageContent(themeFromFile, input.KeepOldData);
         }
 
         public async Task<ReturnModel<MainPageContentDto>> GetMainPageContents(RequestModel request, bool onlyActiveTheme = false)

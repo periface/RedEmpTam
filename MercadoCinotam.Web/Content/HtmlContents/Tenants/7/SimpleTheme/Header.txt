@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" data-async="false" data-printproperty="content" data-property="SimpleThemeService.Custom.MetaTags.Description">
+    <meta name="author" content="">
+    <meta name="keywords" data-async="false" data-printproperty="content" data-property="SimpleThemeService.Custom.MetaTags.Tags">
+    <title>Basic theme landing page</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/Views/Themes/SimpleTheme/Assets/css/bootstrap.min.css" type="text/css">
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/Views/Themes/SimpleTheme/Assets/font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/Views/Themes/SimpleTheme/Assets/css/magnific-popup.css" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Views/Themes/SimpleTheme/Assets/css/creative.css" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link href="~/Views/Themes/SimpleTheme/Assets/css/overlay.css" rel="stylesheet" />
+        <![endif]-->
+    <link href="/Views/Themes/SimpleTheme/Assets/css/overlay.css" rel="stylesheet" />
+    <style>
+        .details-text {
+            margin-top: 40px;
+            line-height: 25px;
+            -webkit-font-stretch: semi-condensed;
+            -moz-font-stretch: semi-condensed;
+            -ms-font-stretch: semi-condensed;
+            -o-font-stretch: semi-condensed;
+            font-stretch: semi-condensed;
+            font-weight: 100;
+        }
+
+        .little-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+            .little-container ul {
+                margin-top: 30px;
+            }
+
+                .little-container ul > li {
+                    margin: 10px;
+                    font-weight: 100;
+                    /* font-stretch: inherit; */
+                    font-size: 1.1em;
+                    line-height: 30px;
+                    list-style: none;
+                }
+    </style>

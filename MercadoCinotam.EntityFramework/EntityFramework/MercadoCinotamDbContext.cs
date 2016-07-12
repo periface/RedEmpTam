@@ -6,7 +6,6 @@ using MercadoCinotam.MultiTenancy;
 using MercadoCinotam.ProductFeatures.Entities;
 using MercadoCinotam.Products.Entities;
 using MercadoCinotam.Pyme.Entities;
-using MercadoCinotam.Themes.Entities;
 using MercadoCinotam.Users;
 using System.Data.Common;
 using System.Data.Entity;
@@ -31,9 +30,9 @@ namespace MercadoCinotam.EntityFramework
         public IDbSet<PymeContactInfo> PymeContactInfos { get; set; }
         public IDbSet<PymeOwner> PymeOwners { get; set; }
         public IDbSet<MainPageContent> MainPageContents { get; set; }
-        public IDbSet<Theme> Themes { get; set; }
-        public IDbSet<ThemeRequiredField> ThemeRequiredFields { get; set; }
-        public IDbSet<ThemePreview> ThemePreviews { get; set; }
+        //public IDbSet<Theme> Themes { get; set; }
+        //public IDbSet<ThemeRequiredField> ThemeRequiredFields { get; set; }
+        //public IDbSet<ThemePreview> ThemePreviews { get; set; }
         public MercadoCinotamDbContext()
             : base("Default")
         {

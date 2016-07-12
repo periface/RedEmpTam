@@ -1,17 +1,15 @@
 ﻿using Abp.Application.Services.Dto;
-using Abp.AutoMapper;
-using MercadoCinotam.Themes.Entities;
+using Helpers.Helpers.HelperModels;
 using System.Collections.Generic;
 
 namespace MercadoCinotam.ThemeService.Dtos
 {
     public class ThemeSelectorOutput : IOutputDto
     {
-        public ThemeDto ActiveTheme { get; set; }
+        public ThemeInfo ActiveTheme { get; set; }
         public List<ThemeDto> Themes { get; set; }
     }
-    [AutoMapFrom(typeof(Theme))]
-    public class ThemeDto : EntityDto
+    public class ThemeDto : EntityDto<string>
     {
         public string ThemeUniqueName { get; set; }
         public string ThemeName { get; set; }
@@ -20,7 +18,6 @@ namespace MercadoCinotam.ThemeService.Dtos
         public IEnumerable<ThemePreviewDto> Preview { get; set; }
 
     }
-    [AutoMap(typeof(ThemePreview))]
     public class ThemePreviewDto
     {
         public string Image { get; set; }

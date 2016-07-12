@@ -9,7 +9,7 @@ namespace MercadoCinotam.MainPageContentManager.Entities
         public string Value { get; set; }
         public string Type { get; set; }
         public bool IsStatic { get; set; }
-        public int ThemeReferenceId { get; set; }
+        public string ThemeReferenceId { get; set; }
         public string ThemeReferenceName { get; set; }
         public int TenantId { get; set; }
     }

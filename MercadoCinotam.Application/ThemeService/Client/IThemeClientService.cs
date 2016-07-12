@@ -1,5 +1,5 @@
 ﻿using Abp.Application.Services;
-using MercadoCinotam.ThemeService.Dtos;
+using Helpers.Helpers.HelperModels;
 using System.Threading.Tasks;
 
 namespace MercadoCinotam.ThemeService.Client

@@ -1,0 +1,92 @@
+{
+	"ThemeName": "Tema basico",
+	"ThemeUniqueName": "SimpleTheme",
+	"ThemeCreationTime": "12-07-2016",
+	"ThemeDescription": "Tema basico, recomendado para negocios con poca cantidad de productos (3)",
+	"InDevelopment": "false",
+	"TenantName": "Ropa",
+	"PropertyServices": [{
+		"Name": "SimpleThemeServiceName"
+	}, {
+		"Name": "PymeInfo"
+	}, {
+		"Name": "PymeContact"
+	}],
+	"IterationServices": [{
+		"Name": "Products",
+		"Properties": ["ProductName", "MediumImage", "ProductDescription", "ProductPrice", "Sku"]
+	}, {
+		"Name": "Galardons",
+		"Properties": ["Image", "GalardonName"]
+	}],
+	"PreviewsFolder": "/Assets/Img/ThemePreviews/",
+	"ThemeRequiredProperties": [{
+		"Key": "SimpleTheme.OurProducts",
+		"Value": "Nuestros productos",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Features",
+		"Value": "Caracteristicas",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Certifications",
+		"Value": "Certificaciones",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.GetInTouch",
+		"Value": "Pongase en contacto",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.GetInTouchMessage",
+		"Value": "Estamos para atenderle",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.AboutUs",
+		"Value": "Nosotros",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Menu.OurProducts",
+		"Value": "Productos",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Menu.Features",
+		"Value": "Caracteristicas",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Menu.Certifications",
+		"Value": "Certificaciones",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Menu.Contact",
+		"Value": "Contacto",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Menu.AboutUs",
+		"Value": "Acerca de nosotros",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Menu.Cart",
+		"Value": "Carrito",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.LoadPage.Text",
+		"Value": "Cargando...",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.LoadPage.SecText",
+		"Value": "Las Mejores Tiendas Online",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.LoadPage.SecTitle",
+		"Value": "PymeTam",
+		"Type": "Texto"
+	}, {
+		"Key": "SimpleTheme.Header.Background",
+		"Value": "/Views/Themes/SimpleTheme/Assets/img/header.jpg",
+		"Type": "Imagen"
+	}, {
+		"Key": "SimpleTheme.Header.BackgroundElements",
+		"Value": "Nuestros productos",
+		"Type": "Texto"
+	}]
+}

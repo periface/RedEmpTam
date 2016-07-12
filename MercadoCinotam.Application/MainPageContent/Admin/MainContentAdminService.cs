@@ -32,7 +32,7 @@ namespace MercadoCinotam.MainPageContent.Admin
                 return _mainPageContentProvider.AddContent(edited);
             }
             var newContent = input.MapTo<MainPageContentManager.Entities.MainPageContent>();
-            newContent.ThemeReferenceId = 0;
+            newContent.ThemeReferenceId = "Custom";
             newContent.ThemeReferenceName = "Custom";
             newContent.IsStatic = false;
             return _mainPageContentProvider.AddContent(newContent);

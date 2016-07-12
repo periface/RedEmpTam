@@ -131,9 +131,6 @@
     <Compile Include="Pyme\Manager\PymeManager.cs" />
     <Compile Include="Pyme\PymeProvider.cs" />
     <Compile Include="SystemThemeProvider.cs" />
-    <Compile Include="Themes\Entities\Theme.cs" />
-    <Compile Include="Themes\Entities\ThemePreview.cs" />
-    <Compile Include="Themes\Entities\ThemeRequiredField.cs" />
     <Compile Include="Themes\Manager\IThemeManager.cs" />
     <Compile Include="Themes\Manager\ThemeManager.cs" />
     <Compile Include="Themes\ThemeProvider.cs" />
@@ -170,6 +167,7 @@
   <ItemGroup>
     <Folder Include="Orders\" />
     <Folder Include="ShoppingCarts\" />
+    <Folder Include="Themes\Entities\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Helpers\Helpers.csproj">

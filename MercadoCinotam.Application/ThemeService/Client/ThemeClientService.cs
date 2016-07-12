@@ -1,8 +1,8 @@
 ﻿using Abp.Configuration;
+using Helpers.Helpers;
+using Helpers.Helpers.HelperModels;
 using Helpers.TenancyHelpers;
 using MercadoCinotam.StartupSettings;
-using MercadoCinotam.ThemeService.Dtos;
-using MercadoCinotam.ThemeService.Helpers;
 using System;
 using System.Threading.Tasks;
 using System.Web;

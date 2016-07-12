@@ -147,10 +147,8 @@
     <Compile Include="ThemeService\Admin\ThemeAdminService.cs" />
     <Compile Include="ThemeService\Client\IThemeClientService.cs" />
     <Compile Include="ThemeService\Client\ThemeClientService.cs" />
-    <Compile Include="ThemeService\Dtos\ThemeContentOutput.cs" />
     <Compile Include="ThemeService\Dtos\ThemeHtmlInput.cs" />
     <Compile Include="ThemeService\Dtos\ThemeSelectorOutput.cs" />
-    <Compile Include="ThemeService\Helpers\FileHelpers.cs" />
     <Compile Include="Users\Dto\CreateUserInput.cs" />
     <Compile Include="Users\IUserAppService.cs" />
     <Compile Include="Roles\RoleAppService.cs" />

@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using Helpers.ThemeHelper;
+using System.Web.Mvc;
 
 namespace MercadoCinotam.Web.Controllers
 {
@@ -7,6 +8,7 @@ namespace MercadoCinotam.Web.Controllers
         // GET: Landing
         public ActionResult Index()
         {
+            ThemeHelper.ClearTheme(System.Web.HttpContext.Current);
             return View();
         }
     }

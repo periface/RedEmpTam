@@ -1,10 +1,11 @@
-﻿using Abp.AutoMapper;
-using Abp.Configuration;
+﻿using Abp.Configuration;
+using Helpers.Helpers;
 using MercadoCinotam.StartupSettings;
 using MercadoCinotam.Themes;
 using MercadoCinotam.ThemeService.Dtos;
-using MercadoCinotam.ThemeService.Helpers;
 using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -15,6 +16,7 @@ namespace MercadoCinotam.ThemeService.Admin
     {
         private readonly ThemeProvider _themeManager;
         private readonly ISettingStore _settingStore;
+        private const string ThemeFolder = "/Views/Themes/{0}";
         const string ServerPath = "/Content/HtmlContents/Tenants/{0}/{1}/";
         private const string ThemeHeaderContent = "/Views/Themes/{0}/Assets/DefaultContent/Header.txt";
         private const string ThemeBodyContent = "/Views/Themes/{0}/Assets/DefaultContent/Body.txt";
@@ -30,25 +32,43 @@ namespace MercadoCinotam.ThemeService.Admin
 
         public async Task<ThemeSelectorOutput> GetThemesForSelector()
         {
-            var themes = _themeManager.GetThemes();
+            var themes =
+            await _themeManager.GetAllThemesFromFiles(_server);
 
             var activeThemeName = await _settingStore.GetSettingOrNullAsync(TenantId, null, ConfigConst.Theme);
-            var activeTheme = _themeManager.GetTheme(activeThemeName.Value);
-            var activeThemeDto = activeTheme.MapTo<ThemeDto>();
+            var activeTheme = await _themeManager.GetTheme(activeThemeName.Value,_server);
+
             return new ThemeSelectorOutput()
             {
                 Themes = themes.Select(a => new ThemeDto()
                 {
-                    Id = a.Id,
-                    Preview = _themeManager.GetThemePreviews(a.Id).Select(t => t.MapTo<ThemePreviewDto>()),
-                    Released = a.Released,
+                    Id = a.ThemeUniqueName,
+                    Preview = GetPreviewsFromFolder(a.PreviewsFolder, a.ThemeUniqueName),
+                    Released = a.InDevelopment,
                     ThemeDescription = a.ThemeDescription,
                     ThemeName = a.ThemeName,
                     ThemeUniqueName = a.ThemeUniqueName,
 
                 }).ToList(),
-                ActiveTheme = activeThemeDto
+                ActiveTheme = activeTheme
             };
+        }
+
+        private IEnumerable<ThemePreviewDto> GetPreviewsFromFolder(string previewsFolder, string themeUniqueName)
+        {
+            var folder = string.Format(ThemeFolder, themeUniqueName) + previewsFolder;
+            var serverPath = _server.MapPath(folder);
+            var files = Directory.GetFiles(serverPath);
+            var listOfFiles = new List<ThemePreviewDto>();
+            foreach (var file in files)
+            {
+                var virtualPath = folder + Path.GetFileName(file);
+                listOfFiles.Add(new ThemePreviewDto()
+                {
+                    Image = virtualPath
+                });
+            }
+            return listOfFiles;
         }
 
         public async Task<ThemeHtmlInput> GetThemeContentForEdit()
@@ -96,6 +116,13 @@ namespace MercadoCinotam.ThemeService.Admin
 
             FileHelpers.ProcessFile(fileHeaderDirectory, input.HtmlContentHeader);
             FileHelpers.ProcessFile(fileBodyDirectory, input.HtmlContentBody);
+        }
+
+
+
+        public Task<int> RegisterThemeByFile()
+        {
+            throw new NotImplementedException();
         }
 
         private string GetServerFileRoute(string tenantFolder, string fileNameBody)

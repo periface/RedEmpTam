@@ -2,7 +2,6 @@
 using Abp.Web.Models;
 using Helpers.GenericTypes;
 using Helpers.ReflectionHelpers;
-using Helpers.ThemeHelper;
 using MercadoCinotam.MainPageContent.Admin;
 using MercadoCinotam.MainPageContent.Dtos;
 using MercadoCinotam.PymeInfo.Dtos;
@@ -59,7 +58,7 @@ namespace MercadoCinotam.Web.Areas.Admin.Controllers
         public async Task<ActionResult> Themes()
         {
             var themes = await _themeAdminService.GetThemesForSelector();
-            ThemeHelper.ClearTheme(System.Web.HttpContext.Current);
+
             return View(themes);
         }
 

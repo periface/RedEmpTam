@@ -9,11 +9,14 @@ using MercadoCinotam.Authorization;
 using MercadoCinotam.Authorization.Roles;
 using MercadoCinotam.Editions;
 using MercadoCinotam.MultiTenancy.Dto;
+using MercadoCinotam.Pyme;
 using MercadoCinotam.StartupSettings;
+using MercadoCinotam.Themes;
 using MercadoCinotam.Users;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace MercadoCinotam.MultiTenancy
 {
@@ -22,19 +25,23 @@ namespace MercadoCinotam.MultiTenancy
         private readonly TenantManager _tenantManager;
         private readonly RoleManager _roleManager;
         private readonly EditionManager _editionManager;
+        private readonly PymeProvider _pymeProvider;
+        private readonly ThemeProvider _themeProvider;
         private readonly IAbpZeroDbMigrator _abpZeroDbMigrator;
         private readonly ISettingStore _settingStore;
         public TenantAppService(
             TenantManager tenantManager,
             RoleManager roleManager,
             EditionManager editionManager,
-            IAbpZeroDbMigrator abpZeroDbMigrator, ISettingStore settingStore)
+            IAbpZeroDbMigrator abpZeroDbMigrator, ISettingStore settingStore, PymeProvider pymeProvider, ThemeProvider themeProvider)
         {
             _tenantManager = tenantManager;
             _roleManager = roleManager;
             _editionManager = editionManager;
             _abpZeroDbMigrator = abpZeroDbMigrator;
             _settingStore = settingStore;
+            _pymeProvider = pymeProvider;
+            _themeProvider = themeProvider;
         }
 
         [AbpAuthorize(PermissionNames.Pages_Tenants)]
@@ -92,7 +99,8 @@ namespace MercadoCinotam.MultiTenancy
 
                 //Assign Default Theme
                 await _settingStore.CreateAsync(Settings.ThemeInitialConfig(tenant.Id));
-
+                var theme = await _themeProvider.GetThemeByThemeName(ValueConst.MainTheme, HttpContext.Current.Server);
+                _pymeProvider.SetMainPageContent(theme, false);
                 //Paypal config
                 await _settingStore.CreateAsync(Settings.PayPalInitialConfig(tenant.Id));
                 await _settingStore.CreateAsync(Settings.PayPalSecretKey(tenant.Id));

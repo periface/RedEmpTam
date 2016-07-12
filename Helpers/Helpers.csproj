@@ -87,6 +87,9 @@
   <ItemGroup>
     <Compile Include="GenericTypes\RequestModel.cs" />
     <Compile Include="GenericTypes\ReturnModel.cs" />
+    <Compile Include="Helpers\FileHelpers.cs" />
+    <Compile Include="Helpers\HelperModels\ThemeContentOutput.cs" />
+    <Compile Include="Helpers\HelperModels\ThemeInfo.cs" />
     <Compile Include="ReflectionHelpers\InputBuilder.cs" />
     <Compile Include="ReflectionHelpers\QueryableHelper.cs" />
     <Compile Include="Slugger.cs" />

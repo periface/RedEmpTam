@@ -1,15 +1,13 @@
 ﻿using Abp.Domain.Services;
-using MercadoCinotam.Themes.Entities;
+using Helpers.Helpers.HelperModels;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MercadoCinotam.Themes.Manager
 {
     public interface IThemeManager : IDomainService
     {
-        int SaveTheme(Theme theme);
-        IEnumerable<Theme> GetThemes();
-        Theme GetTheme(int themeId);
-        IEnumerable<ThemePreview> GetThemePreviews(int themeId);
-        Theme GetTheme(string activeThemeName);
+        IEnumerable<ThemeInfo> GetThemes();
+        Task<ThemeInfo> GetTheme(string activeThemeName, dynamic server);
     }
 }

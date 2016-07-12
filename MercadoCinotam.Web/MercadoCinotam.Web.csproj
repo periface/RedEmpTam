@@ -699,6 +699,7 @@
     <Content Include="Views\Themes\Agency\Assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Views\Themes\Agency\Assets\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\Themes\Agency\ViewHelpers\_modalsForProducts.cshtml" />
+    <Content Include="Views\Themes\SimpleTheme\Activator.json" />
     <None Include="Views\Themes\SimpleTheme\Products\Details.cshtml" />
     <None Include="Views\Themes\SimpleTheme\Landing\Index.cshtml" />
     <None Include="Views\Shared\_Layout.liquid" />
