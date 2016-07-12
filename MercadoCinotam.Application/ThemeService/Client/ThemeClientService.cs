@@ -33,7 +33,7 @@ namespace MercadoCinotam.ThemeService.Client
             }
             catch (Exception)
             {
-                return "";
+                return string.Empty;
             }
         }
         public async Task<ThemeContentOutput> GetThemeContentFor(string selector)
